@@ -997,7 +997,6 @@
   .party-reset {
     font-size:13px !important;
   }
-
   /* Weapons */
   #weaponsPage .character-header h2 {
     font-size:19px !important;
@@ -1997,8 +1996,7 @@
     font-size:11.5px;
     font-weight:600;
   }
-  .inspector-requires {
-    margin-top:6px;
+  .inspector-requires {    margin-top:6px;
   }
   .inspector-requires p {
     margin:4px 0 0;
@@ -2997,8 +2995,7 @@
   .skill-tree-actions button,
   .skill-modal-close {
     transition:background .14s ease,border-color .14s ease,color .14s ease,transform .14s ease;
-  }
-  .skill-tree-actions button:hover,
+  }  .skill-tree-actions button:hover,
   .skill-modal-close:hover {
     background:#202b33 !important;
     border-color:#586a78 !important;
@@ -3997,8 +3994,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     filter:none !important;}
   #optimizerRoster .roster-chip[data-char].active::before {content:'✓';color:var(--char-accent);font-weight:800;margin-right:4px;}
   #optimizerRoster .roster-chip[data-char].active:hover {background:color-mix(in srgb,var(--char-accent) 20%,#131a21) !important;filter:none !important;}
-  .optimizer-character[data-char] .optimizer-token.picto {
-    border-color:color-mix(in srgb,var(--char-accent) 40%,#303b45) !important;
+  .optimizer-character[data-char] .optimizer-token.picto {    border-color:color-mix(in srgb,var(--char-accent) 40%,#303b45) !important;
     background:color-mix(in srgb,var(--char-accent) 12%,#111a21) !important;
     color:color-mix(in srgb,var(--char-accent) 52%,#edf3f5) !important;
   }
@@ -4038,6 +4034,319 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   @media(max-width:760px){.optimizer-act-field {width:100% !important;min-width:0 !important;max-width:100% !important;flex:0 0 auto !important;}}
   @media(max-width:395px){#optimizerRoster .roster-chip[data-char]{font-size:10px !important;padding:5px 3px !important;}}
   @media(prefers-reduced-motion:reduce){.sliding-segments > .segment-glider.ready{transition:none !important;}}
+
+/* ===== v14.6.5 — unified character selection + cohesive Builds switch ===== */
+
+/* All three Acts live inside one segmented track. The existing glider slides
+   within the track; individual buttons deliberately have no outlines. */
+#buildsPage .build-act-switch {
+  display:inline-flex !important;
+  align-items:stretch !important;
+  width:max-content;
+  gap:3px !important;
+  padding:4px !important;
+  background:#111a21 !important;
+  border:1px solid #34434e !important;
+  border-radius:11px !important;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,.25);
+}
+#buildsPage .build-act-switch .build-act-btn {
+  min-width:76px !important;
+  min-height:34px !important;
+  padding:6px 13px !important;
+  border:0 !important;
+  border-radius:7px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  color:#9caab6 !important;
+  transform:none !important;
+}
+#buildsPage .build-act-switch .build-act-btn:hover:not(.active) {
+  border:0 !important;
+  background:rgba(130,164,184,.09) !important;
+  color:#e3ebf0 !important;
+  transform:none !important;
+}
+#buildsPage .build-act-switch .build-act-btn.active {
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  color:#f0f6fb !important;
+}
+#buildsPage .build-act-switch .segment-glider {
+  border:1px solid #566e7e;
+  border-radius:7px;
+  background:#253844;
+}
+#buildsPage .build-act-switch:has([data-build-act="1"].active) .segment-glider {
+  border-color:#498a99;
+  background:#1b3941;
+}
+#buildsPage .build-act-switch:has([data-build-act="2"].active) .segment-glider {
+  border-color:#7661a5;
+  background:#302849;
+}
+#buildsPage .build-act-switch:has([data-build-act="3"].active) .segment-glider {
+  border-color:#987647;
+  background:#403320;
+}
+#buildsPage .build-act-switch .segment-glider.ready {
+  transition:transform .31s cubic-bezier(.23,.8,.26,1),width .31s cubic-bezier(.23,.8,.26,1),
+    height .31s ease,opacity .18s ease,background-color .24s ease,border-color .24s ease;
+}
+
+/* Consistent ghost buttons and a restrained tint when selected on both pages. */
+#partyPicker .character-picker-button,
+#optimizerRoster .character-picker-button {
+  position:relative;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:0 !important;
+  min-height:34px !important;
+  padding:0 10px !important;
+  border-radius:8px !important;
+  border:1px solid color-mix(in srgb,var(--char-accent) 30%,#34404b) !important;
+  background:color-mix(in srgb,var(--char-accent) 5%,#11171c) !important;
+  color:color-mix(in srgb,var(--char-accent) 64%,#dce6ed) !important;
+  box-shadow:none !important;
+  overflow:hidden;
+  font-size:12px !important;
+  font-weight:650 !important;
+  line-height:1.2 !important;
+  white-space:nowrap;
+  transform:none !important;
+  filter:none !important;
+  transition:border-color .2s ease,background-color .2s ease,color .2s ease,opacity .2s ease !important;
+}
+#partyPicker .character-picker-button:hover:not(:disabled),
+#optimizerRoster .character-picker-button:hover {
+  transform:none !important; filter:none !important;
+  border-color:color-mix(in srgb,var(--char-accent) 76%,#52616b) !important;
+  background:color-mix(in srgb,var(--char-accent) 10%,#121920) !important;
+}
+#partyPicker .character-picker-button.selected,
+#optimizerRoster .character-picker-button.active {
+  border-color:color-mix(in srgb,var(--char-accent) 76%,#3a4651) !important;
+  background:color-mix(in srgb,var(--char-accent) 13%,#131a21) !important;
+  color:#f0f5f8 !important;
+  box-shadow:none !important;
+}
+#partyPicker .character-picker-button.selected:hover,
+#optimizerRoster .character-picker-button.active:hover {
+  transform:none !important; filter:none !important;
+  background:color-mix(in srgb,var(--char-accent) 19%,#131a21) !important;
+}
+/* The marker is integrated into the button's *left side*, with no circle. */
+#partyPicker .character-picker-button .picker-marker,
+#optimizerRoster .character-picker-button .picker-marker {
+  display:none !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+#partyPicker .character-picker-button.selected .picker-marker,
+#optimizerRoster .character-picker-button.active .picker-marker {
+  display:grid !important;
+  place-items:center;
+  align-self:stretch;
+  flex:0 0 20px !important;
+  min-width:20px !important;
+  width:20px !important;
+  height:auto !important;
+  margin-left:-10px;
+  margin-right:8px;
+  padding:0;
+  border:0 !important;
+  border-radius:7px 0 0 7px !important;
+  background:var(--char-accent) !important;
+  color:#0a1118 !important;
+  font-size:11px !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+}
+#partyPicker .character-picker-button .picker-name,
+#optimizerRoster .character-picker-button .picker-name {
+  display:block;
+  min-width:0;
+  font-weight:650 !important;
+  color:inherit !important;
+  font-size:inherit !important;
+}
+#partyPicker .character-picker-button:disabled {
+  opacity:.35;
+  cursor:not-allowed;
+}
+/* Keep the five Optimizer choices on one line, without a clipped float. */
+#optimizerRoster.optimizer-roster {
+  flex-wrap:nowrap !important;
+  overflow-x:auto;
+  overflow-y:hidden;
+  align-items:center;
+  padding:2px 0;
+}
+#optimizerRoster .character-picker-button {
+  flex:1 1 0;
+  min-width:0 !important;
+  padding:0 6px !important;
+  font-size:11px !important;
+}
+#optimizerRoster .character-picker-button.active .picker-marker {
+  flex-basis:18px !important;
+  min-width:18px !important;
+  width:18px !important;
+  margin-left:-6px;
+  margin-right:5px;
+  border-radius:7px 0 0 7px !important;
+  font-size:10.5px !important;
+}
+/* v14.6.1's independent check glyph and bottom inset border are no longer
+   needed: the left color block is now the single selected-state marker. */
+#optimizerRoster .roster-chip[data-char].active::before {content:none !important;display:none !important;}
+#optimizerRoster .roster-chip[data-char].active {box-shadow:none !important;}
+#optimizerRoster .roster-chip[data-char].active:hover {box-shadow:none !important;}
+#partyPicker {align-items:center;gap:6px;}
+#partyPicker .character-picker-button {min-width:94px;}
+@media(max-width:520px) {
+  #optimizerRoster .character-picker-button {font-size:10.5px !important;padding:0 4px !important;}
+  #optimizerRoster .character-picker-button.active .picker-marker {
+    flex-basis:16px !important;min-width:16px !important;width:16px !important;
+    margin-left:-4px;margin-right:3px;border-radius:6px 0 0 6px !important;
+  }
+  #partyPicker .character-picker-button {min-width:0;}
+}
+@media(prefers-reduced-motion:reduce) {
+  #buildsPage .build-act-switch .segment-glider.ready,
+  #partyPicker .character-picker-button,
+  #optimizerRoster .character-picker-button {transition:none !important;}
+}
+
+
+/* v14.6.5: build correctness / shared equipment audit */
+.optimizer-token .token-lp {font-size:11px;font-weight:600;opacity:.8;margin-left:5px;white-space:nowrap}
+.optimizer-block-label {letter-spacing:.03em}
+.turn-order-audit{margin:4px 0 16px;padding:11px 13px;border:1px solid #2b3943;border-radius:10px;background:#111920;color:#a4b4c1;font-size:12px;line-height:1.55}
+.turn-order-audit strong{color:#d6e1e8}
+.turn-order-audit[data-audit-status="caution"]{border-color:#785943;background:#201811;color:#e8c6a4}
+.optimizer-audit-disclaimer{margin:-5px 0 18px;color:#8f9da9;font-size:12px;line-height:1.5;}
+.skill-tree-board .decorative-lock {background:#1a3550!important;border-color:#6094c7!important;color:#c0e0ff!important;opacity:.92!important}
+.skill-tree-board .decorative-lock .diamond-inner {color:#c0e0ff!important}
+
+
+/* ===== v14.6.5: precise selection markers and card-sized stat layouts ===== */
+#partyPicker .character-picker-button.selected .picker-marker,
+#optimizerRoster .character-picker-button.active .picker-marker {
+  display:grid !important;
+  position:absolute !important;
+  top:-1px !important;
+  bottom:-1px !important;
+  left:-1px !important;
+  right:auto !important;
+  width:19px !important;
+  min-width:19px !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:8px 0 0 8px !important;
+  box-shadow:none !important;
+  align-items:center;
+  justify-items:center;
+  transform:none !important;
+}
+#optimizerRoster .character-picker-button.active .picker-marker { width:18px !important;min-width:18px !important; }
+#partyPicker .character-picker-button.selected .picker-name { padding-left:14px; }
+#optimizerRoster .character-picker-button.active .picker-name { padding-left:13px; }
+#partyPicker .character-picker-button,
+#optimizerRoster .character-picker-button { isolation:isolate; }
+/* Compact two-column layout belongs to each card, NOT to the full viewport. */
+.optimizer-character .attribute-editor {min-width:0;}
+.optimizer-character .optimizer-attribute-layout {
+  display:grid !important;
+  grid-template-columns:minmax(0,145px) minmax(0,1fr) !important;
+  align-items:start !important;
+  column-gap:12px !important;
+  row-gap:7px !important;
+  min-width:0 !important;
+}
+.optimizer-character .optimizer-radar {
+  box-sizing:border-box;
+  min-width:0 !important;
+  width:100% !important;
+  min-height:0 !important;
+  padding:2px 8px 0 0 !important;
+  margin:0 !important;
+  border:0 !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  overflow:visible !important;
+}
+.optimizer-character .optimizer-radar .attribute-radar.compact {
+  width:100% !important;
+  max-width:144px !important;
+  height:auto !important;
+  display:block;
+}
+.optimizer-character .attribute-input-grid {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-content:start !important;
+  gap:8px 7px !important;
+  min-width:0 !important;
+}
+.optimizer-character .attribute-input-grid label {min-width:0 !important;overflow:visible;font-size:10px !important;line-height:1.25 !important;}
+.optimizer-character .attribute-input-grid input {width:100% !important;min-width:0 !important;}
+.optimizer-character .optimizer-attribute-layout > .radar-key {
+  grid-column:1/-1;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  align-items:center !important;
+  white-space:normal !important;
+  gap:5px 7px !important;
+  margin-top:4px;
+  font-size:11px !important;
+}
+.optimizer-character .computed-speed {grid-column:1/-1;padding:9px 10px;border-radius:8px;background:#121a20;border:1px solid #2b3942;color:#afc0cb;font-size:11px;line-height:1.45;}
+.optimizer-character .computed-speed strong {color:#dfe8ee;font-size:13px;font-weight:650;}
+.optimizer-character .computed-speed small {display:block;color:#8293a0;font-size:11px;line-height:1.4;margin-top:3px;}
+.optimizer-character .computed-speed .speed-warning {color:#d4b581;}
+.optimizer-character .picto-equipped {display:inline-flex;align-items:center;gap:5px;min-height:29px;flex-wrap:wrap;}
+.optimizer-character .picto-level-label {display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:550;opacity:.85;white-space:nowrap;}
+.optimizer-character input.picto-level-input {box-sizing:border-box;width:38px;height:23px;padding:0 3px;border-radius:4px;border:1px solid color-mix(in srgb,var(--char-accent) 40%,#394855);background:#0e141a;color:#e7eef3;font-size:11px;text-align:center;outline:none;}
+.optimizer-character input.picto-level-input {appearance:textfield;-moz-appearance:textfield;}
+.optimizer-character input.picto-level-input::-webkit-inner-spin-button,
+.optimizer-character input.picto-level-input::-webkit-outer-spin-button {-webkit-appearance:none;margin:0;}
+.optimizer-character input.picto-level-input:focus {border-color:var(--char-accent);outline:2px solid color-mix(in srgb,var(--char-accent) 20%,transparent);}
+@media(max-width:400px) {
+ .optimizer-character .optimizer-attribute-layout {grid-template-columns:minmax(0,128px) minmax(0,1fr) !important;column-gap:9px !important;}
+ .optimizer-character .optimizer-radar {padding-right:2px !important;}
+}
+
+
+/* ===== v14.6.5 — restore horizontal form + true order-aware target ===== */
+.optimizer-character { container-type:inline-size; }
+.optimizer-character .optimizer-attribute-layout { grid-template-columns:minmax(0,152px) minmax(0,1fr) !important; }
+.optimizer-character .attribute-input-grid {
+  grid-template-columns:repeat(5,minmax(0,1fr)) minmax(74px,1fr) !important;
+  gap:7px 6px !important;
+  align-items:start !important;
+}
+.optimizer-character .attribute-input-grid label {font-size:11px !important;letter-spacing:0 !important;}
+.optimizer-character .attribute-input-grid input {height:34px !important;padding-inline:5px !important;}
+.optimizer-character .computed-speed {padding:7px 9px !important;}
+.optimizer-character .computed-speed small:last-child {font-size:10.5px !important;}
+@container (max-width:600px) {
+  .optimizer-character .attribute-input-grid {grid-template-columns:repeat(3,minmax(0,1fr)) !important;}
+  .optimizer-character .optimizer-attribute-layout {grid-template-columns:minmax(0,134px) minmax(0,1fr) !important;}
+}
+@container (max-width:470px) {
+  .optimizer-character .optimizer-attribute-layout {grid-template-columns:minmax(0,118px) minmax(0,1fr) !important;column-gap:10px !important;}
+  .optimizer-character .attribute-input-grid {grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+/* Sciel reference: screenshot's three horizontal rails and connecting branches.
+   Keep all node identities clearly provisional until hover-named reference. */
+.skill-tree-board.sciel-tree { min-width:900px !important; }
+
 </style>
 </head>
 <body>
@@ -4684,8 +4993,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
             <div class="tier b">B</div>
             <div class="weapon">
               <span class="weapon-name">Chalium</span>
-              <span class="why">Defensive parry/Shield specialist</span>
-            </div>
+              <span class="why">Defensive parry/Shield specialist</span>            </div>
             <div class="act">A2</div>
           </div>
           <div class="weapon-row" data-rank="17" data-act="1"
@@ -5684,8 +5992,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
               <span class="why">Best all-around Act 1 Gustave weapon and a strong Overcharge progression choice</span>
             </div>
             <div class="act">A1</div>
-          </div>
-          <div class="weapon-row" data-rank="2" data-act="1"
+          </div>          <div class="weapon-row" data-rank="2" data-act="1"
                data-character="Gustave" data-weapon="Gaulteram"
                data-tier="A+" data-actlabel="1" data-progression-act="1"
                data-why="Excellent optional Act 1 Agility/Luck weapon from Yellow Harvest" role="button" tabindex="0"
@@ -5983,6 +6290,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     </div>
 
     <div class="optimizer-status" id="optimizerStatus"></div>
+    <div class="turn-order-audit" data-turn-order-audit role="status" aria-live="polite"></div>
+    <p class="optimizer-audit-disclaimer">Build suggestions are provisional: acquired Pictos are allocated only once as physical equipment. Separately equipped Luminas cost LP per character. In-game Picto stat bonuses, levels, and mastery status are not yet tracked; verify Speed and skill connections before committing a respec.</p>
 
     <section class="optimizer-section">
       <div class="optimizer-section-head">
@@ -6162,7 +6471,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
 <footer class="site-footer" role="contentinfo">
   <span>Expedition 33 · Build planner and collection tracker</span>
-  <span>E33.EXE <span class="site-version" data-site-version>v14.6.0</span></span>
+  <span>E33.EXE <span class="site-version" data-site-version>v14.6.5</span></span>
 </footer>
 
 <script>
@@ -6277,7 +6586,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
   const optimizerSkillData = {"Gustave":{"starting":["Lumiere Assault","Overcharge"],"skills":["Lumiere Assault","Powerful","Recovery","Shatter","Overcharge","Marking Shot","From Fire","Strike Storm"]},"Lune":{"starting":["Immolation","Ice Lance"],"skills":["Immolation","Thunderfall","Ice Lance","Earth Rising","Healing Light","Wildfire","Electrify","Lightning Dance","Storm Caller","Fire Rage","Hell","Thermal Transfer","Crippling Tsunami","Typhoon","Rockslide","Crustal Crush","Terraquake","Rebirth","Revitalization","Mayhem","Elemental Trick","Elemental Genesis"]},"Maelle":{"starting":["Offensive Switch","Percee","Spark"],"skills":["Offensive Switch","Percee","Spark","Phantom Strike","Stendhal","Burning Canvas","Swift Stride","Guard Up","Fleuret Fury","Breaking Rules","Fencer's Flurry","Sword Ballet","Egide","Momentum Strike","Guard Down","Payback","Degagement","Mezzo Forte","Last Chance","Rain of Fire","Combustion","Revenge","Pyrolyse"]},"Sciel":{"starting":["Focused Foretell","Twilight Slash"],"skills":["Focused Foretell","Twilight Slash","Marking Card","Rush","Spectral Sweep","Bad Omen","Dark Cleansing","Card Weaver","All Set","Harvest","Phantom Blade","Sealed Fate","Grim Harvest","Searing Bond","Firing Shadow","Fortune's Fury","Our Sacrifice","Delaying Slash","Dark Wave","Plentiful Harvest","Intervention","Final Path","Twilight Dance"]},"Verso":{"starting":["Assault Zero","From Fire"],"skills":["Assault Zero","From Fire","Marking Shot","Quick Strike","Powerful","Leadership","Phantom Stars","Burden","Berserk Slash","Defiant Strike","Strike Storm","Steeled Strike","End Bringer","Light Holder","Radiant Slash","Perfect Recovery","Purification","Follow Up","Overload","Speed Burst","Ascending Assault","Blitz","Perfect Break","Paradigm Shift"]},"Monoco":{"starting":["Chalier Combo","Stalact Punches"],"skills":["Chalier Combo","Stalact Punches","Pelerin Heal","Braseleur Smash","Ramasseur Bonk","Troubadour Trumpet","Duallist Storm","Creation Void","Abbest Wind","Lancelier Impale","Portier Crash","Eveque Spear","Chevaliere Ice","Chevaliere Thrusts","Chevaliere Piercing","Aberration Light","Demineur Thunder","Bruler Bash","Cruler Barrier","Luster Slices","Contorsionniste Blast","Boucheclier Fortify","Chapelier Slash","Grosse Tete Whack","Sakapatate Explosion","Sakapatate Estoc","Sakapatate Slam","Sakapatate Fire","Benisseur Mortar","Ballet Charm","Orphelin Cheers","Echassier Stabs","Cultist Blood","Cultist Slashes","Hexga Crush","Rocher Hammering","Lampmaster Light","Moissonneuse Vendage","Clair Enfeeble","Obscur Sword","Potier Energy","Sapling Absorption","Jar Lampstorm","Gault Fury","Glaise Earthquake","Danseuse Waltz"]}};
   const optimizerSkillPriority = {"Gustave":{"1":["Marking Shot","Powerful","From Fire","Recovery","Strike Storm","Shatter"]},"Lune":{"1":["Thunderfall","Wildfire","Electrify","Mayhem","Earth Rising","Thermal Transfer","Healing Light","Rebirth","Revitalization"],"2":["Lightning Dance","Elemental Trick","Crippling Tsunami"],"3":["Elemental Genesis","Fire Rage","Hell","Storm Caller","Rockslide","Crustal Crush","Terraquake"]},"Maelle":{"1":["Swift Stride","Guard Up","Fleuret Fury","Guard Down","Breaking Rules","Degagement","Rain of Fire","Combustion"],"2":["Fencer's Flurry","Sword Ballet","Mezzo Forte","Egide","Momentum Strike"],"3":["Stendhal","Phantom Strike","Last Chance","Burning Canvas","Payback","Pyrolyse"]},"Sciel":{"1":["Phantom Blade","Sealed Fate","Marking Card","Rush","Spectral Sweep","Dark Cleansing","Harvest","Searing Bond"],"2":["Firing Shadow","Plentiful Harvest","Card Weaver"],"3":["Fortune's Fury","Intervention","All Set","Final Path","Twilight Dance","Our Sacrifice","Dark Wave"]},"Verso":{"2":["Marking Shot","Quick Strike","Berserk Slash","Defiant Strike","Powerful","Perfect Recovery","Paradigm Shift","Purification"],"3":["Follow Up","Leadership","Phantom Stars","Strike Storm","Steeled Strike","End Bringer","Perfect Break","Blitz","Radiant Slash","Light Holder","Overload","Speed Burst","Ascending Assault"]},"Monoco":{"2":["Potier Energy","Chevaliere Piercing","Stalact Punches","Moissonneuse Vendage","Pelerin Heal","Benisseur Mortar"],"3":["Sakapatate Explosion","Portier Crash","Duallist Storm","Sakapatate Fire","Lampmaster Light","Glaise Earthquake"]}};
-  const skillTreeGraph = {"Gustave":{"aspect":1.45,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/gustave-guide-best-skills-and-weapons","nodes":[{"id":"Lumiere Assault","label":"Lumière Assault","sp":0,"gate":1,"prereqs":[],"x":68,"y":35,"starting":true},{"id":"Powerful","label":"Powerful","sp":1,"gate":1,"prereqs":["Lumiere Assault"],"x":50,"y":24,"starting":false},{"id":"Recovery","label":"Recovery","sp":2,"gate":1,"prereqs":["Powerful"],"x":31,"y":17,"starting":false},{"id":"Shatter","label":"Shatter","sp":6,"gate":1,"prereqs":["Recovery"],"x":13,"y":13,"starting":false},{"id":"Overcharge","label":"Overcharge","sp":0,"gate":1,"prereqs":[],"x":68,"y":65,"starting":true},{"id":"Marking Shot","label":"Marking Shot","sp":1,"gate":1,"prereqs":["Overcharge"],"x":50,"y":76,"starting":false},{"id":"From Fire","label":"From Fire","sp":2,"gate":1,"prereqs":["Marking Shot"],"x":31,"y":83,"starting":false},{"id":"Strike Storm","label":"Strike Storm","sp":10,"gate":1,"prereqs":["From Fire"],"x":13,"y":87,"starting":false}],"links":[["Lumiere Assault","Powerful"],["Powerful","Recovery"],["Recovery","Shatter"],["Overcharge","Marking Shot"],["Marking Shot","From Fire"],["From Fire","Strike Storm"],["Lumiere Assault","Overcharge"]],"decorative":[{"x":83,"y":22},{"x":83,"y":40},{"x":83,"y":58},{"x":83,"y":76},{"x":58,"y":10},{"x":58,"y":90}]},"Lune":{"aspect":1.72,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/lune-guide-best-skills-and-weapons","nodes":[{"id":"Revitalization","label":"Revitalization","sp":6,"gate":1,"prereqs":["Rebirth"],"x":45,"y":8,"starting":false},{"id":"Rebirth","label":"Rebirth","sp":4,"gate":1,"prereqs":["Healing Light"],"x":45,"y":21,"starting":false},{"id":"Healing Light","label":"Healing Light","sp":1,"gate":1,"prereqs":["Immolation","Ice Lance"],"x":45,"y":35,"starting":false},{"id":"Immolation","label":"Immolation","sp":0,"gate":1,"prereqs":[],"x":35,"y":35,"starting":true},{"id":"Ice Lance","label":"Ice Lance","sp":0,"gate":1,"prereqs":[],"x":55,"y":35,"starting":true},{"id":"Hell","label":"Hell","sp":10,"gate":1,"prereqs":["Fire Rage"],"x":5,"y":49,"starting":false},{"id":"Fire Rage","label":"Fire Rage","sp":6,"gate":1,"prereqs":["Wildfire"],"x":15,"y":49,"starting":false},{"id":"Wildfire","label":"Wildfire","sp":2,"gate":1,"prereqs":["Thunderfall"],"x":25,"y":49,"starting":false},{"id":"Thunderfall","label":"Thunderfall","sp":1,"gate":1,"prereqs":["Immolation"],"x":35,"y":49,"starting":false},{"id":"Earth Rising","label":"Earth Rising","sp":1,"gate":1,"prereqs":["Ice Lance"],"x":55,"y":49,"starting":false},{"id":"Rockslide","label":"Rockslide","sp":2,"gate":1,"prereqs":["Earth Rising"],"x":65,"y":49,"starting":false},{"id":"Crustal Crush","label":"Crustal Crush","sp":6,"gate":1,"prereqs":["Rockslide"],"x":75,"y":49,"starting":false},{"id":"Terraquake","label":"Terraquake","sp":10,"gate":1,"prereqs":["Crustal Crush"],"x":85,"y":49,"starting":false},{"id":"Electrify","label":"Electrify","sp":1,"gate":1,"prereqs":["Thunderfall"],"x":35,"y":63,"starting":false},{"id":"Mayhem","label":"Mayhem","sp":4,"gate":1,"prereqs":["Electrify","Thermal Transfer"],"x":45,"y":63,"starting":false},{"id":"Thermal Transfer","label":"Thermal Transfer","sp":2,"gate":1,"prereqs":["Earth Rising"],"x":55,"y":63,"starting":false},{"id":"Lightning Dance","label":"Lightning Dance","sp":6,"gate":1,"prereqs":["Electrify"],"x":35,"y":77,"starting":false},{"id":"Elemental Trick","label":"Elemental Trick","sp":4,"gate":1,"prereqs":["Mayhem"],"x":45,"y":77,"starting":false},{"id":"Crippling Tsunami","label":"Crippling Tsunami","sp":6,"gate":1,"prereqs":["Thermal Transfer"],"x":55,"y":77,"starting":false},{"id":"Storm Caller","label":"Storm Caller","sp":8,"gate":1,"prereqs":["Lightning Dance"],"x":35,"y":91,"starting":false},{"id":"Elemental Genesis","label":"Elemental Genesis","sp":10,"gate":1,"prereqs":["Elemental Trick","Storm Caller","Typhoon"],"x":45,"y":91,"starting":false},{"id":"Typhoon","label":"Typhoon","sp":8,"gate":1,"prereqs":["Crippling Tsunami"],"x":55,"y":91,"starting":false}],"links":[["Revitalization","Rebirth"],["Rebirth","Healing Light"],["Immolation","Healing Light"],["Healing Light","Ice Lance"],["Immolation","Thunderfall"],["Thunderfall","Wildfire"],["Wildfire","Fire Rage"],["Fire Rage","Hell"],["Ice Lance","Earth Rising"],["Earth Rising","Rockslide"],["Rockslide","Crustal Crush"],["Crustal Crush","Terraquake"],["Thunderfall","Electrify"],["Electrify","Lightning Dance"],["Lightning Dance","Storm Caller"],["Earth Rising","Thermal Transfer"],["Thermal Transfer","Crippling Tsunami"],["Crippling Tsunami","Typhoon"],["Electrify","Mayhem"],["Mayhem","Thermal Transfer"],["Lightning Dance","Elemental Trick"],["Elemental Trick","Crippling Tsunami"],["Storm Caller","Elemental Genesis"],["Elemental Genesis","Typhoon"],["Mayhem","Elemental Trick"]],"decorative":[{"x":96,"y":25,"label":"Tremor","kind":"gradient"},{"x":96,"y":51,"label":"Tree of Life","kind":"gradient"},{"x":96,"y":77,"label":"Sky Break","kind":"gradient"}]},"Maelle":{"aspect":1.7,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/maelle-guide-best-skills-and-weapons","nodes":[{"id":"Phantom Strike","label":"Phantom Strike","sp":4,"gate":3,"prereqs":["Offensive Switch"],"x":31,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Burning Canvas","label":"Burning Canvas","sp":6,"gate":3,"prereqs":["Phantom Strike","Stendhal"],"x":42,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Stendhal","label":"Stendhal","sp":4,"gate":3,"prereqs":["Percee"],"x":53,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Offensive Switch","label":"Offensive Switch","sp":0,"gate":1,"prereqs":[],"x":31,"y":24,"starting":true},{"id":"Percee","label":"Percée","sp":0,"gate":1,"prereqs":[],"x":53,"y":24,"starting":true},{"id":"Degagement","label":"Dégagement","sp":2,"gate":1,"prereqs":["Spark"],"x":31,"y":39,"starting":false},{"id":"Swift Stride","label":"Swift Stride","sp":1,"gate":1,"prereqs":["Percee"],"x":53,"y":39,"starting":false},{"id":"Combustion","label":"Combustion","sp":6,"gate":1,"prereqs":["Rain of Fire"],"x":8,"y":55,"starting":false},{"id":"Rain of Fire","label":"Rain of Fire","sp":4,"gate":1,"prereqs":["Spark"],"x":19,"y":55,"starting":false},{"id":"Spark","label":"Spark","sp":0,"gate":1,"prereqs":[],"x":31,"y":55,"starting":true},{"id":"Guard Down","label":"Guard Down","sp":4,"gate":1,"prereqs":["Degagement","Guard Up"],"x":42,"y":55,"starting":false},{"id":"Guard Up","label":"Guard Up","sp":2,"gate":1,"prereqs":["Swift Stride"],"x":53,"y":55,"starting":false},{"id":"Fleuret Fury","label":"Fleuret Fury","sp":2,"gate":1,"prereqs":["Guard Up"],"x":64,"y":55,"starting":false},{"id":"Breaking Rules","label":"Breaking Rules","sp":4,"gate":1,"prereqs":["Fleuret Fury"],"x":75,"y":55,"starting":false},{"id":"Revenge","label":"Revenge","sp":6,"gate":1,"prereqs":["Combustion"],"x":8,"y":72,"starting":false},{"id":"Pyrolyse","label":"Pyrolyse","sp":8,"gate":1,"prereqs":["Revenge"],"x":8,"y":89,"starting":false},{"id":"Mezzo Forte","label":"Mezzo Forte","sp":4,"gate":1,"prereqs":["Degagement"],"x":31,"y":72,"starting":false},{"id":"Last Chance","label":"Last Chance","sp":6,"gate":1,"prereqs":["Mezzo Forte"],"x":31,"y":89,"starting":false},{"id":"Payback","label":"Payback","sp":8,"gate":1,"prereqs":["Last Chance","Momentum Strike"],"x":42,"y":89,"starting":false},{"id":"Egide","label":"Égide","sp":4,"gate":1,"prereqs":["Guard Up"],"x":53,"y":72,"starting":false},{"id":"Momentum Strike","label":"Momentum Strike","sp":6,"gate":1,"prereqs":["Egide"],"x":53,"y":89,"starting":false},{"id":"Fencer's Flurry","label":"Fencer’s Flurry","sp":6,"gate":1,"prereqs":["Breaking Rules"],"x":75,"y":72,"starting":false},{"id":"Sword Ballet","label":"Sword Ballet","sp":10,"gate":1,"prereqs":["Fencer's Flurry"],"x":75,"y":89,"starting":false}],"links":[["Phantom Strike","Burning Canvas"],["Burning Canvas","Stendhal"],["Phantom Strike","Offensive Switch"],["Offensive Switch","Degagement"],["Degagement","Spark"],["Stendhal","Percee"],["Percee","Swift Stride"],["Swift Stride","Guard Up"],["Combustion","Rain of Fire"],["Rain of Fire","Spark"],["Spark","Guard Down"],["Guard Down","Guard Up"],["Guard Up","Fleuret Fury"],["Fleuret Fury","Breaking Rules"],["Combustion","Revenge"],["Revenge","Pyrolyse"],["Spark","Mezzo Forte"],["Mezzo Forte","Last Chance"],["Last Chance","Payback"],["Payback","Momentum Strike"],["Guard Up","Egide"],["Egide","Momentum Strike"],["Breaking Rules","Fencer's Flurry"],["Fencer's Flurry","Sword Ballet"]],"decorative":[{"x":64,"y":31,"label":"Gustave's Homage","kind":"special"},{"x":88,"y":29,"label":"Virtuose Strike","kind":"gradient"},{"x":88,"y":54,"label":"Phoenix Flame","kind":"gradient"},{"x":88,"y":79,"label":"Gommage","kind":"gradient"}]},"Verso":{"aspect":1.62,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/verso-guide-best-skills-and-weapons","nodes":[{"id":"From Fire","label":"From Fire","sp":0,"gate":2,"prereqs":[],"x":31,"y":7,"starting":true},{"id":"Perfect Recovery","label":"Perfect Recovery","sp":1,"gate":2,"prereqs":["From Fire"],"x":31,"y":21,"starting":false},{"id":"Overload","label":"Overload","sp":6,"gate":2,"prereqs":["Follow Up","Speed Burst"],"x":8,"y":39,"starting":false},{"id":"Follow Up","label":"Follow Up","sp":4,"gate":2,"prereqs":["Purification"],"x":19,"y":39,"starting":false},{"id":"Purification","label":"Purification","sp":2,"gate":2,"prereqs":["Perfect Recovery","Paradigm Shift","Blitz"],"x":31,"y":39,"starting":false},{"id":"Assault Zero","label":"Assault Zero","sp":0,"gate":2,"prereqs":[],"x":53,"y":7,"starting":true},{"id":"Quick Strike","label":"Quick Strike","sp":2,"gate":2,"prereqs":["Marking Shot","Paradigm Shift","Powerful","Berserk Slash"],"x":53,"y":39,"starting":false},{"id":"Powerful","label":"Powerful","sp":2,"gate":2,"prereqs":["Quick Strike"],"x":64,"y":39,"starting":false},{"id":"Leadership","label":"Leadership","sp":4,"gate":2,"prereqs":["Powerful"],"x":75,"y":39,"starting":false},{"id":"Speed Burst","label":"Speed Burst","sp":6,"gate":2,"prereqs":["Overload","Ascending Assault"],"x":8,"y":55,"starting":false},{"id":"Ascending Assault","label":"Ascending Assault","sp":4,"gate":2,"prereqs":["Blitz","Speed Burst"],"x":19,"y":55,"starting":false},{"id":"Blitz","label":"Blitz","sp":2,"gate":2,"prereqs":["Purification","Ascending Assault","Radiant Slash","Perfect Break"],"x":31,"y":55,"starting":false},{"id":"Paradigm Shift","label":"Paradigm Shift","sp":2,"gate":2,"prereqs":["Purification","Quick Strike","Perfect Break"],"x":42,"y":39,"starting":false},{"id":"Perfect Break","label":"Perfect Break","sp":4,"gate":2,"prereqs":["Blitz","Paradigm Shift","Berserk Slash"],"x":42,"y":55,"starting":false},{"id":"Berserk Slash","label":"Berserk Slash","sp":2,"gate":2,"prereqs":["Quick Strike","Perfect Break","Defiant Strike"],"x":53,"y":55,"starting":false},{"id":"Defiant Strike","label":"Defiant Strike","sp":6,"gate":2,"prereqs":["Berserk Slash","Strike Storm"],"x":64,"y":55,"starting":false},{"id":"Radiant Slash","label":"Radiant Slash","sp":4,"gate":2,"prereqs":["Blitz","Light Holder"],"x":31,"y":70,"starting":false},{"id":"Burden","label":"Burden","sp":4,"gate":2,"prereqs":["Berserk Slash","Phantom Stars"],"x":53,"y":70,"starting":false},{"id":"Light Holder","label":"Light Holder","sp":6,"gate":2,"prereqs":["Radiant Slash","End Bringer"],"x":31,"y":83,"starting":false},{"id":"Strike Storm","label":"Strike Storm","sp":8,"gate":2,"prereqs":["Defiant Strike","Steeled Strike"],"x":53,"y":83,"starting":false},{"id":"Phantom Stars","label":"Phantom Stars","sp":8,"gate":2,"prereqs":["Leadership","Burden"],"x":75,"y":55,"starting":false},{"id":"End Bringer","label":"End Bringer","sp":10,"gate":2,"prereqs":["Light Holder","Steeled Strike"],"x":31,"y":94,"starting":false},{"id":"Steeled Strike","label":"Steeled Strike","sp":10,"gate":2,"prereqs":["Strike Storm","End Bringer"],"x":53,"y":94,"starting":false},{"id":"Marking Shot","label":"Marking Shot","sp":1,"gate":2,"prereqs":["Assault Zero"],"x":53,"y":21,"starting":false}],"links":[["From Fire","Perfect Recovery"],["Perfect Recovery","Purification"],["Assault Zero","Marking Shot"],["Marking Shot","Quick Strike"],["Overload","Follow Up"],["Follow Up","Purification"],["Purification","Paradigm Shift"],["Paradigm Shift","Quick Strike"],["Quick Strike","Powerful"],["Powerful","Leadership"],["Speed Burst","Ascending Assault"],["Ascending Assault","Blitz"],["Blitz","Perfect Break"],["Perfect Break","Berserk Slash"],["Berserk Slash","Defiant Strike"],["Defiant Strike","Phantom Stars"],["Overload","Speed Burst"],["Purification","Blitz"],["Paradigm Shift","Perfect Break"],["Quick Strike","Berserk Slash"],["Powerful","Defiant Strike"],["Leadership","Phantom Stars"],["Blitz","Radiant Slash"],["Radiant Slash","Light Holder"],["Light Holder","End Bringer"],["Berserk Slash","Burden"],["Burden","Strike Storm"],["Strike Storm","Steeled Strike"],["End Bringer","Steeled Strike"]],"decorative":[{"x":95,"y":24,"label":"Sabotage","kind":"gradient"},{"x":95,"y":50,"label":"Striker","kind":"gradient"},{"x":95,"y":76,"label":"Angel's Eyes","kind":"gradient"}]},"Sciel":{"aspect":2.28,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/sciel-guide-best-skills-and-weapons","nodes":[{"id":"Marking Card","label":"Marking Card","sp":2,"gate":1,"prereqs":["Focused Foretell","Bad Omen"],"x":5,"y":13,"starting":false},{"id":"Bad Omen","label":"Bad Omen","sp":4,"gate":1,"prereqs":["Marking Card","Delaying Slash"],"x":13,"y":13,"starting":false},{"id":"Delaying Slash","label":"Delaying Slash","sp":6,"gate":1,"prereqs":["Bad Omen","Dark Wave"],"x":21,"y":13,"starting":false},{"id":"Dark Wave","label":"Dark Wave","sp":10,"gate":1,"prereqs":["Grim Harvest","Delaying Slash","Final Path"],"x":45,"y":13,"starting":false},{"id":"Fortune's Fury","label":"Fortune's Fury","sp":6,"gate":1,"prereqs":["Firing Shadow"],"x":69,"y":13,"starting":false},{"id":"Plentiful Harvest","label":"Plentiful Harvest","sp":4,"gate":1,"prereqs":["Firing Shadow","Final Path"],"x":77,"y":13,"starting":false},{"id":"Focused Foretell","label":"Focused Foretell","sp":0,"gate":1,"prereqs":[],"x":85,"y":13,"starting":true},{"id":"Rush","label":"Rush","sp":1,"gate":1,"prereqs":["Focused Foretell","Spectral Sweep"],"x":5,"y":29,"starting":false},{"id":"Dark Cleansing","label":"Dark Cleansing","sp":2,"gate":1,"prereqs":["Spectral Sweep","Card Weaver","Intervention"],"x":5,"y":47,"starting":false},{"id":"Card Weaver","label":"Card Weaver","sp":4,"gate":1,"prereqs":["Dark Cleansing","All Set"],"x":13,"y":47,"starting":false},{"id":"All Set","label":"All Set","sp":6,"gate":1,"prereqs":["Card Weaver","Twilight Dance"],"x":21,"y":47,"starting":false},{"id":"Intervention","label":"Intervention","sp":4,"gate":1,"prereqs":["Spectral Sweep","Dark Cleansing","Final Path"],"x":29,"y":47,"starting":false},{"id":"Final Path","label":"Final Path","sp":10,"gate":1,"prereqs":["Plentiful Harvest","Dark Wave","Intervention","Twilight Dance"],"x":45,"y":47,"starting":false},{"id":"Our Sacrifice","label":"Our Sacrifice","sp":8,"gate":1,"prereqs":["Fortune's Fury","Twilight Dance"],"x":61,"y":47,"starting":false},{"id":"Twilight Slash","label":"Twilight Slash","sp":0,"gate":1,"prereqs":[],"x":69,"y":47,"starting":true},{"id":"Phantom Blade","label":"Phantom Blade","sp":2,"gate":1,"prereqs":["Twilight Slash","Sealed Fate"],"x":77,"y":47,"starting":false},{"id":"Sealed Fate","label":"Sealed Fate","sp":4,"gate":1,"prereqs":["Phantom Blade","Grim Harvest"],"x":85,"y":47,"starting":false},{"id":"Spectral Sweep","label":"Spectral Sweep","sp":2,"gate":1,"prereqs":["Rush","Dark Cleansing"],"x":21,"y":65,"starting":false},{"id":"Firing Shadow","label":"Firing Shadow","sp":2,"gate":1,"prereqs":["Searing Bond","Plentiful Harvest","Fortune's Fury"],"x":21,"y":83,"starting":false},{"id":"Twilight Dance","label":"Twilight Dance","sp":10,"gate":1,"prereqs":["Our Sacrifice","All Set","Final Path"],"x":45,"y":83,"starting":false},{"id":"Grim Harvest","label":"Grim Harvest","sp":6,"gate":1,"prereqs":["Sealed Fate","Dark Wave"],"x":69,"y":83,"starting":false},{"id":"Harvest","label":"Harvest","sp":1,"gate":1,"prereqs":["Twilight Slash","Searing Bond"],"x":77,"y":65,"starting":false},{"id":"Searing Bond","label":"Searing Bond","sp":2,"gate":1,"prereqs":["Harvest","Firing Shadow"],"x":85,"y":65,"starting":false}],"links":[["Marking Card","Bad Omen"],["Bad Omen","Delaying Slash"],["Delaying Slash","Dark Wave"],["Dark Wave","Fortune's Fury"],["Fortune's Fury","Plentiful Harvest"],["Plentiful Harvest","Focused Foretell"],["Marking Card","Rush"],["Rush","Dark Cleansing"],["Dark Cleansing","Card Weaver"],["Card Weaver","All Set"],["All Set","Intervention"],["Intervention","Final Path"],["Final Path","Our Sacrifice"],["Our Sacrifice","Twilight Slash"],["Twilight Slash","Phantom Blade"],["Phantom Blade","Sealed Fate"],["All Set","Spectral Sweep"],["Spectral Sweep","Firing Shadow"],["Dark Wave","Final Path"],["Final Path","Twilight Dance"],["Twilight Slash","Harvest"],["Harvest","Searing Bond"],["Firing Shadow","Twilight Dance"],["Twilight Dance","Grim Harvest"]],"decorative":[{"x":97,"y":27,"label":"Shadow Bringer","kind":"gradient"},{"x":97,"y":52,"label":"Doom","kind":"gradient"},{"x":97,"y":77,"label":"End Slice","kind":"gradient"}]}};
+  const skillTreeGraph = {"Gustave":{"aspect":1.45,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/gustave-guide-best-skills-and-weapons","nodes":[{"id":"Lumiere Assault","label":"Lumière Assault","sp":0,"gate":1,"prereqs":[],"x":68,"y":35,"starting":true},{"id":"Powerful","label":"Powerful","sp":1,"gate":1,"prereqs":["Lumiere Assault"],"x":50,"y":24,"starting":false},{"id":"Recovery","label":"Recovery","sp":2,"gate":1,"prereqs":["Powerful"],"x":31,"y":17,"starting":false},{"id":"Shatter","label":"Shatter","sp":6,"gate":1,"prereqs":["Recovery"],"x":13,"y":13,"starting":false},{"id":"Overcharge","label":"Overcharge","sp":0,"gate":1,"prereqs":[],"x":68,"y":65,"starting":true},{"id":"Marking Shot","label":"Marking Shot","sp":1,"gate":1,"prereqs":["Overcharge"],"x":50,"y":76,"starting":false},{"id":"From Fire","label":"From Fire","sp":2,"gate":1,"prereqs":["Marking Shot"],"x":31,"y":83,"starting":false},{"id":"Strike Storm","label":"Strike Storm","sp":10,"gate":1,"prereqs":["From Fire"],"x":13,"y":87,"starting":false}],"links":[["Lumiere Assault","Powerful"],["Powerful","Recovery"],["Recovery","Shatter"],["Overcharge","Marking Shot"],["Marking Shot","From Fire"],["From Fire","Strike Storm"],["Lumiere Assault","Overcharge"]],"decorative":[{"x":83,"y":22},{"x":83,"y":40},{"x":83,"y":58},{"x":83,"y":76},{"x":58,"y":10},{"x":58,"y":90}]},"Lune":{"aspect":1.72,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/lune-guide-best-skills-and-weapons","nodes":[{"id":"Revitalization","label":"Revitalization","sp":6,"gate":1,"prereqs":["Rebirth"],"x":45,"y":8,"starting":false},{"id":"Rebirth","label":"Rebirth","sp":4,"gate":1,"prereqs":["Healing Light"],"x":45,"y":21,"starting":false},{"id":"Healing Light","label":"Healing Light","sp":1,"gate":1,"prereqs":["Immolation","Ice Lance"],"x":45,"y":35,"starting":false},{"id":"Immolation","label":"Immolation","sp":0,"gate":1,"prereqs":[],"x":35,"y":35,"starting":true},{"id":"Ice Lance","label":"Ice Lance","sp":0,"gate":1,"prereqs":[],"x":55,"y":35,"starting":true},{"id":"Hell","label":"Hell","sp":10,"gate":1,"prereqs":["Fire Rage"],"x":5,"y":49,"starting":false},{"id":"Fire Rage","label":"Fire Rage","sp":6,"gate":1,"prereqs":["Wildfire"],"x":15,"y":49,"starting":false},{"id":"Wildfire","label":"Wildfire","sp":2,"gate":1,"prereqs":["Thunderfall"],"x":25,"y":49,"starting":false},{"id":"Thunderfall","label":"Thunderfall","sp":1,"gate":1,"prereqs":["Immolation"],"x":35,"y":49,"starting":false},{"id":"Earth Rising","label":"Earth Rising","sp":1,"gate":1,"prereqs":["Ice Lance"],"x":55,"y":49,"starting":false},{"id":"Rockslide","label":"Rockslide","sp":2,"gate":1,"prereqs":["Earth Rising"],"x":65,"y":49,"starting":false},{"id":"Crustal Crush","label":"Crustal Crush","sp":6,"gate":1,"prereqs":["Rockslide"],"x":75,"y":49,"starting":false},{"id":"Terraquake","label":"Terraquake","sp":10,"gate":1,"prereqs":["Crustal Crush"],"x":85,"y":49,"starting":false},{"id":"Electrify","label":"Electrify","sp":1,"gate":1,"prereqs":["Thunderfall"],"x":35,"y":63,"starting":false},{"id":"Mayhem","label":"Mayhem","sp":4,"gate":1,"prereqs":["Electrify","Thermal Transfer"],"x":45,"y":63,"starting":false},{"id":"Thermal Transfer","label":"Thermal Transfer","sp":2,"gate":1,"prereqs":["Earth Rising"],"x":55,"y":63,"starting":false},{"id":"Lightning Dance","label":"Lightning Dance","sp":6,"gate":1,"prereqs":["Electrify"],"x":35,"y":77,"starting":false},{"id":"Elemental Trick","label":"Elemental Trick","sp":4,"gate":1,"prereqs":["Mayhem"],"x":45,"y":77,"starting":false},{"id":"Crippling Tsunami","label":"Crippling Tsunami","sp":6,"gate":1,"prereqs":["Thermal Transfer"],"x":55,"y":77,"starting":false},{"id":"Storm Caller","label":"Storm Caller","sp":8,"gate":1,"prereqs":["Lightning Dance"],"x":35,"y":91,"starting":false},{"id":"Elemental Genesis","label":"Elemental Genesis","sp":10,"gate":1,"prereqs":["Elemental Trick","Storm Caller","Typhoon"],"x":45,"y":91,"starting":false},{"id":"Typhoon","label":"Typhoon","sp":8,"gate":1,"prereqs":["Crippling Tsunami"],"x":55,"y":91,"starting":false}],"links":[["Revitalization","Rebirth"],["Rebirth","Healing Light"],["Immolation","Healing Light"],["Healing Light","Ice Lance"],["Immolation","Thunderfall"],["Thunderfall","Wildfire"],["Wildfire","Fire Rage"],["Fire Rage","Hell"],["Ice Lance","Earth Rising"],["Earth Rising","Rockslide"],["Rockslide","Crustal Crush"],["Crustal Crush","Terraquake"],["Thunderfall","Electrify"],["Electrify","Lightning Dance"],["Lightning Dance","Storm Caller"],["Earth Rising","Thermal Transfer"],["Thermal Transfer","Crippling Tsunami"],["Crippling Tsunami","Typhoon"],["Electrify","Mayhem"],["Mayhem","Thermal Transfer"],["Lightning Dance","Elemental Trick"],["Elemental Trick","Crippling Tsunami"],["Storm Caller","Elemental Genesis"],["Elemental Genesis","Typhoon"],["Mayhem","Elemental Trick"]],"decorative":[{"x":96,"y":25,"label":"Tremor","kind":"gradient"},{"x":96,"y":51,"label":"Tree of Life","kind":"gradient"},{"x":96,"y":77,"label":"Sky Break","kind":"gradient"}]},"Maelle":{"aspect":1.7,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/maelle-guide-best-skills-and-weapons","nodes":[{"id":"Phantom Strike","label":"Phantom Strike","sp":4,"gate":3,"prereqs":["Offensive Switch"],"x":31,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Burning Canvas","label":"Burning Canvas","sp":6,"gate":3,"prereqs":["Phantom Strike","Stendhal"],"x":42,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Stendhal","label":"Stendhal","sp":4,"gate":3,"prereqs":["Percee"],"x":53,"y":8,"starting":false,"visualLockUntilAct":3},{"id":"Offensive Switch","label":"Offensive Switch","sp":0,"gate":1,"prereqs":[],"x":31,"y":24,"starting":true},{"id":"Percee","label":"Percée","sp":0,"gate":1,"prereqs":[],"x":53,"y":24,"starting":true},{"id":"Degagement","label":"Dégagement","sp":2,"gate":1,"prereqs":["Spark"],"x":31,"y":39,"starting":false},{"id":"Swift Stride","label":"Swift Stride","sp":1,"gate":1,"prereqs":["Percee"],"x":53,"y":39,"starting":false},{"id":"Combustion","label":"Combustion","sp":6,"gate":1,"prereqs":["Rain of Fire"],"x":8,"y":55,"starting":false},{"id":"Rain of Fire","label":"Rain of Fire","sp":4,"gate":1,"prereqs":["Spark"],"x":19,"y":55,"starting":false},{"id":"Spark","label":"Spark","sp":0,"gate":1,"prereqs":[],"x":31,"y":55,"starting":true},{"id":"Guard Down","label":"Guard Down","sp":4,"gate":1,"prereqs":["Degagement","Guard Up"],"x":42,"y":55,"starting":false},{"id":"Guard Up","label":"Guard Up","sp":2,"gate":1,"prereqs":["Swift Stride"],"x":53,"y":55,"starting":false},{"id":"Fleuret Fury","label":"Fleuret Fury","sp":2,"gate":1,"prereqs":["Guard Up"],"x":64,"y":55,"starting":false},{"id":"Breaking Rules","label":"Breaking Rules","sp":4,"gate":1,"prereqs":["Fleuret Fury"],"x":75,"y":55,"starting":false},{"id":"Revenge","label":"Revenge","sp":6,"gate":1,"prereqs":["Combustion"],"x":8,"y":72,"starting":false},{"id":"Pyrolyse","label":"Pyrolyse","sp":8,"gate":1,"prereqs":["Revenge"],"x":8,"y":89,"starting":false},{"id":"Mezzo Forte","label":"Mezzo Forte","sp":4,"gate":1,"prereqs":["Degagement"],"x":31,"y":72,"starting":false},{"id":"Last Chance","label":"Last Chance","sp":6,"gate":1,"prereqs":["Mezzo Forte"],"x":31,"y":89,"starting":false},{"id":"Payback","label":"Payback","sp":8,"gate":1,"prereqs":["Last Chance","Momentum Strike"],"x":42,"y":89,"starting":false},{"id":"Egide","label":"Égide","sp":4,"gate":1,"prereqs":["Guard Up"],"x":53,"y":72,"starting":false},{"id":"Momentum Strike","label":"Momentum Strike","sp":6,"gate":1,"prereqs":["Egide"],"x":53,"y":89,"starting":false},{"id":"Fencer's Flurry","label":"Fencer’s Flurry","sp":6,"gate":1,"prereqs":["Breaking Rules"],"x":75,"y":72,"starting":false},{"id":"Sword Ballet","label":"Sword Ballet","sp":10,"gate":1,"prereqs":["Fencer's Flurry"],"x":75,"y":89,"starting":false}],"links":[["Phantom Strike","Burning Canvas"],["Burning Canvas","Stendhal"],["Phantom Strike","Offensive Switch"],["Offensive Switch","Degagement"],["Degagement","Spark"],["Stendhal","Percee"],["Percee","Swift Stride"],["Swift Stride","Guard Up"],["Combustion","Rain of Fire"],["Rain of Fire","Spark"],["Spark","Guard Down"],["Guard Down","Guard Up"],["Guard Up","Fleuret Fury"],["Fleuret Fury","Breaking Rules"],["Combustion","Revenge"],["Revenge","Pyrolyse"],["Spark","Mezzo Forte"],["Mezzo Forte","Last Chance"],["Last Chance","Payback"],["Payback","Momentum Strike"],["Guard Up","Egide"],["Egide","Momentum Strike"],["Breaking Rules","Fencer's Flurry"],["Fencer's Flurry","Sword Ballet"]],"decorative":[{"x":64,"y":31,"label":"Gustave's Homage","kind":"special"},{"x":88,"y":29,"label":"Virtuose Strike","kind":"gradient"},{"x":88,"y":54,"label":"Phoenix Flame","kind":"gradient"},{"x":88,"y":79,"label":"Gommage","kind":"gradient"}]},"Verso":{"aspect":1.62,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/verso-guide-best-skills-and-weapons","nodes":[{"id":"From Fire","label":"From Fire","sp":0,"gate":2,"prereqs":[],"x":31,"y":7,"starting":true},{"id":"Perfect Recovery","label":"Perfect Recovery","sp":1,"gate":2,"prereqs":["From Fire"],"x":31,"y":21,"starting":false},{"id":"Overload","label":"Overload","sp":6,"gate":2,"prereqs":["Follow Up","Speed Burst"],"x":8,"y":39,"starting":false},{"id":"Follow Up","label":"Follow Up","sp":4,"gate":2,"prereqs":["Purification"],"x":19,"y":39,"starting":false},{"id":"Purification","label":"Purification","sp":2,"gate":2,"prereqs":["Perfect Recovery","Paradigm Shift","Blitz"],"x":31,"y":39,"starting":false},{"id":"Assault Zero","label":"Assault Zero","sp":0,"gate":2,"prereqs":[],"x":53,"y":7,"starting":true},{"id":"Quick Strike","label":"Quick Strike","sp":2,"gate":2,"prereqs":["Marking Shot","Paradigm Shift","Powerful","Berserk Slash"],"x":53,"y":39,"starting":false},{"id":"Powerful","label":"Powerful","sp":2,"gate":2,"prereqs":["Quick Strike"],"x":64,"y":39,"starting":false},{"id":"Leadership","label":"Leadership","sp":4,"gate":2,"prereqs":["Powerful"],"x":75,"y":39,"starting":false},{"id":"Speed Burst","label":"Speed Burst","sp":6,"gate":2,"prereqs":["Overload","Ascending Assault"],"x":8,"y":55,"starting":false},{"id":"Ascending Assault","label":"Ascending Assault","sp":4,"gate":2,"prereqs":["Blitz","Speed Burst"],"x":19,"y":55,"starting":false},{"id":"Blitz","label":"Blitz","sp":2,"gate":2,"prereqs":["Purification","Ascending Assault","Radiant Slash","Perfect Break"],"x":31,"y":55,"starting":false},{"id":"Paradigm Shift","label":"Paradigm Shift","sp":2,"gate":2,"prereqs":["Purification","Quick Strike","Perfect Break"],"x":42,"y":39,"starting":false},{"id":"Perfect Break","label":"Perfect Break","sp":4,"gate":2,"prereqs":["Blitz","Paradigm Shift","Berserk Slash"],"x":42,"y":55,"starting":false},{"id":"Berserk Slash","label":"Berserk Slash","sp":2,"gate":2,"prereqs":["Quick Strike","Perfect Break","Defiant Strike"],"x":53,"y":55,"starting":false},{"id":"Defiant Strike","label":"Defiant Strike","sp":6,"gate":2,"prereqs":["Berserk Slash","Strike Storm"],"x":64,"y":55,"starting":false},{"id":"Radiant Slash","label":"Radiant Slash","sp":4,"gate":2,"prereqs":["Blitz","Light Holder"],"x":31,"y":70,"starting":false},{"id":"Burden","label":"Burden","sp":4,"gate":2,"prereqs":["Berserk Slash","Phantom Stars"],"x":53,"y":70,"starting":false},{"id":"Light Holder","label":"Light Holder","sp":6,"gate":2,"prereqs":["Radiant Slash","End Bringer"],"x":31,"y":83,"starting":false},{"id":"Strike Storm","label":"Strike Storm","sp":8,"gate":2,"prereqs":["Defiant Strike","Steeled Strike"],"x":53,"y":83,"starting":false},{"id":"Phantom Stars","label":"Phantom Stars","sp":8,"gate":2,"prereqs":["Leadership","Burden"],"x":75,"y":55,"starting":false},{"id":"End Bringer","label":"End Bringer","sp":10,"gate":2,"prereqs":["Light Holder","Steeled Strike"],"x":31,"y":94,"starting":false},{"id":"Steeled Strike","label":"Steeled Strike","sp":10,"gate":2,"prereqs":["Strike Storm","End Bringer"],"x":53,"y":94,"starting":false},{"id":"Marking Shot","label":"Marking Shot","sp":1,"gate":2,"prereqs":["Assault Zero"],"x":53,"y":21,"starting":false}],"links":[["From Fire","Perfect Recovery"],["Perfect Recovery","Purification"],["Assault Zero","Marking Shot"],["Marking Shot","Quick Strike"],["Overload","Follow Up"],["Follow Up","Purification"],["Purification","Paradigm Shift"],["Paradigm Shift","Quick Strike"],["Quick Strike","Powerful"],["Powerful","Leadership"],["Speed Burst","Ascending Assault"],["Ascending Assault","Blitz"],["Blitz","Perfect Break"],["Perfect Break","Berserk Slash"],["Berserk Slash","Defiant Strike"],["Defiant Strike","Phantom Stars"],["Overload","Speed Burst"],["Purification","Blitz"],["Paradigm Shift","Perfect Break"],["Quick Strike","Berserk Slash"],["Powerful","Defiant Strike"],["Leadership","Phantom Stars"],["Blitz","Radiant Slash"],["Radiant Slash","Light Holder"],["Light Holder","End Bringer"],["Berserk Slash","Burden"],["Burden","Strike Storm"],["Strike Storm","Steeled Strike"],["End Bringer","Steeled Strike"]],"decorative":[{"x":95,"y":24,"label":"Sabotage","kind":"gradient"},{"x":95,"y":50,"label":"Striker","kind":"gradient"},{"x":95,"y":76,"label":"Angel's Eyes","kind":"gradient"}]},"Sciel":{"aspect":2.5,"reference":"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/playable/sciel-guide-best-skills-and-weapons","nodes":[{"id":"Marking Card","label":"Marking Card","sp":2,"gate":1,"prereqs":["Focused Foretell","Bad Omen"],"x":7,"y":12,"starting":false},{"id":"Bad Omen","label":"Bad Omen","sp":4,"gate":1,"prereqs":["Marking Card","Delaying Slash"],"x":17,"y":12,"starting":false},{"id":"Delaying Slash","label":"Delaying Slash","sp":6,"gate":1,"prereqs":["Bad Omen","Dark Wave"],"x":27,"y":12,"starting":false},{"id":"Dark Wave","label":"Dark Wave","sp":10,"gate":1,"prereqs":["Grim Harvest","Delaying Slash","Final Path"],"x":47,"y":12,"starting":false},{"id":"Fortune's Fury","label":"Fortune's Fury","sp":6,"gate":1,"prereqs":["Firing Shadow"],"x":67,"y":12,"starting":false},{"id":"Plentiful Harvest","label":"Plentiful Harvest","sp":4,"gate":1,"prereqs":["Firing Shadow","Final Path"],"x":77,"y":12,"starting":false},{"id":"Focused Foretell","label":"Focused Foretell","sp":0,"gate":1,"prereqs":[],"x":87,"y":12,"starting":true},{"id":"Rush","label":"Rush","sp":1,"gate":1,"prereqs":["Focused Foretell","Spectral Sweep"],"x":7,"y":49,"starting":false},{"id":"Dark Cleansing","label":"Dark Cleansing","sp":2,"gate":1,"prereqs":["Spectral Sweep","Card Weaver","Intervention"],"x":27,"y":49,"starting":false},{"id":"Card Weaver","label":"Card Weaver","sp":4,"gate":1,"prereqs":["Dark Cleansing","All Set"],"x":37,"y":49,"starting":false},{"id":"All Set","label":"All Set","sp":6,"gate":1,"prereqs":["Card Weaver","Twilight Dance"],"x":87,"y":49,"starting":false},{"id":"Intervention","label":"Intervention","sp":6,"gate":1,"prereqs":["Spectral Sweep","Dark Cleansing","Final Path"],"x":57,"y":49,"starting":false},{"id":"Final Path","label":"Final Path","sp":10,"gate":1,"prereqs":["Plentiful Harvest","Dark Wave","Intervention","Twilight Dance"],"x":47,"y":49,"starting":false},{"id":"Our Sacrifice","label":"Our Sacrifice","sp":8,"gate":1,"prereqs":["Fortune's Fury","Twilight Dance"],"x":27,"y":87,"starting":false},{"id":"Twilight Slash","label":"Twilight Slash","sp":0,"gate":1,"prereqs":[],"x":67,"y":49,"starting":true},{"id":"Phantom Blade","label":"Phantom Blade","sp":2,"gate":1,"prereqs":["Twilight Slash","Sealed Fate"],"x":77,"y":49,"starting":false},{"id":"Sealed Fate","label":"Sealed Fate","sp":4,"gate":1,"prereqs":["Phantom Blade","Grim Harvest"],"x":67,"y":68,"starting":false},{"id":"Spectral Sweep","label":"Spectral Sweep","sp":2,"gate":1,"prereqs":["Rush","Dark Cleansing"],"x":17,"y":49,"starting":false},{"id":"Firing Shadow","label":"Firing Shadow","sp":2,"gate":1,"prereqs":["Searing Bond","Plentiful Harvest","Fortune's Fury"],"x":27,"y":68,"starting":false},{"id":"Twilight Dance","label":"Twilight Dance","sp":10,"gate":1,"prereqs":["Our Sacrifice","All Set","Final Path"],"x":47,"y":87,"starting":false},{"id":"Grim Harvest","label":"Grim Harvest","sp":6,"gate":1,"prereqs":["Sealed Fate","Dark Wave"],"x":67,"y":87,"starting":false},{"id":"Harvest","label":"Harvest","sp":1,"gate":1,"prereqs":["Twilight Slash","Searing Bond"],"x":7,"y":30,"starting":false},{"id":"Searing Bond","label":"Searing Bond","sp":2,"gate":1,"prereqs":["Harvest","Firing Shadow"],"x":87,"y":30,"starting":false}],"links":[["Marking Card","Bad Omen"],["Bad Omen","Delaying Slash"],["Delaying Slash","Dark Wave"],["Dark Wave","Fortune's Fury"],["Fortune's Fury","Plentiful Harvest"],["Plentiful Harvest","Focused Foretell"],["Marking Card","Harvest"],["Harvest","Rush"],["Focused Foretell","Searing Bond"],["Searing Bond","All Set"],["Rush","Spectral Sweep"],["Spectral Sweep","Dark Cleansing"],["Dark Cleansing","Card Weaver"],["Card Weaver","Final Path"],["Final Path","Intervention"],["Intervention","Twilight Slash"],["Twilight Slash","Phantom Blade"],["Phantom Blade","All Set"],["Dark Wave","Final Path"],["Dark Cleansing","Firing Shadow"],["Firing Shadow","Our Sacrifice"],["Final Path","Twilight Dance"],["Twilight Slash","Sealed Fate"],["Sealed Fate","Grim Harvest"],["Our Sacrifice","Twilight Dance"],["Twilight Dance","Grim Harvest"]],"decorative":[{"x":95,"y":26,"label":"Gradient ability","kind":"gradient"},{"x":95,"y":49,"label":"Locked ability","kind":"locked"},{"x":95,"y":78,"label":"Locked ability","kind":"locked"}]}};
   const optimizerConfig = {"availability":{"1":["Gustave","Lune","Maelle","Sciel"],"2":["Lune","Maelle","Sciel","Verso","Monoco"],"3":["Lune","Maelle","Sciel","Verso","Monoco"]},"baseScores":{"1":{"Maelle":92,"Lune":88,"Sciel":76,"Gustave":72},"2":{"Maelle":98,"Lune":94,"Verso":92,"Sciel":84,"Monoco":74},"3":{"Maelle":100,"Sciel":98,"Lune":96,"Monoco":84,"Verso":82}},"defaultLP":{"1":25,"2":55,"3":100},"roleTags":{"Gustave":["Break","Mark","AP economy","Buff / Debuff"],"Lune":["Burn","AP economy","DPS"],"Maelle":["Burn","Mark","DPS"],"Sciel":["Turn control","AP economy","Buff / Debuff","Sustain"],"Verso":["Mark","Free Aim","Reaction","DPS"],"Monoco":["Burn","Break","AP economy","Buff / Debuff"]}};
 
   const allCharacters = ["Gustave","Lune","Maelle","Sciel","Verso","Monoco"];
@@ -6362,8 +6671,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       const isAvailable = available.includes(name);
       const selected = party.includes(name);
       const pos = selected ? orderedParty.indexOf(name) + 1 : null;
-      const orderBadge = selected ? `<span class="party-order">${pos}</span>` : '';
-      return `<button class="party-chip ${selected ? 'selected' : ''} ${!isAvailable ? 'disabled' : ''}" data-char="${name}" data-party-char="${name}" ${!isAvailable ? 'disabled' : ''}>${orderBadge}<span>${name}</span></button>`;
+      const marker = `<span class="picker-marker" aria-hidden="true">${pos ?? ''}</span>`;
+      return `<button type="button" class="party-chip character-picker-button ${selected ? 'selected' : ''} ${!isAvailable ? 'disabled' : ''}" data-char="${name}" data-party-char="${name}" aria-pressed="${selected}" ${!isAvailable ? 'disabled' : ''}>${marker}<span class="picker-name">${name}</span></button>`;
     }).join('');
 
     picker.querySelectorAll('.party-chip:not(.disabled)').forEach(btn => btn.addEventListener('click', () => {
@@ -6514,7 +6823,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   };
 
 
-  const E33_SITE_VERSION = '14.6.1';
+  const E33_SITE_VERSION = '14.6.5';
   document.querySelectorAll('[data-site-version]').forEach(el => el.textContent = 'v' + E33_SITE_VERSION);
 
   function updateScrollLock() {
@@ -6634,7 +6943,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     const available = optimizerConfig.availability[String(act)] || [];
     const unlocked = getUnlockedRoster(act);
     const sameRoster = [...root.children].length === available.length && available.every((c,i)=>root.children[i]?.dataset.rosterChar===c);
-    if (!sameRoster) root.innerHTML = available.map(c=>`<button type="button" class="roster-chip" data-roster-char="${c}" data-char="${c}" aria-pressed="false">${c}</button>`).join('');
+    if (!sameRoster) root.innerHTML = available.map(c=>`<button type="button" class="roster-chip character-picker-button" data-roster-char="${c}" data-char="${c}" aria-pressed="false"><span class="picker-marker" aria-hidden="true">✓</span><span class="picker-name">${c}</span></button>`).join('');
     root.querySelectorAll('[data-roster-char]').forEach(btn=>{const selected=unlocked.includes(btn.dataset.rosterChar);btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected));});
     if (sameRoster) return;
     root.querySelectorAll('[data-roster-char]').forEach(btn=>btn.addEventListener('click',()=>{
@@ -6682,8 +6991,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
         labels.prepend(s);
       }
     });
-    document.querySelectorAll('#weaponsPage .weapon-row').forEach(row => {
-      if (row.querySelector('.weapon-owned-control')) return;
+    document.querySelectorAll('#weaponsPage .weapon-row').forEach(row => {      if (row.querySelector('.weapon-owned-control')) return;
       const name = row.dataset.weapon;
       const checked = owned.has(name);
       row.classList.toggle('weapon-owned', checked);
@@ -6786,6 +7094,81 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     const map = getOwnedSkillMap();
     map[character] = [...set];
     saveOwnedSkillMap(map);
+  }
+
+
+  /* Picto Speed data adapted from: fmarlats/picto-builder (MIT License).
+     Copyright (c) 2024-2025 fmarlats.
+     Permission is hereby granted, free of charge, to any person obtaining a copy
+     of this software and associated documentation files (the "Software"), to deal
+     in the Software without restriction, including without limitation the rights
+     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+     copies of the Software, and to permit persons to whom the Software is
+     furnished to do so, subject to the following conditions:
+     The above copyright notice and this permission notice shall be included in all
+     copies or substantial portions of the Software.
+     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+     SOFTWARE.
+  */
+  // Reference data: Agility -> Speed (Gamer Guides breakpoint table) and
+  // Picto Speed by Picto level (fmarlats/picto-builder, MIT license, source data
+  // adapted from Gamer Guides). Never mistake this partial stat sum for all
+  // sources of in-game Speed, which may include character level and effects.
+  const agilitySpeedAtLevel = [0,3,6,10,15,20,26,31,37,43,50,55,61,66,71,76,81,86,91,95,99,105,110,116,121,126,132,137,142,147,152,157,162,167,171,176,181,185,190,194,198,203,207,211,216,220,224,228,231,235,239,242,246,250,253,257,260,263,266,269,272,275,278,281,284,287,290,292,295,297,299,302,304,307,309,311,313,315,317,319,321,323,324,326,328,329,331,332,334,335,336,338,339,340,342,343,344,345,346,346];
+  const pictoSpeedCurves = [[8,10,14,20,26,34,43,54,65,78,92,108,124,142,162,182,205,228,253,280,308,337,368,400,434,470,507,546,586,628,672,717,764],[12,15,21,30,39,51,65,81,98,117,138,162,186,213,243,273,308,342,380,420,462,506,552,600,651,705,761,819,879,942,1008,1076,1146],[8,10,14,19,25,33,41,52,62,75,88,103,118,135,154,173,195,217,241,266,293,321,350,380,413,447,482,519,557,597,639,682,726],[14,17,24,34,45,58,74,92,111,133,157,184,211,242,276,310,349,388,431,476,524,573,626,680,738,799,862,929,997,1068,1143,1219,1299],[12,15,20,29,38,49,62,77,93,112,132,154,177,203,231,260,293,325,361,399,439,481,525,570,619,670,723,779,836,895,958,1022,1089],[11,14,19,27,36,46,59,73,88,106,125,146,168,192,219,246,277,308,342,378,416,455,497,540,586,635,685,738,792,848,908,968,1032],[15,18,26,36,47,62,78,98,117,141,166,195,224,256,292,328,369,411,456,504,555,607,663,720,782,846,913,983,1055,1131,1210,1291,1376],[4,5,7,10,13,17,22,27,33,39,46,54,62,71,81,91,103,114,127,140,154,169,184,200,217,235,254,273,293,314,336,359,382],[16,19,27,38,50,65,82,103,124,149,175,206,236,270,308,346,390,434,481,532,586,641,700,760,825,893,964,1038,1114,1194,1277,1363,1452],[4,5,7,10,13,17,21,26,31,38,44,52,59,68,77,87,98,109,121,133,147,161,175,190,207,224,241,260,279,299,320,341,363],[7,8,12,16,21,28,35,44,52,63,74,87,100,114,130,146,164,183,203,224,247,270,295,320,348,376,406,437,469,503,538,574,612],[10,13,18,25,33,42,54,67,81,97,114,134,154,176,201,225,254,282,313,346,381,417,455,494,536,581,627,675,724,776,830,886,944],[14,18,24,35,45,59,74,93,112,134,158,185,213,243,278,312,351,390,433,479,527,577,630,684,743,804,867,934,1003,1074,1150,1227,1307],[1055],[293],[836],[279],[557],[1114],[726]];
+  const pictoSpeedCurveByName = {"Accelerating Heal":0,"Accelerating Last Stand":0,"Accelerating Tint":0,"Aegis Revival":0,"Augmented Attack":0,"Augmented Aim":1,"Augmented First Strike":1,"Auto Powerful":2,"Auto 1 HP":3,"Auto Rush":4,"Base Shield":5,"Beneficial Contamination":2,"Bloody Bullet":0,"Break Specialist":0,"Breaker":0,"Breaking Burn":1,"Breaking Counter":0,"Breaking Attack":2,"Breaking Death":0,"Breaking Slow":0,"Breaking Shots":0,"Burn Affinity":4,"Burning Death":0,"Charging Alteration":0,"Burning Shots":6,"Charging Attack":2,"Charging Burn":2,"Charging Recovery":0,"Charging Mark":2,"Charging Stun":0,"Charging Weakness":0,"Charybde To Scylla":0,"Cheater":0,"Combo Attack II":4,"Combo Attack I":4,"Combo Attack III":4,"Confident":2,"Critical Burn":2,"Critical Break":4,"Critical Moment":0,"Critical Stun (2)":0,"Critical Vulnerability":2,"Cursed Power":0,"Dead Energy I":0,"Critical Weakness":4,"Dead Energy II":7,"Death Bomb":0,"Dodger":1,"Double Burn":4,"Double Mark":8,"Empowering Attack":4,"Effective Support":0,"Empowering Break":0,"Empowering Dodge":0,"Energetic Healer":2,"Empowering Tint":0,"Empowering Parry":0,"Energising Attack I":4,"Energising Break":0,"Energising Attack II":4,"Energising Burn":2,"Energising Death":0,"Energising Heal":2,"Energising Jump":4,"Energising Powerful":2,"Energising Rush":2,"Energising Shell":2,"Energising Shots":4,"Energising Stun":2,"Energising Turn":8,"Enfeebling Mark":9,"Exposing Attack":4,"Exposing Break":0,"First Offensive":2,"Free Aim Inverted Shot":6,"First Strike":2,"Frozen Affinity":0,"Fueling Break":0,"Gradient Break":0,"Glass Cannon":8,"Gradient Breaker":0,"Gradient Fighter":0,"Greater Defenceless":2,"Greater Powerful":9,"Greater Rush":4,"Greater Powerless":2,"Greater Slow":2,"Healing Boon":2,"Healing Death":0,"Healing Fire":2,"Healing Stun":2,"Immaculate":2,"Longer Rush":2,"Marking Shots":6,"Parry Specialist":9,"Painter":2,"Perilous Parry":0,"Powerful Mark":4,"Powerful Heal":0,"Powered Attack":4,"Powerful Revive":0,"Powerful Shield":1,"Pro Retreat":10,"Protecting Death":2,"Protecting Heal":0,"Quick Break":0,"Revive Paradox":0,"Rewarding Mark":7,"Rush On Powerful":2,"Shell On Rush":2,"Shield Affinity":2,"Shielding Death":9,"Shortcut":0,"Sniper":1,"Slowing Break":0,"Solidifying":2,"SOS Rush":0,"SOS Power":0,"SOS Shell":0,"Staggering Attack":1,"Stay Marked":11,"Stun Boost":12,"Survivor":4,"Sweet Kill":0,"Versatile":1,"Weakness Gain":0,"AP Discount":13,"Alternating Critical":14,"Consuming Attack":15,"Double Third":16,"Frenzy":17,"Gradient Parry":17,"Longer Break":16,"Slowing Attack":17,"Trigger Happy":18,"Clea’s Death":19};
+  const pictoLevelsKey = 'e33-owned-picto-levels-v1';
+  function pictoStoredLevels() {
+    try { return JSON.parse(localStorage.getItem(pictoLevelsKey) || '{}') || '{}'; } catch { return {}; }
+  }
+  function pictoLevelFor(name) {
+    const curve = pictoSpeedCurves[pictoSpeedCurveByName[name]];
+    const saved = Number(pictoStoredLevels()[name]);
+    return Number.isFinite(saved) && saved >= 1 && saved <= 33 ? Math.round(saved) : (curve?.length === 1 ? 33 : 1);
+  }
+  function setPictoLevel(name, level) {
+    const ls=pictoStoredLevels();
+    ls[name]=Math.max(1,Math.min(33,Math.round(Number(level)||1)));
+    try { localStorage.setItem(pictoLevelsKey,JSON.stringify(ls)); } catch(e) { console.warn('Unable to store Picto level:',e); }
+  }
+  function pictoSpeedAtLevel(name,level) {
+    const idx=pictoSpeedCurveByName[name];
+    if (idx == null) return 0; // No recorded Speed bonus for this Picto.
+    const curve=pictoSpeedCurves[idx];
+    return curve.length===1 ? (level===33 ? curve[0] : 0) : (curve[Math.max(1,Math.min(33,level))-1] ?? 0);
+  }
+  function calculatedSpeedParts(character, pictos, attrsOverride=null) {
+    const profile=getProfileFor(character,getOptimizerAct());
+    const agi=Math.max(0,Math.min(99,Math.round(Number(attrsOverride?.Agility ?? profile.attrs.Agility)||0)));
+    const agility=agilitySpeedAtLevel[agi]||0;
+    const equipped=pictos.map(p=>{
+      const level=pictoLevelFor(p.name);
+      return {name:p.name,level,speed:pictoSpeedAtLevel(p.name,level)};
+    });
+    return {agility,pictoSpeed:equipped.reduce((sum,p)=>sum+p.speed,0),equipped,
+      assumed:equipped.filter(p=>pictoStoredLevels()[p.name] == null && pictoSpeedCurveByName[p.name]!=null).length,
+      total:agility+equipped.reduce((sum,p)=>sum+p.speed,0),
+      tracked:profile.enteredAttrs.Agility !== undefined};
+  }
+  function renderSpeedContribution(character,pictos) {
+    const sp=calculatedSpeedParts(character,pictos);
+    const label=sp.tracked?sp.total.toLocaleString():'—';
+    const assumed=sp.assumed ? `<span class="speed-warning"> · ${sp.assumed} Picto level${sp.assumed===1?'':'s'} assumed</span>` : '';
+    return `<div class="computed-speed" data-speed-for="${character}"><strong>Estimated Speed · ${label}</strong>
+      <small>${sp.tracked ? `${sp.agility} from Agility + ${sp.pictoSpeed} from equipped Pictos` : 'Enter Agility to calculate Speed.'}${assumed}</small>
+      <small title="The calculation covers Agility and equipped Pictos; character base/level stats, turn-start mechanics and combat effects may differ.">Agility and equipped Picto bonuses · projected, not guaranteed turn order.</small></div>`;
+  }
+  function equippedPictoHTML(p) {
+    const idx=pictoSpeedCurveByName[p.name];
+    const curve=idx == null ? null : pictoSpeedCurves[idx];
+    const level=pictoLevelFor(p.name);
+    const input=curve && curve.length===33 ? `<label class="picto-level-label" title="Actual level of your acquired Picto; changes its Speed bonus">Lv <input class="picto-level-input" type="number" min="1" max="33" inputmode="numeric" value="${level}" data-picto-level="${esc(p.name)}" aria-label="${esc(p.name)} Picto level"></label>` : '';
+    return `<span class="optimizer-token picto picto-equipped" title="${esc(p.name)}: ${pictoSpeedAtLevel(p.name,level)} Speed at level ${level}">${esc(p.name)}${input}</span>`;
   }
 
   function getOptimizerProfile() {
@@ -6902,22 +7285,98 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     return set;
   }
 
-  function nextSkillRecommendations(character, act, limit=3) {
-    const owned = getOwnedSkills(character);
-    const route = priorityThroughAct(character,act);
-    return route.filter(s => {
-      if (owned.has(s)) return false;
-      const node = graphNode(character,s);
-      return character === 'Monoco' || (node && (node.gate || 1) <= act);
-    }).slice(0,limit);
+  // A single reachable NEXT step instead of three (possibly distant) goals.
+  // Show the first missing connector on the route to the highest-priority skill.
+  function nextSkillRecommendations(character, act, limit=1) {
+    const owned=getOwnedSkills(character);
+    for(const skill of priorityThroughAct(character,act)){
+      if(owned.has(skill))continue;
+      if(character==='Monoco')return [skill];
+      const path=pathToSkill(character,skill,owned,act);
+      if(!path)continue;
+      const step=path.find(s=>!owned.has(s));
+      if(step)return [step];
+    }
+    return [];
   }
 
-  function targetAttrsFor(character, act) {
+  function baseTargetAttrsFor(character, act) {
     const data = progressionData[character];
     if (!data) return {Vitality:0,Might:0,Agility:0,Defense:0,Luck:0};
     const eligible = data.acts.filter(a => a.act <= act);
     const target = eligible[eligible.length - 1] || data.acts[0];
     return {...target.attrs};
+  }
+
+  /* Estimate an order-aware target for the complete active party, using the
+     target build budget, entered stats, and uniquely allocated physical Pictos.
+     This optimizes RELATIVE tracked Speed, not an asserted exact in-game order.
+     It preserves each build's allocation total whenever possible. */
+  function orderAwareTargets(act) {
+    const roster=getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+    const party=recommendParty(act).combo;
+    const order=initiativeOrder(party,act,getBattleMode());
+    const allocated=allocatePartyPictos(roster,party);
+    const plan=Object.fromEntries(roster.map(c=>[c,baseTargetAttrsFor(c,act)]));
+    const inputs=Object.fromEntries(roster.map(c=>[c,getProfileFor(c,act)]));
+    const baseBudgets=Object.fromEntries(roster.map(c=>[c,Math.max(
+      Object.values(plan[c]).reduce((n,v)=>n+(Number(v)||0),0),
+      Object.values(inputs[c].enteredAttrs).reduce((n,v)=>n+(Number(v)||0),0)
+    )]));
+    const total=c=>calculatedSpeedParts(c,allocated[c]||[],plan[c]).total;
+    // If the entered build already has more Agility, never recommend undoing it
+    // automatically merely to change character order.
+    for(const c of roster){
+      const entered=inputs[c].enteredAttrs;
+      if(entered.Agility != null && Number(entered.Agility)>plan[c].Agility){
+        plan[c].Agility=Math.min(99,Number(entered.Agility));
+      }
+    }
+    const redistribute=(c,change)=>{
+      const p=plan[c];
+      if(change>0){
+        let room=Math.min(change,99-p.Agility);
+        let available=Math.max(0,baseBudgets[c]-Object.values(p).reduce((n,v)=>n+(Number(v)||0),0));
+        let gain=Math.min(room,available);p.Agility+=gain;room-=gain;
+        // Keep the highest-value offensive investment where possible.
+        for(const stat of ['Defense','Vitality','Might','Luck']){
+          if(room<=0)break;
+          const n=Math.min(room,p[stat]||0);
+          p[stat]-=n;p.Agility+=n;room-=n;gain+=n;
+        }
+        return gain;
+      }
+      const n=Math.min(-change,Math.max(0,p.Agility-(Number(inputs[c].enteredAttrs.Agility)||0)));
+      p.Agility-=n;
+      for(const stat of (c==='Maelle'?['Luck','Might','Vitality','Defense']:['Might','Luck','Vitality','Defense'])){
+        const can=Math.min(n,99-(p[stat]||0));
+        if(can>0){p[stat]=(p[stat]||0)+can;break;}
+      }
+      return -n;
+    };
+    // Prefer making an earlier support character faster rather than making
+    // the damage finisher weaker, while preserving each character's budget.
+    for(let pass=0;pass<3;pass++){
+      for(let i=order.length-2;i>=0;i--){
+        const first=order[i],last=order[i+1],margin=6;
+        if(total(first)>=total(last)+margin)continue;
+        const before=plan[first].Agility;
+        for(let targetAgi=before+1;targetAgi<=99;targetAgi++){
+          if(total(first)>=total(last)+margin)break;
+          if(redistribute(first,1)<=0)break;
+        }
+        // Only lower the later character if earlier cannot reach the target.
+        for(let j=0;j<99 && total(first)<total(last)+margin;j++){
+          if(redistribute(last,-1)>=0)break;
+        }
+      }
+    }
+    const actual=order.map(c=>total(c));
+    const aligned=actual.every((s,i)=>i===0||actual[i-1]>=s+1);
+    return {plan,order,allocated,estimatedSpeed:Object.fromEntries(order.map(c=>[c,total(c)])),aligned};
+  }
+  function targetAttrsFor(character,act){
+    return orderAwareTargets(act).plan[character] || baseTargetAttrsFor(character,act);
   }
 
   function getProfileFor(character, act) {
@@ -6930,7 +7389,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       enteredAttrs,
       hasEnteredAttributes: Object.keys(enteredAttrs).some(a=>enteredAttrs[a] !== '' && enteredAttrs[a] != null),
       lp: Number(current.lp ?? 0),
-      hasEnteredLP: current.lp !== undefined && current.lp !== null && current.lp !== ''
+      hasEnteredLP: current.lp !== undefined && current.lp !== null && current.lp !== '',
+      speed: current.speed ?? ''
     };
   }
 
@@ -6981,34 +7441,96 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     return score;
   }
 
-  function recommendedPictos(character) {
+  // Each acquired Picto is a single physical item. Allocate it only once
+  // across every visible loadout (including bench recommendations).
+  // A mastered Lumina passive may be shared; its cost is paid by each wearer.
+  function allocatePartyPictos(available, activeParty) {
     const acquired = getAcquiredLuminas();
-    return luminaData
-      .filter(p => acquired.has(p.name))
-      .map(p => ({...p, _score:pictoScore(p, character)}))
-      .sort((a,b) => b._score-a._score || a.cost-b.cost)
-      .slice(0,3);
+    const pool = luminaData.filter(p=>acquired.has(p.name));
+    const allocation = Object.fromEntries(available.map(c=>[c,[]]));
+    const taken = new Set();
+    const prioritized = [...activeParty.filter(c=>available.includes(c)), ...available.filter(c=>!activeParty.includes(c))];
+    // Fill first/second/third slots in rounds to avoid one character hoarding
+    // every high-tier physical Picto while other active characters have none.
+    for (let slot=0;slot<3;slot++) {
+      const offers = [];
+      prioritized.forEach((character,partyIndex)=>{
+        pool.forEach(p=>{
+          if(taken.has(p.name))return;
+          const roleScore = pictoScore(p,character);
+          const teamBonus = activeParty.includes(character) ? 25 : 0;
+          offers.push({character, p, score:roleScore+teamBonus, partyIndex});
+        });
+      });
+      offers.sort((a,b)=>b.score-a.score||a.partyIndex-b.partyIndex||a.p.name.localeCompare(b.p.name));
+      const assignedThisRound = new Set();
+      for(const offer of offers){
+        if(assignedThisRound.has(offer.character)||taken.has(offer.p.name))continue;
+        allocation[offer.character].push(offer.p);
+        taken.add(offer.p.name);
+        assignedThisRound.add(offer.character);
+      }
+      if(!assignedThisRound.size)break;
+    }
+    return allocation;
+  }
+
+  // Compatibility helper for existing panels: always use the global allocation.
+  function recommendedPictos(character) {
+    const act = getOptimizerAct();
+    const available = getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+    const party = recommendParty(act).combo;
+    return allocatePartyPictos(available,party)[character] || [];
   }
 
   function recommendedLuminas(character, lp, selectedPictos) {
     const acquired = getAcquiredLuminas();
-    const pictoNames = new Set(selectedPictos.map(p => p.name));
+    const pictoNames = new Set(selectedPictos.map(p=>p.name));
     const pool = luminaData
-      .filter(p => acquired.has(p.name) && !pictoNames.has(p.name))
-      .map(p => ({...p, _score:pictoScore(p, character)}))
-      .sort((a,b) => (b._score/Math.max(1,b.cost))-(a._score/Math.max(1,a.cost)) || b._score-a._score);
-
-    let remaining = lp;
+      // A Picto passive is already active for free on its physical wearer.
+      .filter(p=>acquired.has(p.name) && !pictoNames.has(p.name))
+      .map(p=>({...p,_score:pictoScore(p,character)}))
+      .sort((a,b)=>(b._score/Math.max(1,b.cost))-(a._score/Math.max(1,a.cost))||b._score-a._score);
+    let remaining = Math.max(0,Number(lp)||0);
     const chosen = [];
-    for (const p of pool) {
-      if (p.cost <= remaining && chosen.length < 10) {
+    for(const p of pool){
+      if(p.cost <= remaining && chosen.length < 10){
         chosen.push(p);
         remaining -= p.cost;
       }
     }
-    return {chosen, spent:lp-remaining, remaining};
+    return {chosen,spent:Math.max(0,Number(lp)||0)-remaining,remaining};
   }
 
+  function luminaTokenHTML(p) {
+    return `<span class="optimizer-token lumina" title="${esc(p.name)} costs ${p.cost} LP per character">${esc(p.name)} <b class="token-lp">${p.cost} LP</b></span>`;
+  }
+
+  function buildTurnOrderAudit(party) {
+    const act=getOptimizerAct();
+    const order=initiativeOrder(party,act,getBattleMode());
+    const roster=getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+    const allocation=allocatePartyPictos(roster,recommendParty(act).combo);
+    const contributions=Object.fromEntries(order.map(c=>[c,calculatedSpeedParts(c,allocation[c]||[])]));
+    const complete=order.every(c=>contributions[c].tracked);
+    const plan=orderAwareTargets(act);
+    const targets=order.map(c=>`${c} ${plan.plan[c].Agility} AGI / ~${plan.estimatedSpeed[c]} Speed`).join(' → ');
+    const targetMessage=`<strong>Order-aware target:</strong> ${targets}. ${plan.aligned?'Estimated target ranking matches the intended order.':'The current attribute budgets and Picto bonuses cannot enforce this exact order.'} Start-of-battle effects may override Speed.`;
+    if(!complete)return `${targetMessage}<br>Enter the party’s Agility values to compare your current allocation with that target.`;
+    const sorted=[...order].sort((a,b)=>contributions[b].total-contributions[a].total);
+    const aligned=order.join('|')===sorted.join('|');
+    const comparison=sorted.map(c=>`${c} (${contributions[c].total})`).join(' → ');
+    const assumptions=order.reduce((n,c)=>n+contributions[c].assumed,0);
+    return `${targetMessage}<br><strong>${aligned?'Current contributions align':'Current contribution conflict'}:</strong> ${comparison}. ${assumptions?`${assumptions} Picto levels assumed; `:''}base/level Speed and First Strike may change the actual order.`;
+  }
+
+  function updateTurnOrderAudits() {
+    const party=recommendParty(getOptimizerAct()).combo;
+    document.querySelectorAll('[data-turn-order-audit]').forEach(el=>{
+      el.innerHTML=buildTurnOrderAudit(party);
+      el.dataset.auditStatus=buildTurnOrderAudit(party).includes('Potential speed-order conflict')?'caution':'neutral';
+    });
+  }
   function combinationBonus(combo, act) {
     const has = n => combo.includes(n);
     let score = 0;
@@ -7246,16 +7768,16 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   function refreshCharacterLuminas(card, character, act) {
     if (!card) return;
     const profile = getProfileFor(character,act);
-    const pictos = recommendedPictos(character);
+    const pictos = recommendedPictos(character); // globally unique across all displayed cards
     const luminas = recommendedLuminas(character,profile.lp,pictos);
     const section = card.querySelector('.optimizer-loadout-grid > div:nth-child(4)');
     if (!section) return;
-    section.querySelector('.optimizer-block-label').textContent = `Equip as Luminas · ${luminas.spent}/${profile.lp} LP`;
+    section.querySelector('.optimizer-block-label').textContent = `Add passive Luminas · ${luminas.spent}/${profile.lp} LP`;
     const list = section.querySelector('.optimizer-token-list');
     list.innerHTML = profile.lp <= 0
       ? `<span class="optimizer-helper-message">Insufficient Lumina LP</span>`
       : luminas.chosen.length
-        ? luminas.chosen.map(p=>`<span class="optimizer-token lumina">${esc(p.name)}</span>`).join('')
+        ? luminas.chosen.map(luminaTokenHTML).join('')
         : pictoTrackerButton();
     list.querySelectorAll('[data-open-pictos]').forEach(btn=>btn.addEventListener('click',()=>openPictoModal(btn)));
   }
@@ -7263,24 +7785,25 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   function renderOptimizerCharacters(act, party) {
     const available = getUnlockedRoster(act).filter(c => (optimizerConfig.availability[String(act)] || []).includes(c));
     const root = document.getElementById('optimizerCharacters');
+    const allocations = allocatePartyPictos(available,party);
     root.innerHTML = available.map(character => {
       const weapon = weaponRecommendation(character,act);
-      const pictos = recommendedPictos(character);
+      const pictos = allocations[character] || [];
       const profile = getProfileFor(character,act);
       const luminas = recommendedLuminas(character,profile.lp,pictos);
       const ownedSkills = getOwnedSkills(character);
       const route = priorityThroughAct(character,act);
-      const next = nextSkillRecommendations(character,act,3);
+      const next = nextSkillRecommendations(character,act,1);
       const target = targetAttrsFor(character,act);
       const active = party.includes(character);
 
       const pictoHTML = pictos.length
-        ? pictos.map(p=>`<span class="optimizer-token picto">${esc(p.name)}</span>`).join('')
+        ? pictos.map(equippedPictoHTML).join('')
         : pictoTrackerButton();
       const luminaHTML = profile.lp <= 0
         ? `<span class="optimizer-helper-message">Insufficient Lumina LP</span>`
         : luminas.chosen.length
-          ? luminas.chosen.map(p=>`<span class="optimizer-token lumina">${esc(p.name)}</span>`).join('')
+          ? luminas.chosen.map(luminaTokenHTML).join('')
           : pictoTrackerButton();
       const nextHTML = next.length
         ? next.map(s=>`<span class="next-skill-badge" title="Recommended next unlock (view via Skills)">${esc(s)}</span>`).join('')
@@ -7308,11 +7831,11 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
               <div class="optimizer-skill-summary">${nextHTML}</div>
             </div>
             <div>
-              <div class="optimizer-block-label">Equip as Pictos</div>
+              <div class="optimizer-block-label">Equip as Pictos · shared physical inventory · 0 LP</div>
               <div class="optimizer-token-list">${pictoHTML}</div>
             </div>
             <div>
-              <div class="optimizer-block-label">Equip as Luminas · ${luminas.spent}/${profile.lp} LP</div>
+              <div class="optimizer-block-label">Add passive Luminas · ${luminas.spent}/${profile.lp} LP</div>
               <div class="optimizer-token-list">${luminaHTML}</div>
             </div>
           </div>
@@ -7323,12 +7846,13 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
             <div class="optimizer-attribute-layout">
               <div class="optimizer-radar">
                 ${attributeRadarSVG(profile.attrs, target, true, profile.hasEnteredAttributes)}
-                <div class="radar-key"><span class="current"></span>Current <span class="target"></span>Act ${act} target</div>
               </div>
               <div class="attribute-input-grid">
                 ${attrInputs}
                 <label>Lumina LP<input type="number" min="0" max="999" placeholder="0" value="${profile.hasEnteredLP ? profile.lp : ''}" data-opt-char="${character}" data-opt-lp="true"></label>
               </div>
+              <div class="radar-key"><span class="current"></span>Current <span class="target"></span>Act ${act} order-aware target</div>
+              ${renderSpeedContribution(character,pictos)}
             </div>
           </div>
         </div>
@@ -7342,12 +7866,52 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       input.addEventListener('input',e => {
         const field=e.currentTarget;
         setProfileField(field.dataset.optChar,'attrs',field.value,field.dataset.optAttr);
-        const profile=getProfileFor(field.dataset.optChar,getOptimizerAct());
-        const chart=field.closest('.optimizer-character')?.querySelector('.optimizer-radar .attribute-radar');
-        if(chart) chart.outerHTML=attributeRadarSVG(profile.attrs,targetAttrsFor(field.dataset.optChar,getOptimizerAct()),true,profile.hasEnteredAttributes);
-        renderOptimizerStatus(getOptimizerAct(),recommendParty(getOptimizerAct()).combo);
+        const act=getOptimizerAct();
+        const plan=orderAwareTargets(act);
+        root.querySelectorAll('.optimizer-character').forEach(statCard=>{
+          const person=statCard.dataset.char;
+          const current=getProfileFor(person,act);
+          const target=plan.plan[person]||baseTargetAttrsFor(person,act);
+          const chart=statCard.querySelector('.optimizer-radar .attribute-radar');
+          if(chart)chart.outerHTML=attributeRadarSVG(current.attrs,target,true,current.hasEnteredAttributes);
+          statCard.querySelectorAll('[data-opt-attr]').forEach(input=>{
+            const fieldTarget=input.closest('label')?.querySelector('.target-mini b');
+            if(fieldTarget)fieldTarget.textContent=String(target[input.dataset.optAttr]??0);
+          });
+        });
+        const card=field.closest('.optimizer-character');
+        const roster=getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+        const pictos=allocatePartyPictos(roster,recommendParty(act).combo)[field.dataset.optChar]||[];
+        const speedPanel=card?.querySelector('[data-speed-for]');
+        if(speedPanel)speedPanel.outerHTML=renderSpeedContribution(field.dataset.optChar,pictos);
+        updateTurnOrderAudits();
+        renderOptimizerStatus(act,recommendParty(act).combo);
       });
     });
+    root.querySelectorAll('[data-picto-level]').forEach(input=>input.addEventListener('change',e=>{
+      const field=e.currentTarget;
+      setPictoLevel(field.dataset.pictoLevel,field.value);
+      field.value=pictoLevelFor(field.dataset.pictoLevel);
+      const act=getOptimizerAct();
+      const roster=getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+      const allocation=allocatePartyPictos(roster,recommendParty(act).combo);
+      // A Picto can only occupy one physical slot; update the relevant owner.
+      roster.forEach(c=>{
+        const card=root.querySelector(`.optimizer-character[data-char="${c}"]`);
+        const panel=card?.querySelector('[data-speed-for]');
+        if(panel)panel.outerHTML=renderSpeedContribution(c,allocation[c]||[]);
+      });
+      const plan=orderAwareTargets(act);
+      root.querySelectorAll('.optimizer-character').forEach(statCard=>{
+        const c=statCard.dataset.char,target=plan.plan[c]||baseTargetAttrsFor(c,act),profile=getProfileFor(c,act);
+        const chart=statCard.querySelector('.optimizer-radar .attribute-radar');
+        if(chart)chart.outerHTML=attributeRadarSVG(profile.attrs,target,true,profile.hasEnteredAttributes);
+        statCard.querySelectorAll('[data-opt-attr]').forEach(input=>{
+          const b=input.closest('label')?.querySelector('.target-mini b');if(b)b.textContent=String(target[input.dataset.optAttr]??0);
+        });
+      });
+      updateTurnOrderAudits();
+    }));
     root.querySelectorAll('[data-opt-lp]').forEach(input => {
       input.addEventListener('input',e=>{
         const field=e.currentTarget;
@@ -7364,7 +7928,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     const untracked = order.filter(c => !hasTrackedBattleSkills(c));
     const note = document.getElementById('battlePlanNote');
     note.textContent = !tracked.length
-      ? 'Recommended combat plan · Skill loadouts have not been entered. This uses the guide’s Act '+act+' recommendations and will change as you select characters, weapons and unlocked skills. Untracked weapons use recommended build assumptions. Nothing is marked as owned.'
+      ? 'Suggested combat plan · Verify actual turn order in game. Skill loadouts have not been entered. This uses the guide’s Act '+act+' recommendations and will change as you select characters, weapons and unlocked skills. Untracked weapons use recommended build assumptions. Nothing is marked as owned.'
       : untracked.length
         ? 'Partly personalized · Using tracked skills for '+tracked.join(', ')+'. Recommended skills fill the gaps for '+untracked.join(', ')+'. The plan updates as you make selections.'
         : 'Personalized to tracked skills · Only starting and selected skills are used. A small unlocked skill pool can legitimately repeat actions. Update your selections to refine the plan.';
@@ -7426,8 +7990,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     selectedPriorityAction=p;
     priorityModalTrigger=trigger||document.activeElement;
     const backdrop=document.getElementById('priorityModalBackdrop');
-    backdrop.dataset.char=p.character||'';
-    document.getElementById('priorityModalTitle').textContent=p.title;
+    backdrop.dataset.char=p.character||'';    document.getElementById('priorityModalTitle').textContent=p.title;
     document.getElementById('priorityModalEyebrow').textContent=p.type+' · recommended next action';
     document.getElementById('priorityGuideInstruction').textContent=p.instruction;
     document.getElementById('priorityGuideExtra').textContent=p.why;
@@ -7472,6 +8035,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     renderOptimizerStatus(act,party);
     renderPartyRecommendation(act,party);
     renderOptimizerCharacters(act,party);
+    updateTurnOrderAudits();
     renderBattlePlan(act,party);
     renderPriorities(act,party);
   }
@@ -7584,7 +8148,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     const data = optimizerSkillData[character];
     const owned = getOwnedSkills(character);
     const route = priorityThroughAct(character,act);
-    const next = nextSkillRecommendations(character,act,3);
+    const next = nextSkillRecommendations(character,act,1);
     const nextSet = new Set(next);
     const board = document.getElementById('skillTreeBoard');
     const count = document.getElementById('skillTreeCount');
@@ -7593,7 +8157,9 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     document.getElementById('skillModalTitle').textContent = `${character} skill tracker`;
     document.getElementById('skillModalSubtitle').textContent = character === 'Monoco'
       ? 'Monoco does not use a normal SP tree. Track Nevron skills in the in-game-style collection grid.'
-      : `Tree geometry follows the in-game layout. Click any reachable downstream skill and the tracker fills the shortest connecting path automatically; removing a connector also removes any selected nodes that lose their route back to a starting skill.`;
+      : character === 'Sciel'
+        ? 'Layout and visible SP costs match your screenshot. Skills shown as icons in that screenshot cannot be named from the image alone; their identities and paths remain provisional until confirmed.'
+        : `The current tree is a modeled layout. Click a connected skill to track it and its connecting route; confirm the resulting path against the game before spending SP.`;
 
     if (ref) {
       ref.href = skillTreeGraph[character]?.reference || 'https://interfaceingame.com/screenshots/clair-obscur-expedition-33-skill-tree/';
