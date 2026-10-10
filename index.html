@@ -4417,6 +4417,30 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
  }
  .monoco-skill-grid .monoco-skill-label {font-size:11px !important;}
 }
+
+/* v14.6.8 Meta optimizer: equipment stat transparency & high-LP readability */
+.meta-method-note{margin:2px 0 12px;color:#a6b4c1;font-size:11.5px;line-height:1.5;padding:9px 12px;border-radius:9px;background:#111b22;border:1px solid #263541}
+.meta-method-note b{color:#e0ebf3;font-weight:650}.meta-method-note a{color:#8cc6e4;text-decoration:none}.meta-method-note a:hover{text-decoration:underline}
+.meta-picto-entry{display:inline-flex;flex-direction:column;gap:4px;align-items:flex-start;min-width:0;max-width:100%;padding:2px 2px 6px;border-radius:6px}
+.meta-picto-entry .optimizer-token{max-width:100%;white-space:normal}
+.picto-equipment-details{display:block;font-size:11px;line-height:1.3;color:#91a4b4;white-space:normal}
+.lumina-extra{width:100%;margin-top:5px;padding:8px 10px;border:1px solid #30404c;border-radius:8px;background:#0f1921;color:#cad6df}
+.lumina-extra summary{font-size:12px;cursor:pointer;user-select:none;font-weight:650}
+.lumina-extra .optimizer-token-list{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px}
+.optimizer-character .optimizer-token-list{align-items:flex-start;gap:8px}
+#metaDataStatus{color:#9dc0da}
+
+/* v14.6.8: owned Picto level editor is shared by the page and optimizer overlay. */
+.picto-library-level{grid-column:1/-1;border-top:1px solid #26313b;padding-top:11px;min-width:0}
+.picto-library-level-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:6px}
+.picto-library-level-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#a9b6c1;font-weight:600}
+.picto-library-level-input{width:64px;min-height:32px;background:#121b22;border:1px solid #3b4b59;border-radius:7px;color:#edf4f8;font:inherit;font-size:12px;padding:5px 7px;appearance:textfield}
+.picto-library-level-input::-webkit-inner-spin-button{opacity:.5}
+.picto-library-level-input:focus-visible{outline:2px solid #72a8d1;outline-offset:1px}
+.picto-library-level-input:disabled{opacity:.4;cursor:not-allowed}
+.picto-library-level-stats{font-size:11px;line-height:1.4;color:#a7bac8;min-width:0}
+.picto-library-level-note{font-size:11px;margin-top:5px;color:#8193a3}
+
 </style>
 </head>
 <body>
@@ -4969,8 +4993,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
                data-why="Unique Shield-stealing specialist that is exceptional in Shield-heavy fights" role="button" tabindex="0"
                aria-label="Open details for Barrier Breaker">
             <div class="rank">9</div>
-            <div class="tier aplus">A+</div>
-            <div class="weapon">
+            <div class="tier aplus">A+</div>            <div class="weapon">
               <span class="weapon-name">Barrier Breaker</span>
               <span class="why">Unique Shield-stealing specialist that is exceptional in Shield-heavy fights</span>
             </div>
@@ -4993,7 +5016,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
                data-character="Maelle" data-weapon="Veremum"
                data-tier="A" data-actlabel="2" data-progression-act="2"
                data-why="Reliable physical option with strong Vitality/Luck scaling" role="button" tabindex="0"
-               aria-label="Open details for Veremum">            <div class="rank">11</div>
+               aria-label="Open details for Veremum">
+            <div class="rank">11</div>
             <div class="tier a">A</div>
             <div class="weapon">
               <span class="weapon-name">Veremum</span>
@@ -5968,8 +5992,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
             <div class="rank">9</div>
             <div class="tier bplus">B+</div>
             <div class="weapon">
-              <span class="weapon-name">Esquiaro<span class="release-badge">DLC</span></span>
-              <span class="why">DLC defensive Earth specialist from Verso&#x27;s Drafts</span>
+              <span class="weapon-name">Esquiaro<span class="release-badge">DLC</span></span>              <span class="why">DLC defensive Earth specialist from Verso&#x27;s Drafts</span>
             </div>
             <div class="act">A3</div>
           </div>
@@ -5992,7 +6015,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
                data-why="Fire/Luck option with decent progression value" role="button" tabindex="0"
                aria-label="Open details for Boucharo">
             <div class="rank">11</div>
-            <div class="tier b">B</div>            <div class="weapon">
+            <div class="tier b">B</div>
+            <div class="weapon">
               <span class="weapon-name">Boucharo</span>
               <span class="why">Fire/Luck option with decent progression value</span>
             </div>
@@ -6361,7 +6385,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
     <div class="optimizer-status" id="optimizerStatus"></div>
     <div class="turn-order-audit" data-turn-order-audit role="status" aria-live="polite"></div>
-    <p class="optimizer-audit-disclaimer">Build suggestions are provisional: acquired Pictos are allocated only once as physical equipment. Separately equipped Luminas cost LP per character. In-game Picto stat bonuses, levels, and mastery status are not yet tracked; verify Speed and skill connections before committing a respec.</p>
+    <p class="optimizer-audit-disclaimer">Physical Pictos are assigned uniquely across characters and evaluated using tracked level bonuses. Unentered Picto levels default to 1; the tracker assumes acquired Picto effects have been mastered for Lumina use. Verify in-game turn order and skills before respec.</p>
 
     <section class="optimizer-section">
       <div class="optimizer-section-head">
@@ -6385,6 +6409,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
           <button type="button" class="track-pictos-button" data-open-pictos aria-haspopup="dialog" title="Open the full Pictos & Luminas tracker"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 6h10M5 10h10M5 14h10M3 6h.1M3 10h.1M3 14h.1"/></svg><span>Track acquired Pictos</span><span class="track-pictos-arrow" aria-hidden="true">↗</span></button>
         </div>
 </div>
+      <div class="meta-method-note"><b>Build logic:</b> Physical Pictos are shared one-copy items selected for their actual level-dependent stats and valuable LP savings. Mastered Luminas use a character-specific LP budget optimizer—no 10-passive limit. Unentered Picto levels are treated as Lv 1. <a href="https://github.com/fmarlats/picto-builder" target="_blank" rel="noopener">Stat reference ↗</a> · <span id="metaDataStatus">Loading detailed equipment stats…</span></div>
       <div class="optimizer-character-grid" id="optimizerCharacters"></div>
     </section>
 
@@ -6893,7 +6918,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   };
 
 
-  const E33_SITE_VERSION = '14.6.7';
+  const E33_SITE_VERSION = '14.6.8';
   document.querySelectorAll('[data-site-version]').forEach(el => el.textContent = 'v' + E33_SITE_VERSION);
 
   function updateScrollLock() {
@@ -6966,8 +6991,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     if (e.target.id === 'pictoModalBackdrop') closePictoModal();
   });
   document.addEventListener('click',e=>{
-    // The heading's shortcut is static; character shortcuts are rebound when rendered.
-    if (e.target.closest('.optimizer-section-head [data-open-pictos]')) openPictoModal(e.target.closest('[data-open-pictos]'));
+    // The heading's shortcut is static; character shortcuts are rebound when rendered.    if (e.target.closest('.optimizer-section-head [data-open-pictos]')) openPictoModal(e.target.closest('[data-open-pictos]'));
   });
   document.addEventListener('keydown',e=>{
     const backdrop = document.getElementById('pictoModalBackdrop');
@@ -6991,7 +7015,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     return ['Lune','Maelle','Sciel','Verso','Monoco'];
   }
 
-  function getUnlockedRoster(act) {    try {
+  function getUnlockedRoster(act) {
+    try {
       const saved = JSON.parse(localStorage.getItem(rosterStorageKey) || '{}');
       const key = String(act);
       if (Array.isArray(saved[key])) return saved[key];
@@ -7202,7 +7227,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     try { return JSON.parse(localStorage.getItem(pictoLevelsKey) || '{}') || '{}'; } catch { return {}; }
   }
   function pictoLevelFor(name) {
-    const curve = pictoSpeedCurves[pictoSpeedCurveByName[name]];
+    const curve = pictoMeta[name]?.a || pictoSpeedCurves[pictoSpeedCurveByName[name]];
     const saved = Number(pictoStoredLevels()[name]);
     return Number.isFinite(saved) && saved >= 1 && saved <= 33 ? Math.round(saved) : (curve?.length === 1 ? 33 : 1);
   }
@@ -7213,6 +7238,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   }
   function pictoSpeedAtLevel(name,level) {
     const idx=pictoSpeedCurveByName[name];
+    if(pictoMeta[name]?.a?.length) return (pictoMeta[name].a[Math.min(pictoMeta[name].a.length,Math.max(1,level))-1]?.[2] || 0);
     if (idx == null) return 0; // No recorded Speed bonus for this Picto.
     const curve=pictoSpeedCurves[idx];
     return curve.length===1 ? (level===33 ? curve[0] : 0) : (curve[Math.max(1,Math.min(33,level))-1] ?? 0);
@@ -7240,7 +7266,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   }
   function equippedPictoHTML(p) {
     const idx=pictoSpeedCurveByName[p.name];
-    const curve=idx == null ? null : pictoSpeedCurves[idx];
+    const curve=pictoMeta[p.name]?.a || (idx == null ? null : pictoSpeedCurves[idx]);
     const level=pictoLevelFor(p.name);
     const input=curve && curve.length===33 ? `<label class="picto-level-label" title="Actual level of your acquired Picto; changes its Speed bonus">Lv <input class="picto-level-input" type="number" min="1" max="33" inputmode="numeric" value="${level}" data-picto-level="${esc(p.name)}" aria-label="${esc(p.name)} Picto level"></label>` : '';
     return `<span class="optimizer-token picto picto-equipped" title="${esc(p.name)}: ${pictoSpeedAtLevel(p.name,level)} Speed at level ${level}">${esc(p.name)}${input}</span>`;
@@ -7506,80 +7532,248 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   function tierValue(t) {
     return ({SS:100,S:84,A:68,B:48,C:28,D:10,F:0}[t] ?? 35);
   }
-  function pictoScore(p, character) {
-    let score = tierValue(p.tier);
-    const roleTags = optimizerConfig.roleTags[character] || [];
-    if (p.tags.includes(character)) score += 24;
-    roleTags.forEach(tag => { if (p.tags.includes(tag)) score += 14; });
-    if (p.tags.includes('Universal')) score += 6;
-    if (p.name === 'Painted Power' && getOptimizerAct() < 3) score -= 100;
-    return score;
-  }
-
-  // Each acquired Picto is a single physical item. Allocate it only once
-  // across every visible loadout (including bench recommendations).
-  // A mastered Lumina passive may be shared; its cost is paid by each wearer.
-  function allocatePartyPictos(available, activeParty) {
-    const acquired = getAcquiredLuminas();
-    const pool = luminaData.filter(p=>acquired.has(p.name));
-    const allocation = Object.fromEntries(available.map(c=>[c,[]]));
-    const taken = new Set();
-    const prioritized = [...activeParty.filter(c=>available.includes(c)), ...available.filter(c=>!activeParty.includes(c))];
-    // Fill first/second/third slots in rounds to avoid one character hoarding
-    // every high-tier physical Picto while other active characters have none.
-    for (let slot=0;slot<3;slot++) {
-      const offers = [];
-      prioritized.forEach((character,partyIndex)=>{
-        pool.forEach(p=>{
-          if(taken.has(p.name))return;
-          const roleScore = pictoScore(p,character);
-          const teamBonus = activeParty.includes(character) ? 25 : 0;
-          offers.push({character, p, score:roleScore+teamBonus, partyIndex});
-        });
-      });
-      offers.sort((a,b)=>b.score-a.score||a.partyIndex-b.partyIndex||a.p.name.localeCompare(b.p.name));
-      const assignedThisRound = new Set();
-      for(const offer of offers){
-        if(assignedThisRound.has(offer.character)||taken.has(offer.p.name))continue;
-        allocation[offer.character].push(offer.p);
-        taken.add(offer.p.name);
-        assignedThisRound.add(offer.character);
-      }
-      if(!assignedThisRound.size)break;
+  /* v14.6.8: evidence-led, budget-aware optimizer.
+     Exact source equipment bonuses are downloaded from the adjacent same-origin
+     MIT-licensed picto-stat-reference.json. Data: fmarlats/picto-builder,
+     https://github.com/fmarlats/picto-builder; reference comparisons: Gamer Guides.
+     This is a deterministic role-weighted recommendation, not a simulation of
+     conditional boss resistances, breakpoints or every possible encounter. */
+  let pictoMeta = Object.create(null);
+  let pictoMetaReady = false;
+  const usefulEffectScores = {
+    'Painted Power':{all:92}, 'Cheater':{all:129}, 'Energy Master':{all:116},
+    'AP Discount':{all:119}, 'Energising Turn':{all:114},'Energising Parry':{all:106},
+    'Energising Start I':{all:83},'Energising Start II':{all:70},'Energising Start III':{all:62},
+    'Energising Start IV':{all:56},'Second Chance':{all:65},
+    'Augmented First Strike':{all:67,Maelle:120,Verso:100,Lune:77},
+    'First Strike':{all:64,Sciel:88,Monoco:88,Lune:91},
+    'Burning Shots':{all:30,Lune:115,Verso:89,Maelle:82,Monoco:84},
+    'Marking Shots':{all:26,Lune:100,Verso:104,Maelle:68,Sciel:72},
+    'Rewarding Mark':{all:64,Lune:92,Maelle:116,Verso:106,Sciel:74},
+    'Beneficial Contamination':{all:34,Lune:109,Verso:72,Maelle:61},
+    'Critical Burn':{all:23,Maelle:93,Lune:85,Verso:75},
+    'Burn Affinity':{all:20,Maelle:112,Lune:90,Verso:84},
+    'Double Burn':{all:22,Maelle:97,Lune:106,Verso:83,Monoco:86},
+    'Double Mark':{all:25,Verso:81,Lune:83,Maelle:72},
+    'Stay Marked':{all:25,Verso:78,Maelle:77},
+    'Glass Canon':{all:56,Maelle:112,Verso:86,Lune:90},
+    'Immaculate':{all:69,Maelle:111,Verso:98,Lune:81},
+    'Full Strength':{all:66,Maelle:107,Verso:82},
+    'Warming Up':{all:53,Maelle:91,Verso:83},
+    'Confident Fighter':{all:55,Maelle:92,Verso:86},
+    'Empowering Attack':{all:56,Maelle:92,Verso:77},
+    'Empowering Parry':{all:80,Maelle:91,Sciel:84,Monoco:98},
+    'Energising Shots':{all:49,Lune:86,Verso:96,Monoco:74},
+    'Augmented Aim':{all:38,Lune:74,Verso:85},
+    'Sniper':{all:25,Lune:68,Verso:91},
+    'Healing Counter':{all:60,Sciel:79,Monoco:74},
+    'Dodger':{all:85},
+    'Healing Parry':{all:63},
+    'Teamwork':{all:74},
+    'Tainted':{all:65,Maelle:84,Verso:82},
+    'Roulette':{all:30,Maelle:46},
+    'Frenzy':{all:58,Maelle:122,Verso:111},
+    'Feint':{all:50,Maelle:117,Verso:89},
+    'Double Third':{all:58,Maelle:104,Verso:96},
+    'First Life':{all:48,Maelle:97,Verso:80},
+    'Alternating Critical':{all:58,Maelle:85,Verso:88},
+    'Consuming Attack':{all:28,Maelle:95,Lune:90},
+    'Gradient Overcharge':{all:36,Maelle:74,Monoco:72},
+    'Charging Critical':{all:40,Sciel:101,Verso:89,Maelle:86},
+    'Gradient Fighter':{all:43,Monoco:91},
+    'Breaker':{all:34,Monoco:89,Gustave:73},
+    'Breaking Shots':{all:23,Verso:76,Monoco:67,Gustave:64},
+    'Breaking Attack':{all:27,Verso:60,Monoco:79},
+    'Critical Break':{all:34,Monoco:85,Sciel:72},
+    'Quick Break':{all:42,Monoco:95},
+    'Staggering Attack':{all:34,Gustave:60},
+    'Faster Than Strong':{all:20,Sciel:109,Monoco:120,Lune:52,Maelle:0},
+    'Auto Powerful':{all:56,Sciel:101,Monoco:102},
+    'Auto Rush':{all:54,Sciel:92,Monoco:90},
+    'Effective Support':{all:56,Sciel:81,Monoco:93},
+    'Longer Powerful':{all:48,Sciel:71,Monoco:85},
+    'Energising Powerful':{all:48,Sciel:82,Monoco:95},
+    'Powerful Mark':{all:42,Sciel:64,Verso:66},
+    'First Offensive':{all:49,Maelle:75},
+    'Energising Break':{all:45,Monoco:72},
+    'Critical Moment':{all:48,Maelle:82,Verso:65},
+    'Healing Fire':{all:40,Lune:60},
+    'Revive Paradox':{all:42,Lune:66,Sciel:58}
+  };
+  const situationalPictoBlacklist = new Set([
+    'Auto Death','Solo Fighter','The One','At Death\'s Door','Last Stand Critical',
+    'Empowering Last Stand','Protecting Last Stand','Accelerating Last Stand',
+    'Random Defense','Exhausting Power','Pro Retreat','Death Bomb',
+    'SOS Rush','SOS Power','SOS Shell','SOS Healing Tint','SOS Healing',
+    'Anti-Blight','Anti-Burn','Anti-Charm','Anti-Freeze','Anti-Stun',
+    'Clea\'s Death','Clea\'s Life'
+  ]);
+  function effectScore(p, character, act=getOptimizerAct()) {
+    if(situationalPictoBlacklist.has(p.name))return 0;
+    const guidance=usefulEffectScores[p.name];
+    if(guidance){
+      let x=guidance[character]??guidance.all??0;
+      if(p.name==='Painted Power' && act===1)x=16;
+      if(p.name==='Painted Power' && act===2)x=54;
+      if(['Frenzy','Feint','Double Third','AP Discount'].includes(p.name) && act<3)x*=.55;
+      return x;
     }
-    return allocation;
+    // Conservative fallback: gear not identified in a role guide should not
+    // outrank a researched synergy merely because its library tier is high.
+    let x=0;
+    const tags=p.tags||[];
+    const roleTags=optimizerConfig.roleTags[character]||[];
+    if(tags.includes(character))x+=25;
+    roleTags.forEach(t=>{if(tags.includes(t))x+=11;});
+    if(tags.includes('AP economy')||tags.includes('Universal'))x+=23;
+    if(tags.includes('DPS') && ['Maelle','Verso','Lune'].includes(character))x+=13;
+    if(tags.includes('Situational')||tags.includes('Solo'))x*=.22;
+    if(p.tier==='D')x*=.25;
+    return Math.min(67,x);
   }
-
-  // Compatibility helper for existing panels: always use the global allocation.
+  // Preserve the old score API used by party selection; prioritize synergy,
+  // not the subjective catalog tier.
+  function pictoScore(p, character) {return effectScore(p,character);}
+  function pictoStatDetails(p) {
+    const meta=pictoMeta[p.name];
+    const level=pictoLevelFor(p.name);
+    if(!meta?.a?.length)return {level,Health:0,Defense:0,Speed:pictoSpeedAtLevel(p.name,level),Crit:0,verified:false};
+    const a=meta.a[Math.min(meta.a.length,level)-1]||[0,0,0,0];
+    return {level,Health:a[0]||0,Defense:a[1]||0,Speed:a[2]||0,Crit:a[3]||0,verified:true};
+  }
+  function statFitness(p,character,activeOrder) {
+    const x=pictoStatDetails(p),index=activeOrder.indexOf(character);
+    const isSupport=['Sciel','Monoco','Gustave'].includes(character);
+    // Direct item stats, unlike learned Lumina effects, are character-exclusive.
+    const speedW=(index===0?0.22:index===1?0.15:index>1?0.065:isSupport?0.17:0.11);
+    const critW=character==='Maelle'?2.8:character==='Sciel'?2.0:character==='Lune'?2.1:character==='Verso'?2.25:1.3;
+    const healthW=isSupport?0.023:0.018;
+    const defenseW=character==='Maelle'?0.088:0.064;
+    const value=Math.min(70,Math.sqrt(x.Health)*healthW*3.8)
+       + Math.min(77,Math.sqrt(x.Defense)*defenseW*9)
+       + Math.min(90,Math.sqrt(x.Speed)*speedW*7)
+       + Math.min(105,x.Crit*critW);
+    return {value,stats:x};
+  }
+  function pictoPhysicalValue(p,character,activeOrder) {
+    const utility=effectScore(p,character);
+    const stat=statFitness(p,character,activeOrder);
+    const lp=getProfileFor(character,getOptimizerAct()).lp;
+    const lpWeight=lp<25?1.95:lp<70?1.55:lp<150?1.12:0.78;
+    // A passive bought for only 5 LP does NOT earn a physical slot merely
+    // because it is high tier. Valuable stats or avoided expensive LP must
+    // justify sacrificing one of three exclusive slots.
+    const saved=Math.min(40,p.cost)*lpWeight*Math.min(1,utility/75);
+    return {value:stat.value + saved + utility*.12,stat:stat.stats,saved};
+  }
+  // The allocation solves the physical inventory jointly over active and
+  // bench characters. Every Picto can appear in at most one physical slot.
+  function allocatePartyPictos(available,activeParty) {
+    const acquired=getAcquiredLuminas();
+    const pool=luminaData.filter(p=>acquired.has(p.name));
+    const result=Object.fromEntries(available.map(c=>[c,[]]));
+    const taken=new Set();
+    const activeOrder=initiativeOrder(activeParty,getOptimizerAct(),getBattleMode());
+    const priority=[...activeParty.filter(c=>available.includes(c)),...available.filter(c=>!activeParty.includes(c))];
+    const eligible=priority.map(c=>({character:c,active:activeParty.includes(c)}));
+    const all=[];
+    for(const {character,active} of eligible){
+      for(const p of pool){
+        const score=pictoPhysicalValue(p,character,activeOrder).value*(active?1.35:.58);
+        all.push({character,p,score});
+      }
+    }
+    all.sort((a,b)=>b.score-a.score||a.p.name.localeCompare(b.p.name));
+    // Greedy matching, followed by pair swaps to correct local conflicts.
+    for(const choice of all){
+      if(taken.has(choice.p.name)||result[choice.character].length>=3)continue;
+      result[choice.character].push(choice.p);taken.add(choice.p.name);
+    }
+    for(let iteration=0;iteration<2;iteration++){
+      let improved=false;
+      for(let i=0;i<priority.length;i++)for(let j=i+1;j<priority.length;j++){
+        const a=priority[i],b=priority[j];
+        const wa=activeParty.includes(a)?1.35:.58,wb=activeParty.includes(b)?1.35:.58;
+        for(let k=0;k<result[a].length;k++)for(let l=0;l<result[b].length;l++){
+          const pa=result[a][k],pb=result[b][l];
+          const original=pictoPhysicalValue(pa,a,activeOrder).value*wa+pictoPhysicalValue(pb,b,activeOrder).value*wb;
+          const switched=pictoPhysicalValue(pb,a,activeOrder).value*wa+pictoPhysicalValue(pa,b,activeOrder).value*wb;
+          if(switched>original+0.5){result[a][k]=pb;result[b][l]=pa;improved=true;}
+        }
+      }
+      if(!improved)break;
+    }
+    return result;
+  }
   function recommendedPictos(character) {
-    const act = getOptimizerAct();
-    const available = getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
-    const party = recommendParty(act).combo;
-    return allocatePartyPictos(available,party)[character] || [];
+    const act=getOptimizerAct();
+    const available=getUnlockedRoster(act).filter(c=>(optimizerConfig.availability[String(act)]||[]).includes(c));
+    return allocatePartyPictos(available,recommendParty(act).combo)[character]||[];
   }
-
-  function recommendedLuminas(character, lp, selectedPictos) {
-    const acquired = getAcquiredLuminas();
-    const pictoNames = new Set(selectedPictos.map(p=>p.name));
-    const pool = luminaData
-      // A Picto passive is already active for free on its physical wearer.
-      .filter(p=>acquired.has(p.name) && !pictoNames.has(p.name))
-      .map(p=>({...p,_score:pictoScore(p,character)}))
-      .sort((a,b)=>(b._score/Math.max(1,b.cost))-(a._score/Math.max(1,a.cost))||b._score-a._score);
-    let remaining = Math.max(0,Number(lp)||0);
-    const chosen = [];
-    for(const p of pool){
-      if(p.cost <= remaining && chosen.length < 10){
-        chosen.push(p);
-        remaining -= p.cost;
+  // An exact 0/1 knapsack (rather than ratio-greedy + arbitrary 10-slot cap)
+  // maximizes useful mastered Lumina effects subject to each character's LP.
+  function recommendedLuminas(character,lp,selectedPictos) {
+    const acquired=getAcquiredLuminas();
+    const physical=new Set(selectedPictos.map(p=>p.name));
+    const budget=Math.max(0,Math.min(5000,Math.floor(Number(lp)||0)));
+    const candidates=luminaData.filter(p=>acquired.has(p.name)&&!physical.has(p.name)&&p.cost>0&&p.cost<=budget)
+      .map(p=>({...p,_value:effectScore(p,character)}))
+      .filter(p=>p._value>=13)
+      .sort((a,b)=>b._value-a._value);
+    const dp=new Float64Array(budget+1).fill(-1e9);dp[0]=0;
+    const paths=Array(budget+1).fill(null);
+    for(const p of candidates){
+      for(let amount=budget;amount>=p.cost;amount--){
+        const prev=amount-p.cost;
+        if(dp[prev]<0)continue;
+        const value=dp[prev]+p._value+.13*p.cost;
+        if(value>dp[amount]+1e-7){dp[amount]=value;paths[amount]={entry:p,previous:paths[prev]};}
       }
     }
-    return {chosen,spent:Math.max(0,Number(lp)||0)-remaining,remaining};
+    let best=0;
+    for(let i=1;i<=budget;i++)if(dp[i]>dp[best]+1e-8 || Math.abs(dp[i]-dp[best])<1e-8&&i>best)best=i;
+    const chosen=[];const used=new Set();
+    for(let n=paths[best];n;n=n.previous){if(!used.has(n.entry.name)){chosen.push(n.entry);used.add(n.entry.name);}}
+    chosen.sort((a,b)=>b._value-a._value||a.cost-b.cost);
+    return {chosen,spent:best,remaining:budget-best,eligible:candidates.length};
   }
-
   function luminaTokenHTML(p) {
-    return `<span class="optimizer-token lumina" title="${esc(p.name)} costs ${p.cost} LP per character">${esc(p.name)} <b class="token-lp">${p.cost} LP</b></span>`;
+    return `<span class="optimizer-token lumina" title="${esc(p.name)} · role value ${Math.round(p._value||0)} · ${p.cost} LP">${esc(p.name)} <b class="token-lp">${p.cost} LP</b></span>`;
   }
+  function luminaDisplayHTML(luminas){
+    const rows=luminas.chosen.map(luminaTokenHTML);
+    if(rows.length<=15)return rows.join('');
+    return rows.slice(0,15).join('')+`<details class="lumina-extra"><summary>Show remaining ${rows.length-15} Luminas</summary><div class="optimizer-token-list">${rows.slice(15).join('')}</div></details>`;
+  }
+  function pictoReasonHTML(p,character,activeOrder){
+    const x=pictoPhysicalValue(p,character,activeOrder);const s=x.stat;
+    const stats=[s.Health?`+${s.Health} HP`:'',s.Defense?`+${s.Defense} DEF`:'',s.Speed?`+${s.Speed} SPD`:'',s.Crit?`+${s.Crit}% CRIT`:''].filter(Boolean);
+    const levelUnverified=pictoStoredLevels()[p.name]==null;
+    return `<small class="picto-equipment-details" title="Physical Picto stats are awarded only to the equipped character. ${levelUnverified?'Level is assumed until you enter the in-game level.':''}">${s.verified?(stats.join(' · ')||'No item stats'):'Stats not yet verified'} · ${p.cost} LP effect free${levelUnverified?' · Lv assumed':''}</small>`;
+  }
+  function pictoTrackerButton() {
+    return `<button type="button" class="track-pictos-button" data-open-pictos>☷ &nbsp; Track acquired Pictos ↗</button>`;
+  }
+  // Fetch complete per-level attributes from our same-origin, MIT-attributed
+  // reference asset, then recompute the entire loadout with real item stats.
+  fetch('./picto-stat-reference.json?v=14.6.8',{cache:'no-cache'}).then(r=>{
+    if(!r.ok)throw Error(`Reference HTTP ${r.status}`);
+    return r.json();
+  }).then(db=>{
+    if(!db||Object.keys(db).length<200)throw Error('Incomplete Picto reference');
+    pictoMeta=db;pictoMetaReady=true;
+    const status=document.getElementById('metaDataStatus');if(status)status.textContent='Level stats loaded';
+    // Repaint library stat labels once the same-origin reference arrives.
+    if(document.getElementById('luminaList')) {
+      const expanded = [...document.querySelectorAll('.lumina-item[open]')].map(e=>e.dataset.name);
+      renderLuminas();
+      expanded.forEach(name=>{
+        const element=[...document.querySelectorAll('.lumina-item')].find(e=>e.dataset.name===name);
+        if(element)element.open=true;
+      });
+    }
+    if(document.getElementById('optimizerPage'))renderOptimizer();
+  }).catch(e=>console.warn('Picto stat reference unavailable; only partial local stat data can be estimated.',e));
 
   function buildTurnOrderAudit(party) {
     const act=getOptimizerAct();
@@ -7796,8 +7990,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       <div class="status-cell"><span>Weapons tracked</span><strong>${ownedWeapons.size}</strong><small>Optimizer uses the best owned weapon per character.</small></div>
       <div class="status-cell"><span>Pictos acquired</span><strong>${acquired.size}</strong><small>Any acquired Picto is assumed masterable and can be recommended as a Lumina.</small></div>
       <div class="status-cell"><span>Skills tracked</span><strong>${skillCount}</strong><small>Only prerequisite-valid skills are counted in the tree.</small></div>
-      <div class="status-cell"><span>Attributes entered</span><strong>${attrsTracked}/${available.length}</strong><small>Only entered values count; Act targets remain visible as references.</small></div>`;
-  }
+      <div class="status-cell"><span>Attributes entered</span><strong>${attrsTracked}/${available.length}</strong><small>Only entered values count; Act targets remain visible as references.</small></div>`;  }
 
   function partyReason(act, party) {
     const key = party.join('|');
@@ -7847,13 +8040,13 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     const luminas = recommendedLuminas(character,profile.lp,pictos);
     const section = card.querySelector('.optimizer-loadout-grid > div:nth-child(4)');
     if (!section) return;
-    section.querySelector('.optimizer-block-label').textContent = `Add passive Luminas · ${luminas.spent}/${profile.lp} LP`;
+    section.querySelector('.optimizer-block-label').textContent = `Add passive Luminas · ${luminas.spent}/${profile.lp} LP${luminas.remaining?' · '+luminas.remaining+' unspent':''}`;
     const list = section.querySelector('.optimizer-token-list');
     list.innerHTML = profile.lp <= 0
       ? `<span class="optimizer-helper-message">Insufficient Lumina LP</span>`
       : luminas.chosen.length
-        ? luminas.chosen.map(luminaTokenHTML).join('')
-        : pictoTrackerButton();
+        ? luminaDisplayHTML(luminas)
+        : `<span class="optimizer-helper-message">No beneficial affordable mastered Luminas available.</span>`;
     list.querySelectorAll('[data-open-pictos]').forEach(btn=>btn.addEventListener('click',()=>openPictoModal(btn)));
   }
 
@@ -7873,13 +8066,13 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       const active = party.includes(character);
 
       const pictoHTML = pictos.length
-        ? pictos.map(equippedPictoHTML).join('')
+        ? pictos.map(p=>`<span class="meta-picto-entry">${equippedPictoHTML(p)}${pictoReasonHTML(p,character,initiativeOrder(party,act,getBattleMode()))}</span>`).join('')
         : pictoTrackerButton();
       const luminaHTML = profile.lp <= 0
         ? `<span class="optimizer-helper-message">Insufficient Lumina LP</span>`
         : luminas.chosen.length
-          ? luminas.chosen.map(luminaTokenHTML).join('')
-          : pictoTrackerButton();
+          ? luminaDisplayHTML(luminas)
+          : `<span class="optimizer-helper-message">No beneficial, affordable mastered Luminas available. ${pictoTrackerButton()}</span>`;
       const nextHTML = next.length
         ? next.map(s=>`<span class="next-skill-badge" title="Recommended next unlock (view via Skills)">${esc(s)}</span>`).join('')
         : `<span class="optimizer-token">Core route complete</span>`;
@@ -7910,7 +8103,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
               <div class="optimizer-token-list">${pictoHTML}</div>
             </div>
             <div>
-              <div class="optimizer-block-label">Add passive Luminas · ${luminas.spent}/${profile.lp} LP</div>
+              <div class="optimizer-block-label">Add passive Luminas · ${luminas.spent}/${profile.lp} LP${luminas.remaining?` · ${luminas.remaining} unspent`:``}</div>
               <div class="optimizer-token-list">${luminaHTML}</div>
             </div>
           </div>
@@ -7990,7 +8183,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     root.querySelectorAll('[data-opt-lp]').forEach(input => {
       input.addEventListener('input',e=>{
         const field=e.currentTarget;
-        setProfileField(field.dataset.optChar,'lp',field.value);        refreshCharacterLuminas(field.closest('.optimizer-character'),field.dataset.optChar,getOptimizerAct());
+        setProfileField(field.dataset.optChar,'lp',field.value);
+        refreshCharacterLuminas(field.closest('.optimizer-character'),field.dataset.optChar,getOptimizerAct());
       });
     });
   }
@@ -8575,6 +8769,13 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     });
   }
 
+  function libraryPictoStatSummary(p) {
+    const v=pictoStatDetails(p);
+    if (!v.verified) return 'Stat bonuses unavailable in the reference for this Picto.';
+    const parts=[v.Health ? `+${v.Health.toLocaleString()} HP` : '',v.Defense ? `+${v.Defense.toLocaleString()} DEF` : '',
+      v.Speed ? `+${v.Speed.toLocaleString()} SPD` : '',v.Crit ? `+${v.Crit}% CRIT` : ''].filter(Boolean);
+    return parts.length ? parts.join(' · ') : 'No item stat bonus at this level.';
+  }
   function renderLuminas() {
     const list = document.getElementById('luminaList');
     const acquired = getAcquiredLuminas();
@@ -8617,6 +8818,18 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
             <div class="synergy-chips">${p.tags.map(t => `<span class="synergy-chip">${esc(t)}</span>`).join('')}</div>
             ${p.effect ? `<div class="effect-note">${esc(p.effect)}</div>` : `<div class="effect-note">Overall tier reflects general team value; specialist setups may rate this higher.</div>`}
           </div>
+          <div class="detail-pair picto-library-level" data-picto-name="${esc(p.name)}">
+            <span>Physical Picto level (1–33)</span>
+            <div class="picto-library-level-row">
+              <label class="picto-library-level-label">Lv
+                <input class="picto-library-level-input" type="number" inputmode="numeric" min="1" max="33"
+                  data-library-picto-level="${esc(p.name)}" value="${pictoLevelFor(p.name)}" ${owned ? '' : 'disabled'}
+                  aria-label="${esc(p.name)} Picto level">
+              </label>
+              <span class="picto-library-level-stats">${esc(libraryPictoStatSummary(p))}</span>
+            </div>
+            <div class="effect-note picto-library-level-note">${!owned ? 'Mark this Picto acquired to record its level.' : pictoStoredLevels()[p.name] == null ? 'Level 1 is assumed until you enter the level shown in-game.' : 'Stat bonuses apply only when physically equipped.'}</div>
+          </div>
         </div>
       </details>`;
       columns[i%2].push(item);
@@ -8626,6 +8839,26 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
     list.querySelectorAll('.lumina-item').forEach(item => bindAnimatedDetails(item,'.lumina-detail'));
 
+    // The full library (and its optimizer overlay, which reuses this same DOM)
+    // exposes levels for EVERY acquired Picto, not just the optimizer's current picks.
+    list.querySelectorAll('[data-library-picto-level]').forEach(input => {
+      input.addEventListener('click',e=>e.stopPropagation());
+      input.addEventListener('change',e=>{
+        const name=input.dataset.libraryPictoLevel;
+        if (!getAcquiredLuminas().has(name)) return;
+        setPictoLevel(name,input.value);
+        input.value=String(pictoLevelFor(name));
+        const p=luminaData.find(x=>x.name===name);
+        const panel=input.closest('.picto-library-level');
+        if(p&&panel){
+          const stats=panel.querySelector('.picto-library-level-stats');
+          if(stats) stats.textContent=libraryPictoStatSummary(p);
+          const note=panel.querySelector('.picto-library-level-note');
+          if(note)note.textContent='Stat bonuses apply only when physically equipped.';
+        }
+        renderOptimizer();
+      });
+    });
     list.querySelectorAll('.acquired-control').forEach(control => {
       control.addEventListener('click', e => e.stopPropagation());
       control.addEventListener('keydown', e => e.stopPropagation());
@@ -8646,6 +8879,12 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
         item.classList.toggle('acquired', e.target.checked);
         item.dataset.owned = e.target.checked ? 'true' : 'false';
+        const lvInput=item.querySelector('[data-library-picto-level]');
+        if(lvInput) lvInput.disabled=!e.target.checked;
+        const lvNote=item.querySelector('.picto-library-level-note');
+        if(lvNote)lvNote.textContent=!e.target.checked ? 'Mark this Picto acquired to record its level.'
+          : pictoStoredLevels()[canonical]==null ? 'Level 1 is assumed until you enter the level shown in-game.'
+          : 'Stat bonuses apply only when physically equipped.';
         const control = item.querySelector('.acquired-control');
         if (control) control.title = e.target.checked ? 'Acquired' : 'Mark as acquired';
 
@@ -8750,8 +8989,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       wrap.appendChild(root);
 
       button.addEventListener('click', e => {
-        e.stopPropagation();
-        const opening = !root.classList.contains('open');
+        e.stopPropagation();        const opening = !root.classList.contains('open');
         closeCustomSelects(root);
         root.classList.toggle('open',opening);
         button.setAttribute('aria-expanded',opening ? 'true':'false');
