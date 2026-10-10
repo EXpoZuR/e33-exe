@@ -6918,7 +6918,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   };
 
 
-  const E33_SITE_VERSION = '14.6.8';
+  const E33_SITE_VERSION = '14.6.9';
   document.querySelectorAll('[data-site-version]').forEach(el => el.textContent = 'v' + E33_SITE_VERSION);
 
   function updateScrollLock() {
@@ -6951,7 +6951,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   });
 
   const pictoLibraryHome = document.getElementById('luminaPage');
-  const pictoLibraryNode = pictoLibraryHome?.querySelector(':scope > .guide-shell');
+  let pictoLibraryNode = pictoLibraryHome?.querySelector(':scope > .guide-shell');
   let pictoModalTrigger = null;
   let pictoRestoreTimer = null;
 
@@ -6962,14 +6962,22 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   function openPictoModal(trigger) {
     const backdrop = document.getElementById('pictoModalBackdrop');
     const container = document.getElementById('pictoModalContent');
-    if (!backdrop || !container || !pictoLibraryNode) return;
+    // Resolve the single live library after rerenders; don't clone its state.
+    pictoLibraryNode = pictoLibraryHome?.querySelector(':scope > .guide-shell')
+      || container?.querySelector(':scope > .guide-shell') || pictoLibraryNode;
+    if (!backdrop || !container || !pictoLibraryNode) {
+      // Make the action functional even if the overlay cannot mount.
+      switchPage('luminaPage');
+      return;
+    }
     pictoModalTrigger = trigger || document.activeElement;
     clearTimeout(pictoRestoreTimer);
-    container.appendChild(pictoLibraryNode); // Move, do not clone: one library / one state.
+    if (pictoLibraryNode.parentElement !== container) container.appendChild(pictoLibraryNode);
     syncPictoModalCount();
     backdrop.classList.add('open');
     backdrop.setAttribute('aria-hidden','false');
-    document.body.classList.add('modal-open');
+    document.querySelectorAll('[data-open-pictos]').forEach(btn=>btn.setAttribute('aria-expanded','true'));
+    updateScrollLock();
     backdrop.querySelector('.picto-modal-close')?.focus();
   }
   function closePictoModal() {
@@ -6977,6 +6985,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     if (!backdrop?.classList.contains('open')) return;
     backdrop.classList.remove('open');
     backdrop.setAttribute('aria-hidden','true');
+    document.querySelectorAll('[data-open-pictos]').forEach(btn=>btn.setAttribute('aria-expanded','false'));
     clearTimeout(pictoRestoreTimer);
     pictoRestoreTimer=setTimeout(()=>{
       if(!backdrop.classList.contains('open') && pictoLibraryHome && pictoLibraryNode) pictoLibraryHome.appendChild(pictoLibraryNode);
@@ -6990,8 +6999,12 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   document.getElementById('pictoModalBackdrop')?.addEventListener('mousedown',e=>{
     if (e.target.id === 'pictoModalBackdrop') closePictoModal();
   });
+  // One delegated click listener also works for cards rebuilt by the optimizer.
   document.addEventListener('click',e=>{
-    // The heading's shortcut is static; character shortcuts are rebound when rendered.    if (e.target.closest('.optimizer-section-head [data-open-pictos]')) openPictoModal(e.target.closest('[data-open-pictos]'));
+    const trigger=e.target.closest('[data-open-pictos]');
+    if (!trigger) return;
+    e.preventDefault();
+    openPictoModal(trigger);
   });
   document.addEventListener('keydown',e=>{
     const backdrop = document.getElementById('pictoModalBackdrop');
@@ -8047,7 +8060,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       : luminas.chosen.length
         ? luminaDisplayHTML(luminas)
         : `<span class="optimizer-helper-message">No beneficial affordable mastered Luminas available.</span>`;
-    list.querySelectorAll('[data-open-pictos]').forEach(btn=>btn.addEventListener('click',()=>openPictoModal(btn)));
+    // Picto shortcuts are handled by the document-level click delegate.
   }
 
   function renderOptimizerCharacters(act, party) {
@@ -8128,7 +8141,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     }).join('');
 
     root.querySelectorAll('[data-edit-skills]').forEach(btn => btn.addEventListener('click',()=>openSkillModal(btn.dataset.editSkills)));
-    root.querySelectorAll('[data-open-pictos]').forEach(btn => btn.addEventListener('click',()=>openPictoModal(btn)));
+    // Picto shortcuts are handled by the document-level click delegate.
     // Paint as the user types; do not tear down the focused input or silently insert target values.
     root.querySelectorAll('[data-opt-attr]').forEach(input => {
       input.addEventListener('input',e => {
