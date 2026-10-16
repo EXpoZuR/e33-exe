@@ -194,7 +194,7 @@
           <span class="cp-legend-piece"><i class="cp-legend-dot skipped"></i> Skipped</span>
           <span class="cp-legend-piece"><i class="cp-legend-dot"></i> Upcoming</span>
         </span>
-        <span class="cp-route-tip">Fill = completion · line = route reached · select dots to jump</span>
+        <span class="cp-route-tip">Fill = completion · line = route reached · select dots to open their section</span>
       </div>
     </div>`;
     const viewport=dock.querySelector(".cp-route-viewport");
@@ -269,6 +269,7 @@
     const item=byId.get(btn.dataset.id);
     if(!item)return;
     if(statusOf(item.step.id)==="skip")showSkips.add(item.step.chapterId);
+    if(statusOf(item.step.id)==="done")showArchives.add(item.step.chapterId);
     openChapter(item.step.chapterId);
     mount.querySelector('[data-cp-chapter="'+item.step.chapterId+'"]')?.scrollIntoView({behavior:"smooth",block:"start"});
     announce(item.step.area+": "+item.step.title);
