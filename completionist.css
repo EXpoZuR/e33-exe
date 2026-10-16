@@ -145,7 +145,7 @@
 #completionistPage .cp-upcoming-list::-webkit-scrollbar{width:7px}
 #completionistPage .cp-upcoming-list::-webkit-scrollbar-track{background:#141b24}
 #completionistPage .cp-upcoming-list::-webkit-scrollbar-thumb{background:#46566a;border-radius:8px}
-#completionistPage .cp-upcoming-item{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:15px;align-items:start;padding:19px 20px 18px;border-bottom:1px solid #293442;transition:background .18s ease}
+#completionistPage .cp-upcoming-item{display:grid;grid-template-columns:32px minmax(0,1fr);gap:15px;align-items:start;padding:19px 20px 18px;border-bottom:1px solid #293442;transition:background .18s ease}
 #completionistPage .cp-upcoming-item:last-child{border-bottom:0}
 #completionistPage .cp-upcoming-item:hover{background:linear-gradient(90deg,rgba(126,172,227,.045),rgba(185,148,255,.025))}
 #completionistPage .cp-upcoming-number{padding-top:2px;color:#718aa3;font-size:12px;font-weight:850;font-variant-numeric:tabular-nums}
@@ -154,7 +154,7 @@
 #completionistPage .cp-upcoming-instructions{margin:0;color:#aebfcc;font-size:12px;line-height:1.66;max-width:760px;overflow-wrap:anywhere}
 #completionistPage .cp-upcoming-meta{display:flex;flex-wrap:wrap;align-items:center;gap:5px 10px;margin-top:12px;color:#758b9e;font-size:11px;font-weight:650;line-height:1.45}
 #completionistPage .cp-upcoming-type{color:#9291b2;border-left:1px solid #425061;padding-left:10px}
-#completionistPage .cp-upcoming-actions{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:7px;min-width:116px}
+#completionistPage .cp-upcoming-actions{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:9px;min-width:0;margin-top:14px}
 #completionistPage .cp-upcoming-actions .cp-inline{min-height:34px;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:800;white-space:nowrap;text-align:center;transition:background .16s ease,border-color .16s ease}
 #completionistPage .cp-upcoming-actions .cp-upcoming-complete{color:#b8ecdb;border-color:#456b62;background:linear-gradient(115deg,#1d3934,#202b38)}
 #completionistPage .cp-upcoming-actions .cp-upcoming-complete:hover{color:#e4fff5;border-color:#7acead;background:#25443c}
@@ -165,7 +165,7 @@
  #completionistPage .cp-upcoming-list{max-height:420px}
  #completionistPage .cp-upcoming-header{padding:13px 14px}
  #completionistPage .cp-upcoming-item{grid-template-columns:26px minmax(0,1fr);gap:8px 10px;padding:16px 13px}
- #completionistPage .cp-upcoming-actions{grid-column:2;flex-direction:row;flex-wrap:wrap;min-width:0}
+ #completionistPage .cp-upcoming-actions{flex-direction:row;flex-wrap:wrap;min-width:0}
  #completionistPage .cp-upcoming-title{font-size:14px}
  #completionistPage .cp-upcoming-instructions{font-size:12px}
 }
