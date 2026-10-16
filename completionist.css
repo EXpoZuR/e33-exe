@@ -85,7 +85,7 @@
 #completionistPage .cp-route-rail{--cp-travel:0%;display:flex;align-items:center;gap:6px;position:relative;width:max-content;min-width:100%;min-height:26px;padding:0 3px;}
 #completionistPage .cp-route-rail::before,#completionistPage .cp-route-rail::after{content:"";position:absolute;top:50%;left:10px;right:10px;height:3px;transform:translateY(-50%);border-radius:999px;pointer-events:none;}
 #completionistPage .cp-route-rail::before{background:#374251;}
-#completionistPage .cp-route-rail::after{right:auto;width:calc((100% - 20px) * var(--cp-travel) / 100);background:linear-gradient(90deg,#6e99bf,#a68ada,#dd89aa);box-shadow:0 0 9px rgba(151,137,209,.42);transition:width .55s cubic-bezier(.22,1,.36,1);}
+#completionistPage .cp-route-rail::after{right:auto;width:max(0px,calc(var(--cp-travel) - 20px));background:linear-gradient(90deg,#6e99bf,#a68ada,#dd89aa);box-shadow:0 0 9px rgba(151,137,209,.42);transition:width .55s cubic-bezier(.22,1,.36,1);}
 #completionistPage .cp-tick{z-index:1;position:relative;flex:0 0 14px;width:14px;height:14px;padding:0;border-radius:50%;border:2px solid #657386;background:#172028;box-shadow:0 0 0 2px #151c24;transition:background .24s,border-color .24s,box-shadow .24s,transform .24s;}
 #completionistPage .cp-tick:hover{transform:scale(1.25);border-color:#e5f1ff;}
 #completionistPage .cp-tick.is-done{background:linear-gradient(120deg,#81c8ff,#b994ff);border-color:#bdcef5;}
