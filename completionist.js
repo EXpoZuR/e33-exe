@@ -24,6 +24,7 @@
   let openId = "act1";
   const showSkips = new Set();
   const showArchives = new Set();
+  const expandedUpcoming = new Set();
   let touched = null;
   let dockPulseTimer = null;
 
@@ -99,16 +100,59 @@
       </div>
     </details>`;
   }
+
+  // Show a compact, internally scrollable preview without diluting the primary objective.
+  function upcomingMarkup(chapter, current) {
+    if (!current) return "";
+    const nextIndex = chapter.steps.indexOf(current);
+    const upcoming = chapter.steps.slice(nextIndex + 1).filter(s => statusOf(s.id) === "pending").slice(0, 8);
+    if (!upcoming.length) return "";
+    return `<section class="cp-upcoming" aria-label="Upcoming steps">
+      <div class="cp-upcoming-header">
+        <div>
+          <span class="cp-upcoming-eyebrow">ON DECK</span>
+          <h4>Up Next <span>${upcoming.length} upcoming step${upcoming.length === 1 ? "" : "s"}</span></h4>
+        </div>
+        <span class="cp-upcoming-hint">Select a step to view directions</span>
+      </div>
+      <div class="cp-upcoming-list" role="group" aria-label="Next ${upcoming.length} steps">
+        ${upcoming.map(step => {
+          const number = chapter.steps.indexOf(step) + 1;
+          return `<details class="cp-upcoming-item" data-upcoming="${esc(step.id)}" ${expandedUpcoming.has(step.id) ? "open" : ""}>
+            <summary>
+              <span class="cp-upcoming-number">${number.toString().padStart(2, "0")}</span>
+              <span class="cp-upcoming-summary">
+                <span class="cp-upcoming-title">${esc(step.title)}</span>
+                <span class="cp-upcoming-location">${esc(step.area)} · ${esc(step.kind)}</span>
+              </span>
+              <span class="cp-upcoming-arrow" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="cp-upcoming-details">
+              <div class="cp-directions-label">Where to go / how to complete</div>
+              <p>${esc(step.directions)}</p>
+              <div class="cp-upcoming-actions">
+                <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}">✓ Complete Step</button>
+                <button class="cp-inline" data-action="skip" data-id="${esc(step.id)}">Skip for now ↷</button>
+              </div>
+            </div>
+          </details>`;
+        }).join("")}
+      </div>
+      <div class="cp-upcoming-footer">Showing the next ${upcoming.length} unfinished step${upcoming.length === 1 ? "" : "s"} · More appear as you progress</div>
+    </section>`;
+  }
+
   function focusMarkup(chapter,stats) {
     const next = chapter.steps.find(step => statusOf(step.id) === "pending");
     const completed = chapter.steps.filter(step => statusOf(step.id) === "done");
+    const upcoming = upcomingMarkup(chapter,next);
     const skipped = skippedMarkup(chapter);
     const archive = archiveMarkup(chapter,completed);
     let main;
     if (!next) {
       main = `<div class="cp-finished">
         <h3>${stats.skip ? "All checkpoints visited" : "Act complete ✓"}</h3>
-        <p>${stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Mark them complete above or choose Revisit to bring one back." : "Every checkpoint in this section has been checked off."}</p>
+        <p>${stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Mark them complete above or choose Revisit to bring one back." : "Every step in this section has been completed."}</p>
         ${stats.skip ? `<button class="cp-tool" data-action="revisit-first" data-chapter="${esc(chapter.id)}">Revisit first skipped step ↗</button>` : ""}
       </div>`;
     } else {
@@ -124,18 +168,19 @@
         <div class="cp-directions-label">Where to go / how to complete</div>
         <p class="cp-directions">${esc(next.directions)}</p>
         <div class="cp-step-actions">
-          <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Check off step</button>
+          <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
           <button class="cp-skip" data-action="skip" data-id="${esc(next.id)}">Skip for now ↷</button>
         </div>
       </article>`;
     }
     return `<div class="cp-chapter-body" id="cp-body-${esc(chapter.id)}">
       <div class="cp-status-line">
-        <span><strong>${stats.done}</strong> of ${stats.total} checked off · ${stats.skip} skipped</span>
+        <span><strong>${stats.done}</strong> of ${stats.total} steps completed · ${stats.skip} skipped</span>
         <span>${stats.pending ? stats.pending+" upcoming" : "Route visited"}</span>
       </div>
       ${skipped}
       ${main}
+      ${upcoming}
       ${archive}
     </div>`;
   }
@@ -145,6 +190,7 @@
     const overall = Math.round(100*totalDone/steps.length);
     const activeChapter = chapters.find(c=>c.id===openId);
     const activeStats = activeChapter ? chapterStats(activeChapter) : null;
+    const previousUpcomingScroll = mount.querySelector(".cp-upcoming-list")?.scrollTop || 0;
     mount.innerHTML=chapters.map(chapter => {
       const s=chapterStats(chapter),opened=chapter.id===openId;
       const percent=100*s.done/s.total;
@@ -160,6 +206,8 @@
       </section>`;
     }).join("");
 
+    const upcomingScroller = mount.querySelector(".cp-upcoming-list");
+    if(upcomingScroller && !animated) upcomingScroller.scrollTop = previousUpcomingScroll;
     const prevScroll = dock.querySelector(".cp-route-viewport")?.scrollLeft || 0;
     let furthest=-1;
     steps.forEach((step,index)=>{if(statusOf(step.id)!=="pending")furthest=index;});
@@ -169,7 +217,7 @@
     dock.innerHTML=`<div class="cp-dock-inner ${animated?"is-updated":""}">
       <div class="cp-dock-head">
         <div><span class="cp-overall-kicker">Total completion</span>
-          <span class="cp-overall-num">${overall}% <small>${totalDone} / ${steps.length} steps</small></span>
+          <span class="cp-overall-num">${overall}% <small>${totalDone} / ${steps.length} steps completed</small></span>
         </div>
         <div class="cp-overall-right">
           <div><strong>${activeChapter ? esc(activeChapter.title) : "Route"}</strong> · ${activeStats ? activeStats.done+" / "+activeStats.total+" complete" : "Select an act"}</div>
@@ -223,6 +271,7 @@
     if(status==="pending")delete statuses[id];
     else statuses[id]=status;
     touched=id;
+    expandedUpcoming.delete(id);
     save();
     render({animated:true});
     const action = status==="done" ? "Completed" : status==="skip" ? "Skipped for later" : "Restored";
@@ -259,7 +308,13 @@
     }
   });
   mount.addEventListener("toggle",event=>{
-    if(!(event.target instanceof HTMLDetailsElement) || !event.target.dataset.archive)return;
+    if(!(event.target instanceof HTMLDetailsElement))return;
+    if(event.target.dataset.upcoming){
+      if(event.target.open)expandedUpcoming.add(event.target.dataset.upcoming);
+      else expandedUpcoming.delete(event.target.dataset.upcoming);
+      return;
+    }
+    if(!event.target.dataset.archive)return;
     const chapter=event.target.dataset.archive;
     if(event.target.open)showArchives.add(chapter); else showArchives.delete(chapter);
   },true);
