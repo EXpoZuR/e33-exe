@@ -122,10 +122,10 @@
               <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
               <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
               <div class="cp-upcoming-meta"><span>${esc(step.area)}</span><span class="cp-upcoming-type">${esc(icon(step.kind)+" "+step.kind)}</span></div>
-            </div>
-            <div class="cp-upcoming-actions">
-              <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}" aria-label="Complete ${esc(step.title)}">✓ Complete Step</button>
-              <button class="cp-inline cp-upcoming-skip" data-action="skip" data-id="${esc(step.id)}" aria-label="Skip ${esc(step.title)} for now">Skip for now ↷</button>
+              <div class="cp-upcoming-actions">
+                <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}" aria-label="Complete ${esc(step.title)}">✓ Complete Step</button>
+                <button class="cp-inline cp-upcoming-skip" data-action="skip" data-id="${esc(step.id)}" aria-label="Skip ${esc(step.title)} for now">Skip for now ↷</button>
+              </div>
             </div>
           </div>`;
         }).join("")}
@@ -149,9 +149,9 @@
       </div>`;
     } else {
       const idx=chapter.steps.indexOf(next)+1;
-      main = `<article class="cp-focus-card" tabindex="-1" aria-label="Next objective">
+      main = `<article class="cp-focus-card" tabindex="-1" aria-label="Active Step">
         <div class="cp-focus-overline">
-          <span class="cp-next-label">Next objective</span>
+          <span class="cp-next-label">Active Step</span>
           <span class="cp-kind">${esc(icon(next.kind)+" "+next.kind)}</span>
           <span class="cp-step-counter">STEP ${idx} / ${chapter.steps.length}</span>
         </div>
