@@ -132,3 +132,43 @@
   #completionistPage *,#completionistPage *::before,#completionistPage *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
 }
 @media print{#completionistPage .cp-progress-dock{display:none!important;}}
+
+
+/* Completionist · compact upcoming route preview */
+#completionistPage .cp-upcoming{margin-top:15px;border:1px solid #2e3a47;border-radius:14px;background:linear-gradient(155deg,#171e27,#111820);overflow:hidden}
+#completionistPage .cp-upcoming-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 18px 13px;border-bottom:1px solid #2a3540}
+#completionistPage .cp-upcoming-eyebrow{font-size:11px;letter-spacing:.14em;color:#9b8cd5;font-weight:900}
+#completionistPage .cp-upcoming-header h4{margin:3px 0 0;font-size:16px;letter-spacing:-.025em;font-weight:800;color:#edf5fb}
+#completionistPage .cp-upcoming-header h4 span{font-size:11px;color:#8397a9;font-weight:650;margin-left:5px;letter-spacing:0}
+#completionistPage .cp-upcoming-hint{font-size:11px;color:#8193a5;line-height:1.4;text-align:right}
+#completionistPage .cp-upcoming-list{max-height:390px;overflow-y:auto;overscroll-behavior:contain;scrollbar-color:#56647b #141b24;scrollbar-width:thin}
+#completionistPage .cp-upcoming-list::-webkit-scrollbar{width:7px}
+#completionistPage .cp-upcoming-list::-webkit-scrollbar-track{background:#141b24}
+#completionistPage .cp-upcoming-list::-webkit-scrollbar-thumb{background:#46566a;border-radius:8px}
+#completionistPage .cp-upcoming-item{border-bottom:1px solid #26313c;transition:background .2s ease}
+#completionistPage .cp-upcoming-item:last-child{border-bottom:0}
+#completionistPage .cp-upcoming-item[open]{background:linear-gradient(90deg,rgba(126,172,227,.075),rgba(185,148,255,.045))}
+#completionistPage .cp-upcoming-item summary{display:flex;align-items:center;gap:15px;min-height:65px;padding:12px 19px;cursor:pointer;list-style:none;transition:background .16s}
+#completionistPage .cp-upcoming-item summary::-webkit-details-marker{display:none}
+#completionistPage .cp-upcoming-item summary:hover{background:rgba(255,255,255,.025)}
+#completionistPage .cp-upcoming-item summary:focus-visible{outline:2px solid #8ac6ff;outline-offset:-3px}
+#completionistPage .cp-upcoming-number{flex:0 0 30px;color:#657e97;font-size:12px;font-weight:900;font-variant-numeric:tabular-nums}
+#completionistPage .cp-upcoming-summary{display:block;min-width:0;flex:1}
+#completionistPage .cp-upcoming-title{display:block;font-size:13px;line-height:1.35;color:#d3dfe9;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#completionistPage .cp-upcoming-location{display:block;margin-top:5px;font-size:11px;color:#788da1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#completionistPage .cp-upcoming-arrow{color:#8798a9;font-size:17px;transition:transform .22s}
+#completionistPage .cp-upcoming-item[open] .cp-upcoming-arrow{transform:rotate(180deg);color:#b994ff}
+#completionistPage .cp-upcoming-details{padding:0 19px 18px 64px;animation:cp-panel-in .18s ease}
+#completionistPage .cp-upcoming-details p{margin:0;color:#aabcca;font-size:12px;line-height:1.7;max-width:790px}
+#completionistPage .cp-upcoming-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:13px}
+#completionistPage .cp-upcoming-actions .cp-inline{min-height:31px;border-radius:7px;padding:6px 11px}
+#completionistPage .cp-upcoming-actions .cp-upcoming-complete{color:#a5dbc9;border-color:#42675c;background:#1a2927}
+#completionistPage .cp-upcoming-footer{border-top:1px solid #2a3540;padding:10px 18px;color:#748a9c;font-size:11px}
+@media(max-width:740px){
+  #completionistPage .cp-upcoming-list{max-height:365px}
+  #completionistPage .cp-upcoming-header{padding:13px 14px}
+  #completionistPage .cp-upcoming-item summary{padding:11px 13px;gap:10px}
+  #completionistPage .cp-upcoming-details{padding:0 13px 15px 53px}
+  #completionistPage .cp-upcoming-header h4{font-size:14px}
+}
+@media(max-width:440px){#completionistPage .cp-upcoming-hint{display:none}}
