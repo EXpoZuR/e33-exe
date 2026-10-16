@@ -24,7 +24,6 @@
   let openId = "act1";
   const showSkips = new Set();
   const showArchives = new Set();
-  const expandedUpcoming = new Set();
   let touched = null;
   let dockPulseTimer = null;
 
@@ -109,33 +108,26 @@
     if (!upcoming.length) return "";
     return `<section class="cp-upcoming" aria-label="Upcoming steps">
       <div class="cp-upcoming-header">
-        <div>
-          <span class="cp-upcoming-eyebrow">ON DECK</span>
+        <div><span class="cp-upcoming-eyebrow">ON DECK</span>
           <h4>Up Next <span>${upcoming.length} upcoming step${upcoming.length === 1 ? "" : "s"}</span></h4>
         </div>
-        <span class="cp-upcoming-hint">Select a step to view directions</span>
+        <span class="cp-upcoming-hint">Directions and actions at a glance</span>
       </div>
-      <div class="cp-upcoming-list" role="group" aria-label="Next ${upcoming.length} steps">
+      <div class="cp-upcoming-list" role="list" aria-label="Next ${upcoming.length} steps">
         ${upcoming.map(step => {
           const number = chapter.steps.indexOf(step) + 1;
-          return `<details class="cp-upcoming-item" data-upcoming="${esc(step.id)}" ${expandedUpcoming.has(step.id) ? "open" : ""}>
-            <summary>
-              <span class="cp-upcoming-number">${number.toString().padStart(2, "0")}</span>
-              <span class="cp-upcoming-summary">
-                <span class="cp-upcoming-title">${esc(step.title)}</span>
-                <span class="cp-upcoming-location">${esc(step.area)} · ${esc(step.kind)}</span>
-              </span>
-              <span class="cp-upcoming-arrow" aria-hidden="true">⌄</span>
-            </summary>
-            <div class="cp-upcoming-details">
-              <div class="cp-directions-label">Where to go / how to complete</div>
-              <p>${esc(step.directions)}</p>
-              <div class="cp-upcoming-actions">
-                <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}">✓ Complete Step</button>
-                <button class="cp-inline" data-action="skip" data-id="${esc(step.id)}">Skip for now ↷</button>
-              </div>
+          return `<div class="cp-upcoming-item" role="listitem" data-upcoming="${esc(step.id)}">
+            <span class="cp-upcoming-number" aria-label="Step ${number}">${number.toString().padStart(2, "0")}</span>
+            <div class="cp-upcoming-info">
+              <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
+              <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
+              <div class="cp-upcoming-meta"><span>${esc(step.area)}</span><span class="cp-upcoming-type">${esc(icon(step.kind)+" "+step.kind)}</span></div>
             </div>
-          </details>`;
+            <div class="cp-upcoming-actions">
+              <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}" aria-label="Complete ${esc(step.title)}">✓ Complete Step</button>
+              <button class="cp-inline cp-upcoming-skip" data-action="skip" data-id="${esc(step.id)}" aria-label="Skip ${esc(step.title)} for now">Skip for now ↷</button>
+            </div>
+          </div>`;
         }).join("")}
       </div>
       <div class="cp-upcoming-footer">Showing the next ${upcoming.length} unfinished step${upcoming.length === 1 ? "" : "s"} · More appear as you progress</div>
@@ -185,7 +177,7 @@
     </div>`;
   }
 
-  function render({animated=false,followRail=true}={}) {
+  function render({animated=false,followRail=true,preserveUpcomingScroll=false}={}) {
     const totalDone = steps.filter(s => statusOf(s.id) === "done").length;
     const overall = Math.round(100*totalDone/steps.length);
     const activeChapter = chapters.find(c=>c.id===openId);
@@ -207,7 +199,7 @@
     }).join("");
 
     const upcomingScroller = mount.querySelector(".cp-upcoming-list");
-    if(upcomingScroller && !animated) upcomingScroller.scrollTop = previousUpcomingScroll;
+    if(upcomingScroller && (preserveUpcomingScroll || !animated)) upcomingScroller.scrollTop = previousUpcomingScroll;
     const prevScroll = dock.querySelector(".cp-route-viewport")?.scrollLeft || 0;
     let furthest=-1;
     steps.forEach((step,index)=>{if(statusOf(step.id)!=="pending")furthest=index;});
@@ -268,16 +260,18 @@
   function change(id,status) {
     const item=byId.get(id);
     if(!item)return;
+    const activeChapter=chapters.find(c=>c.id===openId);
+    const currentBefore=activeChapter?.steps.find(s=>statusOf(s.id)==="pending")?.id;
+    const changedCurrent=currentBefore===id;
     if(status==="pending")delete statuses[id];
     else statuses[id]=status;
     touched=id;
-    expandedUpcoming.delete(id);
     save();
-    render({animated:true});
+    // Completing an On Deck objective must not move the current step or scroll away.
+    render({animated:true,followRail:changedCurrent,preserveUpcomingScroll:!changedCurrent});
     const action = status==="done" ? "Completed" : status==="skip" ? "Skipped for later" : "Restored";
     announce(action+": "+item.step.title+". Progress saved in this browser.");
-    // Keep keyboard focus in the replacement objective after the previous card disappears.
-    if(item.step.chapterId===openId && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    if(changedCurrent && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
       mount.querySelector(".cp-focus-card")?.focus({preventScroll:true});
     }
   }
@@ -308,13 +302,7 @@
     }
   });
   mount.addEventListener("toggle",event=>{
-    if(!(event.target instanceof HTMLDetailsElement))return;
-    if(event.target.dataset.upcoming){
-      if(event.target.open)expandedUpcoming.add(event.target.dataset.upcoming);
-      else expandedUpcoming.delete(event.target.dataset.upcoming);
-      return;
-    }
-    if(!event.target.dataset.archive)return;
+    if(!(event.target instanceof HTMLDetailsElement) || !event.target.dataset.archive)return;
     const chapter=event.target.dataset.archive;
     if(event.target.open)showArchives.add(chapter); else showArchives.delete(chapter);
   },true);
