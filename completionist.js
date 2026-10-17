@@ -7,6 +7,7 @@
   const live = document.getElementById("completionistAnnouncement");
   const modal = document.getElementById("completionistGuideModal");
   const detailData = window.E33_COMPLETION_DETAILS || {};
+  const routeData = window.E33_COMPLETION_ROUTES || {};
   let modalStepId = null;
   let modalPreviousFocus = null;
   if (!Array.isArray(raw) || !mount || !dock) return;
@@ -16,10 +17,17 @@
   const slug = x => String(x).normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const esc = x => String(x).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
   const chapters = raw.map((chapter, chapterIndex) => {
-    const steps = chapter.areas.flatMap(([area, entries]) => entries.map(([kind,title,directions,stableId], position) => ({
-      id: typeof stableId === "string" && stableId ? stableId : chapter.id + ":" + slug(area) + ":" + slug(title),
-      kind,title,directions,area,position,chapterId:chapter.id
-    })));
+    const steps = chapter.areas.flatMap(([area, entries]) => entries.map(([kind,title,directions,stableId], position) => {
+      const id = typeof stableId === "string" && stableId ? stableId : chapter.id + ":" + slug(area) + ":" + slug(title);
+      const previousRoute = routeData[id];
+      return {
+        id,kind,title,area,position,chapterId:chapter.id,
+        // Always assume consecutive chronological play. Original wording stays available for NG+ detours.
+        directions: typeof previousRoute?.from === "string" ? previousRoute.from : directions,
+        previousTitle: previousRoute?.previous || null,
+        restartDirections: directions
+      };
+    }));
     return {...chapter,number:chapterIndex,steps};
   });
   const steps = chapters.flatMap(c => c.steps);
@@ -110,10 +118,9 @@
     modal.querySelector("#cpGuideLocation").textContent = step.area;
     modal.querySelector("#cpGuideNumber").textContent = "STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
     modalBody.innerHTML = `
-      <div class="cp-guide-intro">A longer route for this checkpoint. Directions use named Expedition Flags and visible landmarks wherever available.</div>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">01 / START HERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / GET TO THE OBJECTIVE</span><h4>Route and landmarks</h4><p>${esc(detailed || step.directions)}</p></section>
-      ${detailed && detailed !== step.directions ? `<section class="cp-guide-block cp-guide-short"><span class="cp-guide-block-label">QUICK ROUTE REMINDER</span><p>${esc(step.directions)}</p></section>` : ""}
+      <div class="cp-guide-intro">This walkthrough assumes you just finished the checkpoint immediately before this one. If you travelled out of order, use the alternate route from an Expedition Flag below.</div>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">01 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
+      <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">02 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">03 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(completionNote(step))}</p></section>
       ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
     `;
@@ -255,7 +262,7 @@
         </div>
         <div class="cp-stage">${esc(next.area)} <span aria-hidden="true">↗</span></div>
         <h3 style="margin-top:19px">${esc(next.title)}</h3>
-        <div class="cp-directions-label">Where to go / how to complete</div>
+        <div class="cp-directions-label">From previous step${next.previousTitle ? " · "+esc(next.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(next.directions)}</p>
         <div class="cp-step-actions">
           <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
