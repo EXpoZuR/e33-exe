@@ -37,6 +37,8 @@
   const byId = new Map(steps.map((step,i) => [step.id,{step,index:i}]));
   let statuses = {};
   let openId = "act1";
+  // Temporary timeline selection. Never change progress simply by viewing a dot.
+  let selectedStepId = null;
   const showSkips = new Set();
   const showArchives = new Set();
   let touched = null;
@@ -265,36 +267,52 @@
   }
 
   function focusMarkup(chapter,stats) {
-    const next = chapter.steps.find(step => statusOf(step.id) === "pending");
-    const completed = chapter.steps.filter(step => statusOf(step.id) === "done");
-    const upcoming = upcomingMarkup(chapter,next);
+    // The true active objective remains the first pending one; a timeline dot may
+    // spotlight ANY step without marking it done or undoing its skipped state.
+    const active = chapter.steps.find(step => statusOf(step.id) === "pending");
+    const selection = selectedStepId && byId.get(selectedStepId)?.step.chapterId === chapter.id
+      ? byId.get(selectedStepId).step : null;
+    const step = selection || active;
+    const selected = !!selection && selection.id !== active?.id;
+    const completed = chapter.steps.filter(entry => statusOf(entry.id) === "done");
+    const upcoming = upcomingMarkup(chapter,active);
     const skipped = skippedMarkup(chapter);
     const archive = archiveMarkup(chapter,completed);
     let main;
-    if (!next) {
+    if (!step) {
       main = `<div class="cp-finished">
         <h3>${stats.skip ? "All checkpoints visited" : "Act complete ✓"}</h3>
-        <p>${stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Mark them complete above or choose Revisit to bring one back." : "Every step in this section has been completed."}</p>
+        <p>${stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Select one of their hollow markers in the bottom timeline to review it, or choose Revisit." : "Every step in this section has been completed. Select a filled marker to review a previous step."}</p>
         ${stats.skip ? `<button class="cp-tool" data-action="revisit-first" data-chapter="${esc(chapter.id)}">Revisit first skipped step ↗</button>` : ""}
       </div>`;
     } else {
-      const idx=chapter.steps.indexOf(next)+1;
-      main = `<article class="cp-focus-card" tabindex="-1" aria-label="Active Step">
+      const stepStatus=statusOf(step.id);
+      const label=selected ? (stepStatus==="skip" ? "Skipped Step" : stepStatus==="done" ? "Completed Step" : "Selected Step") : "Active Step";
+      const idx=chapter.steps.indexOf(step)+1;
+      const actions=stepStatus==="done"
+        ? `<button class="cp-skip" data-action="restore" data-id="${esc(step.id)}">↶ Undo completion</button>`
+        : stepStatus==="skip"
+        ? `<button class="cp-done" data-action="done" data-id="${esc(step.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
+           <button class="cp-skip" data-action="restore" data-id="${esc(step.id)}">↶ Revisit as active</button>`
+        : `<button class="cp-done" data-action="done" data-id="${esc(step.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
+           <button class="cp-skip" data-action="skip" data-id="${esc(step.id)}">Skip for now ↷</button>`;
+      main = `<article class="cp-focus-card ${selected?"is-spotlight":""}" tabindex="-1" aria-label="${esc(label)}" data-focus-step="${esc(step.id)}">
         <div class="cp-focus-overline">
-          <span class="cp-next-label">Active Step</span>
-          <span class="cp-kind">${esc(icon(next.kind)+" "+next.kind)}</span>
+          <span class="cp-next-label">${esc(label)}</span>
+          <span class="cp-kind">${esc(icon(step.kind)+" "+step.kind)}</span>
           <span class="cp-step-counter">STEP ${idx} / ${chapter.steps.length}</span>
         </div>
-        <div class="cp-stage">${esc(next.area)} <span aria-hidden="true">↗</span></div>
-        <h3 style="margin-top:19px">${esc(next.title)}</h3>
-        ${next.context ? `<p class="cp-focus-context">${esc(next.context)}</p>` : ""}
-        <div class="cp-directions-label">From previous step${next.previousTitle ? " · "+esc(next.previousTitle) : ""}</div>
-        <p class="cp-directions">${esc(next.directions)}</p>
-        ${prerequisiteMarkup(next)}
+        <div class="cp-stage">${esc(step.area)} <span aria-hidden="true">↗</span></div>
+        <h3 style="margin-top:19px">${esc(step.title)}</h3>
+        ${step.context ? `<p class="cp-focus-context">${esc(step.context)}</p>` : ""}
+        <div class="cp-directions-label">From previous step${step.previousTitle ? " · "+esc(step.previousTitle) : ""}</div>
+        <p class="cp-directions">${esc(step.directions)}</p>
+        ${prerequisiteMarkup(step)}
+        ${selected && stepStatus==="skip" ? `<p class="cp-view-note">This checkpoint is still skipped. Viewing it does not change your completion percentage or fill its timeline circle.</p>` : ""}
         <div class="cp-step-actions">
-          <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
-          <button class="cp-skip" data-action="skip" data-id="${esc(next.id)}">Skip for now ↷</button>
-          <button class="cp-route-btn" data-action="details" data-id="${esc(next.id)}" aria-label="View detailed directions for ${esc(next.title)}">↗ Detailed directions</button>
+          ${actions}
+          <button class="cp-route-btn" data-action="details" data-id="${esc(step.id)}" aria-label="View detailed directions for ${esc(step.title)}">↗ Detailed directions</button>
+          ${selected ? `<button class="cp-route-btn cp-resume" data-action="resume">← Back to ${active?"Active Step":"act overview"}</button>` : ""}
         </div>
       </article>`;
     }
@@ -337,7 +355,8 @@
     let furthest=-1;
     steps.forEach((step,index)=>{if(statusOf(step.id)!=="pending")furthest=index;});
     const travel = Math.max(0,100*(furthest+1)/steps.length);
-    const currentStep = activeChapter?.steps.find(s=>statusOf(s.id)==="pending") || null;
+    const currentStep = (selectedStepId && byId.get(selectedStepId)?.step.chapterId === openId ? byId.get(selectedStepId).step : null)
+      || activeChapter?.steps.find(s=>statusOf(s.id)==="pending") || null;
     const activeIndex = currentStep ? byId.get(currentStep.id).index : -1;
     dock.innerHTML=`<div class="cp-dock-inner ${animated?"is-updated":""}">
       <div class="cp-dock-head">
@@ -378,7 +397,7 @@
           <span class="cp-legend-piece"><i class="cp-legend-dot skipped"></i> Skipped</span>
           <span class="cp-legend-piece"><i class="cp-legend-dot"></i> Upcoming</span>
         </span>
-        <span class="cp-route-tip">Fill = completion · line = route reached · select dots to open their section</span>
+        <span class="cp-route-tip">Select any dot to review its exact step</span>
       </div>
     </div>`;
     const viewport=dock.querySelector(".cp-route-viewport");
@@ -397,6 +416,7 @@
 
   function openChapter(id) {
     if(!chapters.some(c=>c.id===id))return;
+    if(selectedStepId && byId.get(selectedStepId)?.step.chapterId !== id) selectedStepId=null;
     openId=id;
     storageSet(OPEN,id);
     render({followRail:true});
@@ -406,7 +426,8 @@
     if(!item)return;
     const activeChapter=chapters.find(c=>c.id===openId);
     const currentBefore=activeChapter?.steps.find(s=>statusOf(s.id)==="pending")?.id;
-    const changedCurrent=currentBefore===id;
+    const changedCurrent=currentBefore===id || selectedStepId===id;
+    if(selectedStepId===id)selectedStepId=null;
     if(status==="pending")delete statuses[id];
     else statuses[id]=status;
     touched=id;
@@ -426,12 +447,19 @@
     const action=btn.dataset.action,id=btn.dataset.id;
     if(action==="toggle-chapter") {
       if(openId===btn.dataset.chapter) {
+        selectedStepId=null;
         openId=null;
         storageSet(OPEN,"");
         render({followRail:false});
       } else openChapter(btn.dataset.chapter);
     }
     if(action==="details")showGuide(id);
+    if(action==="resume"){
+      selectedStepId=null;
+      render({followRail:true});
+      mount.querySelector(".cp-focus-card")?.scrollIntoView?.({behavior:"smooth",block:"start"});
+      announce("Returned to the active objective.");
+    }
     if(action==="done" || action==="skip")change(id,action);
     if(action==="restore")change(id,"pending");
     if(action==="toggle-skips") {
@@ -453,16 +481,19 @@
   },true);
   dock.addEventListener("click",event=>{
     const segment=event.target.closest("button[data-action='segment']");
-    if(segment){openChapter(segment.dataset.chapter);mount.querySelector('[data-cp-chapter="'+segment.dataset.chapter+'"]')?.scrollIntoView({behavior:"smooth",block:"start"});return;}
+    if(segment){selectedStepId=null;openChapter(segment.dataset.chapter);mount.querySelector('[data-cp-chapter="'+segment.dataset.chapter+'"]')?.scrollIntoView({behavior:"smooth",block:"start"});return;}
     const btn=event.target.closest("button[data-action='jump']");
     if(!btn)return;
     const item=byId.get(btn.dataset.id);
     if(!item)return;
-    if(statusOf(item.step.id)==="skip")showSkips.add(item.step.chapterId);
-    if(statusOf(item.step.id)==="done")showArchives.add(item.step.chapterId);
+    // Show the selected objective in the focus card, regardless of its status.
+    // In particular, a skipped dot must NOT be silently restored or stay hidden.
+    selectedStepId=item.step.id;
     openChapter(item.step.chapterId);
-    mount.querySelector('[data-cp-chapter="'+item.step.chapterId+'"]')?.scrollIntoView({behavior:"smooth",block:"start"});
-    announce(item.step.area+": "+item.step.title);
+    const focus=mount.querySelector(".cp-focus-card");
+    (focus || mount.querySelector('[data-cp-chapter="'+item.step.chapterId+'"]'))?.scrollIntoView({behavior:"smooth",block:"start"});
+    focus?.focus?.({preventScroll:true});
+    announce("Reviewing "+item.step.title+". Its completion status has not changed.");
   });
 
   document.getElementById("completionistExport")?.addEventListener("click",()=>{
