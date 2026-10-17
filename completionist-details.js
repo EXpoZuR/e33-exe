@@ -1,7 +1,7 @@
-/* Curated area-specific reference links and extended directions for E33.EXE Completionist */
+/* Curated location guides and extended directions for E33.EXE Completionist */
 window.E33_COMPLETION_DETAILS = {
   "sources": {
-    "prologue": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-lumiere-walkthrough-journals-music-records",
+    "prologue": "https://www.powerpyx.com/clair-obscur-expedition-33-prologue-collectible-locations/",
     "spring": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-spring-meadows-walkthrough-outfits-journals",
     "flying": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-flying-waters-walkthrough-paint-cages-journals",
     "sanctuary": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-ancient-sanctuary-walkthrough-outfits-journals-paint-cages",
@@ -42,7 +42,7 @@ window.E33_COMPLETION_DETAILS = {
     "lostGestrals": "https://www.powerpyx.com/clair-obscur-expedition-33-lost-gestral-locations-guide/",
     "nevron": "https://www.gamerguides.com/clair-obscur-expedition-33/guide/side-quests/nevrons/all-nevron-quests-and-rewards",
     "karatom": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-how-to-get-blue-mushrooms-for-karatom",
-    "record": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-clair-obscur-expedition-33-all-music-records-locations"
+    "update": "https://game-checklists.com/expedition33/guides/versos-drafts-complete-guide.html"
   },
   "areas": {
     "Lumière Festival": [
@@ -208,12 +208,12 @@ window.E33_COMPLETION_DETAILS = {
     "Verso's Drafts": [
       "Verso's Drafts entrance — dive site near Lumière",
       "Enter this post-launch update region only once Esquie's dive ability is unlocked, then use the internal Expedition Flags and minigame hubs to clear its branches.",
-      "endgame"
+      "update"
     ],
     "Bonus Endless Tower": [
       "Endless Tower endgame challenge entrance",
       "These additional bosses are endgame-level rematches. Return after completing the regular tower floors and with a high-level NG+ build if needed.",
-      "endgame"
+      "update"
     ]
   },
   "specific": {
@@ -237,7 +237,7 @@ window.E33_COMPLETION_DETAILS = {
     "Expedition 50": "From Paintress Shrine Flag advance into the next open area until the road branches. Take the LEFT path through the ruins and look on the LEFT near a cluster of dead expeditioners. If you reach the next combat area, turn back.",
     "Friendly Hexga": "Continue past Old Farm toward Tide Caverns. Look for the WHITE, non-hostile Hexga at the edge of the cliff near the handholds used to cross the chasm; talk before entering the cavern. From Tide Caverns Flag descend the rope. Crystal 1 is on the LEFT by a Hexga enemy. Crystal 2 is BEHIND the central pillar reached by the middle slope. Crystal 3 is dropped by the Rocher with a white pillar on the RIGHT side. Return all three and speak to the friendly Hexga again for Auto Shell.",
     "Auto Shell": "The Picto is the reward for the friendly Hexga quest, not a loose chest. After collecting three Rock Crystals in Tide Caverns—left crystal by an enemy, crystal behind middle pillar, and Rocher drop on the right—backtrack to the white Hexga on the cliff approach from Old Farm and turn them all in. Speak again after the animation; do not attack it.",
-    "Red Woods · Bénisseur": "From the Ancient Sanctuary region travel to the Red Woods portal south of Gestral Beach. From Entrance Flag go straight to the unusual fountain. Interact repeatedly and contribute the requested Chroma amounts one at a time until the white Bénisseur appears. Speak to it and accept Recovery. Make sure you have enough Chroma for the remaining donations before committing; if not, leave this objective skipped and return.",
+    "Red Woods · Bénisseur": "Return to the Ancient Sanctuary region after Flying Waters and locate Red Woods south of the Gestral Beach and west of the Hidden Gestral Arena. Enter at the Red Woods portal and, from its Entrance Flag, walk into the nearby clearing to the bubbling fountain. Donate Chroma sequentially: 5,000, then 10,000, then 25,000, then 50,000 (90,000 total). After the final donation, the fountain reveals the friendly Bénisseur and gives Recovery. Do not fight it afterward.",
     "Karatom · START BEFORE leaving": "From the Gestral Village entrance follow the left-hand path into the Bazaar/workshop portion of town. Find the small Gestral Karatom standing by his unfinished Ultimate Sakapatate. Speak to him and hear the request for a blue mushroom; the actual mushroom is found later on the LOWER floor of Esquie's Nest. You must return with Gustave still available during Act 1.",
     "Blue Mushroom": "In Esquie's Nest descend into the initial large cavern and drop off the upper path into the lower watery area near the Mime. Search the cluster of blue-violet glowing mushrooms at the edge of the rocks; collect the named Blue Mushroom quest item, not just a generic material. Return it to Karatom in the Gestral Village workshop after recruiting Esquie.",
     "RETURN: Karatom's Pure outfit": "Immediately after recruiting Esquie, fast-travel back to Gestral Village. Return to Karatom in the workshop beside the Ultimate Sakapatate. Hand over the Blue Mushroom from Esquie's Nest, accept the test fight, and win as Gustave. Exhaust Karatom's post-battle dialogue and verify the Pure outfit in Gustave's cosmetics. Do this BEFORE finishing Stone Wave Cliffs.",
@@ -248,7 +248,11 @@ window.E33_COMPLETION_DETAILS = {
     "Lettre à Maelle": "Immediately after defeating the FIRST Axon in Visages, select Camp and repeatedly choose Check Up on the Others until the special scene involving Verso, Maelle, and Esquie appears. The music record Lettre à Maelle is obtained from that optional interaction. Do not leave it to endgame cleanup.",
     "Esquie 6–7": "In Act 3, access camp after the Monolith sequence and advance Esquie's conversations until he directs you back to Esquie's Nest. Fly back, reenter François' Cave, complete the rematch and recover the Urrie stone. RETURN to camp and speak to Esquie again to gain relationship level 6 and the DIVE ability. Speak again for level 7. Having flight alone does not let you dive.",
     "Renoir's Drafts / The Abyss · Simon": "First finish Esquie's level-6 relationship quest, which unlocks UNDERWATER DIVING. On the Continent search the ocean toward Renoir's Drafts' submerged dive marker (southeast of Visages). Dive into the portal, progress through the Drafts, and follow the Golden Tree descent to The Abyss. Simon is at the bottom; prepare an endgame party before initiating the battle.",
-    "Enter Verso's Drafts": "Finish Act 3's Monolith sequence to get Esquie flight, then complete Esquie's level-6 relationship quest at Esquie's Nest to get DIVE. Fly to the small rocky/toy-covered island by Lumière and locate the circular underwater interaction. Dive to enter Verso's Drafts; the regular entrance cannot be reached by swimming alone."
+    "Enter Verso's Drafts": "You need to be in Act 3 and have Esquie's diving ability unlocked by his relationship quest. From the Continent map locate Lumière at the southern end, then look for the small island just EAST of its entrance. This island has a peculiar portal next to toy-shaped rocks. Travel to the portal and interact with it to enter Verso's Drafts. You do not enter by diving beneath the island; diving is an access prerequisite.",
+    "Prologue Mime": "In Lumière's Main Street while exploring with Sophie, walk nearly to the far end of the street, but DO NOT accept the prompt to go down to the docks. On the RIGHT side, beside a performance stage with dancers, find the robotic Mime. Speak to it and win the optional fight to receive the Lumière record. This is the prologue-only version of the fight.",
+    "Old Key": "After the festival begins, you receive a Festival Token. Find the woman standing at the BACK LEFT in the THIRD festival stall and trade a token for the Old Key. If you already spent the first token, obtain extra tokens by talking to the man in white or beating Maelle in the optional duel. You must have the key before leaving the festival or you cannot open the Fracture Survivor gate later in Old Lumière.",
+    "Gestral Beach #1": "On the Continent to the west of Ancient Sanctuary, find the beach portal beside the unusual trees. Start the platforming course and use the horizontal logs and rotating platforms to reach the last platform without falling. Speak to the Gestral at the far end, and answer 17 when asked the question to claim the swimsuit rewards.",
+    "Carrabi's coastal shop": "From Flying Waters' Continent exit, travel northeast toward Esquie's Nest and watch for an EAST-bound side road to a sandy beach on the right. Carrabi is standing directly on the shoreline and sells Gustave's Lumière Suit, Maelle's Lumière outfit and Gustave's Short haircut. If you reach a black-blue land barrier from your approach, do not try to cross it without Esquie: return after recruiting him as scheduled here. Guides also document a walking approach to the beach from the Flying Waters side."
   },
   "overrides": {
     "Ancient Sanctuary Mime": "mimeSanctuary",
@@ -293,7 +297,17 @@ window.E33_COMPLETION_DETAILS = {
     "Maelle · The Reacher": "reacher",
     "Painting Workshop · finale": "endgame",
     "The Canvas · Manor Family Canvas": "canvas",
-    "Renoir's Drafts / The Abyss · Simon": "abyss"
+    "Renoir's Drafts / The Abyss · Simon": "abyss",
+    "Prologue Mime": "prologue",
+    "Old Key": "prologue",
+    "Gestral Beach #1": "continent",
+    "Carrabi's coastal shop": "continent",
+    "Enter Verso's Drafts": "update",
+    "Open Playground / Gestral Baths": "update",
+    "Reverie Path": "update",
+    "Licorne / Barbasucette / Franctale": "update",
+    "Candy Land / Carousel": "update",
+    "Root of All Evil · Osquio": "update"
   },
   "sourceTitles": {
     "mimeSanctuary": "Gamer Guides — exact Ancient Sanctuary Mime location",
@@ -304,6 +318,7 @@ window.E33_COMPLETION_DETAILS = {
     "act1": "PowerPyx — Act 1 chronological collectibles",
     "act2": "PowerPyx — Act 2 chronological collectibles",
     "act3": "PowerPyx — Act 3 chronological collectibles",
-    "endgame": "PowerPyx — endgame collectible guide"
+    "endgame": "PowerPyx — endgame collectible guide",
+    "update": "Game Checklists — Verso's Drafts walkthrough"
   }
 };
