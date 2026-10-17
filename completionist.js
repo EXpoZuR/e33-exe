@@ -159,6 +159,8 @@
   }
   modal?.addEventListener("click",event=>{
     if(event.target===modal || event.target.closest(".cp-guide-close")){closeGuide();return;}
+    const link=event.target.closest('button[data-action="details"]');
+    if(link){showGuide(link.dataset.id);return;}
     const btn=event.target.closest("[data-guide-action]");
     if(!btn||!modalStepId)return;
     const id=modalStepId,status=btn.dataset.guideAction;
