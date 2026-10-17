@@ -12,8 +12,8 @@
   const slug = x => String(x).normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const esc = x => String(x).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
   const chapters = raw.map((chapter, chapterIndex) => {
-    const steps = chapter.areas.flatMap(([area, entries]) => entries.map(([kind,title,directions], position) => ({
-      id: chapter.id + ":" + slug(area) + ":" + slug(title),
+    const steps = chapter.areas.flatMap(([area, entries]) => entries.map(([kind,title,directions,stableId], position) => ({
+      id: typeof stableId === "string" && stableId ? stableId : chapter.id + ":" + slug(area) + ":" + slug(title),
       kind,title,directions,area,position,chapterId:chapter.id
     })));
     return {...chapter,number:chapterIndex,steps};
