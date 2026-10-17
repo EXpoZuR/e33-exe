@@ -124,7 +124,7 @@
       <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4><p>${esc(step.context || step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">02 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
       <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(completionNote(step))}</p></section>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(detailData.completion?.[step.title] || completionNote(step))}</p></section>
       ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
     `;
     updateModalControls();
