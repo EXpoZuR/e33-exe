@@ -272,3 +272,17 @@
 #completionistPage .cp-guide-context{border-left-color:color-mix(in srgb,var(--cp-guide-accent) 65%,#526481);background:linear-gradient(100deg,color-mix(in srgb,var(--cp-guide-accent) 6%,transparent),transparent);padding-top:7px;padding-right:15px;border-radius:0 9px 9px 0}
 #completionistPage .cp-guide-context h4{font-size:19px}
 #completionistPage .cp-guide-context p{color:#d7e3ee;font-size:14px}
+
+/* v14.8.0 — unmet story/quest prerequisites, still non-blocking for NG+. */
+#completionistPage .cp-prerequisite{display:flex;align-items:flex-start;gap:9px;max-width:100%;margin:15px 0 0;padding:11px 12px;border-radius:9px;border:1px solid #5e533b;background:linear-gradient(100deg,rgba(171,130,74,.10),rgba(128,108,76,.045));color:#d8c6a9;line-height:1.45}
+#completionistPage .cp-prereq-marker{display:grid;place-items:center;flex:0 0 18px;height:18px;border:1px solid #b99761;border-radius:50%;color:#dfbb76;font-size:11px;font-weight:900}
+#completionistPage .cp-prereq-copy{flex:1;min-width:0;font-size:12px}
+#completionistPage .cp-prereq-copy strong{display:block;font-weight:850;color:#efcf99}
+#completionistPage .cp-prereq-copy>span{display:block;margin-top:5px;font-size:11px;color:#ad9e88;line-height:1.5}
+#completionistPage .cp-prereq-action{flex:0 0 auto;align-self:center;min-height:30px;padding:6px 9px;border:1px solid #655842;border-radius:7px;background:#29261e;color:#e8cda5;font-size:11px;font-weight:800;white-space:nowrap}
+#completionistPage .cp-prereq-action:hover{border-color:#b99761;background:#3b3125;color:#fff1cc}
+#completionistPage .cp-prerequisite.is-compact{margin:10px 0 8px;padding:8px 10px;gap:7px}
+#completionistPage .cp-prerequisite.is-compact .cp-prereq-copy{font-size:11px}
+#completionistPage .cp-prerequisite.is-compact .cp-prereq-action{padding:5px 8px;min-height:27px}
+#completionistPage .cp-guide-body>.cp-prerequisite{margin:0 0 20px}
+@media(max-width:520px){#completionistPage .cp-prerequisite{flex-wrap:wrap}#completionistPage .cp-prereq-action{margin-left:25px}#completionistPage .cp-prerequisite.is-compact .cp-prereq-action{margin-left:24px}}
