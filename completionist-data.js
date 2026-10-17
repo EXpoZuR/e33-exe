@@ -1,4 +1,4 @@
-/* Completionist chronological traversal-gated checklist; step IDs remain stable */
+/* Traversal-gated, fact-checked chronological checkpoints; identifiers unchanged. */
 window.E33_COMPLETION_DATA = [
   {
     "id": "prologue",
@@ -280,7 +280,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Rare enemy",
             "Ancient Sanctuary Mime",
-            "From the Sanctuary Maze Flag, hug the right-hand wall to the low crawlspace under a rock. Crawl through, turn LEFT at the fork into the blue-and-red flower field, then circle BEHIND the wooden hut to find the Mime and Lune's Baguette rewards. If you reach Giant Bell Alley, return to Sanctuary Maze."
+            "The Mime is a striped silent enemy hiding BEHIND a ruined wooden HUT in a clearing of BLUE and RED flowers. From Sanctuary Maze Flag follow the RIGHT wall to the low rock crawlspace, crawl through, then take the LEFT fork to the flower field. Walk behind the hut and defeat the Mime for Lune's Baguette outfit and haircut."
           ],
           [
             "Journal",
@@ -315,7 +315,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Berrami's journal collection",
-            "Talk to the enormous blue Gestral in the Bazaar. Return with additional expedition journals for his associated rewards."
+            "Berrami is the ENORMOUS BLUE Gestral standing inside the Bazaar near Jujubree's shop. Talk to him and show the Expedition Journals you've already recovered. He gives rewards at collection milestones; keep bringing new journals throughout the game."
           ],
           [
             "Merchant",
@@ -325,22 +325,22 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Karatom · START BEFORE leaving",
-            "In the Sakapatate workshop speak with Karatom about his blue-mushroom request. Finish after Esquie's Nest, BEFORE the Act 1 finale."
+            "Karatom is a small Gestral standing below a huge UNFINISHED Sakapatate machine beyond the Gestral Bazaar. Talk to him; he asks for a mushroom growing in Esquie's Nest to power up his creation. You return with the Mushroom after recruiting Esquie and MUST finish Gustave's test before the end of Act 1."
           ],
           [
             "Quest",
             "Purumi rescue",
-            "Near the route to the arena, talk to Alexsoundro's group, climb the nearby walkway and grapple across to the stranded child. Return for Lune's Sakapatate outfit."
+            "Purumi is a tiny blue-and-purple Gestral stranded at the TOP of the village's tall STONE PILLAR. Speak to his tall guardian Alexsoundro at the BASE first. Then find the rope in the nearby alley, climb to the wooden overhead walkways, grapple across, shimmy along the climbable wall and JUMP onto Purumi's pillar. Talk to Purumi. You'll return to Alexsoundro and receive Lune's Sakapatate outfit."
           ],
           [
             "Minigame",
             "Ono-Puncho",
-            "From the Arena Flag pass under the ruined arch to Ono-Puncho. Land a 9,999+ damage hit for Maelle's Sakapatate outfit."
+            "Ono-Puncho is a purple-blue Gestral who challenges you to deal 9,999 damage in ONE HIT. From the Arena Flag, look right of the two tall spectators for a BROKEN ARCH leading to his alcove. Speak to him, accept, buff and mark the target, then land a 9,999+ damage hit for Maelle's Sakapatate outfit. If you aren't strong enough yet, skip and revisit."
           ],
           [
             "Picto",
             "Roulette",
-            "Find the neon-lit casino door near the arena and choose the reply 'I don't care.'"
+            "The Gestral Gambler speaks through the DOOR of a neon-lit casino, reached from the theatre/arena side of the village. Walk up to the DOOR (you don't enter the casino), answer 'Yes' to gambling, then respond 'I don't care' to his probability question. He hands you the Roulette Picto."
           ],
           [
             "Secret",
@@ -355,7 +355,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Arena",
             "Gestral tournament / recruit Sciel",
-            "Finish the village tournament and recruit Sciel. If you are replaying NG+ for alternate rewards, check the Sciel fight's win/loss weapon outcome. After she joins, return to the theater merchant for Sciel's outfit; you cannot purchase it earlier."
+            "The village chief Golgra wants you to prove yourself in the arena tournament to get Esquie's password. Once you've explored the shops and side quests, head to the Gestral Arena, speak to the registration Gestral and complete the tournament; Sciel joins your party afterward."
           ],
           [
             "Cosmetic",
@@ -536,7 +536,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Secret",
             "Speak to the Young Boy",
-            "On the route toward Paintress Shrine, reach the isolated platform and exhaust his dialogue."
+            "The Young Boy is a mysterious humanoid NPC on an isolated platform reached from the story path near Paintress Shrine. Stop to speak with him and exhaust his available dialogue before continuing. There is no item to pick up here."
           ]
         ]
       ],
@@ -1075,8 +1075,9 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Secret",
-            "The Canvas · Manor Family Canvas",
-            "Enter The Canvas and obtain Manor Family Canvas; use it to open the Manor's hidden room connected from Frozen Hearts."
+            "The Canvas · Dessendre family portrait",
+            "Fly to The Canvas optional island, pick up the DESSENDRE FAMILY PORTRAIT, then enter any Manor door. From the Manor rest point go upstairs to the landing and place the portrait in the EMPTY FRAME on the right. This opens a secret room off the main living/dining area containing an Unknown journal.",
+            "endgame:optional-regions-bosses-and-secret-weapons:the-canvas-manor-family-canvas"
           ],
           [
             "Boss",
