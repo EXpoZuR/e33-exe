@@ -184,25 +184,24 @@
 #completionistPage .cp-route-btn:hover{color:#f3f6ff;border-color:#9e9de4;background:linear-gradient(120deg,#25364a,#322a50)}
 #completionistPage .cp-upcoming-actions .cp-upcoming-guide{color:#b8addf;background:rgba(115,91,163,.095);border-color:#554c6c}
 #completionistPage .cp-upcoming-actions .cp-upcoming-guide:hover{border-color:#b6a0ef;color:#f5ebff}
-/* Continuous chapter-width progress: each segment has flex-grow equal to its checkpoint count. */
-#completionistPage .cp-section-strip{margin:0 0 13px}
-#completionistPage .cp-section-strip-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 7px;font-size:11px;color:#7d90a3}
-#completionistPage .cp-section-strip-head span:first-child{font-size:11px;letter-spacing:.1em;color:#afbad0;font-weight:850}
-#completionistPage .cp-section-track{display:flex;align-items:center;width:100%;height:28px;gap:0;padding:2px;border:1px solid #445263;border-radius:9px;background:#0c1218;overflow:hidden;box-shadow:inset 0 1px 5px rgba(0,0,0,.45)}
-#completionistPage .cp-section-segment{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;flex-basis:0;flex-shrink:1;height:100%;padding:0;border-radius:0;border:0;border-right:1px solid #0c1218;background:color-mix(in srgb,var(--cp-segment-accent) 10%,#1d2631);cursor:pointer;overflow:hidden;isolation:isolate;transition:background .25s,filter .25s}
-#completionistPage .cp-section-segment:first-child{border-radius:5px 0 0 5px}
-#completionistPage .cp-section-segment:last-child{border-right:0;border-radius:0 5px 5px 0}
-#completionistPage .cp-section-segment:hover{background:color-mix(in srgb,var(--cp-segment-accent) 24%,#1b2836)}
-#completionistPage .cp-section-segment.is-active{z-index:1;background:color-mix(in srgb,var(--cp-segment-accent) 25%,#1c2c39);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--cp-segment-accent) 65%,#d6e8ff),0 0 16px color-mix(in srgb,var(--cp-segment-accent) 28%,transparent)}
-#completionistPage .cp-section-fill{position:absolute;inset:0 auto 0 0;display:block;height:100%;background:linear-gradient(90deg,color-mix(in srgb,var(--cp-segment-accent) 65%,#6996b8),var(--cp-segment-accent));opacity:.55;box-shadow:0 0 10px color-mix(in srgb,var(--cp-segment-accent) 45%,transparent);transition:width .62s cubic-bezier(.22,1,.36,1)}
-#completionistPage .cp-section-segment.is-active .cp-section-fill{opacity:1;filter:saturate(1.25) brightness(1.05)}
-#completionistPage .cp-section-marker{position:relative;z-index:2;pointer-events:none;font-size:10px;letter-spacing:-.015em;font-weight:900;color:#eef4f8;text-shadow:0 1px 3px #0a111a}
-#completionistPage .cp-section-segment:first-child .cp-section-marker{font-size:9px}
-#completionistPage .cp-section-legend{display:flex;flex-wrap:wrap;gap:5px 15px;align-items:center;margin-top:9px;font-size:11px;line-height:1.4;color:#889aab}
-#completionistPage .cp-legend-item{display:inline-flex;align-items:center;gap:5px;max-width:180px;white-space:nowrap}
-#completionistPage .cp-legend-item.is-active{color:#ecf4fb;font-weight:800}
-#completionistPage .cp-legend-square{width:7px;height:7px;border-radius:2px;background:color-mix(in srgb,var(--cp-segment-accent) 75%,#657482)}
-#completionistPage .cp-legend-item.is-active .cp-legend-square{background:var(--cp-segment-accent);box-shadow:0 0 8px var(--cp-segment-accent)}
+/* Weighted six-section progress in the dock: a thin, proportional rule. */
+#completionistPage .cp-section-strip{margin:0 0 6px}
+#completionistPage .cp-section-track{display:flex;align-items:stretch;width:100%;height:13px;gap:0;padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
+#completionistPage .cp-section-segment{--cp-segment-accent:#81c8ff;position:relative;display:block;min-width:0;flex-basis:0;flex-shrink:1;height:13px;padding:0;margin:0;border:0;border-radius:0;background:transparent!important;overflow:visible;isolation:auto;cursor:pointer;transition:none}
+#completionistPage .cp-section-segment::before{content:"";position:absolute;left:0;right:0;top:5px;height:3px;background:color-mix(in srgb,var(--cp-segment-accent) 22%,#36434f);box-shadow:inset -1px 0 0 #10161d;transition:background .2s ease}
+#completionistPage .cp-section-segment:first-child::before,#completionistPage .cp-section-segment:first-child .cp-section-fill{border-radius:3px 0 0 3px}
+#completionistPage .cp-section-segment:last-child::before,#completionistPage .cp-section-segment:last-child .cp-section-fill{border-radius:0 3px 3px 0}
+#completionistPage .cp-section-fill{position:absolute;z-index:1;top:5px;left:0;display:block;height:3px;background:linear-gradient(90deg,color-mix(in srgb,var(--cp-segment-accent) 70%,#81b7d5),var(--cp-segment-accent));opacity:.64;transition:width .55s cubic-bezier(.22,1,.36,1)}
+#completionistPage .cp-section-segment.is-active::before{background:color-mix(in srgb,var(--cp-segment-accent) 48%,#354553);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--cp-segment-accent) 24%,transparent)}
+#completionistPage .cp-section-segment.is-active .cp-section-fill{opacity:1;box-shadow:0 0 9px color-mix(in srgb,var(--cp-segment-accent) 40%,transparent)}
+#completionistPage .cp-section-segment:hover::before,#completionistPage .cp-section-segment:focus-visible::before{height:5px;top:4px;background:color-mix(in srgb,var(--cp-segment-accent) 60%,#34434d)}
+#completionistPage .cp-section-segment:hover .cp-section-fill,#completionistPage .cp-section-segment:focus-visible .cp-section-fill{height:5px;top:4px;opacity:1}
+#completionistPage .cp-section-segment:focus-visible{outline:2px solid #c0dfff;outline-offset:1px;border-radius:2px}
+#completionistPage .cp-section-segment::after{content:attr(data-tooltip);position:absolute;z-index:50;bottom:calc(100% + 7px);left:50%;width:max-content;max-width:250px;padding:7px 10px;border:1px solid #48576b;border-radius:7px;background:#1b2530;color:#ecf5fe;box-shadow:0 9px 23px rgba(0,0,0,.5);font-size:11px;font-weight:750;letter-spacing:0;line-height:1.45;text-align:center;white-space:nowrap;pointer-events:none;opacity:0;visibility:hidden;transform:translate(-50%,4px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease}
+#completionistPage .cp-section-segment:first-child::after{left:0;transform:translate(0,4px)}
+#completionistPage .cp-section-segment:last-child::after{left:auto;right:0;transform:translate(0,4px)}
+#completionistPage .cp-section-segment:hover::after,#completionistPage .cp-section-segment:focus-visible::after{opacity:1;visibility:visible;transform:translate(-50%,0)}
+#completionistPage .cp-section-segment:first-child:hover::after,#completionistPage .cp-section-segment:first-child:focus-visible::after,#completionistPage .cp-section-segment:last-child:hover::after,#completionistPage .cp-section-segment:last-child:focus-visible::after{transform:translate(0,0)}
 /* Overlay (source-backed longer directions without any nested accordion) */
 #completionistPage .cp-guide-overlay{display:none;position:fixed;inset:0;z-index:90;padding:24px;align-items:center;justify-content:center;background:rgba(4,7,12,.84);backdrop-filter:blur(11px)}
 #completionistPage .cp-guide-overlay.open{display:flex;animation:cp-panel-in .16s ease}
@@ -241,9 +240,6 @@
 #completionistPage .cp-guide-skip-msg{color:#e8ba76;font-size:13px;font-weight:800}
 @media(max-width:740px){
  #completionistPage .cp-shell{padding-bottom:300px}
- #completionistPage .cp-section-strip-head span:last-child{display:none}
- #completionistPage .cp-section-legend{gap:5px 9px}
- #completionistPage .cp-legend-item{font-size:10px}
  #completionistPage .cp-guide-overlay{padding:9px}
  #completionistPage .cp-guide-dialog{max-height:calc(100dvh - 18px);border-radius:13px}
  #completionistPage .cp-guide-head{padding:17px 17px 13px}
@@ -252,8 +248,13 @@
  #completionistPage .cp-guide-block{padding-left:21px}
 }
 @media(max-width:440px){
- #completionistPage .cp-legend-item{font-size:9px}
- #completionistPage .cp-legend-item:nth-child(5){display:none}
  #completionistPage .cp-guide-controls button{flex:1}
 }
 @media(prefers-reduced-motion:reduce){#completionistPage .cp-section-fill{transition:none!important}}
+
+/* v14.7.6 — thinner floating dock while preserving checkpoint navigation. */
+#completionistPage .cp-dock-inner{padding-top:12px;padding-bottom:9px}
+#completionistPage .cp-dock-head{margin-bottom:7px}
+#completionistPage .cp-route-viewport{padding-top:3px;padding-bottom:6px}
+#completionistPage .cp-route-legend{margin-top:0}
+@media(max-width:740px){#completionistPage .cp-dock-inner{padding-top:10px;padding-bottom:7px}}
