@@ -1,8 +1,8 @@
-/* Player-first checkpoint context: what to recognize, why it matters, and what's rewarded. */
+/* Human-readable location and quest context for each stable Completionist checkpoint. */
 window.E33_COMPLETION_CONTEXT = {
-  "prologue:lumie-re-festival:old-key": "The Old Key is a one-time festival prize. It matters much later because it opens a locked journal gate in Old Lumière.",
-  "prologue:lumie-re-festival:prologue-mime": "A Mime is the silent, striped performer you can challenge during the festival. It is an optional combat encounter that disappears once you depart Lumière.",
-  "prologue:lumie-re-festival:trash-can-man-s-interaction": "The trash-can man is an unusual NPC disguised as a rubbish bin among the festival streets. This is a conversation, not a chest or combat encounter.",
+  "prologue:lumie-re-festival:old-key": "The Old Key is a festival token reward at Colette's nighttime farewell stall—not an item that can be found on Gustave and Sophie's earlier daytime stroll. It opens a locked expedition journal in Act 2.",
+  "prologue:lumie-re-festival:prologue-mime": "The Prologue Mime is an optional striped enemy by the dancers near the harbor during the DAYTIME walk with Sophie. Beat it BEFORE entering the later nighttime festival or the unique achievement is missed for this run.",
+  "prologue:lumie-re-festival:trash-can-man-s-interaction": "A glowing garbage can on the DAYTIME main street with Sophie hides a small interaction/reward. It is encountered BEFORE the Mime and BEFORE the nighttime festival.",
   "prologue:lumie-re-festival:prologue-festival-rewards": "Festival stalls exchange the tokens you earn by talking with festival NPCs and doing their activities. Claim the unique token prizes before leaving.",
   "act1:spring-meadows-meadows-corridor:dodger": "Dodger is a combat Picto earned during the introduction to Spring Meadows, around Lune and the first Portier encounter.",
   "act1:spring-meadows-meadows-corridor:lanceram": "Lanceram is Gustave's early spear-like weapon. The Lancelier enemies on the Meadows Corridor story route can provide it.",
@@ -58,7 +58,7 @@ window.E33_COMPLETION_CONTEXT = {
   "act1:gestral-village:roulette": "Roulette comes from a Gestral GAMBLER speaking through the door of the casino, not a loose item inside the building. He asks a deliberately silly probability question.",
   "act1:gestral-village:hidden-manor-kitchen": "The Manor is reached along the theatre-side path marked TURN BACK. Its kitchen has interactable objects and a secret area.",
   "act1:gestral-village:nocturne-pour-un-masque-de-tristesse": "This music record is hidden behind a puzzle in the Manor's dining room. Activating the four wall switches opens a fireplace passage.",
-  "act1:gestral-village:gestral-tournament-recruit-sciel": "The village holds a mandatory Gestral combat tournament. Completing it introduces and recruits Sciel.",
+  "act1:gestral-village:gestral-tournament-recruit-sciel": "This is a mandatory story tournament, not the optional Hidden Gestral Arena. Two people have different roles: CHIEF GOLGRA in Chief's House enables registration; LIMONSOL, the pineapple-looking Gestral at the Arena desk, runs the matches. If Limonsol says registration hasn't started, the Golgra conversation hasn't occurred.",
   "act1:gestral-village:village-cosmetic-merchants": "Several village Gestrals run cosmetic shops. Their offerings depend on which party members have joined; check back when new characters are recruited.",
   "act1:esquie-s-nest-return-to-village:esquie-s-nest-mime": "The Nest Mime is an optional enemy on the LOWER floor of the first huge cavern, below the raised path from the entrance.",
   "act1:esquie-s-nest-return-to-village:blue-mushroom": "Karatom's quest item is a glowing BLUE MUSHROOM growing in the first big cavern near the Mime. The item is called a Mushroom in the inventory.",
@@ -119,7 +119,7 @@ window.E33_COMPLETION_CONTEXT = {
   "act2:continent-northern-detours:painting-workshop-entrance-2": "The SECOND Painting Workshop portal is a different entrance to the same quest; collect Colour of the Beast for its shared statue.",
   "act2:monoco-s-station:recruit-monoco": "Monoco is a new playable character encountered at this snowy railway station. His unique mechanics let him learn moves from enemies.",
   "act2:monoco-s-station:expedition-65": "Expedition 65 is a journal near a railway carriage by the station's rear exit.",
-  "act2:monoco-s-station:grandis-fashionist": "The Grandis Fashionist is an NPC in a RED BERET who offers unique Pure outfits if you complete the requested poetry exchanges.",
+  "act2:monoco-s-station:grandis-fashionist": "The Fashionist is the Grandis NPC wearing a red beret. He becomes available after Monoco joins, and the NPC only starts the poetry contest when you are controlling Lune, Maelle, or Sciel, not Verso or Monoco.",
   "act2:monoco-s-station:eternal-ice-merchant-request": "A Grandis merchant at the station wants Eternal Ice from Frozen Hearts. You can register the request now and hand it in later.",
   "act2:monoco-s-station:monoco-skills-ongoing": "Monoco learns skills from particular enemy types when you fight them with him present. This checkpoint is an ongoing collection reminder, not a single object.",
   "act2:continent-before-old-lumie-re:carousel-le-grand-cafe-de-lumie-re": "The Carousel is a tiny optional location east of Monoco's Station. Its record is hidden inside a cave along the wall.",
@@ -195,5 +195,6 @@ window.E33_COMPLETION_CONTEXT = {
   "update:bonus-endless-tower:clea-unleashed": "Clea Unleashed is an extra high-level Endless Tower rematch added after the original game.",
   "update:bonus-endless-tower:duollistes": "Duollistes is an extra multi-boss battle in the tower, rewarding unique equipment.",
   "update:bonus-endless-tower:chromatic-lampmaster": "Chromatic Lampmaster is a stronger bonus version of the earlier boss and rewards First Life.",
-  "update:bonus-endless-tower:simon-the-divergent-star": "Simon the Divergent Star is one of the hardest additional tower battles in the update."
+  "update:bonus-endless-tower:simon-the-divergent-star": "Simon the Divergent Star is one of the hardest additional tower battles in the update.",
+  "act1:gestral-village:meet-chief-golgra": "Golgra is the large Gestral chief inside the CHIEF'S HOUSE, the prominent building at the top of the village's entrance path. She must authorize the Legendary Tournament before its registration desk becomes active; merely reaching the Arena isn't enough."
 };
