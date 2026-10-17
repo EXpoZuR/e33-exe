@@ -1,4 +1,4 @@
-/* Chronological, previous-objective routes. Keys remain stable through reordering. */
+/* E33.EXE sequential travel guidance by stable checkpoint ID. */
 window.E33_COMPLETION_ROUTES = {
   "act1:spring-meadows-meadows-corridor:dodger": {
     "previous": "Prologue festival rewards",
@@ -387,5 +387,249 @@ window.E33_COMPLETION_ROUTES = {
   "act1:stone-wave-cliffs-flooded-buildings-finale:lampmaster-finish-act-1": {
     "previous": "Coralim",
     "from": "From Coralim descend back through Flooded Buildings to Basalt Waves Flag. Follow its MAIN route to Lampmaster's arena; finish Karatom's Gustave reward first, then defeat Lampmaster to end Act 1."
+  },
+  "prologue:lumie-re-festival:old-key": {
+    "previous": null,
+    "from": "At the start of Lumière's festival, explore the stalls before leaving for the dock. Trade a Festival Token for the Old Key."
+  },
+  "prologue:lumie-re-festival:prologue-mime": {
+    "previous": "Old Key",
+    "from": "From the Old Key stall follow Main Street toward the performance stage. Find the optional Mime beside the stage before approaching the dock."
+  },
+  "prologue:lumie-re-festival:trash-can-man-s-interaction": {
+    "previous": "Prologue Mime",
+    "from": "After the Mime, walk BACK up Main Street into the festival crowd. Find the disguised rubbish-bin man and finish his dialogue."
+  },
+  "prologue:lumie-re-festival:prologue-festival-rewards": {
+    "previous": "Trash-can man's interaction",
+    "from": "From the rubbish-bin man return to the festival stalls and collect remaining unique rewards before taking the exit to the docks."
+  },
+  "act2:continent-esquie-swimming:gustave-record-stone-wave-cliffs-return": {
+    "previous": "Lampmaster / finish Act 1",
+    "from": "After Lampmaster and the new swimming ability, SWIM to Stone Wave Cliffs' rear/northern coast and revisit the former boss area for Gustave's record."
+  },
+  "act2:continent-esquie-swimming:expedition-64-the-meadows": {
+    "previous": "Gustave record · Stone Wave Cliffs return",
+    "from": "Leave Stone Wave Cliffs by that shoreline, sail to the Meadows beach and enter. Pick up Expedition 64 by its old campsite."
+  },
+  "act2:continent-esquie-swimming:white-tree-expedition-36": {
+    "previous": "Expedition 64 / The Meadows",
+    "from": "From The Meadows return to Esquie, swim WEST to White Tree island, and enter. Explore the central path for Expedition 36 and its record."
+  },
+  "act2:continent-esquie-swimming:lost-gestral-3": {
+    "previous": "White Tree · Expedition 36",
+    "from": "Exit White Tree and search immediately outside, through the tall grass on the island, for Lost Gestral #3."
+  },
+  "act2:continent-esquie-swimming:blades-graveyard-reverence": {
+    "previous": "Lost Gestral #3",
+    "from": "From Lost Gestral #3 board Esquie and swim toward the Blades' Graveyard coast, then explore its clearing for Reverence."
+  },
+  "act2:continent-esquie-swimming:gestral-beach-beach-raft-volley": {
+    "previous": "Blades' Graveyard · Reverence",
+    "from": "Leave Blades' Graveyard, sail to the nearby Raft Volley Gestral Beach portal and beat its three levels."
+  },
+  "act2:continent-esquie-swimming:painting-workshop-entrance-1": {
+    "previous": "Gestral Beach · Beach Raft Volley",
+    "from": "From Raft Volley use Esquie to reach the island Painting Workshop entrance near the Stone Wave Cliffs coast. Give the first painting object to the central statue."
+  },
+  "act2:forgotten-battlefield:expedition-41": {
+    "previous": "Painting Workshop · entrance #1",
+    "from": "Exit the Workshop, land on the route to Forgotten Battlefield. Advance to the Fading Woman, then go RIGHT and LEFT to Expedition 41."
+  },
+  "act2:forgotten-battlefield:expedition-57": {
+    "previous": "Expedition 41",
+    "from": "Return from Expedition 41 to the Fading Woman; go BEHIND her into the next open battlefield and inspect ahead for Expedition 57."
+  },
+  "act2:forgotten-battlefield:dualliste": {
+    "previous": "Expedition 57",
+    "from": "From Expedition 57 follow the main left-hand battle route to Ancient Bridge, cross it and defeat Dualliste."
+  },
+  "act2:continent-northern-detours:lost-gestral-4-paint-break": {
+    "previous": "Dualliste",
+    "from": "After Dualliste, use the Battlefield's northern exit and search the nearby tree-lined grasslands for Lost Gestral #4. Return to Sastro for Paint Break."
+  },
+  "act2:continent-northern-detours:lost-voice-merchant": {
+    "previous": "Lost Gestral #4 / Paint Break",
+    "from": "From Gestral #4 head slightly NORTH in the same meadow to the merchant selling Lost Voice."
+  },
+  "act2:continent-northern-detours:stone-quarry-troubadour": {
+    "previous": "Lost Voice merchant",
+    "from": "From that merchant travel toward the nearby Stone Quarry portal. Inside, complete the friendly Troubadour's red/green note challenge."
+  },
+  "act2:continent-northern-detours:expedition-48": {
+    "previous": "Stone Quarry Troubadour",
+    "from": "Remain at the friendly Troubadour in Stone Quarry and inspect the ground on its RIGHT for Expedition 48."
+  },
+  "act2:continent-northern-detours:boat-graveyard": {
+    "previous": "Expedition 48",
+    "from": "Exit Stone Quarry to the northern Continent and find the Boat Graveyard portal. Pick up Alicia's Birthday Party."
+  },
+  "act2:continent-northern-detours:painting-workshop-entrance-2": {
+    "previous": "Boat Graveyard",
+    "from": "Leave Boat Graveyard and return toward the northern Battlefield exit; enter the second Painting Workshop among the trees and place Colour of the Beast."
+  },
+  "act2:monoco-s-station:recruit-monoco": {
+    "previous": "Painting Workshop · entrance #2",
+    "from": "From the Workshop take the Continent road toward Monoco's Station, enter and defeat Monoco in his arena."
+  },
+  "act2:monoco-s-station:expedition-65": {
+    "previous": "Recruit Monoco",
+    "from": "Once Monoco joins, walk behind the arena to the station's exit tracks and search beside the lodged carriage for Expedition 65."
+  },
+  "act2:monoco-s-station:grandis-fashionist": {
+    "previous": "Expedition 65",
+    "from": "From the carriage walk back INTO the station hall and find the red-beret Fashionist for the three poetry rewards."
+  },
+  "act2:monoco-s-station:eternal-ice-merchant-request": {
+    "previous": "Grandis Fashionist",
+    "from": "After the Fashionist visit the neighboring Grandis merchant to learn its Eternal Ice request."
+  },
+  "act2:monoco-s-station:monoco-skills-ongoing": {
+    "previous": "Eternal Ice merchant request",
+    "from": "Before leaving the station from the merchant, put Monoco in the active party and learn available skills from subsequent enemies."
+  },
+  "act2:continent-before-old-lumie-re:carousel-le-grand-cafe-de-lumie-re": {
+    "previous": "Monoco skills · ongoing",
+    "from": "From Monoco's Station take the EAST exit to The Carousel. From Carousel Entrance Flag follow the LEFT wall into the small cave for the record."
+  },
+  "act2:continent-before-old-lumie-re:carousel-grandis-challenge": {
+    "previous": "Carousel · Le Grand Café de Lumière",
+    "from": "From the record cave return to the carousel attraction, speak to the Grandis and use Paint Break to finish the challenge."
+  },
+  "act2:continent-before-old-lumie-re:gestral-ascension": {
+    "previous": "Carousel Grandis challenge",
+    "from": "Leave The Carousel and take the WEST route through Monoco's Station to the Gestral Ascension beach, then climb its platform course."
+  },
+  "act2:continent-before-old-lumie-re:expedition-47": {
+    "previous": "Gestral Ascension",
+    "from": "From the top of Gestral Ascension leave the beach and head toward Carnovi's coastal stall. Find Expedition 47 before the enemy group past it."
+  },
+  "act2:continent-before-old-lumie-re:esoteric-ruins-portier": {
+    "previous": "Expedition 47",
+    "from": "From Expedition 47 keep to the WESTWARD road toward Old Lumière. Detour into Esoteric Ruins for Portier's Wooden Boards quest."
+  },
+  "act2:continent-before-old-lumie-re:paint-break-clean-up": {
+    "previous": "Esoteric Ruins / Portier",
+    "from": "After Portier's quest, use your Paint Break ability to backtrack to known spike-locked side areas, then return toward Old Lumière."
+  },
+  "act2:old-lumie-re:mandelgo-unique-stock": {
+    "previous": "Paint Break clean-up",
+    "from": "Enter Old Lumière from the Continent. Near its Entrance Flag find Mandelgo, complete the duel and buy unique stock."
+  },
+  "act2:old-lumie-re:fracture-survivor-old-key": {
+    "previous": "Mandelgo · unique stock",
+    "from": "From Mandelgo follow LEFT STREET, hug the RIGHT wall past the first enemy and enter the broken pipe for the Old Key journal gate."
+  },
+  "act2:old-lumie-re:renoir-renoir-journal": {
+    "previous": "Fracture Survivor · OLD KEY",
+    "from": "Return from the broken pipe to the main Left Street route. Reach Manor Gardens, enter the LEFT Manor door and search its bathroom and bedroom."
+  },
+  "act2:old-lumie-re:old-lumie-re-story-encounter": {
+    "previous": "Renoir / Renoir journal",
+    "from": "Leave the Manor into Manor Gardens. Resume the story path and finish Old Lumière's main encounter to unlock Esquie's sea-reef breaking."
+  },
+  "act2:old-lumie-re:redalim": {
+    "previous": "Old Lumière story encounter",
+    "from": "Return to Old Lumière by its REAR exit after the boss. From Manor Gardens take the newly accessible return path to Redalim's Paint Cage."
+  },
+  "act2:old-lumie-re:healing-death": {
+    "previous": "Redalim",
+    "from": "From Redalim continue the same return path along handholds and grapples to the Gold Chevalière platform and Healing Death."
+  },
+  "act2:old-lumie-re:chromatic-danseuse": {
+    "previous": "Healing Death",
+    "from": "Retrace the route from Healing Death toward Train Station Ruins. Descend into the ruined station to defeat Chromatic Danseuse."
+  },
+  "act2:old-lumie-re:expedition-42": {
+    "previous": "Chromatic Danseuse",
+    "from": "From the station return to Manor Gardens and take the OTHER newly opened route. Descend its rope for Expedition 42."
+  },
+  "act2:old-lumie-re:right-street-mime": {
+    "previous": "Expedition 42",
+    "from": "From Expedition 42 fast-travel to Right Street Flag; climb beyond the fallen Axon for the hidden Mime."
+  },
+  "act2:continent-western-expansion:lost-gestral-5": {
+    "previous": "Right Street Mime",
+    "from": "Exit Old Lumière via its rear coast and use Esquie to BREAK the sea reefs on the way to the western island. Find Lost Gestral #5."
+  },
+  "act2:continent-western-expansion:falling-leaves": {
+    "previous": "Lost Gestral #5",
+    "from": "From that island sail west to Falling Leaves, enter and clear its journal/record/boss detours."
+  },
+  "act2:continent-western-expansion:accessible-caves": {
+    "previous": "Falling Leaves",
+    "from": "After Falling Leaves explore nearby western Continent optional caves; return to the main overworld when finished."
+  },
+  "act2:visages:expedition-69-joy-vale": {
+    "previous": "Accessible caves",
+    "from": "From the caves travel to Visages, enter Plaza and take JOY VALE. Follow its LEFT side path for Expedition 69."
+  },
+  "act2:visages:expedition-39-sadness-vale": {
+    "previous": "Expedition 69 · Joy Vale",
+    "from": "Return to Plaza from Joy Vale and enter SADNESS VALE. Follow the RIGHT path near the giant mask for Expedition 39."
+  },
+  "act2:visages:anger-vale-verso": {
+    "previous": "Expedition 39 · Sadness Vale",
+    "from": "Go back to the Plaza; take ANGER VALE, turn RIGHT at the cave fork and enter its Manor for the Verso record and Unknown journal."
+  },
+  "act2:visages:mask-keeper": {
+    "previous": "Anger Vale · Verso",
+    "from": "Leave the Anger Manor and return to Plaza. With each mask route explored, take the route to PEAK and defeat Mask Keeper."
+  },
+  "act2:visages:lettre-a-maelle": {
+    "previous": "Mask Keeper",
+    "from": "IMMEDIATELY after Mask Keeper camp and check available interactions until the Verso/Maelle/Esquie piano scene awards Lettre à Maelle."
+  },
+  "act2:continent-eastern-detour:robe-de-jour-merchant": {
+    "previous": "Lettre à Maelle",
+    "from": "After camping sail to the eastern Sirène region through Esquie's breakable sea reefs. Find the coast merchant selling Robe de Jour."
+  },
+  "act2:continent-eastern-detour:lost-gestral-6": {
+    "previous": "Robe de Jour merchant",
+    "from": "From the merchant sail north to the small beach above Coastal Cave. Lost Gestral #6 is near three wandering enemies."
+  },
+  "act2:continent-eastern-detour:expedition-43": {
+    "previous": "Lost Gestral #6",
+    "from": "From Gestral #6 explore the nearby eastern island with Chromatic Reaper Cultist; search its camp for Expedition 43."
+  },
+  "act2:continent-eastern-detour:gestral-race": {
+    "previous": "Expedition 43",
+    "from": "From Expedition 43 travel by Esquie to the eastern Gestral Race beach and finish its timed course."
+  },
+  "act2:continent-eastern-detour:sinister-cave": {
+    "previous": "Gestral Race",
+    "from": "From Gestral Race explore the nearby Sinister Cave portal. Follow the internal right-hand grapples and hole for its record."
+  },
+  "act2:sire-ne:expedition-55": {
+    "previous": "Sinister Cave",
+    "from": "Leave Sinister Cave and enter Sirène. Advance to Dancing Classes; inspect the RIGHT route by the third enemy group for Expedition 55."
+  },
+  "act2:sire-ne:benisseur-monoco-skill": {
+    "previous": "Expedition 55",
+    "from": "From the Expedition 55 area enter the fabric-covered room and DROP to the lower floor; fight Bénisseur with Monoco active."
+  },
+  "act2:sire-ne:expedition-67": {
+    "previous": "Benisseur / Monoco skill",
+    "from": "From Bénisseur climb back onto the main path, pass the snake fight and ride the elevator; Expedition 67 is in the first upper room."
+  },
+  "act2:sire-ne:sire-ne-axon": {
+    "previous": "Expedition 67",
+    "from": "After the upper room keep to Sirène's story path and defeat her Axon boss."
+  },
+  "act2:the-monolith:l-amour-d-une-me-re-aline-journal": {
+    "previous": "Sirène Axon",
+    "from": "Exit Sirène for the Continent and enter The Monolith. In Tainted Battlefield take the LEFT branch at the tombstone into the Manor room for Aline's journal and record."
+  },
+  "act2:the-monolith:expedition-70": {
+    "previous": "L'Amour d'une Mère / Aline journal",
+    "from": "Return from the Manor to the Monolith route. At Tainted Lumière flower stalls go RIGHT via grapples for Expedition 70."
+  },
+  "act2:the-monolith:monoco-s-tainted-enemy-skills": {
+    "previous": "Expedition 70",
+    "from": "From Expedition 70 return to the story route, keeping Monoco active while fighting new enemy variants to learn their skills."
+  },
+  "act2:the-monolith:monolith-finale": {
+    "previous": "Monoco's Tainted enemy skills",
+    "from": "From those enemies follow the Monolith's final story route to the finale and unlock Act 3."
   }
 };
