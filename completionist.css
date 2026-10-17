@@ -258,3 +258,9 @@
 #completionistPage .cp-route-viewport{padding-top:3px;padding-bottom:6px}
 #completionistPage .cp-route-legend{margin-top:0}
 @media(max-width:740px){#completionistPage .cp-dock-inner{padding-top:10px;padding-bottom:7px}}
+
+/* v14.7.7 — consistent walking-route and alternative flag-route presentation. */
+#completionistPage .cp-guide-alternate{border-left-color:#49526c}
+#completionistPage .cp-guide-alternate::before{background:#9b8bc4;box-shadow:0 0 0 3px #1b2533}
+#completionistPage .cp-guide-route-extra{margin-top:12px!important}
+#completionistPage .cp-directions-label{line-height:1.45}
