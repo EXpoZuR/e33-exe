@@ -316,17 +316,14 @@
         </div>
       </div>
 
-      <div class="cp-section-strip" aria-label="Section-weighted completion">
-        <div class="cp-section-strip-head"><span>ACT PROGRESSION</span><span>Each section's width reflects its number of steps</span></div>
+      <div class="cp-section-strip" aria-label="Act and section completion">
         <div class="cp-section-track">
           ${chapters.map(chapter=>{
             const s=chapterStats(chapter),isActive=chapter.id===openId;
-            const label=chapter.id==="prologue"?"P":chapter.id==="act1"?"I":chapter.id==="act2"?"II":chapter.id==="act3"?"III":chapter.id==="endgame"?"END":"DLC";
-            return `<button class="cp-section-segment ${isActive?"is-active":""}" style="--cp-segment-accent:${esc(chapter.accent)};flex-grow:${s.total};" data-action="segment" data-chapter="${esc(chapter.id)}" title="${esc(chapter.title)} — ${s.done} of ${s.total} steps completed" aria-label="${esc(chapter.title)}, ${s.done} of ${s.total} steps completed. Open section."><span class="cp-section-fill" style="width:${100*s.done/s.total}%"></span><span class="cp-section-marker" aria-hidden="true">${label}</span></button>`;
+            const percent=Math.round(100*s.done/s.total);
+            const tooltip=chapter.title+" · "+s.done+" / "+s.total+" completed ("+percent+"%)";
+            return `<button class="cp-section-segment ${isActive?"is-active":""}" type="button" style="--cp-segment-accent:${esc(chapter.accent)};flex-grow:${s.total};" data-action="segment" data-chapter="${esc(chapter.id)}" data-tooltip="${esc(tooltip)}" aria-label="${esc(tooltip+". Open section.")}"><span class="cp-section-fill" style="width:${100*s.done/s.total}%"></span></button>`;
           }).join("")}
-        </div>
-        <div class="cp-section-legend">
-          ${chapters.map(chapter=>`<span class="cp-legend-item ${chapter.id===openId?"is-active":""}" style="--cp-segment-accent:${esc(chapter.accent)}"><span class="cp-legend-square"></span>${esc(chapter.title)}</span>`).join("")}
         </div>
       </div>
       <div class="cp-route-viewport" aria-label="Scrollable route timeline">
