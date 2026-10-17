@@ -1,4 +1,4 @@
-/* Completionist itinerary v1 · hand-authored, stable title-based IDs in renderer */
+/* Completionist itinerary v2 · traversal-gated walkthrough; preserve moved checkpoint identifiers */
 window.E33_COMPLETION_DATA = [
   {
     "id": "prologue",
@@ -115,7 +115,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Optional boss",
             "Abbest Cave · Chromatic Abbest",
-            "From Spring Meadows exit explore the western/northwestern route near the ruined structure and enter Abbest Cave. Its optional Chromatic Abbest awards First Offensive. Return later if needed."
+            "Accessible on foot on your FIRST Continent visit after Spring Meadows (no Esquie ability required). From the Spring Meadows exit, explore the northwest side path by the ruined building to Abbest Cave, then fight its optional Chromatic Abbest for First Offensive. This is a high-level challenge in a normal run—return later if you cannot beat it."
           ],
           [
             "Overworld",
@@ -220,12 +220,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Merchant",
             "Blabary / Goblu record",
-            "On the Continent northwest of Ancient Sanctuary near yellow-leaf trees, visit Blabary and buy the Goblu record and unique cosmetics."
+            "Accessible on foot after Flying Waters. West of Ancient Sanctuary, near the yellow-leafed trees, buy the Goblu record and any currently available Artist haircuts from Blabary. Stock hidden behind an unrecruited character is NOT a required purchase yet—return for Sciel's haircut after she joins."
           ],
           [
             "Chromatic",
             "Chromatic Brûleur",
-            "In the northern field around the yellow trees and Blabary, challenge the roaming Chromatic Brûleur for Powerful Revive."
+            "OPTIONAL HIGH-LEVEL BOSS — no special traversal ability is needed to reach it, but its stats are much higher than nearby story enemies. Look in the open field northeast of Hidden Gestral Arena. Fight it if your NG+ party is ready; otherwise use Skip for now and revisit later for Powerful Revive."
           ],
           [
             "Arena",
@@ -245,12 +245,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Lost Gestral",
             "Lost Gestral #1",
-            "Find it immediately outside Esquie's Nest by the large crowned-stone-face entrance. Speak to it and later claim the reward from Sastro at camp."
-          ],
-          [
-            "Merchant",
-            "Carrabi's coastal shop",
-            "Explore the small beach northeast of Esquie's Nest and buy its unique Lumière outfits."
+            "From the walkable path after Flying Waters, approach Esquie's Nest and speak with the Gestral standing directly in front of the entrance. No terrain-breaking ability is required to reach this NPC. Invite the Gestral to camp, then find Sastro on the left side of camp to collect the reward; Sastro appears once the Gestral arrives."
           ]
         ]
       ],
@@ -360,17 +355,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Arena",
             "Gestral tournament / recruit Sciel",
-            "Complete the story tournament. If seeking an alternate reward during NG+, note the Sciel encounter's outcome, then recruit Sciel."
-          ],
-          [
-            "Boss",
-            "Golgra optional duel",
-            "At the Chief's House ask Golgra to fight. Return with stronger builds if she is too difficult."
+            "Finish the village tournament and recruit Sciel. If you are replaying NG+ for alternate rewards, check the Sciel fight's win/loss weapon outcome. After she joins, return to the theater merchant for Sciel's outfit; you cannot purchase it earlier."
           ],
           [
             "Cosmetic",
             "Village cosmetic merchants",
-            "Purchase unique Sakapatate outfits / hairstyles from the village stalls before the story moves on."
+            "While Gustave is still in your party, buy his Sakapatate outfit and Gestral haircut from Delsitra near Karatom's workshop. After recruiting Sciel in the tournament, buy her Sakapatate outfit from Alexcyclo by the theater stage. Verso's Sakapatate outfit stays LOCKED until he joins in Act 2; do not treat the unavailable merchant slot as a missing Act 1 purchase."
           ]
         ]
       ],
@@ -410,7 +400,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Missable quest",
             "RETURN: Karatom's Pure outfit",
-            "Return immediately to Gestral Village, give Karatom the Blue Mushroom, defeat his Ultimate Sakapatate as Gustave and claim Gustave's Pure outfit BEFORE Stone Wave Cliffs finale."
+            "After recruiting Esquie and retrieving the Blue Mushroom from Esquie's Nest, RETURN to Karatom's workshop in Gestral Village. Give him the mushroom, win Gustave's solo Ultimate Sakapatate test fight, and collect Gustave's Pure outfit before completing Stone Wave Cliffs. This is missable once Act 1 ends."
           ]
         ]
       ],
@@ -420,12 +410,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Journal",
             "Expedition 62",
-            "North of Gestral Village cross the jagged ground barrier with Esquie. Search the rubble by the ruined archway."
+            "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK. Head north of Gestral Village toward the cluster of three trees, ride Esquie through the blue-black rock barrier, then search the building rubble for Expedition 62."
           ],
           [
             "Merchant",
             "Jumeliba and Energising Start I",
-            "Past the northern barrier toward the small beach, buy Gustave's unique haircuts from Jumeliba and search beneath the collapsed arch for Energising Start I."
+            "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK. From the road north of Gestral Village ride through the rocky terrain to the small northern beach, then buy Gustave's Charming/Curly hairstyles from Jumeliba. Search under the nearby collapsed arch for Energising Start I."
           ],
           [
             "Lost Gestral",
@@ -433,24 +423,30 @@ window.E33_COMPLETION_DATA = [
             "On the right-hand side of the approach to Stone Wave Cliffs, defeat the Bourgeon on the lower path and find the small Gestral beyond, near the balloon."
           ],
           [
+            "Merchant",
+            "Carrabi's coastal shop",
+            "ACCESS GATE — recruit Esquie and unlock rough-terrain breaking at the end of Esquie's Nest first. Then ride Esquie to the beach north/northeast of Esquie's Nest, passing the blue-black rock barrier on the route. Find Carrabi on the coast and buy Gustave's Lumière Suit, Maelle's Lumière outfit, and Gustave's Short haircut. This is intentionally scheduled AFTER Esquie so the rock barrier cannot stop you.",
+            "act1:continent-after-flying-waters-before-sanctuary:carrabi-s-coastal-shop"
+          ],
+          [
             "Collectible",
             "Sastro's reward for two Gestrals",
-            "At camp speak to Sastro for the second rescue reward."
+            "After rescuing Lost Gestral #1 outside Esquie's Nest and Lost Gestral #2 near Stone Wave Cliffs, visit Sastro at camp and claim the second rescue reward. Sastro's gifts depend on rescue count, not on the order you found them."
           ],
           [
             "Record",
             "Ancient Gestral City",
-            "Use Esquie to cross blocked ground south of Flying Waters, enter Ancient Gestral City and find Lights of the Past in the ruins."
+            "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK. South/east of Flying Waters, smash the blue-black rocky land barrier and enter Ancient Gestral City; pick up the Lights of the Past record in the middle of the ruins."
           ],
           [
             "Record",
             "Twilight Quarry",
-            "Travel south from Esquie's Nest toward the wrecked ships, enter Twilight Quarry and retrieve Un 33 Décembre à Lumière."
+            "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK. Travel toward the wrecked-ship shore south/east of Esquie's Nest, cross the previously blocked rough ground, enter Twilight Quarry, and claim the Un 33 Décembre à Lumière record."
           ],
           [
             "Optional dungeon",
             "Yellow Harvest entrance",
-            "Northwest of Gestral Village, cross the Esquie barrier among yellow-leaved woods and enter Yellow Harvest."
+            "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK (unlocks at Esquie's Nest). Ride Esquie northwest of Gestral Village beyond the rocky obstruction by the yellow forest and Hidden Gestral Arena. Enter Yellow Harvest only after crossing this barrier."
           ]
         ]
       ],
@@ -618,22 +614,22 @@ window.E33_COMPLETION_DATA = [
           [
             "Record",
             "Gustave record · Stone Wave Cliffs return",
-            "Once Esquie can swim, reenter Stone Wave Cliffs through the rear/northern shoreline and search the former boss area."
+            "REQUIRES ESQUIE SWIMMING (unlocked by the Stone Wave Cliffs finale at the start of Act 2). Swim to the north/rear shoreline entrance of Stone Wave Cliffs; return to the former Lampmaster cliff and collect Gustave's music record. No flying or diving is required."
           ],
           [
             "Journal",
             "Expedition 64 / The Meadows",
-            "Swim east of Spring Meadows to The Meadows shoreline; search the old camp for Expedition 64 and explore The Meadows for Our Painted Family."
+            "REQUIRES ESQUIE SWIMMING (after Stone Wave Cliffs). Sail to The Meadows' beach on the southern coast; retrieve Expedition 64 from the abandoned camp between the coast and lake, then enter The Meadows for the Our Painted Family record."
           ],
           [
             "Journal",
             "White Tree · Expedition 36",
-            "Swim to White Tree and collect Expedition 36 and Honeymoon in Lumière near the central path."
+            "REQUIRES ESQUIE SWIMMING. Land on the small island west of the starting landmass, enter White Tree, and pick up Expedition 36 and the Honeymoon in Lumière record from its central path."
           ],
           [
             "Lost Gestral",
             "Lost Gestral #3",
-            "Search west of White Tree on the Continent, among tall vegetation."
+            "REQUIRES ESQUIE SWIMMING. Reach White Tree island off the western coast. Outside the White Tree entrance, find the small Gestral in the tall green vegetation and invite it back to Sastro."
           ],
           [
             "Record",
@@ -648,7 +644,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Painting Workshop · entrance #1",
-            "Find the first Workshop portal, speak to Faceless Boy, collect Light of the Beast and place it into the Lampmaster statue."
+            "REQUIRES ESQUIE SWIMMING. On the island north/northeast of Stone Wave Cliffs (between the cliffs and Forgotten Battlefield), enter the large painted portal. Speak to the Faceless Boy, take Light of the Beast, and place it in the central statue. The third workshop remains inaccessible until Act 3 flight."
           ]
         ]
       ],
@@ -678,7 +674,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Lost Gestral",
             "Lost Gestral #4 / Paint Break",
-            "Search the northern grassland between Forgotten Battlefield and Monoco's Station. Bring your fourth Gestral to Sastro at camp to unlock Paint Break."
+            "AFTER FORGOTTEN BATTLEFIELD. Search the northern edge of the snowy green area between Battlefield's rear exit and Monoco's Station, near the trees. This is the fourth Lost Gestral if you found #1 outside Esquie's Nest, #2 near Stone Wave Cliffs, and #3 on White Tree island; return to Sastro at camp for Paint Break (destroy blue Paint Spikes)."
           ],
           [
             "Record",
@@ -703,7 +699,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Painting Workshop · entrance #2",
-            "In the second Painting Workshop portal retrieve Colour of the Beast for its statue."
+            "AFTER FORGOTTEN BATTLEFIELD (no flight required). From its northern exit follow the western land route into the grove of trees northwest of Forgotten Battlefield, south of Monoco's Station. Enter the second Painting Workshop, accept Colour of the Beast from the Faceless Boy, and add it to the statue. Do not attempt the third floating-island entrance yet."
           ]
         ]
       ],
@@ -748,7 +744,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Cosmetic",
             "Carousel Grandis challenge",
-            "Speak to the Grandis by the carousel, break obstructing crystals with Paint Break, and receive the unique hairstyle."
+            "REQUIRES PAINT BREAK, awarded by Sastro for four rescued Gestrals. At The Carousel on Monoco's Station's eastern side, talk to the Grandis, destroy the blue Paint Spike obstructions, and complete the challenge for its cosmetic reward. If you have fewer than four Gestrals, return after the fourth rescue."
           ],
           [
             "Minigame",
@@ -768,7 +764,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Backtrack",
             "Paint Break clean-up",
-            "Revisit Gestral Village, Spring Meadows and Stone Wave Cliffs to break marked obstacles hiding unique Pictos, weapons and the Chromatic Gault."
+            "REQUIRES FOUR LOST GESTRALS AND SASTRO'S PAINT BREAK LESSON. Return to blocked Paint Spike routes in Gestral Village, Spring Meadows and Stone Wave Cliffs (including Chromatic Gault). Also revisit Delsitra in Gestral Village after Verso joins to buy Verso's previously locked Sakapatate outfit; it was not accessible during Act 1."
           ]
         ]
       ],
@@ -793,7 +789,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Boss",
             "Old Lumière story encounter",
-            "Complete the main story route, then reenter by the rear/northern exit for optional content."
+            "Follow the Old Lumière story route and defeat the main encounter; visit camp and exhaust available scenes. When you return to the Continent, Esquie gains the ability to break reefs IN THE WATER. This second sea traversal upgrade, NOT the initial swimming ability, opens the outer eastern and western island paths. Return by Old Lumière's rear entrance for post-boss collectibles."
           ],
           [
             "Weapon",
@@ -828,7 +824,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Lost Gestral",
             "Lost Gestral #5",
-            "Explore the western island accessible with Esquie near two Mimes; find the Gestral and return to Sastro."
+            "REQUIRES SWIMMING THROUGH SEA REEFS, unlocked after Old Lumière. From Old Lumière's rear Continent exit, cross the previously blocked water passage to the small northwestern island with red trees. Find the Gestral beyond two Mimes and invite it to camp."
           ],
           [
             "Optional dungeon",
@@ -878,27 +874,27 @@ window.E33_COMPLETION_DATA = [
           [
             "Record",
             "Robe de Jour merchant",
-            "South of Sirène, find the merchant on the Continent and buy Robe de Jour."
+            "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Swim through the blocked water passages into the region south of Sirène; buy the Robe de Jour record from the Gestral merchant on the small beach."
           ],
           [
             "Lost Gestral",
             "Lost Gestral #6",
-            "Search the beach north of Coastal Cave for the hidden Gestral."
+            "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Cross to the eastern area north of Coastal Cave and find the small Gestral on the beach near three enemies."
           ],
           [
             "Journal",
             "Expedition 43",
-            "On the eastern island containing a Chromatic Reaper Cultist, locate Expedition 43."
+            "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Swim to the eastern island accessed through the reef gap and inspect the camp near the Chromatic Reaper Cultist for Expedition 43."
           ],
           [
             "Minigame",
             "Gestral Race",
-            "At the eastern beach, complete the time-trial route in under 38 seconds for all unique rewards."
+            "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Swim to the island east of Sirène and enter Gestral Beach. Finish the time trial in under 38 seconds for the top swimsuit reward; the floating Painting Workshop island nearby still requires flight."
           ],
           [
             "Record",
             "Sinister Cave",
-            "Enter Sinister Cave, collect Nocturne pour Lumière, and defeat its Chromatic encounter."
+            "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Enter Sinister Cave in the eastern region and navigate the interior grapples/side paths to retrieve Nocturne pour Lumière; defeat its Chromatic encounter if strong enough."
           ]
         ]
       ],
@@ -966,7 +962,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Relationship",
             "Esquie 6–7",
-            "At camp advance Esquie's relationship to unlock diving at level 6; complete level 7 for the final reward."
+            "REQUIRES ACT 3 after the Monolith and the opportunity to fly. At camp raise Esquie's relationship to level 5; his next quest returns you to Esquie's Nest to fight François again for the Urrie stone. Complete this to reach relationship level 6 and UNLOCK DIVING, then talk again at camp for level 7 and the final Verso gradient attack. Simply talking to Esquie without completing the François quest does not unlock diving."
           ],
           [
             "Relationship",
@@ -991,7 +987,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Lost Gestral",
             "Find remaining Gestrals",
-            "With flight, search the floating island near Endless Tower, the area near The Reacher and the eastern red forest near Endless Night Sanctuary. Return all nine to Sastro."
+            "REQUIRES ESQUIE FLYING at the start of Act 3. Locate the remaining airborne/island Gestrals (including near Endless Tower, The Reacher and Endless Night Sanctuary) and return to Sastro for all nine rescue rewards. No diving is needed to locate those reached by flight."
           ]
         ]
       ],
@@ -1028,13 +1024,8 @@ window.E33_COMPLETION_DATA = [
         [
           [
             "Quest",
-            "The Fountain · Blanche",
-            "After sparing friendly Nevrons, visit The Fountain and speak to Blanche for their collective reward. Find Expedition 84 nearby."
-          ],
-          [
-            "Quest",
             "Floating Cemetery · Chalier",
-            "Speak with the friendly Chalier, pick a weapon and complete the fight and final request."
+            "REQUIRES ESQUIE FLYING (Act 3) to reach Floating Cemetery. Find the friendly white Chalier among the fallen expeditioners, choose its weapon, fight it as requested and complete the final dialogue; unlike most friendly Nevrons, this quest asks you to finish the encounter."
           ],
           [
             "Quest",
@@ -1049,13 +1040,24 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Painting Workshop · finale",
-            "Complete the third portal near Sirène, place Shape of the Beast in the statue, then defeat the upgraded Lampmaster."
+            "REQUIRES ESQUIE FLYING (Act 3) to reach the third Painting Workshop entrance on the FLOATING island east of Sirène. Complete the first two workshops earlier (after Esquie swims; after Forgotten Battlefield), retrieve Shape of the Beast here, place it into the statue, then defeat the upgraded Lampmaster."
+          ],
+          [
+            "Quest",
+            "The Fountain · Blanche",
+            "FINAL FRIENDLY NEVRON REWARD — requires ESQUIE FLYING to reach The Fountain west of Spring Meadows. Do this AFTER completing the other friendly Nevron quests, including Chalier at Floating Cemetery and the Frozen Hearts/Esoteric Ruins quests. Speak with Blanche and complete the final required encounter to earn the collective reward; Blanche is the special final encounter, not a Nevron you simply leave alive."
           ]
         ]
       ],
       [
         "Optional regions, bosses and secret weapons",
         [
+          [
+            "Boss",
+            "Golgra optional duel",
+            "POSTGAME CHALLENGE (no traversal gate): Return to Gestral Village's Chief's House and challenge Golgra. This very high-level optional duel is intentionally scheduled after Act 3 instead of implying a normal Act 1 party should win it.",
+            "act1:gestral-village:golgra-optional-duel"
+          ],
           [
             "Boss",
             "Sprong · Cheater",
@@ -1089,7 +1091,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Boss",
             "Renoir's Drafts / The Abyss · Simon",
-            "Find the underwater entrance between Visages and Sirène, follow the Golden Tree to The Abyss, beat Simon and collect his journal and Simoso."
+            "REQUIRES ESQUIE UNDERWATER DIVING: Act 3, relationship level 6, and the repeat François quest from Esquie's Nest. Dive into the glowing sea portal northeast of Old Lumière/southeast of Visages to enter Renoir's Drafts, then descend via Golden Tree into The Abyss. Defeat Simon for his journal and Simoso. Do not attempt this merely after learning to swim or break sea reefs."
           ],
           [
             "Arena",
@@ -1099,7 +1101,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Area",
             "Other flying-only areas",
-            "Explore Sky Island, Crimson Forest, Endless Night Sanctuary, Isle of the Eyes, Dark Gestral Arena, Sunless Cliffs and the remaining floating islands for unique loot and encounters."
+            "REQUIRES ESQUIE FLYING (Act 3). Explore Sky Island, Crimson Forest, Endless Night Sanctuary, Isle of the Eyes, Dark Gestral Arena, Sunless Cliffs and other floating islands for unique rewards. Deep-water dive sites require Esquie's separate level-6 relationship quest."
           ]
         ]
       ],
@@ -1142,7 +1144,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Location",
             "Enter Verso's Drafts",
-            "Once Esquie can dive, locate the portal near Lumière and enter the update area."
+            "REQUIRES ACT 3 FLYING PLUS UNDERWATER DIVING from Esquie's relationship level 6 / François quest. Fly toward Lumière in the far south, then find the toy-covered rock on the small island immediately east of the city. Use the dive interaction to enter the Verso's Drafts portal; swimming alone is not enough."
           ],
           [
             "Quest",
