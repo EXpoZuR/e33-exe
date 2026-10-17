@@ -5,6 +5,10 @@
   const mount = document.getElementById("completionistSections");
   const dock = document.getElementById("completionistDock");
   const live = document.getElementById("completionistAnnouncement");
+  const modal = document.getElementById("completionistGuideModal");
+  const detailData = window.E33_COMPLETION_DETAILS || {};
+  let modalStepId = null;
+  let modalPreviousFocus = null;
   if (!Array.isArray(raw) || !mount || !dock) return;
 
   const STORE = "e33-completionist-progress-v1";
@@ -67,6 +71,97 @@
     })[kind] || "◇";
   }
 
+
+  // Every checkpoint opens the same stable, accessible guide modal.
+  function completionNote(step) {
+    if (step.kind === "Journal" || step.kind === "Record") return "Pick up the named collectible, then confirm it appears in your Journal or Music Records menu. Merely reaching the location does not count.";
+    if (step.kind === "Picto" || step.kind === "Weapon") return "Collect the item or defeat the specified enemy, then confirm the named item appears in your Pictos or Weapons inventory. Existing NG+ copies still count.";
+    if (step.kind === "Rare enemy" || step.kind === "Chromatic" || step.kind === "Boss" || step.kind === "Optional boss") return "Defeat the encounter and claim its unique reward. If you are not strong enough yet, use Skip for now and return when ready.";
+    if (step.kind === "Merchant") return "Finish the merchant duel if its stock is locked and purchase the unique item(s). Just meeting the merchant is not the same as acquiring everything.";
+    if (step.kind === "Lost Gestral") return "Speak with the lost Gestral, offer to bring it to camp, then check in with Sastro at camp for the corresponding reward.";
+    if (step.kind === "Quest" || step.kind === "Missable quest") return "After handing in the requested item or winning the quest fight, speak to the NPC one more time and verify the quest reward before leaving.";
+    if (step.kind === "Relationship") return "Return to camp after the quest, select Check Up on the Others and speak through the new relationship interaction to claim the unlock.";
+    if (step.kind === "Minigame" || step.kind === "Arena") return "Finish every required round or objective and speak to the host again to claim its final reward.";
+    return "Complete the named interaction, then verify any unique reward in the corresponding in-game menu before marking this step complete.";
+  }
+  function guideSource(step) {
+    const areaInfo = detailData.areas?.[step.area];
+    const key = detailData.overrides?.[step.title] || areaInfo?.[2] || step.chapterId;
+    const url = detailData.sources?.[key] || detailData.sources?.[step.chapterId];
+    if (!url || !/^https:\/\/[a-z0-9.-]+\/\S+$/i.test(url)) return null;
+    const title = detailData.sourceTitles?.[key] || (areaInfo?.[2] === key ? "Illustrated area walkthrough / reference" : "Collectibles walkthrough");
+    return {url,title};
+  }
+  function showGuide(id) {
+    const entry = byId.get(id);
+    if(!entry || !modal)return;
+    const step=entry.step, ch=chapters.find(c=>c.id===step.chapterId);
+    const area = detailData.areas?.[step.area] || [step.area,"Follow the nearest Expedition Flag and examine the side paths before leaving the area.",step.chapterId];
+    const detailed = detailData.specific?.[step.title] || "";
+    const source=guideSource(step);
+    const st=statusOf(step.id);
+    modalStepId=id;
+    modalPreviousFocus=document.activeElement;
+    const modalBody=modal.querySelector(".cp-guide-body");
+    modal.style.setProperty("--cp-guide-accent", ch?.accent || "#81c8ff");
+    modal.querySelector("#cpGuideChapter").textContent = ch?.title || "Completionist";
+    modal.querySelector("#cpGuideType").textContent = icon(step.kind)+" "+step.kind;
+    modal.querySelector("#cpGuideTitle").textContent = step.title;
+    modal.querySelector("#cpGuideLocation").textContent = step.area;
+    modal.querySelector("#cpGuideNumber").textContent = "STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
+    modalBody.innerHTML = `
+      <div class="cp-guide-intro">A longer route for this checkpoint. Directions use named Expedition Flags and visible landmarks wherever available.</div>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">01 / START HERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p></section>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / GET TO THE OBJECTIVE</span><h4>Route and landmarks</h4><p>${esc(detailed || step.directions)}</p></section>
+      ${detailed && detailed !== step.directions ? `<section class="cp-guide-block cp-guide-short"><span class="cp-guide-block-label">QUICK ROUTE REMINDER</span><p>${esc(step.directions)}</p></section>` : ""}
+      <section class="cp-guide-block"><span class="cp-guide-block-label">03 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(completionNote(step))}</p></section>
+      ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
+    `;
+    updateModalControls();
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    document.body.classList.add("modal-open");
+    modal.querySelector(".cp-guide-scroll").scrollTop=0;
+    modal.querySelector(".cp-guide-close")?.focus({preventScroll:true});
+  }
+  function updateModalControls() {
+    if(!modalStepId || !modal)return;
+    const st=statusOf(modalStepId), actions=modal.querySelector("#cpGuideControls");
+    if(!actions)return;
+    actions.innerHTML=st==="done" ?
+      `<span class="cp-guide-done-msg">✓ Step completed</span><button class="cp-guide-secondary" data-guide-action="restore">Undo completion</button>` :
+      st==="skip" ?
+      `<span class="cp-guide-skip-msg">○ Skipped for later</span><button class="cp-guide-primary" data-guide-action="done">✓ Complete Step</button><button class="cp-guide-secondary" data-guide-action="restore">Revisit / make active</button>` :
+      `<button class="cp-guide-primary" data-guide-action="done">✓ Complete Step</button><button class="cp-guide-secondary" data-guide-action="skip">Skip for now ↷</button>`;
+  }
+  function closeGuide() {
+    if(!modal || !modal.classList.contains("open"))return;
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+    document.body.classList.remove("modal-open");
+    modalStepId=null;
+    if(modalPreviousFocus?.isConnected)modalPreviousFocus.focus({preventScroll:true});
+    else mount.querySelector(".cp-focus-card")?.focus({preventScroll:true});
+    modalPreviousFocus=null;
+  }
+  modal?.addEventListener("click",event=>{
+    if(event.target===modal || event.target.closest(".cp-guide-close")){closeGuide();return;}
+    const btn=event.target.closest("[data-guide-action]");
+    if(!btn||!modalStepId)return;
+    const id=modalStepId,status=btn.dataset.guideAction;
+    closeGuide();
+    change(id,status==="restore"?"pending":status);
+  });
+  modal?.addEventListener("keydown",event=>{
+    if(event.key==="Escape"){event.preventDefault();closeGuide();return;}
+    if(event.key!=="Tab")return;
+    const focusable=[...modal.querySelectorAll('button:not(:disabled), a[href]')].filter(x=>x.offsetParent!==null);
+    if(!focusable.length)return;
+    const first=focusable[0],last=focusable[focusable.length-1];
+    if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
+    else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
+  });
+
   function skippedMarkup(chapter) {
     const skipped = chapter.steps.filter(step => statusOf(step.id) === "skip");
     if (!skipped.length) return "";
@@ -80,6 +175,7 @@
       ${visible.map(step => `<div class="cp-skipped-item">
         <span class="cp-skipped-dot" aria-hidden="true"></span>
         <span class="cp-skipped-title" title="${esc(step.area+" · "+step.title)}">${esc(step.title)}</span>
+        <button class="cp-inline" data-action="details" data-id="${esc(step.id)}" aria-label="Details for ${esc(step.title)}">Guide ↗</button>
         <button class="cp-inline" data-action="restore" data-id="${esc(step.id)}" aria-label="Move ${esc(step.title)} back to next steps">Revisit</button>
         <button class="cp-inline complete" data-action="done" data-id="${esc(step.id)}" aria-label="Mark ${esc(step.title)} completed">✓</button>
       </div>`).join("")}
@@ -94,6 +190,7 @@
         ${done.map(step => `<div class="cp-archive-row">
           <span class="cp-archive-icon" aria-hidden="true">✓</span>
           <span class="cp-archive-name">${esc(step.area)} · ${esc(step.title)}</span>
+          <button class="cp-inline" data-action="details" data-id="${esc(step.id)}" aria-label="Details for ${esc(step.title)}">Guide ↗</button>
           <button class="cp-inline" data-action="restore" data-id="${esc(step.id)}" aria-label="Undo ${esc(step.title)}">Undo</button>
         </div>`).join("")}
       </div>
@@ -125,6 +222,7 @@
               <div class="cp-upcoming-actions">
                 <button class="cp-inline cp-upcoming-complete" data-action="done" data-id="${esc(step.id)}" aria-label="Complete ${esc(step.title)}">✓ Complete Step</button>
                 <button class="cp-inline cp-upcoming-skip" data-action="skip" data-id="${esc(step.id)}" aria-label="Skip ${esc(step.title)} for now">Skip for now ↷</button>
+                <button class="cp-inline cp-upcoming-guide" data-action="details" data-id="${esc(step.id)}" aria-label="View detailed directions for ${esc(step.title)}">↗ Full guide</button>
               </div>
             </div>
           </div>`;
@@ -162,6 +260,7 @@
         <div class="cp-step-actions">
           <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
           <button class="cp-skip" data-action="skip" data-id="${esc(next.id)}">Skip for now ↷</button>
+          <button class="cp-route-btn" data-action="details" data-id="${esc(next.id)}" aria-label="View detailed directions for ${esc(next.title)}">↗ Detailed directions</button>
         </div>
       </article>`;
     }
@@ -214,6 +313,20 @@
         <div class="cp-overall-right">
           <div><strong>${activeChapter ? esc(activeChapter.title) : "Route"}</strong> · ${activeStats ? activeStats.done+" / "+activeStats.total+" complete" : "Select an act"}</div>
           <div>${steps.filter(s=>statusOf(s.id)==="skip").length} skipped · ${steps.length-totalDone} still uncollected</div>
+        </div>
+      </div>
+
+      <div class="cp-section-strip" aria-label="Section-weighted completion">
+        <div class="cp-section-strip-head"><span>ACT PROGRESSION</span><span>Each section's width reflects its number of steps</span></div>
+        <div class="cp-section-track">
+          ${chapters.map(chapter=>{
+            const s=chapterStats(chapter),isActive=chapter.id===openId;
+            const label=chapter.id==="prologue"?"P":chapter.id==="act1"?"I":chapter.id==="act2"?"II":chapter.id==="act3"?"III":chapter.id==="endgame"?"END":"DLC";
+            return `<button class="cp-section-segment ${isActive?"is-active":""}" style="--cp-segment-accent:${esc(chapter.accent)};flex-grow:${s.total};" data-action="segment" data-chapter="${esc(chapter.id)}" title="${esc(chapter.title)} — ${s.done} of ${s.total} steps completed" aria-label="${esc(chapter.title)}, ${s.done} of ${s.total} steps completed. Open section."><span class="cp-section-fill" style="width:${100*s.done/s.total}%"></span><span class="cp-section-marker" aria-hidden="true">${label}</span></button>`;
+          }).join("")}
+        </div>
+        <div class="cp-section-legend">
+          ${chapters.map(chapter=>`<span class="cp-legend-item ${chapter.id===openId?"is-active":""}" style="--cp-segment-accent:${esc(chapter.accent)}"><span class="cp-legend-square"></span>${esc(chapter.title)}</span>`).join("")}
         </div>
       </div>
       <div class="cp-route-viewport" aria-label="Scrollable route timeline">
@@ -287,6 +400,7 @@
         render({followRail:false});
       } else openChapter(btn.dataset.chapter);
     }
+    if(action==="details")showGuide(id);
     if(action==="done" || action==="skip")change(id,action);
     if(action==="restore")change(id,"pending");
     if(action==="toggle-skips") {
@@ -307,6 +421,8 @@
     if(event.target.open)showArchives.add(chapter); else showArchives.delete(chapter);
   },true);
   dock.addEventListener("click",event=>{
+    const segment=event.target.closest("button[data-action='segment']");
+    if(segment){openChapter(segment.dataset.chapter);mount.querySelector('[data-cp-chapter="'+segment.dataset.chapter+'"]')?.scrollIntoView({behavior:"smooth",block:"start"});return;}
     const btn=event.target.closest("button[data-action='jump']");
     if(!btn)return;
     const item=byId.get(btn.dataset.id);
