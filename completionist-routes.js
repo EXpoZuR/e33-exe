@@ -1,4 +1,4 @@
-/* E33.EXE sequential travel guidance by stable checkpoint ID. */
+/* Continuous location-to-location routes keyed by immutable checkpoint IDs. */
 window.E33_COMPLETION_ROUTES = {
   "act1:spring-meadows-meadows-corridor:dodger": {
     "previous": "Prologue festival rewards",
@@ -631,5 +631,157 @@ window.E33_COMPLETION_ROUTES = {
   "act2:the-monolith:monolith-finale": {
     "previous": "Monoco's Tainted enemy skills",
     "from": "From those enemies follow the Monolith's final story route to the finale and unlock Act 3."
+  },
+  "act3:act-3-relationships-and-full-traversal:esquie-6-7": {
+    "previous": "Monolith finale",
+    "from": "After the Monolith finale open camp and follow Esquie's new relationship scenes. Return to François in Esquie's Nest for the rematch, then return to camp to unlock diving."
+  },
+  "act3:act-3-relationships-and-full-traversal:sciel-6-7": {
+    "previous": "Esquie 6–7",
+    "from": "From Esquie's camp scene talk to Sciel at the same campsite. Follow her level 6 and 7 prompts and collect the associated rewards."
+  },
+  "act3:act-3-relationships-and-full-traversal:lune-sire-ne-s-dress": {
+    "previous": "Sciel 6–7",
+    "from": "After finishing Sciel's camp dialogue talk to Lune. Fly to Sirène's Dress, defeat the Chromatic encounter, search for Expedition 46, then return to camp."
+  },
+  "act3:act-3-relationships-and-full-traversal:maelle-the-reacher": {
+    "previous": "Lune · Sirène's Dress",
+    "from": "From Lune's camp resolution speak to Maelle and follow her request to The Reacher. Clear its journal and battle objectives, then return and select TRUTH."
+  },
+  "act3:act-3-relationships-and-full-traversal:monoco-sacred-river": {
+    "previous": "Maelle · The Reacher",
+    "from": "After completing Maelle's relationship talk to Monoco at camp. Travel to Sacred River, defeat Golgra for his quest, visit the nearby record merchant and return."
+  },
+  "act3:act-3-relationships-and-full-traversal:find-remaining-gestrals": {
+    "previous": "Monoco · Sacred River",
+    "from": "Leave Sacred River on flying Esquie and search the floating-island regions near Endless Tower, The Reacher and Endless Night Sanctuary for remaining Gestrals. Report to Sastro."
+  },
+  "act3:story-finale-lumie-re:expedition-60": {
+    "previous": "Find remaining Gestrals",
+    "from": "After Sastro's final reward fly to Lumière's last-story entrance. Approach Opera House, take the RIGHT detour and use Esquie to retrieve Expedition 60."
+  },
+  "act3:story-finale-lumie-re:lumie-re-music-record": {
+    "previous": "Expedition 60",
+    "from": "From the Expedition 60 retrieval return to the Opera House route and enter the building. Look along the RIGHT side near the exit for the music record."
+  },
+  "act3:story-finale-lumie-re:see-the-finale": {
+    "previous": "Lumière music record",
+    "from": "From the record continue the linear final-city route toward the last boss. Finish the story, then reload the pre-finale save for cleanup."
+  },
+  "endgame:friendly-nevrons-remaining-quests:floating-cemetery-chalier": {
+    "previous": "See the finale",
+    "from": "Following Act 3's finale return to the Continent with flying Esquie. Enter Floating Cemetery, talk to Chalier and complete its requested combat and dialogue."
+  },
+  "endgame:friendly-nevrons-remaining-quests:frozen-hearts": {
+    "previous": "Floating Cemetery · Chalier",
+    "from": "Leave Floating Cemetery and fly to Frozen Hearts. Fight Gargant for Eternal Ice, then travel back to Monoco's Station and turn it in."
+  },
+  "endgame:friendly-nevrons-remaining-quests:frozen-hearts-danseuse": {
+    "previous": "Frozen Hearts",
+    "from": "Return to Frozen Hearts after the Gargant and merchant exchange. Find the white Danseuse and complete its parry challenge, picking up the nearby records and journal."
+  },
+  "endgame:friendly-nevrons-remaining-quests:painting-workshop-finale": {
+    "previous": "Frozen Hearts Danseuse",
+    "from": "Exit Frozen Hearts with Esquie and fly to the THIRD Painting Workshop floating portal east of Sirène. Place its last offering and finish the Lampmaster encounter."
+  },
+  "endgame:friendly-nevrons-remaining-quests:the-fountain-blanche": {
+    "previous": "Painting Workshop · finale",
+    "from": "After the Workshop finale revisit any unresolved friendly Nevrons. Fly to The Fountain west of Spring Meadows and complete Blanche's concluding encounter."
+  },
+  "act1:gestral-village:golgra-optional-duel": {
+    "previous": "The Fountain · Blanche",
+    "from": "Leave The Fountain, head back to Gestral Village and enter the Chief's House. Challenge Golgra with your endgame party."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:sprong-cheater": {
+    "previous": "Golgra optional duel",
+    "from": "From Gestral Village take Esquie to the water near Blades' Graveyard and approach Sprong. Defeat it for Cheater."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:serpenphare-energy-master": {
+    "previous": "Sprong · Cheater",
+    "from": "After Sprong cross the eastern ocean with Esquie and approach the towering Serpenphare for its Energy Master reward."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:chromatic-petank-anti-stun": {
+    "previous": "Serpenphare · Energy Master",
+    "from": "After Serpenphare fly to the large eastern island nearby and follow the Chromatic Petank to its combat circle."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:the-canvas-manor-family-canvas": {
+    "previous": "Chromatic Petank · Anti-Stun",
+    "from": "From the eastern island take Esquie to The Canvas portal. Retrieve the Manor Family Canvas and return to its associated Manor chamber."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:the-crows": {
+    "previous": "The Canvas · Manor Family Canvas",
+    "from": "After obtaining the Family Canvas fly to The Crows dungeon. Pick up Expedition 34, shoot all the crows, and defeat the special fight."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:flying-manor-clea": {
+    "previous": "The Crows",
+    "from": "Leave The Crows and use Esquie to reach the Flying Manor entrance. Clear its four guardian routes, defeat Clea and speak to the child afterward."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:renoir-s-drafts-the-abyss-simon": {
+    "previous": "Flying Manor · Clea",
+    "from": "From Flying Manor return to the Continent ocean. Use Esquie's relationship-unlocked DIVE at Renoir's Drafts, descend through Golden Tree to The Abyss, and defeat Simon."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:endless-tower": {
+    "previous": "Renoir's Drafts / The Abyss · Simon",
+    "from": "After Simon exit the underwater region, return to the Continent and enter Endless Tower. Complete all primary trials and claim their rewards."
+  },
+  "endgame:optional-regions-bosses-and-secret-weapons:other-flying-only-areas": {
+    "previous": "Endless Tower",
+    "from": "From Endless Tower fly around the remaining optional islands—Sky Island, Crimson Forest and Endless Night Sanctuary—and clear their unique encounters."
+  },
+  "endgame:verification-sweep:all-expedition-journals": {
+    "previous": "Other flying-only areas",
+    "from": "After clearing optional regions travel to Gestral Village. Speak to Berrami, inspect the Journal menu, and collect any numbered or Unknown journals still missing."
+  },
+  "endgame:verification-sweep:all-records-and-music": {
+    "previous": "All Expedition Journals",
+    "from": "After comparing journals use the Music Records menu and verify festival, camp, dungeon and merchant records against the collection."
+  },
+  "endgame:verification-sweep:all-weapons-pictos-and-monoco-skills": {
+    "previous": "All records and music",
+    "from": "From the music review open E33.EXE's Weapons and Pictos & Luminas pages and revisit missing boss drops, merchants and Monoco enemy skills."
+  },
+  "endgame:verification-sweep:all-cosmetics-and-merchants": {
+    "previous": "All weapons, Pictos and Monoco skills",
+    "from": "After verifying equipment collect outstanding outfits and hairstyles and finish any uncompleted Gestral Beach challenges."
+  },
+  "update:verso-s-drafts:enter-verso-s-drafts": {
+    "previous": "All cosmetics and merchants",
+    "from": "After endgame and Esquie's diving quest fly to the island east of Lumière and use the entrance to Verso's Drafts."
+  },
+  "update:verso-s-drafts:open-playground-gestral-baths": {
+    "previous": "Enter Verso's Drafts",
+    "from": "From Verso's Drafts entrance enter Open Playground, clear its interactive mini-games and return to the hub between challenges."
+  },
+  "update:verso-s-drafts:reverie-path": {
+    "previous": "Open Playground / Gestral Baths",
+    "from": "After Playground rewards follow the Reverie Path branch, speak with its merchants and purchase unique weapons and Pictos."
+  },
+  "update:verso-s-drafts:licorne-barbasucette-franctale": {
+    "previous": "Reverie Path",
+    "from": "From Reverie Path explore the adjoining combat branches and defeat Licorne, Barbasucette and Franctale for their special equipment."
+  },
+  "update:verso-s-drafts:candy-land-carousel": {
+    "previous": "Licorne / Barbasucette / Franctale",
+    "from": "Return from those fights through Verso's Drafts to Candy Land and Carousel. Finish the Mime, Paint Cages, gingerbread-door quest and station battle."
+  },
+  "update:verso-s-drafts:root-of-all-evil-osquio": {
+    "previous": "Candy Land / Carousel",
+    "from": "From the Carousel branch follow the main downward route to Root of All Evil and defeat Osquio."
+  },
+  "update:bonus-endless-tower:clea-unleashed": {
+    "previous": "Root of All Evil · Osquio",
+    "from": "After Osquio leave Verso's Drafts and return to Endless Tower. Complete its new Clea Unleashed challenge."
+  },
+  "update:bonus-endless-tower:duollistes": {
+    "previous": "Clea Unleashed",
+    "from": "From the Clea Unleashed challenge choose the Duollistes trial in the tower and win it."
+  },
+  "update:bonus-endless-tower:chromatic-lampmaster": {
+    "previous": "Duollistes",
+    "from": "After Duollistes select the Chromatic Lampmaster rematch and defeat it for First Life."
+  },
+  "update:bonus-endless-tower:simon-the-divergent-star": {
+    "previous": "Chromatic Lampmaster",
+    "from": "After the Lampmaster trial select the final Simon the Divergent Star challenge and collect its rewards."
   }
 };
