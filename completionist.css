@@ -264,3 +264,11 @@
 #completionistPage .cp-guide-alternate::before{background:#9b8bc4;box-shadow:0 0 0 3px #1b2533}
 #completionistPage .cp-guide-route-extra{margin-top:12px!important}
 #completionistPage .cp-directions-label{line-height:1.45}
+
+/* v14.7.8 — player-first objective context precedes route directions. */
+#completionistPage .cp-focus-context{max-width:830px;margin:0 0 19px;color:#d9e5ee;font-size:clamp(13px,1.48vw,15px);font-weight:650;line-height:1.75}
+#completionistPage .cp-upcoming-context{margin:0 0 10px;color:#d0dce6;font-size:12px;font-weight:620;line-height:1.65;overflow-wrap:anywhere}
+#completionistPage .cp-upcoming-instructions{padding:0 0 0 12px;border-left:2px solid #39495b;color:#a5b8c7}
+#completionistPage .cp-guide-context{border-left-color:color-mix(in srgb,var(--cp-guide-accent) 65%,#526481);background:linear-gradient(100deg,color-mix(in srgb,var(--cp-guide-accent) 6%,transparent),transparent);padding-top:7px;padding-right:15px;border-radius:0 9px 9px 0}
+#completionistPage .cp-guide-context h4{font-size:19px}
+#completionistPage .cp-guide-context p{color:#d7e3ee;font-size:14px}
