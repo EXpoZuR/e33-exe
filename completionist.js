@@ -8,6 +8,7 @@
   const modal = document.getElementById("completionistGuideModal");
   const detailData = window.E33_COMPLETION_DETAILS || {};
   const routeData = window.E33_COMPLETION_ROUTES || {};
+  const contextData = window.E33_COMPLETION_CONTEXT || {};
   let modalStepId = null;
   let modalPreviousFocus = null;
   if (!Array.isArray(raw) || !mount || !dock) return;
@@ -22,6 +23,7 @@
       const previousRoute = routeData[id];
       return {
         id,kind,title,area,position,chapterId:chapter.id,
+        context: contextData[id] || "",
         // Always assume consecutive chronological play. Original wording stays available for NG+ detours.
         directions: typeof previousRoute?.from === "string" ? previousRoute.from : directions,
         previousTitle: previousRoute?.previous || null,
@@ -118,10 +120,11 @@
     modal.querySelector("#cpGuideLocation").textContent = step.area;
     modal.querySelector("#cpGuideNumber").textContent = "STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
     modalBody.innerHTML = `
-      <div class="cp-guide-intro">This walkthrough assumes you just finished the checkpoint immediately before this one. If you travelled out of order, use the alternate route from an Expedition Flag below.</div>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">01 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
-      <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">02 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">03 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(completionNote(step))}</p></section>
+      <div class="cp-guide-intro">Identify what you are looking for first. Then follow the route from your previous objective, or use the flag-based alternative if you travelled out of order.</div>
+      <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4><p>${esc(step.context || step.restartDirections)}</p></section>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
+      <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(completionNote(step))}</p></section>
       ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
     `;
     updateModalControls();
@@ -224,6 +227,7 @@
             <span class="cp-upcoming-number" aria-label="Step ${number}">${number.toString().padStart(2, "0")}</span>
             <div class="cp-upcoming-info">
               <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
+              ${step.context ? `<p class="cp-upcoming-context">${esc(step.context)}</p>` : ""}
               <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
               <div class="cp-upcoming-meta"><span>${esc(step.area)}</span><span class="cp-upcoming-type">${esc(icon(step.kind)+" "+step.kind)}</span></div>
               <div class="cp-upcoming-actions">
@@ -262,6 +266,7 @@
         </div>
         <div class="cp-stage">${esc(next.area)} <span aria-hidden="true">↗</span></div>
         <h3 style="margin-top:19px">${esc(next.title)}</h3>
+        ${next.context ? `<p class="cp-focus-context">${esc(next.context)}</p>` : ""}
         <div class="cp-directions-label">From previous step${next.previousTitle ? " · "+esc(next.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(next.directions)}</p>
         <div class="cp-step-actions">
