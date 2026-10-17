@@ -1,4 +1,4 @@
-/* Continuous location-to-location routes keyed by immutable checkpoint IDs. */
+/* Previous-objective route directions keyed by saved stable IDs. */
 window.E33_COMPLETION_ROUTES = {
   "act1:spring-meadows-meadows-corridor:dodger": {
     "previous": "Prologue festival rewards",
@@ -198,15 +198,15 @@ window.E33_COMPLETION_ROUTES = {
   },
   "act1:gestral-village:purumi-rescue": {
     "previous": "Karatom · START BEFORE leaving",
-    "from": "From Karatom, follow the village signs toward the Arena. Near Alexsoundro's group, climb the nearby walkway and grapple to the stranded child Purumi, then return for the outfit."
+    "from": "You have just met Karatom in the workshop beyond the Bazaar. Before heading to the arena, look for the TALL STONE PILLAR nearby with a small BLUE-AND-PURPLE Gestral sitting high on top. The tall, slender guardian at its base is Alexsoundro. TALK TO HIM FIRST; he wants his child Purumi to come down. Then turn away from the pillar, take the first LEFT and then RIGHT to a climbable ROPE in the alley. Go up to the wooden walkways, grapple across, shimmy along the wall, and JUMP to Purumi on top of the pillar. Talk to Purumi to bring him down; finish the conversation with Alexsoundro for Lune's Sakapatate outfit."
   },
   "act1:gestral-village:ono-puncho": {
     "previous": "Purumi rescue",
-    "from": "From Purumi's rescue area walk toward Arena Flag, then through the nearby broken arch to the Ono-Puncho challenge. Deal 9,999 or more damage in one hit for the reward."
+    "from": "After helping the little Gestral Purumi down from the tall pillar, return to the village's main Arena path. From Gestral Arena Flag, look RIGHT of the TWO TALL arena spectators for a BROKEN STONE ARCH leading into a side alcove. Inside is a purple-blue Gestral named Ono-Puncho, who challenges you to deal 9,999 damage in a SINGLE attack. Buff your damage and use Maelle's Percée, or skip until you're stronger. Win to earn her Sakapatate outfit."
   },
   "act1:gestral-village:roulette": {
     "previous": "Ono-Puncho",
-    "from": "Leave Ono-Puncho and return to the Arena/theatre area. Look for the neon-lit casino door and interact with it to claim Roulette."
+    "from": "Leave Ono-Puncho's small alcove and return to the Arena's outer circular path. Continue toward the theatre/graffiti-covered side of the village, taking the passage to the casino with the bright neon lighting. A Gestral speaks to you THROUGH the large casino DOOR. Say 'Yes' to gambling and choose 'I don't care' when asked his probability question to receive Roulette."
   },
   "act1:gestral-village:hidden-manor-kitchen": {
     "previous": "Roulette",
