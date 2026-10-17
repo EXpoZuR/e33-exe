@@ -1,4 +1,4 @@
-/* Completionist itinerary v2 · traversal-gated walkthrough; preserve moved checkpoint identifiers */
+/* Completionist chronological traversal-gated checklist; step IDs remain stable */
 window.E33_COMPLETION_DATA = [
   {
     "id": "prologue",
@@ -280,7 +280,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Rare enemy",
             "Ancient Sanctuary Mime",
-            "At the red-and-blue flower clearing find the ruined hut; circle behind it. Awards Lune's Baguette cosmetics."
+            "From the Sanctuary Maze Flag, hug the right-hand wall to the low crawlspace under a rock. Crawl through, turn LEFT at the fork into the blue-and-red flower field, then circle BEHIND the wooden hut to find the Mime and Lune's Baguette rewards. If you reach Giant Bell Alley, return to Sanctuary Maze."
           ],
           [
             "Journal",
@@ -425,7 +425,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Merchant",
             "Carrabi's coastal shop",
-            "ACCESS GATE — recruit Esquie and unlock rough-terrain breaking at the end of Esquie's Nest first. Then ride Esquie to the beach north/northeast of Esquie's Nest, passing the blue-black rock barrier on the route. Find Carrabi on the coast and buy Gustave's Lumière Suit, Maelle's Lumière outfit, and Gustave's Short haircut. This is intentionally scheduled AFTER Esquie so the rock barrier cannot stop you.",
+            "After recruiting Esquie, return to the eastbound beach route northeast of Flying Waters and near Esquie's Nest. Carrabi stands directly on the sandy coast and sells Lumière outfits and a Gustave haircut. From the Flying Waters side, a footpath may also reach the beach; use the shore entrance rather than a black-blue barrier.",
             "act1:continent-after-flying-waters-before-sanctuary:carrabi-s-coastal-shop"
           ],
           [
