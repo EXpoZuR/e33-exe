@@ -173,3 +173,7 @@
  #completionistPage .cp-upcoming-hint{display:none}
  #completionistPage .cp-upcoming-actions .cp-inline{flex:1 1 auto}
 }
+
+/* Ability unlock breadcrumb, informative only (not extra completion steps) */
+#completionistPage .cp-route-gates{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;border:1px solid #303e4c;background:linear-gradient(110deg,rgba(117,166,213,.07),rgba(185,148,255,.055));color:#93acc0;border-radius:11px;padding:11px 14px;margin:0 0 15px;font-size:11px;font-weight:650;line-height:1.5}
+#completionistPage .cp-route-gates span:first-child{color:#a8b0de;letter-spacing:.085em;font-weight:850;margin-right:5px}
