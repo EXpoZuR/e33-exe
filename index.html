@@ -4442,7 +4442,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 .picto-library-level-note{font-size:11px;margin-top:5px;color:#8193a3}
 
 </style>
-<link rel="stylesheet" href="completionist.css?v=14.7.4" />
+<link rel="stylesheet" href="completionist.css?v=14.7.5" />
 </head>
 <body>
 <header class="app-header">
@@ -6588,11 +6588,26 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
     <div class="cp-chapters" id="completionistSections" aria-label="Acts and checkpoint lists"></div>
   </div>
   <div class="cp-progress-dock" id="completionistDock" aria-label="Completion progress timeline"></div>
+
+  <div class="cp-guide-overlay" id="completionistGuideModal" aria-hidden="true">
+    <section class="cp-guide-dialog" role="dialog" aria-modal="true" aria-labelledby="cpGuideTitle">
+      <header class="cp-guide-head">
+        <div class="cp-guide-heading">
+          <div class="cp-guide-eyebrow" id="cpGuideChapter">Completionist</div>
+          <h2 id="cpGuideTitle">Walkthrough</h2>
+          <div class="cp-guide-meta"><span id="cpGuideLocation"></span><span id="cpGuideType"></span><span id="cpGuideNumber"></span></div>
+        </div>
+        <button class="cp-guide-close" type="button" aria-label="Close detailed directions">×</button>
+      </header>
+      <div class="cp-guide-scroll"><div class="cp-guide-body"></div></div>
+      <footer class="cp-guide-controls" id="cpGuideControls"></footer>
+    </section>
+  </div>
 </section>
 
 <footer class="site-footer" role="contentinfo">
   <span>Expedition 33 · Build planner and collection tracker</span>
-  <span>E33.EXE <span class="site-version" data-site-version>v14.7.4</span></span>
+  <span>E33.EXE <span class="site-version" data-site-version>v14.7.5</span></span>
 </footer>
 
 <script>
@@ -9099,7 +9114,8 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   else requestAnimationFrame(()=>updateTabIndicator(false));
 
 </script>
-<script src="completionist-data.js?v=14.7.4"></script>
-<script src="completionist.js?v=14.7.4"></script>
+<script src="completionist-data.js?v=14.7.5"></script>
+<script src="completionist-details.js?v=14.7.5"></script>
+<script src="completionist.js?v=14.7.5"></script>
 </body>
 </html>
