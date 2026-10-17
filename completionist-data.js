@@ -1,4 +1,4 @@
-/* Traversal-gated, fact-checked chronological checkpoints; identifiers unchanged. */
+/* Verified story gates and chronological Completionist checklist; stable step IDs retained. */
 window.E33_COMPLETION_DATA = [
   {
     "id": "prologue",
@@ -11,18 +11,18 @@ window.E33_COMPLETION_DATA = [
         [
           [
             "Quest",
-            "Old Key",
-            "Exchange the festival token for the Old Key before boarding the expedition. Keep it for Old Lumière in Act 2."
+            "Trash-can man's interaction",
+            "DURING the DAYTIME walk with Sophie, before the harbor Mime or nighttime festival, find the GLOWING TRASH CAN in the narrow marketplace along Main Street. Examine it repeatedly to trigger its optional dialogue and get the Chroma Catalyst."
           ],
           [
             "Rare enemy",
             "Prologue Mime",
-            "Search the festival streets before leaving Lumière. Defeat the optional Mime; unlike later Mimes, this encounter cannot be revisited in the same playthrough."
+            "During Gustave and Sophie's DAYTIME walk, approach the harbor stairs but DO NOT head down them. Look RIGHT near the children dancing on a stage: a silent Mime is sitting to the right of the performance. Defeat it now for the unique achievement; this Mime disappears once you move to the NIGHTTIME FESTIVAL."
           ],
           [
             "Quest",
-            "Trash-can man's interaction",
-            "Speak to the unusual rubbish-bin NPC during the prologue; exhaust the dialogue and finish the interaction before departure."
+            "Old Key",
+            "Only after the daytime harbor sequence does the NIGHTTIME departure festival begin. Gustave receives a Festival Token there. Visit COLETTE in the THIRD STALL on the LEFT and exchange a token for the Old Key needed for the Fracture Survivor journal in Old Lumière."
           ],
           [
             "Collectible",
@@ -150,7 +150,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Merchant",
             "Noco's duel and shop",
-            "Outside Noco's Hut, challenge the Gestral merchant; buy his unique Exposing Attack Picto before leaving the area."
+            "NOCO is a Gestral merchant outside his hut in Flying Waters—but he only appears AFTER you visit the Manor and meet Maelle/the Curator. Exit that Manor, return to Noco's Hut Flag and speak to the nearby small Gestral merchant. Challenge him to unlock his unique stock, including Exposing Attack, and BUY the Picto before leaving Flying Waters permanently: he later moves to Gestral Village and stops selling here."
           ],
           [
             "Quest",
@@ -303,6 +303,12 @@ window.E33_COMPLETION_DATA = [
         "Gestral Village",
         [
           [
+            "Story",
+            "Meet Chief Golgra — unlock tournament registration",
+            "At the entrance to Gestral Village, go UP the main slope to the large CHIEF'S HOUSE directly ahead. Inside, speak to GOLGRA, the village's chief, about getting across the sea and finding Esquie. When Golgra explains the Legendary Tournament, agree to enter eventually but choose 'We'll look around first' so you can finish the village's side quests. This conversation UNLOCKS registration at the Arena; speaking to Limonsol before this produces 'registration hasn't started yet'.",
+            "act1:gestral-village:meet-chief-golgra"
+          ],
+          [
             "Journal",
             "Expedition 52",
             "On the route to the arena, beside the huge reclining white Gestral doctor, descend the path below the arena sign."
@@ -355,7 +361,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Arena",
             "Gestral tournament / recruit Sciel",
-            "The village chief Golgra wants you to prove yourself in the arena tournament to get Esquie's password. Once you've explored the shops and side quests, head to the Gestral Arena, speak to the registration Gestral and complete the tournament; Sciel joins your party afterward."
+            "BEFORE visiting the arena registration, you MUST speak to GOLGRA inside the large Chief's House near the village entrance about finding Esquie. Select the dialogue about the Legendary Tournament—otherwise the registrar says 'registration hasn't started yet.' Once Golgra authorizes it, return to the Arena and talk to LIMONSOL, the yellow pineapple-like Gestral at the desk. Complete the three qualifying one-on-one duels and the fourth match against Sciel (choosing Maelle for her Medalum weapon). After Sciel joins, return to Golgra for the password to Esquie's Nest."
           ],
           [
             "Cosmetic",
@@ -370,7 +376,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Rare enemy",
             "Esquie's Nest Mime",
-            "From Entrance Flag enter the large cavern, look down to the right of the walkway, and drop to the hidden Mime arena for Sciel's Baguette cosmetics."
+            "FIRST win the Gestral Village tournament, recruit Sciel, and speak to Golgra for Esquie's password. On the Continent enter the enormous stone-face cave to the east of the village. The sentry SUNNISO will block the Nest until you complete the password scene. Inside, continue to the first large cavern, look down to the RIGHT for the Mime and drop to its lower platform. Defeat it for Sciel's Baguette cosmetics."
           ],
           [
             "Quest",
@@ -719,12 +725,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Cosmetic",
             "Grandis Fashionist",
-            "Find the red-beret Grandis in the station. Complete all three poems to claim Pure outfits for Maelle, Lune and Sciel."
+            "Only AFTER recruiting Monoco and the Grandis reoccupy the snowy station can you start the Fashionist challenge. Find the Grandis wearing a bright RED BERET near the station tracks. IMPORTANT: Control LUNE, SCIEL, or MAELLE directly in the exploration party when speaking; the Fashionist won't offer the outfit poetry contest to a male character. Solve the three rhyming lines for one heroine, then switch your active character and repeat for the other two. Claim all three Pure outfits."
           ],
           [
             "Quest",
             "Eternal Ice merchant request",
-            "Speak to the station's Grandis merchant, note the request for Eternal Ice from Frozen Hearts, and return after acquiring it."
+            "After defeating Monoco and restoring the Grandis NPCs to the station, speak to the Grandis merchant just LEFT of the station Expedition Flag. His inventory will say 'Complete a Quest'—this is NORMAL and is not unlocked by talking once. Leave the menu and hear his request for Eternal Ice from Gargant in Frozen Hearts. This step only STARTS the quest; the shop becomes available when you return with Eternal Ice later."
           ],
           [
             "Collectible",
@@ -744,7 +750,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Cosmetic",
             "Carousel Grandis challenge",
-            "REQUIRES PAINT BREAK, awarded by Sastro for four rescued Gestrals. At The Carousel on Monoco's Station's eastern side, talk to the Grandis, destroy the blue Paint Spike obstructions, and complete the challenge for its cosmetic reward. If you have fewer than four Gestrals, return after the fourth rescue."
+            "This Carousel NPC's obstacle remains BLOCKED unless Sastro has taught you PAINT BREAK by returning FOUR lost Gestrals. Verify you have rescued four (including the one north of Forgotten Battlefield), return to Sastro at camp to LEARN Paint Break, then come back to The Carousel and break the blue paint spikes blocking the Grandis challenge. If you cannot destroy them yet, you are missing the Sastro reward."
           ],
           [
             "Minigame",
@@ -1030,7 +1036,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Frozen Hearts",
-            "Find Eternal Ice by defeating Gargant in Frozen Hearts; return to the Grandis merchant at Monoco's Station for Survivor."
+            "If you spoke to the Grandis merchant in Monoco's Station earlier, his stock was locked behind the Eternal Ice quest. Travel to Frozen Hearts and reach Icebound Terminal Expedition Flag, defeat GARGANT for the Eternal Ice quest item, then RETURN to Monoco's Station. Speak to the merchant LEFT of the station flag, hand over the ice, and only THEN is his stock—including Survivor—available to BUY. Claiming the item does not automatically grant the Survivor Picto."
           ],
           [
             "Quest",
@@ -1040,7 +1046,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Quest",
             "Painting Workshop · finale",
-            "REQUIRES ESQUIE FLYING (Act 3) to reach the third Painting Workshop entrance on the FLOATING island east of Sirène. Complete the first two workshops earlier (after Esquie swims; after Forgotten Battlefield), retrieve Shape of the Beast here, place it into the statue, then defeat the upgraded Lampmaster."
+            "The FINAL Painting Workshop boss cannot be triggered by visiting its Act 3 portal alone. First collect Light of the Beast at Workshop entrance #1 and Colour of the Beast at #2, then use Esquie's FLIGHT in Act 3 to land on the floating island east of Sirène for entrance #3 and collect Shape of the Beast. Place ALL THREE offerings in the CENTRAL STATUE and only then fight the enhanced Lampmaster."
           ],
           [
             "Quest",
