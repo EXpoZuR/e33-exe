@@ -9,6 +9,7 @@
   const detailData = window.E33_COMPLETION_DETAILS || {};
   const routeData = window.E33_COMPLETION_ROUTES || {};
   const contextData = window.E33_COMPLETION_CONTEXT || {};
+  const gates = window.E33_COMPLETION_GATES?.steps || {};
   let modalStepId = null;
   let modalPreviousFocus = null;
   if (!Array.isArray(raw) || !mount || !dock) return;
@@ -109,6 +110,7 @@
     const area = detailData.areas?.[step.area] || [step.area,"Follow the nearest Expedition Flag and examine the side paths before leaving the area.",step.chapterId];
     const detailed = detailData.specific?.[step.title] || "";
     const source=guideSource(step);
+    const required=prerequisiteMarkup(step);
     const st=statusOf(step.id);
     modalStepId=id;
     modalPreviousFocus=document.activeElement;
@@ -121,6 +123,7 @@
     modal.querySelector("#cpGuideNumber").textContent = "STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
     modalBody.innerHTML = `
       <div class="cp-guide-intro">Identify what you are looking for first. Then follow the route from your previous objective, or use the flag-based alternative if you travelled out of order.</div>
+      ${required}
       <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4><p>${esc(step.context || step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">02 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
       <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
@@ -171,6 +174,21 @@
     if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
     else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
   });
+
+  // Lightweight availability hints, not a hard lock: the save file can be ahead of localStorage.
+  function prerequisiteMarkup(step,compact=false) {
+    const gate=gates[step.id];
+    if(!gate)return "";
+    const missing=(gate.requires || []).filter(id=>byId.has(id) && statusOf(id)!=="done");
+    if(!missing.length)return "";
+    const first=byId.get(missing[0]).step;
+    const count=missing.length;
+    return `<div class="cp-prerequisite ${compact?"is-compact":""}" role="note">
+      <span class="cp-prereq-marker" aria-hidden="true">!</span>
+      <span class="cp-prereq-copy"><strong>Check unlock first: ${esc(first.title)}${count>1?" (+"+(count-1)+" more)":""}</strong>${compact?"":`<span>${esc(gate.tip)}</span>`}</span>
+      <button type="button" class="cp-prereq-action" data-action="details" data-id="${esc(first.id)}">View prerequisite ↗</button>
+    </div>`;
+  }
 
   function skippedMarkup(chapter) {
     const skipped = chapter.steps.filter(step => statusOf(step.id) === "skip");
@@ -228,6 +246,7 @@
             <div class="cp-upcoming-info">
               <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
               ${step.context ? `<p class="cp-upcoming-context">${esc(step.context)}</p>` : ""}
+              ${prerequisiteMarkup(step,true)}
               <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
               <div class="cp-upcoming-meta"><span>${esc(step.area)}</span><span class="cp-upcoming-type">${esc(icon(step.kind)+" "+step.kind)}</span></div>
               <div class="cp-upcoming-actions">
@@ -269,6 +288,7 @@
         ${next.context ? `<p class="cp-focus-context">${esc(next.context)}</p>` : ""}
         <div class="cp-directions-label">From previous step${next.previousTitle ? " · "+esc(next.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(next.directions)}</p>
+        ${prerequisiteMarkup(next)}
         <div class="cp-step-actions">
           <button class="cp-done" data-action="done" data-id="${esc(next.id)}"><span aria-hidden="true">✓</span> Complete Step</button>
           <button class="cp-skip" data-action="skip" data-id="${esc(next.id)}">Skip for now ↷</button>
