@@ -1,4 +1,4 @@
-/* Curated location guides and extended directions for E33.EXE Completionist */
+/* Curated detailed navigation, verified quest steps and supporting source links. */
 window.E33_COMPLETION_DETAILS = {
   "sources": {
     "prologue": "https://www.powerpyx.com/clair-obscur-expedition-33-prologue-collectible-locations/",
@@ -41,8 +41,11 @@ window.E33_COMPLETION_DETAILS = {
     "mimeSanctuary": "https://www.gamerguides.com/clair-obscur-expedition-33/database/enemies/special-enemies/mime-ancient-sanctuary",
     "lostGestrals": "https://www.powerpyx.com/clair-obscur-expedition-33-lost-gestral-locations-guide/",
     "nevron": "https://www.gamerguides.com/clair-obscur-expedition-33/guide/side-quests/nevrons/all-nevron-quests-and-rewards",
-    "karatom": "https://www.pushsquare.com/guides/clair-obscur-expedition-33-how-to-get-blue-mushrooms-for-karatom",
-    "update": "https://game-checklists.com/expedition33/guides/versos-drafts-complete-guide.html"
+    "karatom": "https://www.pcgamer.com/games/rpg/clair-obscur-expedition-33-mushroom-location-karatom/",
+    "update": "https://game-checklists.com/expedition33/guides/versos-drafts-complete-guide.html",
+    "purumi": "https://gameranx.com/features/id/537496/article/clair-obscur-expedition-33-how-to-help-alexsoundro/",
+    "onopuncho": "https://www.pcgamer.com/games/rpg/clair-obscur-expedition-33-ono-puncho-9999-damage/",
+    "gestralVillage": "https://gamefaqs.gamespot.com/ps5/469495-clair-obscur-expedition-33/faqs/81920/chapter-4-gestral-village"
   },
   "areas": {
     "Lumière Festival": [
@@ -238,7 +241,7 @@ window.E33_COMPLETION_DETAILS = {
     "Friendly Hexga": "Continue past Old Farm toward Tide Caverns. Look for the WHITE, non-hostile Hexga at the edge of the cliff near the handholds used to cross the chasm; talk before entering the cavern. From Tide Caverns Flag descend the rope. Crystal 1 is on the LEFT by a Hexga enemy. Crystal 2 is BEHIND the central pillar reached by the middle slope. Crystal 3 is dropped by the Rocher with a white pillar on the RIGHT side. Return all three and speak to the friendly Hexga again for Auto Shell.",
     "Auto Shell": "The Picto is the reward for the friendly Hexga quest, not a loose chest. After collecting three Rock Crystals in Tide Caverns—left crystal by an enemy, crystal behind middle pillar, and Rocher drop on the right—backtrack to the white Hexga on the cliff approach from Old Farm and turn them all in. Speak again after the animation; do not attack it.",
     "Red Woods · Bénisseur": "Return to the Ancient Sanctuary region after Flying Waters and locate Red Woods south of the Gestral Beach and west of the Hidden Gestral Arena. Enter at the Red Woods portal and, from its Entrance Flag, walk into the nearby clearing to the bubbling fountain. Donate Chroma sequentially: 5,000, then 10,000, then 25,000, then 50,000 (90,000 total). After the final donation, the fountain reveals the friendly Bénisseur and gives Recovery. Do not fight it afterward.",
-    "Karatom · START BEFORE leaving": "From the Gestral Village entrance follow the left-hand path into the Bazaar/workshop portion of town. Find the small Gestral Karatom standing by his unfinished Ultimate Sakapatate. Speak to him and hear the request for a blue mushroom; the actual mushroom is found later on the LOWER floor of Esquie's Nest. You must return with Gustave still available during Act 1.",
+    "Karatom · START BEFORE leaving": "WHAT YOU'RE LOOKING FOR: a SMALL Gestral named Karatom standing next to a gigantic, unfinished Sakapatate fighting machine in an open workshop just beyond the Bazaar.\n\nFrom the Chief's House/market enter the Bazaar, walk past the merchants and turn toward the large inactive, patchwork Sakapatate figures. Speak to the SMALL Gestral next to the machine. He wants a mushroom to complete his creation. The quest item is the glowing Mushroom on the LOWER cavern floor of Esquie's Nest, just to the LEFT of the Mime. This first conversation starts the quest; DON'T attempt to finish it yet. Return with the Mushroom after visiting the Nest, then fight his creation SOLO with Gustave to receive the Pure outfit. This fight becomes inaccessible when Act 1 ends.",
     "Blue Mushroom": "In Esquie's Nest descend into the initial large cavern and drop off the upper path into the lower watery area near the Mime. Search the cluster of blue-violet glowing mushrooms at the edge of the rocks; collect the named Blue Mushroom quest item, not just a generic material. Return it to Karatom in the Gestral Village workshop after recruiting Esquie.",
     "RETURN: Karatom's Pure outfit": "Immediately after recruiting Esquie, fast-travel back to Gestral Village. Return to Karatom in the workshop beside the Ultimate Sakapatate. Hand over the Blue Mushroom from Esquie's Nest, accept the test fight, and win as Gustave. Exhaust Karatom's post-battle dialogue and verify the Pure outfit in Gustave's cosmetics. Do this BEFORE finishing Stone Wave Cliffs.",
     "Lost Gestral #1": "On the Continent AFTER Flying Waters, walk northeast toward the massive stone face forming the entrance to Esquie's Nest. The tiny lost Gestral is standing directly OUTSIDE the portal at ground level. Speak to it and offer camp shelter. At camp, find Sastro down the side path for the first rescue reward.",
@@ -283,7 +286,12 @@ window.E33_COMPLETION_DETAILS = {
     "Expedition 60": "In Act 3 Lumière follow the main route toward the OPERA HOUSE via Shattered Alley. Just before stepping inside the Opera House, take the RIGHT-hand path to an interaction point at the end. Use the prompt to call Esquie to retrieve the distant item; this gives the Expedition 60 journal.",
     "Gestral Beach · Beach Raft Volley": "Use Esquie's Act 2 swim to reach the beach portal with the RAFT VOLLEY minigame. Stand in the arena facing the opposite Gestral and press your MELEE attack to send the incoming smaller Gestrals back toward it. The melee swing has a slight delay and a frontal cone, so strike just before they reach you. Beat the three difficulty levels for all unique swimsuit rewards; on the hardest difficulty avoid mashing, as your attack recovery is nearly as long as the incoming shot interval.",
     "Grandis Fashionist": "At Monoco's Station find the Grandis NPC wearing a RED BERET and talk to them. The Fashionist asks for short poem answers for Maelle, Lune, and Sciel. Finish the interaction for all three characters and check their Pure outfits. You can use the dedicated poem-answer page if you need the exact dialogue solutions.",
-    "Gestral Ascension": "From Monoco's Station's western Continent route, find the Gestral Beach portal near the coast. Enter the vertical platforming challenge and work UPWARD across each narrow obstacle; falling to a lower level means climbing again from below. At the TOP, speak to the Gestral host to receive Monoco's swimsuit."
+    "Gestral Ascension": "From Monoco's Station's western Continent route, find the Gestral Beach portal near the coast. Enter the vertical platforming challenge and work UPWARD across each narrow obstacle; falling to a lower level means climbing again from below. At the TOP, speak to the Gestral host to receive Monoco's swimsuit.",
+    "Purumi rescue": "WHAT YOU'RE LOOKING AT: Purumi is a tiny blue-and-purple baby Gestral sitting at the TOP of a very tall stone pillar in Gestral Village; he isn't on the ground. Alexsoundro, his tall, slender guardian, stands at the BOTTOM and is worried Purumi won't come down.\n\n1. Find the pillar. From Gestral Village's Entrance Flag, climb the slope to Chief's House, turn LEFT through the Bazaar, then RIGHT beyond the stalls. Look upward for Purumi and speak to Alexsoundro standing at the pillar's base FIRST. This starts the quest.\n\n2. Find the climb. With Alexsoundro behind you, turn to face AWAY from the pillar and follow the path. Turn LEFT at the first opening, then RIGHT into the alley containing a glowing rope. CLIMB the rope to a wooden walkway above the village.\n\n3. Reach Purumi. Cross the upper wooden walkway, use the grapple point to cross the gap, and follow the path to a wall with handholds. SHIMMY across, turn LEFT and advance to the edge facing Purumi's pillar. JUMP from the walkway onto its top.\n\n4. Talk to Purumi. Speaking to the child is what convinces him to come down; the game returns you to Alexsoundro. Finish the father's dialogue to receive the SAKAPATATE OUTFIT FOR LUNE. Talking to Alexsoundro by itself does NOT complete this quest.",
+    "Ono-Puncho": "WHAT YOU'RE LOOKING FOR: Ono-Puncho is a small purple-blue Gestral waiting alone in a side alcove, NOT a normal arena tournament fighter.\n\nFrom the Gestral Arena Flag, face the fighting/spectator area. Look to the RIGHT of the two tall Gestral fans for a BROKEN ARCHWAY. Walk under it into a small side area and talk to Ono-Puncho. Agree to his one-hit damage challenge: you need a single attack to display at least 9,999 damage. You can set up buffs and Mark beforehand; Sciel's Fortune's Fury on Maelle, Marking Shots, and Maelle's Percée from Virtuose stance are useful. Claim Maelle's Sakapatate outfit after succeeding. This is optional and may be easier with later equipment.",
+    "Roulette": "WHAT YOU'RE LOOKING FOR: an extravagant, neon-lit casino along the village's 'No-Rule' side route, not a casino you can enter.\n\nFrom Arena Flag head to the theater/graffiti-filled path and take the passage marked as leading to a smelly/no-rules area. Follow the polished, illuminated walkway to the large casino door at the back. INTERACT WITH THE DOOR to speak to the Gestral Gambler inside. Say YES when he asks whether you like to gamble; for the question about a 50% chance of more damage, reply 'I don't care.' He rewards you with the Roulette Picto.",
+    "Berrami's journal collection": "WHAT YOU'RE LOOKING FOR: a particularly LARGE, blue, round Gestral standing in the Bazaar, close to the Jujubree merchant stall. This is Berrami, a journal collector—not a fighter or a shop.\n\nFrom Bazaar's market stalls look for the oversized blue Gestral near the vendors. Speak to him and show your recovered Expedition Journals. He checks how many you have and awards items at specific milestones. You can return at any time, including Acts 2 and 3, after collecting additional journals.",
+    "The Canvas · Dessendre family portrait": "WHAT YOU'RE LOOKING FOR: a painting that can be placed into an EMPTY picture frame in the Manor to open a secret room.\n\nAfter obtaining Esquie's flight in Act 3, fly to The Canvas optional area in the northern sky. Enter and pick up the Dessendre family portrait. Leave and enter the Manor through an available door (for example, the Gestral Village portal). From the Manor's rest point, ascend the first staircase and find an empty picture frame on the RIGHT at the upstairs landing. Place the portrait into it. A secret door opens farther inside the dining/living space. Enter the newly accessible room and collect the Unknown journal."
   },
   "overrides": {
     "Ancient Sanctuary Mime": "mimeSanctuary",
@@ -327,7 +335,6 @@ window.E33_COMPLETION_DETAILS = {
     "Lune · Sirène's Dress": "act3",
     "Maelle · The Reacher": "reacher",
     "Painting Workshop · finale": "endgame",
-    "The Canvas · Manor Family Canvas": "canvas",
     "Renoir's Drafts / The Abyss · Simon": "abyss",
     "Prologue Mime": "prologue",
     "Old Key": "prologue",
@@ -338,7 +345,10 @@ window.E33_COMPLETION_DETAILS = {
     "Reverie Path": "update",
     "Licorne / Barbasucette / Franctale": "update",
     "Candy Land / Carousel": "update",
-    "Root of All Evil · Osquio": "update"
+    "Root of All Evil · Osquio": "update",
+    "The Canvas · Dessendre family portrait": "canvas",
+    "Purumi rescue": "purumi",
+    "Ono-Puncho": "onopuncho"
   },
   "sourceTitles": {
     "mimeSanctuary": "Gamer Guides — exact Ancient Sanctuary Mime location",
@@ -350,6 +360,9 @@ window.E33_COMPLETION_DETAILS = {
     "act2": "PowerPyx — Act 2 chronological collectibles",
     "act3": "PowerPyx — Act 3 chronological collectibles",
     "endgame": "PowerPyx — endgame collectible guide",
-    "update": "Game Checklists — Verso's Drafts walkthrough"
+    "update": "Game Checklists — Verso's Drafts walkthrough",
+    "purumi": "Gameranx — Alexsoundro and Purumi rescue (with images)",
+    "onopuncho": "PC Gamer — 9,999-damage challenge",
+    "canvas": "Push Square — The Canvas portrait and secret journal"
   }
 };
