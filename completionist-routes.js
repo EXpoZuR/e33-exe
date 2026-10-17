@@ -1,4 +1,4 @@
-/* Previous-objective route directions keyed by saved stable IDs. */
+/* Sequential travel directions keyed to immutable step IDs. */
 window.E33_COMPLETION_ROUTES = {
   "act1:spring-meadows-meadows-corridor:dodger": {
     "previous": "Prologue festival rewards",
@@ -177,8 +177,8 @@ window.E33_COMPLETION_ROUTES = {
     "from": "After defeating Ultimate Sakapatate, remain in its arena. Circle along the RIGHT side by the statues and crawl through the low opening for Stun Boost; then exit the Sanctuary."
   },
   "act1:gestral-village:expedition-52": {
-    "previous": "Stun Boost",
-    "from": "From Stun Boost, leave the Ancient Sanctuary exit into Gestral Village. Follow the Arena signs to the enormous reclining white doctor, then take the lower side path beneath the arena sign for Expedition 52."
+    "previous": "Meet Chief Golgra — unlock tournament registration",
+    "from": "Leave Golgra's Chief's House after she authorizes the tournament. Walk clockwise around the village toward the Arena signs and find the extremely large, pale reclining Gestral doctor. Just beside the Arena sign is a narrow descending side path; follow it to the fallen expedition member holding Expedition 52."
   },
   "act1:gestral-village:bazaar-demonam-critical-moment": {
     "previous": "Expedition 52",
@@ -218,7 +218,7 @@ window.E33_COMPLETION_ROUTES = {
   },
   "act1:gestral-village:gestral-tournament-recruit-sciel": {
     "previous": "Nocturne pour un masque de tristesse",
-    "from": "Leave the Manor and return to the main Gestral Arena. Complete the tournament and recruit Sciel at the end of its story sequence."
+    "from": "After obtaining the Manor dining-room record, leave the Manor through its front door and head back toward the village center. If you haven't done so, visit the large Chief's House UP the slope from the village Entrance Flag and ask Golgra about finding Esquie. She authorizes the tournament. NOW take the Arena signs to the arena and talk to Limonsol, the yellow pineapple-like Gestral AT THE REGISTRATION DESK. Finish his four duels; use Maelle for the last match to obtain Medalum, then return to Golgra to get Esquie's Nest password."
   },
   "act1:gestral-village:village-cosmetic-merchants": {
     "previous": "Gestral tournament / recruit Sciel",
@@ -226,7 +226,7 @@ window.E33_COMPLETION_ROUTES = {
   },
   "act1:esquie-s-nest-return-to-village:esquie-s-nest-mime": {
     "previous": "Village cosmetic merchants",
-    "from": "Exit Gestral Village to the Continent and enter Esquie's Nest through the giant stone face. From the first upper walkway DROP toward the cavern floor on the RIGHT and search the lower edge for the Mime."
+    "from": "After winning the tournament and recruiting Sciel, RETURN TO CHIEF GOLGRA to collect the password for Esquie's Nest (if you haven't already). Buy any remaining village cosmetics, then leave the village to the Continent and walk east to the huge stone-face entrance of Esquie's Nest. At the entrance speak to the Gestral sentry SUNNISO and progress the PASSWORD story exchange to make the passage accessible. Inside, move down the initial path and look OVER the RIGHT edge to spot a Mime on the lower cavern floor. Drop down to fight it."
   },
   "act1:esquie-s-nest-return-to-village:blue-mushroom": {
     "previous": "Esquie's Nest Mime",
@@ -389,20 +389,20 @@ window.E33_COMPLETION_ROUTES = {
     "from": "From Coralim descend back through Flooded Buildings to Basalt Waves Flag. Follow its MAIN route to Lampmaster's arena; finish Karatom's Gustave reward first, then defeat Lampmaster to end Act 1."
   },
   "prologue:lumie-re-festival:old-key": {
-    "previous": null,
-    "from": "At the start of Lumière's festival, explore the stalls before leaving for the dock. Trade a Festival Token for the Old Key."
+    "previous": "Prologue Mime",
+    "from": "After defeating the Mime, return to the harbor stairs and proceed through the story conversation. After the transition to the NIGHTTIME FAREWELL FESTIVAL, Gustave receives a Festival Token. Look for the THIRD STALL on the LEFT, with COLETTE, and trade one token for the OLD KEY; you will need it much later in Old Lumière for a locked journal."
   },
   "prologue:lumie-re-festival:prologue-mime": {
-    "previous": "Old Key",
-    "from": "From the Old Key stall follow Main Street toward the performance stage. Find the optional Mime beside the stage before approaching the dock."
+    "previous": "Trash-can man's interaction",
+    "from": "From the glowing trash can continue DOWN Main Street toward the broad steps leading to the HARBOR, but do NOT confirm departure. Near the waterfront steps look RIGHT at the small DANCER STAGE; a silent striped MIME lies off to the stage's right. Talk to it and win the fight before going down to the harbor. This is the missable prologue Mime."
   },
   "prologue:lumie-re-festival:trash-can-man-s-interaction": {
-    "previous": "Prologue Mime",
-    "from": "After the Mime, walk BACK up Main Street into the festival crowd. Find the disguised rubbish-bin man and finish his dialogue."
+    "previous": null,
+    "from": "During Gustave and Sophie's DAYTIME walk through Lumière, follow Main Street toward the harbor but DON'T descend the stairs. Look on the LEFT side of the narrow market for a faintly glowing TRASH CAN and interact with it repeatedly for its dialogue and reward. The farewell festival hasn't started yet."
   },
   "prologue:lumie-re-festival:prologue-festival-rewards": {
-    "previous": "Trash-can man's interaction",
-    "from": "From the rubbish-bin man return to the festival stalls and collect remaining unique rewards before taking the exit to the docks."
+    "previous": "Old Key",
+    "from": "Now that Colette has given you the Old Key, explore the OTHER festival stalls and obtain extra Festival Tokens from the optional activities (including Maelle's duel). Redeem tokens for Weird Pictos and unique cosmetics before speaking to Emma to END the festival. Do not confuse this nighttime festival with the earlier harbor Mime section."
   },
   "act2:continent-esquie-swimming:gustave-record-stone-wave-cliffs-return": {
     "previous": "Lampmaster / finish Act 1",
@@ -783,5 +783,9 @@ window.E33_COMPLETION_ROUTES = {
   "update:bonus-endless-tower:simon-the-divergent-star": {
     "previous": "Chromatic Lampmaster",
     "from": "After the Lampmaster trial select the final Simon the Divergent Star challenge and collect its rewards."
+  },
+  "act1:gestral-village:meet-chief-golgra": {
+    "previous": "Stun Boost",
+    "from": "After collecting Stun Boost beside Ultimate Sakapatate's arena, follow the Ancient Sanctuary exit into Gestral Village. Activate the Entrance Expedition Flag and go straight UP the sloped path to the prominent Chief's House. Enter, speak to Golgra about finding Esquie and the Legendary Tournament, then choose to LOOK AROUND FIRST. This unlocks the tournament. You can now explore the village before signing up."
   }
 };
