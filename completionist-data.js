@@ -1172,6 +1172,561 @@ window.E33_COMPLETION_DATA = [
             "Location: Story finale · Lumière. Complete Act 3, then verify the record at Camp."
           ]
         ]
+      ],
+      [
+        "Weapon collection audit · Gustave / Verso",
+        [
+          [
+            "Weapon",
+            "Abysseram",
+            "Flying Waters · Coral Cave Flag, beat Bourgeon beyond the handhold wall. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Blodam",
+            "Continent · island past Serpenphare, defeat Chromatic Reaper Cultist. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Chevalam",
+            "Crimson Forest · Three Blades Flag, defeat area boss. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Confuso",
+            "Visages · Joy Vale, activate mouth, defeat guardian. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Contorso",
+            "Visages · Anger Vale, activate mouth, turn right and beat enemy. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Corpeso",
+            "Dark Shores · Bloodied Beach Flag, fight enemies by crashed ship. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Cruleram",
+            "Flying Waters · Noco's Hut Flag, defeat enemy near massive anchor. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Cultam",
+            "Monoco's Station · merchant, 47,500 Chroma after bringing Eternal Ice from Frozen Hearts. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Danseso",
+            "Old Lumière · defeat Chromatic Danseuse after descending rope. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Dreameso",
+            "The Monolith · Tainted Lumière, grapple by large tree. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Dualiso",
+            "Forgotten Battlefield · Ancient Bridge Flag, defeat boss. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Gesam",
+            "Flying Manor · Central Plaza Flag, elevator then left; or merchant 81,500 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Glaceso",
+            "Continent · northwest of Monoco's Station, defeat enemy group. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Liteso",
+            "Lumière Act 3 · Central Plaza Flag, beat enemies in center. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Noahram",
+            "Gustave starting weapon; verify inventory. Guide rank: D tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Nosaram",
+            "Renoir's Drafts · Entrance Flag, merchant past grapple, 107,475 Chroma. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sakaram",
+            "Ancient Sanctuary · Entrance Flag, fight Robust Sakapatate. Guide rank: C+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Seeram",
+            "Coastal Cave · duel fireplace Cruler merchant then purchase for 21,275 Chroma. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Simoso",
+            "Renoir's Drafts · defeat Simon. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sireso",
+            "Sirène · Dancing Classes Flag, elevator past Paint Cage. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Tireso",
+            "The Reacher · Foggy Area Flag, merchant by hot-air balloon, 51,635 Chroma. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Verleso",
+            "Verso starting weapon; verify inventory. Guide rank: F tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · Lune",
+        [
+          [
+            "Weapon",
+            "Angerim",
+            "Continent · north of Forgotten Battlefield, Chromatic Demineur drop. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Benisim",
+            "Forgotten Battlefield · merchant beyond central battlefield, 7,990 Chroma. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Betelim",
+            "Gestral Village · right side Paint Spike barrier; requires Paint Break. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Braselim",
+            "Monolith · Tainted Hearts main-path enemy group. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Chapelim",
+            "Visages · Joy Vale, defeat area boss. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Choralim",
+            "Sirène's Dress · defeat Chromatic Glissando. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Colim",
+            "Continent · defeat Chorale enemy. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Elerim",
+            "Sinister Cave · beneath statue; or Flying Manor merchant 89,650 Chroma. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Kralim",
+            "The Reacher · Foggy Area Flag, nearby enemies; alternate Chromatic Orphelin at Yellow Harvest. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Lighterim",
+            "Spring Meadows · early enemy group; alternate Coastal Cave merchant. Guide rank: D tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Lithelim",
+            "Monolith · Tainted Lumière, enemies beyond grapple. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Lunerim",
+            "Lune starting weapon; verify inventory. Guide rank: F tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Painerim",
+            "Renoir's Drafts · Entrance merchant past grapple, 93,045 Chroma. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Saperim",
+            "Continent · distant beach east of Sirène, defeat enemy group. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Scaverim",
+            "Falling Leaves · Resinveil Grove, defeat boss behind locked gate. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Snowim",
+            "Frozen Hearts · defeat end-area Gargant; alternate Flying Manor. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Trebuchim",
+            "Ancient Sanctuary · Sanctuary Maze Flag, defeat Catapult Sakapatate. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Troubadim",
+            "Flying Waters · Lumieran Streets, defeat boss after climbing wall. Guide rank: D tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · Maelle",
+        [
+          [
+            "Weapon",
+            "Barrier Breaker",
+            "Camp · after defeating second Axon, speak to Curator to obtain. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Battlum",
+            "Old Lumière · Right Street Flag, main-path group. Guide rank: D tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Brulerum",
+            "Flying Waters · Noco's Hut, beat enemy group near huge anchor. Guide rank: D tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Chalium",
+            "Sinister Cave · defeat final boss. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Chantenum",
+            "Sirène · Crumbling Path Flag, duel merchant past handholds and buy for 18,645 Chroma. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Clierum",
+            "Visages · Anger Vale boss. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Coldum",
+            "Monoco's Station · bring Eternal Ice and buy from merchant for 39,200 Chroma. Guide rank: C+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Facesum",
+            "Isle of the Eyes · final boss. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Glaisum",
+            "Continent · north of Endless Night Sanctuary group; alternate first group in Falling Leaves. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Jarum",
+            "Continent · island south of White Tree, defeat boss. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Lithum",
+            "The Reacher · defeat Alicia. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Maellum",
+            "Maelle starting weapon; verify inventory. Guide rank: F tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Medalum",
+            "MISSABLE: Gestral Village · win tournament as Maelle, before advancing story. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Melarum",
+            "Old Lumière · defeat Renoir in Manor Gardens. Guide rank: B- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Plenum",
+            "Yellow Harvest · Yellow Spire Wrecks Flag, defeat Glaise. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Seashellum",
+            "Flying Manor · Central Plaza elevator merchant, 75,795 Chroma. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Stalum",
+            "Continent · beach west of Forgotten Battlefield north portal, defeat Stalact. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Tissenum",
+            "Sirène · defeat Tisseur. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Veremum",
+            "Monolith · Tainted Meadows merchant after second cutscene, 27,744 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Volesterum",
+            "Lumière Act 3 · near Lumière Gardens merchant, 31,008 Chroma. Guide rank: B- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Yeverum",
+            "Renoir's Drafts · Entrance Flag merchant past grapple, 101,608 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · Sciel",
+        [
+          [
+            "Weapon",
+            "Blizzon",
+            "Falling Leaves · Resinveil Grove, defeat Chromatic Ballet. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Bourgelon",
+            "Monolith · Tainted Waters Chromatic Bourgeon; alternate Coastal Cave merchant. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Charnon",
+            "Renoir's Drafts · Entrance merchant past grapple, 89,884 Chroma. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Corderon",
+            "Sinister Cave · loop to dead merchant in center. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Direton",
+            "Falling Leaves · Resinveil Grove, duel merchant beyond grapple, 30,125 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Garganon",
+            "Monolith · Tainted Hearts merchant after handholds, 26,384 Chroma. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Gobluson",
+            "Coastal Cave · fireplace Cruler merchant, 19,240 Chroma. Guide rank: B- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Guleson",
+            "Endless Night Sanctuary · merchant near Night Totem Flag, 80,040 Chroma. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Hevason",
+            "Gestral Village · beat Golgra four times. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Litheson",
+            "Lumière Act 3 · Central Plaza group. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Lusteson",
+            "Forgotten Battlefield · Battlefield Flag, defeat Chromatic Luster beyond Fading Woman. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Martenon",
+            "Flying Manor · Central Plaza elevator merchant, 97,800 Chroma. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Minason",
+            "The Crows · defeat Chromatic Chapelier. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Moisson",
+            "Continent · red island southwest of Visages, Chromatic Moissonneuse. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Ramasson",
+            "Forgotten Battlefield · first enemy after giant gate. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sadon",
+            "Visages · Plaza merchant, duel and purchase 12,400 Chroma. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Scieleson",
+            "Sciel starting weapon; verify inventory. Guide rank: F tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Tisseron",
+            "Sirène · defeat Sirène. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · Monoco",
+        [
+          [
+            "Weapon",
+            "Ballaro",
+            "Sirène's Dress · Chromatic Glissando; alternate Act 3 Lumière merchant. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Boucharo",
+            "Visages · Sadness Vale boss. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Brumaro",
+            "Continent · flying island south of The Fountain, Chromatic Aberration. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Chromaro",
+            "Renoir's Drafts · entrance merchant past grapple, 102,585 Chroma. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Fragaro",
+            "Monolith · Tainted Meadows merchant after second cutscene, 35,360 Chroma. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Grandaro",
+            "Monoco's Station · bring Eternal Ice then buy for 53,901 Chroma. Guide rank: A- tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Joyaro",
+            "Endless Night Sanctuary · defeat Ultimate Sakapatate; alternate Flying Manor Lampmaster. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Monocaro",
+            "Monoco starting weapon; verify inventory. Guide rank: F tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Nusaro",
+            "Old Lumière · Right Street Flag, end of left-hand path. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sidaro",
+            "Flying Manor · Central Plaza elevator merchant, 76,610 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Urnaro",
+            "Sky Island · defeat Chromatic Glaise. Guide rank: C+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · Verso's Drafts / Thank You Update",
+        [
+          [
+            "Weapon",
+            "Bonbim",
+            "Lune · Verso's Drafts Reverie Path Flag, duel merchant and buy 102,424 Chroma. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Cleim",
+            "Lune · Endless Tower, defeat Clea Unleashed. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Esquim",
+            "Lune · Verso's Drafts Paint Cage 22. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Baguettaro",
+            "Monoco · Verso's Drafts Candy Land, defeat Mime. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Esquiaro",
+            "Monoco · Verso's Drafts Gestral Baths, attack Gestral blocking diving board. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Cannaro",
+            "Monoco · Verso's Drafts Chromatic Machinapieds drop. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Esqium",
+            "Maelle · Verso's Drafts Gestral Carousel, defeat Chromatic Franctale. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Licorum",
+            "Maelle · Verso's Drafts Reverie Path, defeat Chromatic Licorne. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Duollison",
+            "Sciel · Endless Tower, defeat Duollistes. Guide rank: SS tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Esquion",
+            "Sciel · Verso's Drafts Candy Land, side route by handholds toward Mime. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sucetton",
+            "Sciel · Verso's Drafts Reverie Path, Chromatic Barbasucette drop. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Esquiso",
+            "Verso · Verso's Drafts Root of All Evil, defeat Osquio. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ],
+          [
+            "Weapon",
+            "Sucreso",
+            "Verso · Verso's Drafts treehouse above Gingerbread door. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
+      ],
+      [
+        "Weapon collection audit · NG+ special",
+        [
+          [
+            "Weapon",
+            "Baguette",
+            "MISSABLE PREPARATION: keep unused Festival Token from first prologue through end of game. In NG+ after meeting Sophie, inspect baguette basket by wall and wooden table; exchange one token for one character-specific Baguette. Repeat later NG+ for other characters.. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
+          ]
+        ]
       ]
     ]
   },
