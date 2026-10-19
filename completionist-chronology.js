@@ -218,7 +218,7 @@
       const desc=String(step[2]||"");
       if((step[0]==="Cosmetic"&&(/default(?: costume)?\b|deluxe edition default/i.test(desc)))||(/\bstarting weapon\b/i.test(desc))){excluded++;continue}
       if(step[0]==="Collectible"&&/Paint Cage 15\b/.test(step[1])){excluded++;continue}
-      if(["Healing Tint Shard 4","Energy Tint Shard 4","Revive Tint Shard 7"].includes(step[1])){excluded++;continue}
+      if(["Healing Tint Shard 4","Energy Tint Shard 4","Revive Tint Shard 7","Energising Heal"].includes(step[1])){excluded++;continue}
       if(["Exposing Attack (Missable)","Maelle — Obscur outfit"].includes(step[1])){excluded++;continue}
       const dest=findTarget(step,g);
       if(!dest){unresolved.push(step);retained++;continue}
