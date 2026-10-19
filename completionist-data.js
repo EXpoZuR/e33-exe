@@ -694,6 +694,11 @@ window.E33_COMPLETION_DATA = [
             "As soon as swimming unlocks, head WEST from the starting island to the shipwreck peninsula, then take Energising Heal from the second beach camp."
           ],
           [
+            "Picto",
+            "Shared Care (southern island)",
+            "Before visiting White Tree, swim SOUTH from the starting island and search the beach camp at the southern tip for Shared Care."
+          ],
+          [
             "Record",
             "Gustave record · Stone Wave Cliffs return",
             "REQUIRES ESQUIE SWIMMING (unlocked by the Stone Wave Cliffs finale at the start of Act 2). Swim to the north/rear shoreline entrance of Stone Wave Cliffs; return to the former Lampmaster cliff and collect Gustave's music record. No flying or diving is required."
@@ -717,6 +722,11 @@ window.E33_COMPLETION_DATA = [
             "Record",
             "Blades' Graveyard · Reverence",
             "Swim to the Blades' Graveyard coastline and collect Reverence in the central clearing."
+          ],
+          [
+            "Picto",
+            "Accelerating Heal (eastern camp)",
+            "After Blades' Graveyard, swim to the large island east/southeast, land on its eastern shore and search the camp for Accelerating Heal before the Painting Workshop."
           ],
           [
             "Minigame",
