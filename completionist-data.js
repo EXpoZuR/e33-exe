@@ -607,8 +607,8 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Picto",
-            "Auto Shell",
-            "Return the three crystals to Hexga, complete his dialogue and spare him. [Guide rank: A tier; strong]."
+            "Breaking Shots",
+            "Within Tide Caverns after the Manor detour, climb the grassy route by the lantern and traverse the BASALT COLUMNS to reach Breaking Shots; this is not in the Old Farm yard. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Picto",
@@ -622,8 +622,8 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Picto",
-            "Breaking Shots",
-            "Within Tide Caverns after the Manor detour, climb the grassy route by the lantern and traverse the BASALT COLUMNS to reach Breaking Shots; this is not in the Old Farm yard. [Guide rank: B tier; situationally useful]."
+            "Auto Shell",
+            "Return the three crystals to Hexga, complete his dialogue and spare him. [Guide rank: A tier; strong]."
           ]
         ]
       ],
