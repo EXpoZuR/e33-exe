@@ -1,4 +1,4 @@
-/* Verified story gates and chronological Completionist checklist; stable step IDs retained. */
+/* Corrected chronological weapon drops, stable IDs. */
 window.E33_COMPLETION_DATA = [
   {
     "id": "prologue",
@@ -461,8 +461,14 @@ window.E33_COMPLETION_DATA = [
         [
           [
             "Weapon",
+            "Gaulteram",
+            "From Yellow Harvest Entrance Flag, CLIMB the wall handholds to the RIGHT, pass the friendly Gestral, and walk through the first cave. In the first OPEN area just beyond, defeat the roaming GAULT enemies. They drop GAULTERAM for Gustave. This is the early weapon encounter, NOT the Potierim fight farther inside the area.",
+            "act1:yellow-harvest-lost-woods:gaulteram"
+          ],
+          [
+            "Weapon",
             "Potierim",
-            "In the initial Yellow Harvest enemy area defeat Potier enemies until Lune's weapon drops."
+            "Potierim is NOT at the Yellow Harvest entrance. From Entrance Flag climb the RIGHT wall handholds, follow the cave past the first GAULT enemy groups, then use the LEFT-side grapple detour and follow the main path to the HARVESTER'S HOLLOW Expedition Flag. Walk down into the broad CLEARING around the CENTRAL POND and fight the first JAR / POTIER enemy group there. The battle awards Lune's POTIERIM. If you've already got a copy in NG+, the drop may upgrade it instead."
           ],
           [
             "Journal",
