@@ -3257,6 +3257,516 @@ window.E33_COMPLETION_DATA = [
             "Yellow Harvest. Guide tier: S. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
           ]
         ]
+      ],
+      [
+        "Outfit collection audit · Gustave",
+        [
+          [
+            "Cosmetic",
+            "Gustave — Baguette outfit",
+            "Spring Meadows · defeat Mime. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Civilian outfit",
+            "Choose Maelle ending in Act 3. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Expedition outfit",
+            "Default costume. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Flower Suit outfit",
+            "Deluxe edition default (not available in every edition). Check that this distinct Gustave outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Gommage outfit",
+            "Deluxe edition default (not available in every edition). Check that this distinct Gustave outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Lumiere Suit outfit",
+            "Merchant east of Gestral Village, 1,000 Chroma. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Obscur outfit",
+            "Deluxe edition default (not available in every edition). Check that this distinct Gustave outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Pure outfit",
+            "Gestral Village · Karatom mushroom quest, before Act 1 ends. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Renoir outfit",
+            "Choose Verso ending in Act 3. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Renoir's Suit outfit",
+            "Defeat Renoir in Monolith. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Sakapatate outfit",
+            "Gestral Village merchant near chief house, 1,000 Chroma. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Swimsuit outfit",
+            "Gestral Beach · parkour challenge. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Chic outfit",
+            "Continent · merchant near Esquie's Nest, 2,000 Chroma. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Esquie outfit",
+            "Verso's Drafts · ride Gestral Carousel as Verso. Check that this distinct Gustave outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave — Osquio outfit",
+            "Verso's Drafts · defeat Osquio. Check that this distinct Gustave outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Outfit collection audit · Lune",
+        [
+          [
+            "Cosmetic",
+            "Lune — Baguette outfit",
+            "Ancient Sanctuary Mime. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Civilian outfit",
+            "Choose Maelle ending in Act 3. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Clea outfit",
+            "Flying Manor · defeat Clea and claim gift from boy. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Danseuse outfit",
+            "Frozen Hearts · complete Danseuse parry quest. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Expedition outfit",
+            "Default. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Flower Suit outfit",
+            "Deluxe edition default. Check that this distinct Lune outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Lune — Gommage outfit",
+            "Deluxe edition default. Check that this distinct Lune outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Lune — Pure outfit",
+            "Monoco's Station · complete Fashionist poetry quest. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Sakapatate outfit",
+            "Gestral Village · rescue Purumi from tall pillar and obtain reward. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Sirene outfit",
+            "Sirène · defeat Glissando. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Skirt outfit",
+            "Merchant on island near Crimson Forest, 1,000 Chroma. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Swimsuit 1 outfit",
+            "Gestral Beach · parkour challenge, speak to Gestral again after Gustave reward. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Swimsuit 2 outfit",
+            "Gestral Beach · volleyball game. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Chic outfit",
+            "Continent · merchant near Coastal Cave, 10,000 Chroma. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Esquie outfit",
+            "Verso's Drafts · talk to Very Very Cool Gestral at Gestral Carousel near ledge. Check that this distinct Lune outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Lune — Osquio outfit",
+            "Verso's Drafts · Root of All Evil merchant, 20,000 Chroma. Check that this distinct Lune outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Outfit collection audit · Maelle",
+        [
+          [
+            "Cosmetic",
+            "Maelle — Real Maelle outfit",
+            "Act 3 story progression. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Baguette outfit",
+            "The Reacher · defeat Mime. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Civilian outfit",
+            "Merchant on island near Crimson Forest, 1,000 Chroma. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Clair outfit",
+            "Deluxe edition default. Check that this distinct Maelle outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Clea outfit",
+            "Flying Manor · defeat Clea, claim gift from boy. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Expedition outfit",
+            "Default. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Flower Suit outfit",
+            "Deluxe edition default. Check that this distinct Maelle outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Gommage outfit",
+            "Deluxe edition default. Check that this distinct Maelle outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Lumiere outfit",
+            "Merchant east of Gestral Village, 1,000 Chroma. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Obscur outfit",
+            "Forgotten Battlefield · fight merchant then buy for 5,000 Chroma. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Painted Me outfit",
+            "The Manor · place family canvas on empty frame. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Pure outfit",
+            "Monoco's Station · Fashionist poetry quest. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Sakapatate outfit",
+            "Gestral Village · complete Ono-Puncho fast-damage quest. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Skirt outfit",
+            "Stone Wave Cliffs Tide Caverns · Manor wardrobe. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Swimsuit outfit",
+            "Gestral Beach · climbing challenge. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Chic outfit",
+            "Continent · merchant near Coastal Cave, 10,000 Chroma. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Esquie outfit",
+            "Verso's Drafts · talk to Very Very Cool Gestral by Gestral Carousel. Check that this distinct Maelle outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle — Osquio outfit",
+            "Verso's Drafts · Root of All Evil merchant, 20,000 Chroma. Check that this distinct Maelle outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Outfit collection audit · Sciel",
+        [
+          [
+            "Cosmetic",
+            "Sciel — Baguette outfit",
+            "Esquie's Nest · defeat Mime. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Civilian outfit",
+            "Choose Maelle ending in Act 3. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Clea outfit",
+            "Flying Manor · defeat Clea, claim gift from boy. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Danseuse outfit",
+            "Frozen Hearts · merchant near Mime, 10,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Expedition outfit",
+            "Default. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Flower Suit outfit",
+            "Deluxe edition default. Check that this distinct Sciel outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Gommage outfit",
+            "Deluxe edition default. Check that this distinct Sciel outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Pure outfit",
+            "Monoco's Station · Fashionist poetry quest. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Sakapatate outfit",
+            "Gestral Village · right-side merchant, 1,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Sirene outfit",
+            "Merchant on east beach of Sirène island, 5,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Skirt outfit",
+            "Merchant west of Monoco's Station, 5,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Swimsuit 1 outfit",
+            "Camp · Sciel relationship level 6. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Swimsuit 2 outfit",
+            "Gestral Beach · volleyball game. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Chic outfit",
+            "Continent · merchant near Coastal Cave, 10,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Esquie outfit",
+            "Verso's Drafts · talk to Very Very Cool Gestral at Gestral Carousel. Check that this distinct Sciel outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel — Osquio outfit",
+            "Verso's Drafts · Root of All Evil merchant, 20,000 Chroma. Check that this distinct Sciel outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Outfit collection audit · Verso",
+        [
+          [
+            "Cosmetic",
+            "Verso — Baguette outfit",
+            "Visages · defeat Mime. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Civilian outfit",
+            "Continent · hidden room behind Manor door. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Clair outfit",
+            "Endless Tower · complete 11 stages. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Expedition outfit",
+            "Camp scene with Maelle during Act 2. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Flower Suit outfit",
+            "Deluxe edition default. Check that this distinct Verso outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Verso — Gommage outfit",
+            "Deluxe edition default. Check that this distinct Verso outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Verso — Obscur outfit",
+            "Deluxe edition default. Check that this distinct Verso outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Verso — Pelerin outfit",
+            "Frozen Hearts · merchant near Mime, 20,000 Chroma. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Pure outfit",
+            "Merchant on island northwest of Sirène, 10,000 Chroma. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Renoir outfit",
+            "Choose Verso ending in Act 3. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Renoir's Suit outfit",
+            "Defeat Renoir in Monolith. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Sakapatate outfit",
+            "Gestral Village Bazaar merchant, 1,000 Chroma. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Simple outfit",
+            "Merchant on small island near Visages, 5,000 Chroma. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Swimsuit 1 outfit",
+            "Gestral Beach · race. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Swimsuit 2 outfit",
+            "Camp · Sciel relationship level 6. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Verso outfit",
+            "Default. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Chic outfit",
+            "Continent · merchant near Coastal Cave, 10,000 Chroma. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Esquie outfit",
+            "Verso's Drafts · talk to Very Very Cool Gestral at Carousel. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Osquio outfit",
+            "Verso's Drafts · defeat Osquio. Check that this distinct Verso outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Verso — Visages outfit",
+            "Verso's Drafts · Endless Tower, underneath staircase past Clea. Check that this distinct Verso outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Outfit collection audit · Monoco",
+        [
+          [
+            "Cosmetic",
+            "Monoco — Civilian outfit",
+            "Endless Night Sanctuary · merchant near Night Totem Flag, 10,000 Chroma. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Lumiere outfit",
+            "Flying Casino · speak to Gestral as Monoco. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Expedition outfit",
+            "Default. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Flower Suit outfit",
+            "Deluxe edition default. Check that this distinct Monoco outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Gommage outfit",
+            "Deluxe edition default. Check that this distinct Monoco outfit is unlocked. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Pure outfit",
+            "Merchant near lake on southwest edge of Continent map, 10,000 Chroma. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Swimsuit outfit",
+            "Gestral Beach · Only Up challenge. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Baguette outfit",
+            "Verso's Drafts · Candy Land Mime. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Chic outfit",
+            "Continent · merchant near Coastal Cave, 10,000 Chroma. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Esquie outfit",
+            "Verso's Drafts · Very Very Cool Gestral at Carousel. Check that this distinct Monoco outfit is unlocked. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco — Osquio outfit",
+            "Verso's Drafts · Root of All Evil merchant, 20,000 Chroma. Check that this distinct Monoco outfit is unlocked. "
+          ]
+        ]
       ]
     ]
   },
