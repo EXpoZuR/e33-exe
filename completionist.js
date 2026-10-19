@@ -34,6 +34,22 @@
     }));
     return {...chapter,number:chapterIndex,steps};
   });
+  // Route continuity: only label a direction as coming from the previous checkpoint
+  // when its authored origin matches the actual immediately preceding step.
+  // Audit catalogs are unordered item indexes, not a physical walking route.
+  for (const chapter of chapters) {
+    chapter.steps.forEach((step, index) => {
+      const previous = chapter.steps[index - 1];
+      const route = routeData[step.id];
+      const linked = !!previous && !!route?.previous &&
+        slug(route.previous) === slug(previous.title);
+      step.isLinkedRoute = chapter.id !== "inventory" && linked;
+      step.previousTitle = step.isLinkedRoute ? previous.title : null;
+      if (!step.isLinkedRoute) step.directions = step.restartDirections;
+      step.routeLabel = chapter.id === "inventory" ? "COLLECTION LOCATION / ACQUISITION" :
+        step.isLinkedRoute ? "FROM THE PREVIOUS STEP" : "AREA-BASED CHECKPOINT / DETOUR";
+    });
+  }
   const steps = chapters.flatMap(c => c.steps);
   const byId = new Map(steps.map((step,i) => [step.id,{step,index:i}]));
   let statuses = {};
@@ -128,7 +144,7 @@
       <div class="cp-guide-intro">Identify what you are looking for first. Then follow the route from your previous objective, or use the flag-based alternative if you travelled out of order.</div>
       ${required}
       <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4>${rewardRankMarkup(step)}<p>${esc(step.context || step.restartDirections)}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
+      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / ${esc(step.routeLabel)}</span><h4>${step.previousTitle ? esc(step.previousTitle) + " → " : ""}${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
       <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(detailData.completion?.[step.title] || completionNote(step))}</p></section>
       ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
@@ -368,7 +384,7 @@
         <h3 style="margin-top:19px">${esc(step.title)}</h3>
         ${rewardRankMarkup(step)}
         ${step.context ? `<p class="cp-focus-context">${esc(step.context)}</p>` : ""}
-        <div class="cp-directions-label">From previous step${step.previousTitle ? " · "+esc(step.previousTitle) : ""}</div>
+        <div class="cp-directions-label">${esc(step.routeLabel)}${step.previousTitle ? " · "+esc(step.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(step.directions)}</p>
         ${prerequisiteMarkup(step)}
         ${selected && stepStatus==="skip" ? `<p class="cp-view-note">This checkpoint is still skipped. Viewing it does not change your completion percentage or fill its timeline circle.</p>` : ""}
