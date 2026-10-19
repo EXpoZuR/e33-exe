@@ -227,13 +227,20 @@
   }
   for(const [key,items] of pending){
     const [id,anchor]=key.split("::");
-    const chap=chapters.find(c=>c.id===id);if(!chap){inv.areas.push(["Unmapped - "+key,items]);continue}
-    const at=chap.areas.findIndex(x=>x[0]===anchor);
-    if(at<0){inv.areas.push(["Unmapped - "+key,items]);continue}
-    const label="Collectibles to obtain before leaving · "+anchor;
-    const existing=chap.areas.find(x=>x[0]===label);
-    if(existing){existing[1].push(...items);continue}
-    chap.areas.splice(at+1,0,[label,items]);
+    const chap=chapters.find(c=>c.id===id);
+    if(!chap){inv.areas.push(["Unmapped "+key,items]);continue}
+    const at=chap.areas.findIndex(z=>z[0]===anchor);
+    if(at<0){inv.areas.push(["Unmapped "+key,items]);continue}
+    const buckets=new Map();
+    for(const entry of items){
+      const hint=String(entry[2]||"").toLowerCase();
+      const region=regionNames.find(z=>hint.includes(z.toLowerCase()))||"Other "+anchor;
+      if(!buckets.has(region))buckets.set(region,[]);
+      buckets.get(region).push(entry);
+    }
+    const sorted=[...buckets].sort((x,y)=>regionNames.indexOf(x[0])-regionNames.indexOf(y[0]));
+    chap.areas.splice(at+1,0,...sorted.map(([name,entries])=>["Collectibles · "+name,entries]));
   }
+  if(!inv.areas.length)chapters.splice(chapters.indexOf(inv),1);
   window.E33_ROUTE_MIGRATION_STATS={moved,retained,excluded,remaining:inv.areas.reduce((n,x)=>n+x[1].length,0)};
 })();
