@@ -229,7 +229,7 @@
     const chap=chapters.find(c=>c.id===id);if(!chap){inv.areas.push(["Unmapped - "+key,items]);continue}
     const at=chap.areas.findIndex(x=>x[0]===anchor);
     if(at<0){inv.areas.push(["Unmapped - "+key,items]);continue}
-    const label="Unique items · "+anchor;
+    const label="Collectibles to obtain before leaving · "+anchor;
     const existing=chap.areas.find(x=>x[0]===label);
     if(existing){existing[1].push(...items);continue}
     chap.areas.splice(at+1,0,[label,items]);
