@@ -10,6 +10,7 @@
   const routeData = window.E33_COMPLETION_ROUTES || {};
   const contextData = window.E33_COMPLETION_CONTEXT || {};
   const gates = window.E33_COMPLETION_GATES?.steps || {};
+  const siteRanks = window.E33_ITEM_RANKINGS || {weapons:[],pictos:[]};
   let modalStepId = null;
   let modalPreviousFocus = null;
   if (!Array.isArray(raw) || !mount || !dock) return;
@@ -126,7 +127,7 @@
     modalBody.innerHTML = `
       <div class="cp-guide-intro">Identify what you are looking for first. Then follow the route from your previous objective, or use the flag-based alternative if you travelled out of order.</div>
       ${required}
-      <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4><p>${esc(step.context || step.restartDirections)}</p></section>
+      <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4>${rewardRankMarkup(step)}<p>${esc(step.context || step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">02 / FROM THE PREVIOUS STEP</span><h4>${esc(step.previousTitle || "Start of this route")} → ${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
       <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
       <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(detailData.completion?.[step.title] || completionNote(step))}</p></section>
@@ -194,6 +195,58 @@
     </div>`;
   }
 
+
+  const rewardHints = {"Chromatic Lancelier":["Augmented Attack"],"Abbest Cave · Chromatic Abbest":["First Offensive"],"Noco's duel and shop":["Exposing Attack"],"Friendly Demineur":["Deminerim"],"Chromatic Troubadour":["Troubadim","Energising Break"],"Chromatic Brûleur":["Powerful Revive"],"Hidden Gestral Arena · four champions":["Solo Fighter","Accelerating Last Stand"],"Red Woods · Bénisseur":["Recovery"],"Ultimate Sakapatate":["Breaker"],"Black-market alley":["Healing Mark","Sekarum"],"Gestral tournament / recruit Sciel":["Medalum"],"Pinabby":["Teamwork","Auto Death"],"Glaise":["Plenum","Energising Attack I"],"Chromatic Orphelin trio":["Kralim"],"Friendly Hexga":["Auto Shell"],"Stone Quarry Troubadour":["Healing Parry"],"Esoteric Ruins / Portier":["Protecting Heal"],"Mandelgo · unique stock":["Algueron","Longer Powerful","Healing Counter"],"Chromatic Danseuse":["Danseso","Revive Paradox"],"Frozen Hearts":["Survivor"],"Flying Manor · Clea":["Clea's Life"],"Renoir's Drafts / The Abyss · Simon":["Simoso"],"Reverie Path":["AP Discount","Consuming Attack"],"Root of All Evil · Osquio":["Esquiso"],"Clea Unleashed":["Cleim","Clea's Death"],"Duollistes":["Duollison"],"Chromatic Lampmaster":["First Life"]};
+  const rankByName=new Map();
+  [...siteRanks.weapons.map(item=>({...item,type:"Weapon"})),
+   ...siteRanks.pictos.map(item=>({...item,type:"Picto"}))].forEach(item=>{
+    const key=item.name.toLowerCase();
+    if(!rankByName.has(key))rankByName.set(key,[]);
+    rankByName.get(key).push(item);
+  });
+  function rankedRewards(step) {
+    const eligible=new Set(["Weapon","Picto","Merchant","Chromatic","Boss","Optional boss","Quest","Arena","Collection","Secret","Minigame"]);
+    if(!eligible.has(step.kind))return [];
+    const names=new Set(rewardHints[step.title]||[]);
+    // Prefer exactly named rewards; only inspect original pickup text on weapon/picto steps.
+    const targets=step.kind==="Weapon"||step.kind==="Picto"?
+      [step.title,step.restartDirections]:[step.title];
+    for(const list of rankByName.values()) {
+      const item=list[0];
+      if(item.name.length<5)continue;
+      if(targets.some(text=>{
+        const s=String(text).toLowerCase(),n=item.name.toLowerCase();
+        let at=s.indexOf(n);
+        while(at>=0) {
+          const before=at===0?"":s[at-1],after=s[at+n.length]||"";
+          if(!/[a-z0-9]/.test(before)&&!/[a-z0-9]/.test(after))return true;
+          at=s.indexOf(n,at+1);
+        }
+        return false;
+      }))names.add(item.name);
+    }
+    const items=[];
+    for(const name of names){
+      const options=rankByName.get(name.toLowerCase())||[];
+      const picked=options.find(x=>x.type==="Weapon"&&(step.chapterId==="act1"?x.character==="Gustave":x.character==="Verso"))||options[0];
+      if(picked)items.push(picked);
+    }
+    return items.slice(0,4);
+  }
+  function rewardRankMarkup(step) {
+    const items=rankedRewards(step);
+    if(!items.length)return "";
+    return `<div class="cp-ranked-rewards" aria-label="E33.EXE item rankings">
+      <span class="cp-rank-kicker">Build ranking</span>
+      ${items.map(item=>{
+        const who=item.type==="Weapon"?item.character+" · ":"Picto · ";
+        const order=item.type==="Weapon"&&Number.isFinite(item.rank)?" · #"+item.rank:"";
+        const sourceNote=item.type==="Weapon"?item.why:"Lumina cost: "+item.cost+" LP";
+        return `<span class="cp-rank-item" title="${esc(item.name+" · "+item.tier+" tier · "+sourceNote)}"><strong>${esc(item.name)}</strong> ${esc(who)}<em>${esc(item.tier)} tier</em>${order}</span>`;
+      }).join("")}
+    </div>`;
+  }
+
   function skippedMarkup(chapter) {
     const skipped = chapter.steps.filter(step => statusOf(step.id) === "skip");
     if (!skipped.length) return "";
@@ -249,6 +302,7 @@
             <span class="cp-upcoming-number" aria-label="Step ${number}">${number.toString().padStart(2, "0")}</span>
             <div class="cp-upcoming-info">
               <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
+              ${rewardRankMarkup(step)}
               ${step.context ? `<p class="cp-upcoming-context">${esc(step.context)}</p>` : ""}
               ${prerequisiteMarkup(step,true)}
               <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
@@ -304,6 +358,7 @@
         </div>
         <div class="cp-stage">${esc(step.area)} <span aria-hidden="true">↗</span></div>
         <h3 style="margin-top:19px">${esc(step.title)}</h3>
+        ${rewardRankMarkup(step)}
         ${step.context ? `<p class="cp-focus-context">${esc(step.context)}</p>` : ""}
         <div class="cp-directions-label">From previous step${step.previousTitle ? " · "+esc(step.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(step.directions)}</p>
