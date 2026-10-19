@@ -354,8 +354,8 @@ window.E33_COMPLETION_ROUTES = {
     "from": "After SOS Power retrace the short ruins detour to the main Paintress Shrine route. Visit the isolated platform on the continuing trail and speak through the Young Boy's dialogue."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:jerijeri-rangeson": {
-    "previous": "Speak to the Young Boy",
-    "from": "From the Young Boy continue toward Old Farm Flag. Circle the first farmhouse to the RIGHT and crawl behind the huge rock for Jerijeri's merchant stall."
+    "previous": "SOS Power",
+    "from": "From the Paintress Shrine route continue toward Old Farm Flag. Circle the first farmhouse to the RIGHT and crawl behind the huge rock for Jerijeri's merchant stall."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:duenum-paint-cage": {
     "previous": "Jerijeri / Rangeson",
