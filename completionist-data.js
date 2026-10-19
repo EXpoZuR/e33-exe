@@ -591,19 +591,9 @@ window.E33_COMPLETION_DATA = [
             "From Old Farm Flag take the uphill left path to the broken windmill and shoot the Paint Cage locks. [Guide rank: C tier · Maelle; mostly collection or niche use]."
           ],
           [
-            "Picto",
-            "Perilous Parry",
-            "In Tide Caverns, after collecting the Rock Crystals, descend the second/lower rope and defeat the Gold Chevalière beside the hidden Manor doorway. This enemy drops Perilous Parry. [Guide rank: B tier; situationally useful]."
-          ],
-          [
             "Rare enemy",
             "Old Farm Petank",
             "In the lower open field near the windmill, chase the glowing Petank into its marked fight circle."
-          ],
-          [
-            "Picto",
-            "Breaking Shots",
-            "Within Tide Caverns after the Manor detour, climb the grassy route by the lantern and traverse the BASALT COLUMNS to reach Breaking Shots; this is not in the Old Farm yard. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Quest",
@@ -616,9 +606,19 @@ window.E33_COMPLETION_DATA = [
             "Return the three crystals to Hexga, complete his dialogue and spare him. [Guide rank: A tier; strong]."
           ],
           [
+            "Picto",
+            "Perilous Parry",
+            "In Tide Caverns, after collecting the Rock Crystals, descend the second/lower rope and defeat the Gold Chevalière beside the hidden Manor doorway. This enemy drops Perilous Parry. [Guide rank: B tier; situationally useful]."
+          ],
+          [
             "Secret",
             "Tide Caverns Manor outfit",
             "In Tide Caverns descend the second lower rope and defeat the Gold Chevalière. Open the Manor door it guards and check the wardrobe for Maelle's Skirt outfit."
+          ],
+          [
+            "Picto",
+            "Breaking Shots",
+            "Within Tide Caverns after the Manor detour, climb the grassy route by the lantern and traverse the BASALT COLUMNS to reach Breaking Shots; this is not in the Old Farm yard. [Guide rank: B tier; situationally useful]."
           ]
         ]
       ],
