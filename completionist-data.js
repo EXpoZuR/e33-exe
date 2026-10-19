@@ -33,6 +33,11 @@ window.E33_COMPLETION_DATA = [
             "Collectible",
             "Prologue festival rewards",
             "Check the remaining festival-token exchanges for the unique Weird Picto and other one-time rewards before boarding."
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Bun haircut",
+            "MISSABLE: During prologue's nighttime Expedition Festival, spend one Festival Token with AMANDINE, the woman wearing red glasses and a shawl, to receive Gustave's Bun haircut. Do this BEFORE leaving Lumière."
           ]
         ]
       ]
@@ -3765,6 +3770,636 @@ window.E33_COMPLETION_DATA = [
             "Cosmetic",
             "Monoco — Osquio outfit",
             "Verso's Drafts · Root of All Evil merchant, 20,000 Chroma. Check that this distinct Monoco outfit is unlocked. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Gustave",
+        [
+          [
+            "Cosmetic",
+            "Gustave · Anniversary haircut",
+            "Continent · merchant beside Stone Wave Cliffs, 3,000 Chroma. Verify the Gustave Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Bun Braid haircut",
+            "Continent · merchant east of Yellow Harvest, 500 Chroma. Verify the Gustave Bun Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Chic haircut",
+            "Continent · merchant near Esquie's Nest, 1,000 Chroma. Verify the Gustave Chic hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Gustave Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Osquio haircut",
+            "Verso's Drafts · defeat Osquio. Verify the Gustave Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Baguette haircut",
+            "Spring Meadows · defeat Mime. Verify the Gustave Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Charming haircut",
+            "Continent · merchant east of Yellow Harvest, 500 Chroma. Verify the Gustave Charming hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Curly haircut",
+            "Continent · merchant east of Yellow Harvest, 500 Chroma. Verify the Gustave Curly hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Expedition White haircut",
+            "Act 3 · choose Maelle ending. Verify the Gustave Expedition White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Flowers haircut",
+            "Deluxe edition default. Verify the Gustave Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Gestral haircut",
+            "Gestral Village Bazaar merchant, 1,000 Chroma. Verify the Gustave Gestral hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Gustave haircut",
+            "Default. Verify the Gustave Gustave hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Short haircut",
+            "Continent · merchant east of Gestral Village, 500 Chroma. Verify the Gustave Short hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Gustave · Renoir haircut",
+            "Act 3 · choose Verso ending. Verify the Gustave Renoir hairstyle in the cosmetic inventory. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Lune",
+        [
+          [
+            "Cosmetic",
+            "Lune · Anniversary haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Lune Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Double Bun haircut",
+            "Verso's Drafts · Candy Land, finish Marelle puzzle down and right of rope. Verify the Lune Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Lune Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Osquio haircut",
+            "Verso's Drafts · Root of All Evil merchant, 5,000 Chroma. Verify the Lune Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Simon haircut",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Lune Simon hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Long Double Bun haircut",
+            "Continent · merchant near Coastal Cave, 3,000 Chroma. Verify the Lune Long Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Artist haircut",
+            "Continent · merchant near Hidden Gestral Arena, 3,000 Chroma. Verify the Lune Artist hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Baguette haircut",
+            "Ancient Sanctuary · Mime. Verify the Lune Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Bald haircut",
+            "Sunless Cliffs · defeat Mime as Lune. Verify the Lune Bald hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Braid haircut",
+            "Continent · merchant near Stone Wave Cliffs Cave, 1,000 Chroma. Verify the Lune Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Clea haircut",
+            "Endless Tower · complete 3 stages. Verify the Lune Clea hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Lune haircut",
+            "Default. Verify the Lune Lune hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Double Braid haircut",
+            "Island northwest of Sirène merchant, 10,000 Chroma. Verify the Lune Double Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Flowers haircut",
+            "Deluxe edition default. Verify the Lune Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Lune · French Bob haircut",
+            "Merchant south of snow region, 3,000 Chroma. Verify the Lune French Bob hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Gestral haircut",
+            "Find 2 Lost Gestrals and report to Sastro. Verify the Lune Gestral hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Half Ponytail haircut",
+            "Island south of Sirène merchant, 2,000 Chroma. Verify the Lune Half Ponytail hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Messy Bun haircut",
+            "Beach east of Floating Cemetery merchant, 3,000 Chroma. Verify the Lune Messy Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Ponytail haircut",
+            "Lake beach south of Monoco's Station merchant, 3,000 Chroma. Verify the Lune Ponytail hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Rebellious White haircut",
+            "Endless Tower · complete 5 stages. Verify the Lune Rebellious White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Short haircut",
+            "Frozen Hearts · Mime. Verify the Lune Short hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Sirene haircut",
+            "Sirène · Mime. Verify the Lune Sirene hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Wavy haircut",
+            "Yellow Harvest · merchant near Harvester's Hollow Flag, 1,000 Chroma. Verify the Lune Wavy hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Lune · Voluminous haircut",
+            "Red island southwest of Visages · Mime. Verify the Lune Voluminous hairstyle in the cosmetic inventory. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Maelle",
+        [
+          [
+            "Cosmetic",
+            "Maelle · Anniversary haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Maelle Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Chic haircut",
+            "Verso's Drafts · from Reverie Path return uphill, cross right through Gestral lake, solve partly submerged Marelle puzzle. Verify the Maelle Chic hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Double Bun haircut",
+            "Verso's Drafts · Gestral Baths, jump into blue diving ring. Verify the Maelle Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Maelle Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Osquio haircut",
+            "Verso's Drafts · Root of All Evil merchant, 5,000 Chroma. Verify the Maelle Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Simon haircut",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Maelle Simon hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Long Double Bun haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Maelle Long Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Artist haircut",
+            "Continent · merchant near Hidden Gestral Arena, 3,000 Chroma. Verify the Maelle Artist hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Baguette haircut",
+            "The Reacher · Mime. Verify the Maelle Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Bald haircut",
+            "Sunless Cliffs · Mime as Maelle. Verify the Maelle Bald hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Braid haircut",
+            "Yellow Harvest · Mime. Verify the Maelle Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Clea haircut",
+            "Flying Manor · Mime. Verify the Maelle Clea hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Double Braid haircut",
+            "Continent · north portal of Stone Wave Cliffs merchant, 2,000 Chroma. Verify the Maelle Double Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Double Braid White haircut",
+            "Endless Tower · complete 4 stages. Verify the Maelle Double Braid White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Flowers haircut",
+            "Deluxe edition default. Verify the Maelle Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Maelle · French Bob haircut",
+            "The Carousel · Grandis quest. Verify the Maelle French Bob hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Gestral haircut",
+            "Find 1 Lost Gestral and return to Sastro. Verify the Maelle Gestral hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Gestral White haircut",
+            "Dark Gestral Arena · complete 4 fights. Verify the Maelle Gestral White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Maelle haircut",
+            "Default. Verify the Maelle Maelle hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Messy Bun haircut",
+            "Beach east of Floating Cemetery merchant, 3,000 Chroma. Verify the Maelle Messy Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Painted Me haircut",
+            "The Reacher · defeat Alicia. Verify the Maelle Painted Me hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Ponytail White haircut",
+            "Endless Tower · complete 11 stages and speak to nearby Fading Woman for reward. Verify the Maelle Ponytail White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Real Maelle haircut",
+            "Start Act 3. Verify the Maelle Real Maelle hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Rebellious haircut",
+            "The Manor · kitchen switch puzzle. Verify the Maelle Rebellious hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Short haircut",
+            "Flying Waters · Mime. Verify the Maelle Short hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Short White haircut",
+            "Continent · merchant north of The Reacher, 2,000 Chroma. Verify the Maelle Short White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Vintage haircut",
+            "Continent · merchant east of Gestral Village, 1,000 Chroma. Verify the Maelle Vintage hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Maelle · Voluminous haircut",
+            "Monolith · Tainted Cliffs Mime. Verify the Maelle Voluminous hairstyle in the cosmetic inventory. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Sciel",
+        [
+          [
+            "Cosmetic",
+            "Sciel · Anniversary haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Sciel Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Double Bun haircut",
+            "Verso's Drafts · Gingerbread door, repair broken Marelle puzzle. Verify the Sciel Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Sciel Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Osquio haircut",
+            "Verso's Drafts · Root of All Evil merchant, 5,000 Chroma. Verify the Sciel Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Simon haircut",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Sciel Simon hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Long Double Bun haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Sciel Long Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Artist haircut",
+            "Continent · merchant near Hidden Gestral Arena, 3,000 Chroma. Verify the Sciel Artist hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Baguette haircut",
+            "Esquie's Nest · Mime. Verify the Sciel Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Bald haircut",
+            "Sunless Cliffs · defeat Mime as Sciel. Verify the Sciel Bald hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Braid haircut",
+            "Old Lumière · Mime. Verify the Sciel Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Clea haircut",
+            "Endless Tower · complete 7 stages. Verify the Sciel Clea hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Double Braid haircut",
+            "Merchant north of The Reacher, 2,000 Chroma. Verify the Sciel Double Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Flowers haircut",
+            "Deluxe edition default. Verify the Sciel Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Sciel · French Bob haircut",
+            "West of Forgotten Battlefield north portal merchant, 2,000 Chroma. Verify the Sciel French Bob hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Gestral haircut",
+            "Find 3 Lost Gestrals and report to Sastro. Verify the Sciel Gestral hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Messy Bun White haircut",
+            "Endless Tower · complete 6 stages. Verify the Sciel Messy Bun White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Plunging Bob haircut",
+            "Merchant west of Forgotten Battlefield north portal, 2,000 Chroma. Verify the Sciel Plunging Bob hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Ponytail haircut",
+            "Stone Wave Cliffs · merchant through gap by south portal, 1,000 Chroma. Verify the Sciel Ponytail hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Rebellious haircut",
+            "Island south of Sirène merchant, 2,000 Chroma. Verify the Sciel Rebellious hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Sciel haircut",
+            "Default. Verify the Sciel Sciel hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Short haircut",
+            "Beach east of Floating Cemetery merchant, 3,000 Chroma. Verify the Sciel Short hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Short Curly haircut",
+            "Merchant near Stone Wave Cliffs Cave, 1,000 Chroma. Verify the Sciel Short Curly hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Vintage haircut",
+            "Merchant by Stone Wave Cliffs north portal, 2,000 Chroma. Verify the Sciel Vintage hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Sciel · Voluminous haircut",
+            "Red island southwest of Visages · Mime. Verify the Sciel Voluminous hairstyle in the cosmetic inventory. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Verso",
+        [
+          [
+            "Cosmetic",
+            "Verso · Anniversary haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Verso Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Chic haircut",
+            "Verso's Drafts · Gestral Baths Marelle puzzle near Flag. Verify the Verso Chic hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Verso Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Osquio haircut",
+            "Verso's Drafts · defeat Osquio. Verify the Verso Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Simon haircut",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Verso Simon hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Bun Braid haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Verso Bun Braid hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Baguette haircut",
+            "Visages · Mime. Verify the Verso Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Bald haircut",
+            "Sunless Cliffs · Mime as Verso. Verify the Verso Bald hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Bun haircut",
+            "Lake beach south of Monoco's Station merchant, 3,000 Chroma. Verify the Verso Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Curly haircut",
+            "Merchant north of The Reacher, 2,000 Chroma. Verify the Verso Curly hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Expedition White haircut",
+            "Endless Tower · complete 9 stages. Verify the Verso Expedition White hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Flowers haircut",
+            "Deluxe edition default. Verify the Verso Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Verso · Gestral haircut",
+            "Find 5 Lost Gestrals and report to Sastro. Verify the Verso Gestral hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Gustave's haircut",
+            "Beach east of Floating Cemetery merchant, 3,000 Chroma. Verify the Verso Gustave's hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Renoir haircut",
+            "Act 3 · choose Verso ending. Verify the Verso Renoir hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Samurai haircut",
+            "Camp · Monoco relationship level 3. Verify the Verso Samurai hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Verso · Verso haircut",
+            "Default. Verify the Verso Verso hairstyle in the cosmetic inventory. "
+          ]
+        ]
+      ],
+      [
+        "Haircut collection audit · Monoco",
+        [
+          [
+            "Cosmetic",
+            "Monoco · Anniversary haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Monoco Anniversary hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Baguette haircut",
+            "Verso's Drafts · Candy Land Mime. Verify the Monoco Baguette hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Chic haircut",
+            "Merchant near Coastal Cave, 3,000 Chroma. Verify the Monoco Chic hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Double Bun haircut",
+            "Verso's Drafts · Gestral Baths solve Esquie-statue puzzle. Verify the Monoco Double Bun hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Esquie haircut",
+            "Verso's Drafts · Reverie Path merchant, 5,000 Chroma. Verify the Monoco Esquie hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · French Bob haircut",
+            "Verso's Drafts · Gestral Baths, jump into red diving ring. Verify the Monoco French Bob hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Osquio haircut",
+            "Verso's Drafts · Root of All Evil merchant, 5,000 Chroma. Verify the Monoco Osquio hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Simon haircut",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Monoco Simon hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Bald haircut",
+            "Sunless Cliffs · Mime as Monoco. Verify the Monoco Bald hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Flowers haircut",
+            "Deluxe edition default. Verify the Monoco Flowers hairstyle in the cosmetic inventory. Edition exclusive; skip if not owned."
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Monoco haircut",
+            "Default. Verify the Monoco Monoco hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Viking haircut",
+            "Camp · Monoco relationship level 3. Verify the Monoco Viking hairstyle in the cosmetic inventory. "
+          ],
+          [
+            "Cosmetic",
+            "Monoco · Pure haircut",
+            "Merchant near southwestern Continent lake, 10,000 Chroma. Verify the Monoco Pure hairstyle in the cosmetic inventory. "
           ]
         ]
       ]
