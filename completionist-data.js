@@ -571,6 +571,16 @@ window.E33_COMPLETION_DATA = [
             "After the second Greatsword Cultist group and Expedition 56, continue forward, check the LEFT gazebo, then climb the THREE RIGHT-HAND LEDGES and defeat the enemies near the First Strike Picto. [Guide rank: SS tier; high priority]."
           ],
           [
+            "Collectible",
+            "Healing Tint Shard (Paintress Shrine)",
+            "At Paintress Shrine Flag, go LEFT toward ruined building to get the Healing Tint Shard."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard (Paintress Shrine)",
+            "At Paintress Shrine Flag, go RIGHT toward the shrine to get the Energy Tint Shard."
+          ],
+          [
             "Journal",
             "Expedition 50",
             "From Paintress Shrine Flag continue into the ruins and hug the left side beside the fallen expeditioners."
