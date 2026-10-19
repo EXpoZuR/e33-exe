@@ -45,17 +45,17 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Dodger",
-            "Continue with Lune and beat the Portier on the main route after her introduction."
+            "Continue with Lune and beat the Portier on the main route after her introduction. [Guide rank: S tier; high priority]."
           ],
           [
             "Weapon",
             "Lanceram",
-            "Defeat the Lancelier encounter shortly after Meadows Corridor's Expedition Flag."
+            "Defeat the Lancelier encounter shortly after Meadows Corridor's Expedition Flag. [Guide rank: S tier · Gustave; high priority]."
           ],
           [
             "Picto",
             "Critical Burn",
-            "Before the engraved stone structure, check the small cave along the right-hand cliff wall."
+            "Before the engraved stone structure, check the small cave along the right-hand cliff wall. [Guide rank: S tier; high priority]."
           ]
         ]
       ],
@@ -90,12 +90,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Dead Energy II",
-            "From the camp cave exit take the right dead-end trail rather than the left main route."
+            "From the camp cave exit take the right dead-end trail rather than the left main route. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Picto",
             "Burning Shots",
-            "From the camp cave exit take the left route; check the crates beneath the tree."
+            "From the camp cave exit take the left route; check the crates beneath the tree. [Guide rank: S tier; high priority]."
           ],
           [
             "Boss",
@@ -105,7 +105,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Empowering Attack",
-            "After Evêque, follow the left cliffside trail by the expedition message."
+            "After Evêque, follow the left cliffside trail by the expedition message. [Guide rank: B tier; situationally useful]."
           ]
         ]
       ],
@@ -135,12 +135,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "SOS Shell",
-            "Near the entrance's huge anchor, take the side path to the left."
+            "Near the entrance's huge anchor, take the side path to the left. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Picto",
             "Marking Shots",
-            "On the rising main route before the floating mines, take the left side at the top and beat the guarding enemies."
+            "On the rising main route before the floating mines, take the left side at the top and beat the guarding enemies. [Guide rank: S tier; high priority]."
           ],
           [
             "Quest",
@@ -165,12 +165,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Staggering Attack",
-            "From Coral Cave Flag turn right and circle around the stone wall."
+            "From Coral Cave Flag turn right and circle around the stone wall. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Picto",
             "Rewarding Mark",
-            "Past Coral Cave Flag, defeat the enemy that bursts from seaweed along the left wall; check the opening."
+            "Past Coral Cave Flag, defeat the enemy that bursts from seaweed along the left wall; check the opening. [Guide rank: SS tier; high priority]."
           ],
           [
             "Journal",
@@ -195,7 +195,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Versatile",
-            "In Lumieran Streets climb the central building; grapple to its adjacent roof and circle around."
+            "In Lumieran Streets climb the central building; grapple to its adjacent roof and circle around. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Boss",
@@ -260,22 +260,22 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Burning Mark",
-            "From Sanctuary entrance follow the lower stream-side path to the handholds at the cliff edge."
+            "From Sanctuary entrance follow the lower stream-side path to the handholds at the cliff edge. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Picto",
             "Energising Jump",
-            "From the first Petank clearing, take the left branch across the small bridge."
+            "From the first Petank clearing, take the left branch across the small bridge. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Picto",
             "Energising Start II",
-            "From Sanctuary Maze Flag take the right path under the fallen tree, then right through a crawlspace. Climb handholds near the Ranger Sakapatate and follow the upper path."
+            "From Sanctuary Maze Flag take the right path under the fallen tree, then right through a crawlspace. Climb handholds near the Ranger Sakapatate and follow the upper path. [Guide rank: A tier; strong]."
           ],
           [
             "Picto",
             "Attack Lifesteal",
-            "From the Ranger Sakapatate area, enter the cave across from the climbable wall and defeat the Catapult Sakapatate."
+            "From the Ranger Sakapatate area, enter the cave across from the climbable wall and defeat the Catapult Sakapatate. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Rare enemy",
@@ -295,7 +295,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Stun Boost",
-            "After Ultimate Sakapatate, crawl through the low gap along the right edge of the arena."
+            "After Ultimate Sakapatate, crawl through the low gap along the right edge of the arena. [Guide rank: B tier; situationally useful]."
           ]
         ]
       ],
@@ -346,7 +346,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Roulette",
-            "The Gestral Gambler speaks through the DOOR of a neon-lit casino, reached from the theatre/arena side of the village. Walk up to the DOOR (you don't enter the casino), answer 'Yes' to gambling, then respond 'I don't care' to his probability question. He hands you the Roulette Picto."
+            "The Gestral Gambler speaks through the DOOR of a neon-lit casino, reached from the theatre/arena side of the village. Walk up to the DOOR (you don't enter the casino), answer 'Yes' to gambling, then respond 'I don't care' to his probability question. He hands you the Roulette Picto. [Guide rank: S tier; high priority]."
           ],
           [
             "Secret",
@@ -401,7 +401,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Energising Start III",
-            "Just beyond the two tents, check beside the next grapple ledge."
+            "Just beyond the two tents, check beside the next grapple ledge. [Guide rank: A tier; strong]."
           ],
           [
             "Missable quest",
@@ -462,13 +462,13 @@ window.E33_COMPLETION_DATA = [
           [
             "Weapon",
             "Gaulteram",
-            "From Yellow Harvest Entrance Flag, CLIMB the wall handholds to the RIGHT, pass the friendly Gestral, and walk through the first cave. In the first OPEN area just beyond, defeat the roaming GAULT enemies. They drop GAULTERAM for Gustave. This is the early weapon encounter, NOT the Potierim fight farther inside the area.",
+            "From Yellow Harvest Entrance Flag, CLIMB the wall handholds to the RIGHT, pass the friendly Gestral, and walk through the first cave. In the first OPEN area just beyond, defeat the roaming GAULT enemies. They drop GAULTERAM for Gustave. This is the early weapon encounter, NOT the Potierim fight farther inside the area. [Guide rank: A+ tier · Gustave; strong].",
             "act1:yellow-harvest-lost-woods:gaulteram"
           ],
           [
             "Weapon",
             "Potierim",
-            "Potierim is NOT at the Yellow Harvest entrance. From Entrance Flag climb the RIGHT wall handholds, follow the cave past the first GAULT enemy groups, then use the LEFT-side grapple detour and follow the main path to the HARVESTER'S HOLLOW Expedition Flag. Walk down into the broad CLEARING around the CENTRAL POND and fight the first JAR / POTIER enemy group there. The battle awards Lune's POTIERIM. If you've already got a copy in NG+, the drop may upgrade it instead."
+            "Not near the entrance. From Yellow Harvest Entrance climb the RIGHT handholds and pass the first GAULT groups; take the LEFT grapple/cave detour toward HARVESTER'S HOLLOW Flag. Descend into the large valley clearing around the CENTRAL POND. Defeat a JAR/POTIER group there for Lune's Potierim (or an NG+ upgrade). [Guide rank: C tier · Lune; mostly collection or niche use]."
           ],
           [
             "Journal",
@@ -483,7 +483,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Death Bomb",
-            "Before climbing the large slope in Harvester's Hollow, inspect the tent on the right."
+            "Before climbing the large slope in Harvester's Hollow, inspect the tent on the right. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Journal",
@@ -528,12 +528,27 @@ window.E33_COMPLETION_DATA = [
           [
             "Weapon",
             "Delaram Paint Cage",
-            "On the elevated ledge near Expedition 78, shoot the locks around the cage and collect Delaram."
+            "On the elevated ledge near Expedition 78, shoot the locks around the cage and collect Delaram. [Guide rank: C+ tier · Gustave; mostly collection or niche use]."
+          ],
+          [
+            "Picto",
+            "Confident",
+            "Defeat the large Hexga in the first clearing after collecting Delaram. It starts with 3 Shields and renews them during battle; winning awards the Confident Picto. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Picto",
             "Breaking Counter",
-            "In the Hexga clearing search at the base of the ruined metal tower structures."
+            "In the Hexga clearing search at the base of the ruined metal tower structures. [Guide rank: B tier; situationally useful]."
+          ],
+          [
+            "Picto",
+            "Energising Pain",
+            "After the first Hexga, pass through the tunnel and grapple across the gap. In the next open courtyard, defeat the FIRST Greatsword Cultist group for Energising Pain. [Guide rank: B tier; situationally useful]."
+          ],
+          [
+            "Weapon",
+            "Chation",
+            "In the SAME courtyard after the first Hexga, defeat the SECOND Greatsword Cultist enemy group to earn Sciel's Chation. This is an enemy drop, not a ground pickup; in NG+ it may upgrade your existing copy. [Guide rank: S+ tier · Sciel; high priority]."
           ],
           [
             "Journal",
@@ -541,9 +556,19 @@ window.E33_COMPLETION_DATA = [
             "After the Hexga area follow the left cliff wall; find the journal beside a statue / fallen expeditioners."
           ],
           [
+            "Picto",
+            "First Strike",
+            "After the second Greatsword Cultist group and Expedition 56, continue forward, check the LEFT gazebo, then climb the THREE RIGHT-HAND LEDGES and defeat the enemies near the First Strike Picto. [Guide rank: SS tier; high priority]."
+          ],
+          [
             "Journal",
             "Expedition 50",
             "From Paintress Shrine Flag continue into the ruins and hug the left side beside the fallen expeditioners."
+          ],
+          [
+            "Picto",
+            "SOS Power",
+            "Past Paintress Shrine, navigate the fork and grapples to the upper ledge; after the enemy ambush climb the RIGHT ramp, then turn toward the far statue. SOS Power lies BEHIND it. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Secret",
@@ -558,17 +583,27 @@ window.E33_COMPLETION_DATA = [
           [
             "Merchant",
             "Jerijeri / Rangeson",
-            "From Old Farm Flag circle the first farmhouse to the right and crawl behind the large rock to find Jerijeri. Duel for Sciel's Rangeson and buy the unique hairstyle."
+            "From Old Farm Flag circle the first farmhouse to the right and crawl behind the large rock to find Jerijeri. Duel for Sciel's Rangeson and buy the unique hairstyle. [Guide rank: D tier · Sciel; mostly collection or niche use]."
           ],
           [
             "Weapon",
             "Duenum Paint Cage",
-            "From Old Farm Flag take the uphill left path to the broken windmill and shoot the Paint Cage locks."
+            "From Old Farm Flag take the uphill left path to the broken windmill and shoot the Paint Cage locks. [Guide rank: C tier · Maelle; mostly collection or niche use]."
+          ],
+          [
+            "Picto",
+            "Perilous Parry",
+            "In Tide Caverns, after collecting the Rock Crystals, descend the second/lower rope and defeat the Gold Chevalière beside the hidden Manor doorway. This enemy drops Perilous Parry. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Rare enemy",
             "Old Farm Petank",
             "In the lower open field near the windmill, chase the glowing Petank into its marked fight circle."
+          ],
+          [
+            "Picto",
+            "Breaking Shots",
+            "Within Tide Caverns after the Manor detour, climb the grassy route by the lantern and traverse the BASALT COLUMNS to reach Breaking Shots; this is not in the Old Farm yard. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Quest",
@@ -578,7 +613,7 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Auto Shell",
-            "Return the three crystals to Hexga, complete his dialogue and spare him."
+            "Return the three crystals to Hexga, complete his dialogue and spare him. [Guide rank: A tier; strong]."
           ],
           [
             "Secret",
@@ -593,17 +628,22 @@ window.E33_COMPLETION_DATA = [
           [
             "Picto",
             "Enfeebling Mark",
-            "From Basalt Waves Flag backtrack and grapple to Flooded Buildings. Follow the left building, unlock the rope shortcut, turn back and grapple to the pickup."
+            "From Basalt Waves Flag backtrack and grapple to Flooded Buildings. Follow the left building, unlock the rope shortcut, turn back and grapple to the pickup. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Picto",
             "Healing Tint Energy",
-            "At Flooded Buildings take the right-hand building route, defeat the Hexga group and inspect the sword-pierced body."
+            "At Flooded Buildings take the right-hand building route, defeat the Hexga group and inspect the sword-pierced body. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Weapon",
             "Coralim",
-            "From that Hexga group, climb the rope inside the building, then ascend the handholds on the left for Lune's weapon."
+            "From that Hexga group, climb the rope inside the building, then ascend the handholds on the left for Lune's weapon. [Guide rank: C+ tier · Lune; mostly collection or niche use]."
+          ],
+          [
+            "Picto",
+            "At Death's Door",
+            "Defeat Lampmaster at the end of Stone Wave Cliffs; the boss drops At Death's Door. This is a story boss reward and cannot be collected earlier. [Guide rank: S tier; high priority]."
           ],
           [
             "Boss",
@@ -806,12 +846,12 @@ window.E33_COMPLETION_DATA = [
           [
             "Weapon",
             "Redalim",
-            "From Manor Gardens take the first newly opened return path and solve its Paint Cage."
+            "From Manor Gardens take the first newly opened return path and solve its Paint Cage. [Guide rank: B tier · Lune; situationally useful]."
           ],
           [
             "Picto",
             "Healing Death",
-            "On that return path take handholds, grapples and a rope to the platform with Gold Chevalière."
+            "On that return path take handholds, grapples and a rope to the platform with Gold Chevalière. [Guide rank: C tier; mostly collection or niche use]."
           ],
           [
             "Chromatic",
