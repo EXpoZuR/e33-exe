@@ -32,9 +32,146 @@
     [/lumi.re act iii|act 3 lumi.re|lumi.re gardens/i,"act3","Story finale · Lumière"],
     [/lumi.re festival|prologue/i,"prologue","Lumière Festival"]
   ];
+  const continentPictoHints = {
+    "Accelerating Heal": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "On an island just NORTH of Flying Casino, search the beach camp (requires access to the island)."
+    ],
+    "Anti-Stun": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "East of Flying Casino, defeat the Chromatic Petank in the grassy meadow."
+    ],
+    "Breaking Burn": [
+      "act2",
+      "Continent · northern detours",
+      "Far WEST of Monoco's Station northwest exit, search near a Bourgeon."
+    ],
+    "Breaking Death": [
+      "act2",
+      "Continent · Esquie swimming",
+      "East of Stone Wave Cliffs Cave, defeat the Thunder Eveque."
+    ],
+    "Breaking Slow": [
+      "act2",
+      "Continent · before Old Lumière",
+      "Southwest of Abbest Cave, break the Paint Spike rock after unlocking Sastro's Paint Break."
+    ],
+    "Burning Death": [
+      "act2",
+      "Continent · western expansion",
+      "Inside Frozen Hearts, defeat the first enemy group; this is NOT a generic random Overworld pickup."
+    ],
+    "Charging Tint": [
+      "act2",
+      "Continent · northern detours",
+      "West of Forgotten Battlefield north exit, check the beach camp next to the Stalact."
+    ],
+    "Cheater": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "Defeat the optional overworld boss Sprong when your party is strong enough."
+    ],
+    "Critical Break": [
+      "act2",
+      "Continent · western expansion",
+      "Northwest of Visages on land shoreline, break the Paint Spike rock."
+    ],
+    "Critical Vulnerability": [
+      "act2",
+      "Continent · northern detours",
+      "At the small bay above Floating Cemetery, search the hidden camp on the WEST side."
+    ],
+    "Dead Energy I": [
+      "act2",
+      "Continent · Esquie swimming",
+      "Near the Dark Shores portal, search the ground beside the path."
+    ],
+    "Effective Support": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "Fly northeast/east from Sirene over the mainland; search the ground."
+    ],
+    "Empowering Dodge": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "In the camp near the Endless Night Sanctuary portal, pick up the Picto."
+    ],
+    "Energising Gradient": [
+      "act2",
+      "Continent · northern detours",
+      "Northwest of Forgotten Battlefield north portal, defeat the Frost Eveque."
+    ],
+    "Energising Heal": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "At the camp beside the Endless Tower portal, clear the nearby enemy group and collect."
+    ],
+    "Energising Shell": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "Fly EAST of Stone Wave Cliffs Cave and break the Paint Spike rock."
+    ],
+    "Energy Master": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "Defeat Serpenphare after unlocking Esquie's flight."
+    ],
+    "Fueling Break": [
+      "act2",
+      "Continent · before Old Lumière",
+      "Just EAST of The Carousel on the Continent; ground pickup."
+    ],
+    "Healing Parry": [
+      "act2",
+      "Continent · northern detours",
+      "Obtain from the friendly Troubadour quest in Stone Quarry; alternate path beyond the Bourgeon near Stone Wave Cliffs portal."
+    ],
+    "Longer Burn": [
+      "endgame",
+      "Optional regions, bosses and secret weapons",
+      "Flying Manor Central Plaza merchant after elevator; win duel and purchase."
+    ],
+    "Longer Rush": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "On the mountainside southwest of Frozen Cliffs; access through the later northern traversal."
+    ],
+    "Powerful Revive": [
+      "act1",
+      "Continent · AFTER Flying Waters (before Sanctuary)",
+      "Defeat the Chromatic Bruler north of Gestral Village; its Picto is Powerful Revive."
+    ],
+    "Shared Care": [
+      "act2",
+      "Continent · Esquie swimming",
+      "On the island containing White Tree's entrance, collect from the ground by the island camp."
+    ],
+    "Shielding Tint": [
+      "act2",
+      "Continent · northern detours",
+      "In the ruined buildings on a peninsula SOUTHWEST of Boat Graveyard portal."
+    ],
+    "Sniper": [
+      "act3",
+      "Act 3 · relationships and full traversal",
+      "The Reacher: defeat an enemy group in the snowy section."
+    ],
+    "Warming Up": [
+      "act2",
+      "Continent · before Old Lumière",
+      "Outside Coastal Cave portal, defeat the optional Grosse Tete boss."
+    ]
+  };
   const pending=new Map();
   const findTarget=(step, groupName)=>{
     const desc=String(step[2]||"");
+    if (groupName==="Picto inventory audit · Continent" && continentPictoHints[step[1]]) {
+      const [ch, anchor, hint]=continentPictoHints[step[1]];
+      step[2]=hint+" "+desc;
+      return [ch,anchor];
+    }
     if(/requires paint break|behind paint spike|paint spike barrier/i.test(desc)&& !/endless night|manor/i.test(desc))return ["act2","Continent · before Old Lumière"];
     if(/requir(?:es|ing) flight|esquie.s flight|requires flying/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
     const skill=step[0]==="Skill enemy";
