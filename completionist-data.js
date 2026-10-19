@@ -641,6 +641,11 @@ window.E33_COMPLETION_DATA = [
         "Stone Wave Cliffs · Flooded Buildings / finale",
         [
           [
+            "Collectible",
+            "Revive Tint Shard (Flooded Buildings)",
+            "At Flooded Buildings Flag, follow the LEFT building, climb up inside and descend the side climb to the Revive Tint Shard, before grappling for Enfeebling Mark."
+          ],
+          [
             "Picto",
             "Enfeebling Mark",
             "From Basalt Waves Flag backtrack and grapple to Flooded Buildings. Follow the left building, unlock the rope shortcut, turn back and grapple to the pickup. [Guide rank: B tier; situationally useful]."
