@@ -1,4 +1,4 @@
-/* Human-readable location and quest context for each stable Completionist checkpoint. */
+/* Clear objective context by checkpoint ID. */
 window.E33_COMPLETION_CONTEXT = {
   "prologue:lumie-re-festival:old-key": "The Old Key is a festival token reward at Colette's nighttime farewell stall—not an item that can be found on Gustave and Sophie's earlier daytime stroll. It opens a locked expedition journal in Act 2.",
   "prologue:lumie-re-festival:prologue-mime": "The Prologue Mime is an optional striped enemy by the dancers near the harbor during the DAYTIME walk with Sophie. Beat it BEFORE entering the later nighttime festival or the unique achievement is missed for this run.",
@@ -75,7 +75,7 @@ window.E33_COMPLETION_CONTEXT = {
   "act1:continent-after-esquie-traversal:ancient-gestral-city": "Ancient Gestral City is a short optional overworld dungeon with a music record just inside.",
   "act1:continent-after-esquie-traversal:twilight-quarry": "Twilight Quarry is an optional area among wrecked boats. Its unique objective here is a music record.",
   "act1:continent-after-esquie-traversal:yellow-harvest-entrance": "Yellow Harvest is an optional dungeon accessed through rough ground opened by Esquie. This checkpoint is simply locating its entrance.",
-  "act1:yellow-harvest-lost-woods:potierim": "Potierim is a weapon for Lune dropped by the Potier enemy type encountered near Yellow Harvest's entrance.",
+  "act1:yellow-harvest-lost-woods:potierim": "Potierim is an ICE weapon for Lune. It is awarded by an enemy group containing a JAR/POTIER in the large clearing around Harvester's Hollow's central POND—not by the first Gault enemies at the entrance. The level-7 drop may instead upgrade an existing lower-level copy.",
   "act1:yellow-harvest-lost-woods:expedition-44": "Expedition 44 is a journal beside fallen expeditioners in the lower valley of Harvester's Hollow.",
   "act1:yellow-harvest-lost-woods:yellow-harvest-mime": "Yellow Harvest's Mime hides behind a low crawlspace in the rock wall beside Expedition 44.",
   "act1:yellow-harvest-lost-woods:death-bomb": "Death Bomb is a Picto inside a tent near the bottom of Harvester's Hollow's main uphill slope.",
@@ -196,5 +196,6 @@ window.E33_COMPLETION_CONTEXT = {
   "update:bonus-endless-tower:duollistes": "Duollistes is an extra multi-boss battle in the tower, rewarding unique equipment.",
   "update:bonus-endless-tower:chromatic-lampmaster": "Chromatic Lampmaster is a stronger bonus version of the earlier boss and rewards First Life.",
   "update:bonus-endless-tower:simon-the-divergent-star": "Simon the Divergent Star is one of the hardest additional tower battles in the update.",
-  "act1:gestral-village:meet-chief-golgra": "Golgra is the large Gestral chief inside the CHIEF'S HOUSE, the prominent building at the top of the village's entrance path. She must authorize the Legendary Tournament before its registration desk becomes active; merely reaching the Arena isn't enough."
+  "act1:gestral-village:meet-chief-golgra": "Golgra is the large Gestral chief inside the CHIEF'S HOUSE, the prominent building at the top of the village's entrance path. She must authorize the Legendary Tournament before its registration desk becomes active; merely reaching the Arena isn't enough.",
+  "act1:yellow-harvest-lost-woods:gaulteram": "Gaulteram is Gustave's Earth weapon, dropped by the first roaming GAULT enemies in Yellow Harvest's OPEN encounter area AFTER the initial cave. This is a different pickup from Lune's Potierim, which drops much later at Harvester's Hollow."
 };
