@@ -163,6 +163,11 @@ window.E33_COMPLETION_DATA = [
             "NOCO is a Gestral merchant outside his hut in Flying Waters—but he only appears AFTER you visit the Manor and meet Maelle/the Curator. Exit that Manor, return to Noco's Hut Flag and speak to the nearby small Gestral merchant. Challenge him to unlock his unique stock, including Exposing Attack, and BUY the Picto before leaving Flying Waters permanently: he later moves to Gestral Village and stops selling here."
           ],
           [
+            "Picto",
+            "Exposing Attack · Noco exclusive",
+            "After the Manor in Flying Waters, beat merchant Noco and purchase Exposing Attack immediately. Missable!"
+          ],
+          [
             "Quest",
             "Friendly Demineur",
             "Right of the wrecked ship, enter the large pot-shaped structure. Jump across the nearby round pillars for Intact Mine, return it for Deminerim, and spare Demineur."
