@@ -453,11 +453,6 @@ window.E33_COMPLETION_DATA = [
             "Optional dungeon",
             "Yellow Harvest entrance",
             "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK (unlocks at Esquie's Nest). Ride Esquie northwest of Gestral Village beyond the rocky obstruction by the yellow forest and Hidden Gestral Arena. Enter Yellow Harvest only after crossing this barrier."
-          ],
-          [
-            "Record",
-            "Lights of the Past",
-            "Location: Continent · AFTER Esquie traversal. In Ancient Gestral City, find it in the central room."
           ]
         ]
       ],
@@ -937,11 +932,6 @@ window.E33_COMPLETION_DATA = [
             "Record",
             "Rêveries dans Paris",
             "Location: Continent · western expansion. Find the record behind Flying Casino."
-          ],
-          [
-            "Record",
-            "Un 33 Décembre - Lumiere",
-            "Location: Continent · western expansion. Twilight Quarry, against the dark-colored backdrop."
           ]
         ]
       ],
@@ -1122,16 +1112,6 @@ window.E33_COMPLETION_DATA = [
             "At Sacred River defeat Golgra for Monoco's quest; visit the nearby merchant for Children of Lumière and complete his final camp relationship."
           ],
           [
-            "Lost Gestral",
-            "Find remaining Gestrals",
-            "REQUIRES ESQUIE FLYING at the start of Act 3. Locate the remaining airborne/island Gestrals (including near Endless Tower, The Reacher and Endless Night Sanctuary) and return to Sastro for all nine rescue rewards. No diving is needed to locate those reached by flight."
-          ],
-          [
-            "Record",
-            "Lettre à Maelle",
-            "Location: Act 3 · relationships and full traversal. MISSABLE: following first Axon in Act 2, immediately rest at camp and trigger Verso–Maelle–Esquie piano scene; do this before further progression."
-          ],
-          [
             "Record",
             "Lune",
             "Location: Act 3 · relationships and full traversal. Reach Lune relationship level 6, following her Sirène's Dress side quest."
@@ -1160,6 +1140,11 @@ window.E33_COMPLETION_DATA = [
             "Lost Gestral",
             "Lost Gestral #9",
             "Location: Act 3 · relationships and full traversal. Small island near Endless Tower, requires flight. Return to Sastro for the reward."
+          ],
+          [
+            "Record",
+            "Aline",
+            "In White Sands, reach the end of the area after Esquie learns to fly and pick up the Aline music record."
           ]
         ]
       ],
@@ -1368,11 +1353,6 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Record",
-            "Alicia's Birthday Party",
-            "Location: Boat Graveyard. Search beyond the coral reefs."
-          ],
-          [
-            "Record",
             "Clea",
             "Location: Endless Tower. Clear all 11 stages; requires Esquie's flight."
           ],
@@ -1385,11 +1365,6 @@ window.E33_COMPLETION_DATA = [
             "Record",
             "Endless Light",
             "Location: Renoir's Drafts. From Entrance Flag take the grapple route; requires underwater swimming."
-          ],
-          [
-            "Record",
-            "Nocturne pour Lumiere",
-            "Location: Sinister Cave. Drop through the hole in the upper part of the cave."
           ],
           [
             "Record",
