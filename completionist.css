@@ -295,3 +295,13 @@
 #completionistPage .cp-view-note{margin:15px 0 0;font-size:11px;line-height:1.6;color:#c9b089}
 #completionistPage .cp-step-actions .cp-resume{border-color:#3e4c5c;background:#1a232e;color:#98afc6}
 #completionistPage .cp-step-actions .cp-resume:hover{color:#fff;border-color:#8eb2de}
+
+/* v14.8.2 — understated metadata sourced from the site's own gear rankings. */
+#completionistPage .cp-ranked-rewards{display:flex;gap:7px 12px;align-items:center;flex-wrap:wrap;margin:10px 0 13px;color:#9cacc0;font-size:11px;line-height:1.5}
+#completionistPage .cp-rank-kicker{font-size:10px;font-weight:850;letter-spacing:.085em;text-transform:uppercase;color:#8296ac}
+#completionistPage .cp-rank-item{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px;color:#a6b6c6;border-left:2px solid #6d7a99;padding-left:9px}
+#completionistPage .cp-rank-item strong{font-weight:850;color:#dbe5ee}
+#completionistPage .cp-rank-item em{font-style:normal;font-weight:850;color:#c8b6f5}
+#completionistPage .cp-focus-card>.cp-ranked-rewards{margin:4px 0 15px;font-size:12px}
+#completionistPage .cp-upcoming-info>.cp-ranked-rewards{margin:4px 0 9px}
+#completionistPage .cp-guide-context .cp-ranked-rewards{margin:5px 0 12px}
