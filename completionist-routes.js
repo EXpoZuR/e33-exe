@@ -361,14 +361,14 @@ window.E33_COMPLETION_ROUTES = {
     "previous": "Jerijeri / Rangeson",
     "from": "From Jerijeri return to the Old Farm Flag, take the UPHILL LEFT trail toward the broken windmill and solve the Paint Cage for Duenum."
   },
-  "act1:stone-wave-cliffs-old-farm-tide-caverns:perilous-parry": {"previous":"Duenum Paint Cage","from":"Optional Tide Caverns detour: descend the lower second rope and defeat Gold Chevalière in front of the hidden Manor doorway for Perilous Parry."},
+  "act1:stone-wave-cliffs-old-farm-tide-caverns:perilous-parry": {"previous":"Auto Shell","from":"In Tide Caverns descend the lower second rope and defeat Gold Chevalière in front of the hidden Manor doorway for Perilous Parry."},
   "act1:stone-wave-cliffs-old-farm-tide-caverns:old-farm-petank": {
-    "previous": "Perilous Parry",
-    "from": "Return from Tide Caverns to the windmill cage drop into the lower Old Farm field. Chase the glowing Petank around the farm until it stops in its marked arena."
+    "previous": "Duenum Paint Cage",
+    "from": "From the windmill cage drop into the lower Old Farm field. Chase the glowing Petank around the farm until it stops in its marked arena."
   },
-  "act1:stone-wave-cliffs-old-farm-tide-caverns:breaking-shots": {"previous":"Old Farm Petank","from":"In Tide Caverns, pass the grassy path near the lantern and platform across the basalt columns to collect Breaking Shots."},
+  "act1:stone-wave-cliffs-old-farm-tide-caverns:breaking-shots": {"previous":"Tide Caverns Manor outfit","from":"In Tide Caverns, pass the grassy path near the lantern and platform across the basalt columns to collect Breaking Shots."},
   "act1:stone-wave-cliffs-old-farm-tide-caverns:friendly-hexga": {
-    "previous": "Breaking Shots",
+    "previous": "Old Farm Petank",
     "from": "From Petank's arena head along the cliff path toward Tide Caverns. Speak to the white Hexga BEFORE entering; inside Tide Caverns gather the three Rock Crystals it requests."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:auto-shell": {
@@ -376,11 +376,11 @@ window.E33_COMPLETION_ROUTES = {
     "from": "With three Rock Crystals from the Tide Caverns and Rocher enemy, BACKTRACK to the friendly Hexga on the cliff approach. Hand over the crystals and claim Auto Shell."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:tide-caverns-manor-outfit": {
-    "previous": "Auto Shell",
-    "from": "After finishing Hexga, reenter Tide Caverns, descend the SECOND lower rope and defeat Gold Chevalière. Open the Manor door in its chamber and search the wardrobe for Maelle's skirt."
+    "previous": "Perilous Parry",
+    "from": "After defeating Gold Chevalière, enter the Manor doorway, descend the SECOND lower rope and defeat Gold Chevalière. Open the Manor door in its chamber and search the wardrobe for Maelle's skirt."
   },
   "act1:stone-wave-cliffs-flooded-buildings-finale:enfeebling-mark": {
-    "previous": "Tide Caverns Manor outfit",
+    "previous": "Breaking Shots",
     "from": "Leave the hidden Manor and continue the story route until Basalt Waves Flag. Backtrack to the nearby grapple branch leading into Flooded Buildings; take the LEFT-side building loop, unlock the rope shortcut and collect Enfeebling Mark."
   },
   "act1:stone-wave-cliffs-flooded-buildings-finale:healing-tint-energy": {
