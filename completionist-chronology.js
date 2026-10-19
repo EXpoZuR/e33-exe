@@ -164,7 +164,7 @@
       "Outside Coastal Cave portal, defeat the optional Grosse Tete boss."
     ]
   };
-  const regionNames=["Flying Manor","Endless Tower","Renoir\u0027s Drafts","Candy Land","Gestral Baths","Gestral Carousel","Reverie Path","Root of All Evil","The Reacher","Frozen Hearts","White Tree","Stone Wave Cliffs Cave","Crushing Cavern","Falling Leaves","Esoteric Ruins","Coastal Cave","Boat Graveyard","Stone Quarry","Hidden Gestral Arena","Abbest Cave","Sirène\u0027s Dress","Endless Night Sanctuary","Flying Casino","Sacred River","Isle of the Eyes","Dark Gestral Arena","Sunless Cliffs","The Crows","Sky Island","The Fountain","White Sands","The Meadows"];
+  const regionNames=["Flying Manor","Endless Tower","Renoir\u0027s Drafts","The Abyss","Serpenphare","Candy Land","Gestral Baths","Gestral Carousel","Reverie Path","Root of All Evil","The Reacher","Frozen Hearts","White Tree","Stone Wave Cliffs Cave","Crushing Cavern","Falling Leaves","Esoteric Ruins","Coastal Cave","Boat Graveyard","Stone Quarry","Hidden Gestral Arena","Abbest Cave","Sirène\u0027s Dress","Endless Night Sanctuary","Flying Casino","Sacred River","Isle of the Eyes","Dark Gestral Arena","Sunless Cliffs","The Crows","Sky Island","The Fountain","White Sands","The Meadows"];
   const pending=new Map();
   const findTarget=(step, groupName)=>{
     const desc=String(step[2]||"");
