@@ -1182,6 +1182,517 @@ window.E33_COMPLETION_DATA = [
             "Location: Story finale · Lumière. Complete Act 3, then verify the record at Camp."
           ]
         ]
+      ]
+    ]
+  },
+  {
+    "id": "endgame",
+    "title": "Endgame & 100% cleanup",
+    "subtitle": "Side bosses · journals · secrets · collections",
+    "accent": "#b994ff",
+    "areas": [
+      [
+        "Friendly Nevrons / remaining quests",
+        [
+          [
+            "Quest",
+            "Floating Cemetery · Chalier",
+            "REQUIRES ESQUIE FLYING (Act 3) to reach Floating Cemetery. Find the friendly white Chalier among the fallen expeditioners, choose its weapon, fight it as requested and complete the final dialogue; unlike most friendly Nevrons, this quest asks you to finish the encounter."
+          ],
+          [
+            "Quest",
+            "Frozen Hearts",
+            "If you spoke to the Grandis merchant in Monoco's Station earlier, his stock was locked behind the Eternal Ice quest. Travel to Frozen Hearts and reach Icebound Terminal Expedition Flag, defeat GARGANT for the Eternal Ice quest item, then RETURN to Monoco's Station. Speak to the merchant LEFT of the station flag, hand over the ice, and only THEN is his stock—including Survivor—available to BUY. Claiming the item does not automatically grant the Survivor Picto."
+          ],
+          [
+            "Quest",
+            "Frozen Hearts Danseuse",
+            "In Frozen Hearts complete the white Danseuse's parry challenge for her cosmetic reward. Collect Expedition 51 and Clea! Don't Pull Your Sister's Hair!."
+          ],
+          [
+            "Quest",
+            "Painting Workshop · finale",
+            "The FINAL Painting Workshop boss cannot be triggered by visiting its Act 3 portal alone. First collect Light of the Beast at Workshop entrance #1 and Colour of the Beast at #2, then use Esquie's FLIGHT in Act 3 to land on the floating island east of Sirène for entrance #3 and collect Shape of the Beast. Place ALL THREE offerings in the CENTRAL STATUE and only then fight the enhanced Lampmaster."
+          ],
+          [
+            "Quest",
+            "The Fountain · Blanche",
+            "FINAL FRIENDLY NEVRON REWARD — requires ESQUIE FLYING to reach The Fountain west of Spring Meadows. Do this AFTER completing the other friendly Nevron quests, including Chalier at Floating Cemetery and the Frozen Hearts/Esoteric Ruins quests. Speak with Blanche and complete the final required encounter to earn the collective reward; Blanche is the special final encounter, not a Nevron you simply leave alive."
+          ]
+        ]
+      ],
+      [
+        "Optional regions, bosses and secret weapons",
+        [
+          [
+            "Boss",
+            "Golgra optional duel",
+            "POSTGAME CHALLENGE (no traversal gate): Return to Gestral Village's Chief's House and challenge Golgra. This very high-level optional duel is intentionally scheduled after Act 3 instead of implying a normal Act 1 party should win it.",
+            "act1:gestral-village:golgra-optional-duel"
+          ],
+          [
+            "Boss",
+            "Sprong · Cheater",
+            "Swim to the water near Blades' Graveyard and defeat Sprong for the Cheater Picto."
+          ],
+          [
+            "Boss",
+            "Serpenphare · Energy Master",
+            "Reach the eastern ocean by flight and battle Serpenphare for Energy Master."
+          ],
+          [
+            "Boss",
+            "Chromatic Petank · Anti-Stun",
+            "Search the large eastern island for Chromatic Petank and defeat it."
+          ],
+          [
+            "Secret",
+            "The Canvas · Dessendre family portrait",
+            "Fly to The Canvas optional island, pick up the DESSENDRE FAMILY PORTRAIT, then enter any Manor door. From the Manor rest point go upstairs to the landing and place the portrait in the EMPTY FRAME on the right. This opens a secret room off the main living/dining area containing an Unknown journal.",
+            "endgame:optional-regions-bosses-and-secret-weapons:the-canvas-manor-family-canvas"
+          ],
+          [
+            "Boss",
+            "The Crows",
+            "In The Crows find Expedition 34 and shoot all crows to trigger the optional Chromatic fight."
+          ],
+          [
+            "Boss",
+            "Flying Manor · Clea",
+            "Enter Flying Manor, clear all four guardian routes and defeat Clea for Clea's Life; speak to the boy afterward for unique cosmetics."
+          ],
+          [
+            "Boss",
+            "Renoir's Drafts / The Abyss · Simon",
+            "REQUIRES ESQUIE UNDERWATER DIVING: Act 3, relationship level 6, and the repeat François quest from Esquie's Nest. Dive into the glowing sea portal northeast of Old Lumière/southeast of Visages to enter Renoir's Drafts, then descend via Golden Tree into The Abyss. Defeat Simon for his journal and Simoso. Do not attempt this merely after learning to swim or break sea reefs."
+          ],
+          [
+            "Arena",
+            "Endless Tower",
+            "Finish all 11 stages (33 original trials), claim the Clea record and other unique rewards."
+          ],
+          [
+            "Area",
+            "Other flying-only areas",
+            "REQUIRES ESQUIE FLYING (Act 3). Explore Sky Island, Crimson Forest, Endless Night Sanctuary, Isle of the Eyes, Dark Gestral Arena, Sunless Cliffs and other floating islands for unique rewards. Deep-water dive sites require Esquie's separate level-6 relationship quest."
+          ]
+        ]
+      ],
+      [
+        "Verification sweep",
+        [
+          [
+            "Collection",
+            "All Expedition Journals",
+            "Revisit Berrami at Gestral Village and cross-check every uncollected expedition journal, including Unknown journals."
+          ],
+          [
+            "Collection",
+            "All records and music",
+            "Verify the music collection, especially missable prologue and camp records."
+          ],
+          [
+            "Collection",
+            "All weapons, Pictos and Monoco skills",
+            "Cross-check the site's Weapons and Pictos & Luminas pages; acquire remaining unique enemy drops, shop unlocks and Monoco skill variants."
+          ],
+          [
+            "Collection",
+            "All cosmetics and merchants",
+            "Win remaining merchant challenges, purchase unique outfits / hairstyles, and finish every Gestral Beach reward tier."
+          ],
+          [
+            "Journal",
+            "Expedition 34",
+            "Location: The Crows. Near the Expedition Flag; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 35",
+            "Location: Falling Leaves. Near the Chromatic Ballet encounter. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 37",
+            "Location: Gestral Beach. Climb the Wall Gestral Beach; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 45",
+            "Location: Crushing Cavern. Defeat the Giant Sapling then follow the tunnel. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 49",
+            "Location: Falling Leaves. Speak to Young Boy and Lady Sap to open the gate behind the boy; the interaction unlocks the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 51",
+            "Location: Frozen Hearts. From Icebound Train Station Flag go up the hill to a crevice. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 54",
+            "Location: Stone Wave Cliffs Cave. Defeat Chromatic Hexga to obtain the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 61",
+            "Location: The Reacher. From Foggy Area Flag cross the bridge and cave. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 84",
+            "Location: The Fountain. Near the upper ledge past the fountain; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Simon",
+            "Location: Renoir's Drafts. Defeat Simon in the Abyss. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Unknown 2",
+            "Location: The Reacher. Enter the Manor from The Reacher and find the second Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Record",
+            "Alicia",
+            "Location: Falling Leaves. Enter the Manor through Falling Leaves."
+          ],
+          [
+            "Record",
+            "Clea",
+            "Location: Endless Tower. Clear all 11 stages; requires Esquie's flight."
+          ],
+          [
+            "Record",
+            "Clea! Don't Pull Your Sister's Hair!",
+            "Location: Frozen Hearts. Enter the Manor via Frozen Hearts."
+          ],
+          [
+            "Record",
+            "Endless Light",
+            "Location: Renoir's Drafts. From Entrance Flag take the grapple route; requires underwater swimming."
+          ],
+          [
+            "Record",
+            "Until Next Life",
+            "Location: Falling Leaves. Defeat the Scavenger behind gate and speak to Young Boy to claim the record."
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "update",
+    "title": "Thank You Update",
+    "subtitle": "Verso's Drafts · bonus challenges",
+    "accent": "#79e0b8",
+    "areas": [
+      [
+        "Verso's Drafts",
+        [
+          [
+            "Location",
+            "Enter Verso's Drafts",
+            "REQUIRES ACT 3 FLYING PLUS UNDERWATER DIVING from Esquie's relationship level 6 / François quest. Fly toward Lumière in the far south, then find the toy-covered rock on the small island immediately east of the city. Use the dive interaction to enter the Verso's Drafts portal; swimming alone is not enough."
+          ],
+          [
+            "Quest",
+            "Open Playground / Gestral Baths",
+            "Clear the diving-board, statue, seesaw and other minigame challenges; claim their unique rewards."
+          ],
+          [
+            "Collection",
+            "Reverie Path",
+            "Purchase exclusive update weapons and Pictos from its merchants, including AP Discount / Consuming Attack."
+          ],
+          [
+            "Chromatic",
+            "Licorne / Barbasucette / Franctale",
+            "Defeat the three distinctive update Chromatics and obtain their unique weapons."
+          ],
+          [
+            "Quest",
+            "Candy Land / Carousel",
+            "Find the hidden Mime and Paint Cages, finish the Carousel, Gingerbread-door quest and Licornapieds Station battle."
+          ],
+          [
+            "Boss",
+            "Root of All Evil · Osquio",
+            "Descend to the final update area and defeat Osquio for Esquiso and its other unique rewards."
+          ]
+        ]
+      ],
+      [
+        "Bonus Endless Tower",
+        [
+          [
+            "Boss",
+            "Clea Unleashed",
+            "Win the new Endless Tower Clea encounter for Cleim and Clea's Death."
+          ],
+          [
+            "Boss",
+            "Duollistes",
+            "Complete the extra dual-boss fight for Duollison."
+          ],
+          [
+            "Boss",
+            "Chromatic Lampmaster",
+            "Defeat the new Lampmaster challenge for First Life."
+          ],
+          [
+            "Boss",
+            "Simon the Divergent Star",
+            "Finish the new superboss fight and claim its unique rewards."
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "inventory",
+    "title": "Collection Audit",
+    "subtitle": "Inventory cross-check · source-grounded items and acquisition hints",
+    "accent": "#7ee2c2",
+    "areas": [
+      [
+        "Monoco · all 46 skills",
+        [
+          [
+            "Skill enemy",
+            "Chalier Combo",
+            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Stalact Punches",
+            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Pelerin Heal",
+            "Fight Pelerin after Monoco joins in Monoco's Station tutorial. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Braseleur Smash",
+            "Fight Reaper Cultist, northwest of Esoteric Ruins on small island in bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Ramasseur Bonk",
+            "Fight Ramasseur southwest of Esoteric Ruins at narrow left-hand path. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Troubadour Trumpet",
+            "Fight Troubadour south of Monoco's Station south portal with Demineur and Gault. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Duallist Storm",
+            "Refight Dualliste in Endless Tower Stage 1, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Creation Void",
+            "Fight Creation in Act 3 Lumière Gardens, or Renoir's Drafts if needed. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Abbest Wind",
+            "Fight Abbest southwest of Monoco's Station south portal with Rocher and Chalier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Lancelier Impale",
+            "Fight Lancelier east of Gestral Village with Cruler and Demineur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Portier Crash",
+            "Fight Portier southeast of Gestral Village with Bruler and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Eveque Spear",
+            "Fight Eveque near The Monolith Tainted Meadows blue-flower trail; Endless Tower Stage 7 Trial 1 alternative. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Ice",
+            "Fight Gold Chevalière west of Esoteric Ruins portal across small bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Thrusts",
+            "Fight Steel Chevalière on shoreline east of The Reacher. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Piercing",
+            "Fight Ceramic Chevalière southwest of Esoteric Ruins by orange trees. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Aberration Light",
+            "Fight Aberration near Renoir's Drafts entrance, in group with Benisseur and Ballet. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Demineur Thunder",
+            "Fight Demineur south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Bruler Bash",
+            "Fight Bruler southeast of Gestral Village alongside Portier and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cruler Barrier",
+            "Fight Cruler east of Gestral Village in Lancelier group. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Luster Slices",
+            "Fight Luster southeast of Gestral Village with Bruler and Portier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Contorsionniste Blast",
+            "Fight Contorsionniste near Endless Night Sanctuary portal, south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Boucheclier Fortify",
+            "Fight Boucheclier northwest of Frozen Hearts portal, across river on gold-colored ground. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chapelier Slash",
+            "Fight Chapelier on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Grosse Tete Whack",
+            "Fight Grosse Tete in Flying Manor, or the one near Coastal Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Explosion",
+            "Fight Catapult Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take right fork through cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Estoc",
+            "Fight Ranger Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take left fork. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Slam",
+            "Fight Robust Sakapatate near Gestral Totem Flag in Ancient Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Fire",
+            "Fight Ultimate Sakapatate in Endless Tower Stage 7 Trial 3; also in Monolith Tainted Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Benisseur Mortar",
+            "Fight Benisseur on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Ballet Charm",
+            "Fight Ballet on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Orphelin Cheers",
+            "Fight Orphelin west of Esoteric Ruins portal across bay with Gold Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Echassier Stabs",
+            "Fight Echassier in snow clearing southwest of Frozen Hearts portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cultist Blood",
+            "Fight Greatsword Cultist on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cultist Slashes",
+            "Fight Reaper Cultist northwest of Esoteric Ruins portal on small island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Hexga Crush",
+            "Fight Hexga southwest of Esoteric Ruins beside Ceramic Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Rocher Hammering",
+            "Fight Rocher southwest of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Lampmaster Light",
+            "Refight Lampmaster in Endless Tower Stage 2, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Moissonneuse Vendange",
+            "Fight Moissonneuse northwest of Floating Cemetery portal on small beach. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Clair Enfeeble",
+            "Fight Clair in Monolith from Tainted Meadows Flag, following main route. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Obscur Sword",
+            "Fight Obscur from Monolith Tainted Battlefield Flag, back through ship toward windmill. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Potier Energy",
+            "Fight Potier near Boat Graveyard portal with Abbest and Ramasseur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sapling Absorption",
+            "Fight Sapling on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Jar Lampstorm",
+            "Fight Jar near Endless Night Sanctuary portal south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Gault Fury",
+            "Fight Gault south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Glaise Earthquakes",
+            "Fight Glaise west of Esoteric Ruins portal across bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Danseuse Waltz",
+            "Fight Danseuse on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ]
+        ]
       ],
       [
         "Weapon collection audit · Gustave / Verso",
@@ -1735,436 +2246,6 @@ window.E33_COMPLETION_DATA = [
             "Weapon",
             "Baguette",
             "MISSABLE PREPARATION: keep unused Festival Token from first prologue through end of game. In NG+ after meeting Sophie, inspect baguette basket by wall and wooden table; exchange one token for one character-specific Baguette. Repeat later NG+ for other characters.. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
-          ]
-        ]
-      ]
-    ]
-  },
-  {
-    "id": "endgame",
-    "title": "Endgame & 100% cleanup",
-    "subtitle": "Side bosses · journals · secrets · collections",
-    "accent": "#b994ff",
-    "areas": [
-      [
-        "Friendly Nevrons / remaining quests",
-        [
-          [
-            "Quest",
-            "Floating Cemetery · Chalier",
-            "REQUIRES ESQUIE FLYING (Act 3) to reach Floating Cemetery. Find the friendly white Chalier among the fallen expeditioners, choose its weapon, fight it as requested and complete the final dialogue; unlike most friendly Nevrons, this quest asks you to finish the encounter."
-          ],
-          [
-            "Quest",
-            "Frozen Hearts",
-            "If you spoke to the Grandis merchant in Monoco's Station earlier, his stock was locked behind the Eternal Ice quest. Travel to Frozen Hearts and reach Icebound Terminal Expedition Flag, defeat GARGANT for the Eternal Ice quest item, then RETURN to Monoco's Station. Speak to the merchant LEFT of the station flag, hand over the ice, and only THEN is his stock—including Survivor—available to BUY. Claiming the item does not automatically grant the Survivor Picto."
-          ],
-          [
-            "Quest",
-            "Frozen Hearts Danseuse",
-            "In Frozen Hearts complete the white Danseuse's parry challenge for her cosmetic reward. Collect Expedition 51 and Clea! Don't Pull Your Sister's Hair!."
-          ],
-          [
-            "Quest",
-            "Painting Workshop · finale",
-            "The FINAL Painting Workshop boss cannot be triggered by visiting its Act 3 portal alone. First collect Light of the Beast at Workshop entrance #1 and Colour of the Beast at #2, then use Esquie's FLIGHT in Act 3 to land on the floating island east of Sirène for entrance #3 and collect Shape of the Beast. Place ALL THREE offerings in the CENTRAL STATUE and only then fight the enhanced Lampmaster."
-          ],
-          [
-            "Quest",
-            "The Fountain · Blanche",
-            "FINAL FRIENDLY NEVRON REWARD — requires ESQUIE FLYING to reach The Fountain west of Spring Meadows. Do this AFTER completing the other friendly Nevron quests, including Chalier at Floating Cemetery and the Frozen Hearts/Esoteric Ruins quests. Speak with Blanche and complete the final required encounter to earn the collective reward; Blanche is the special final encounter, not a Nevron you simply leave alive."
-          ]
-        ]
-      ],
-      [
-        "Optional regions, bosses and secret weapons",
-        [
-          [
-            "Boss",
-            "Golgra optional duel",
-            "POSTGAME CHALLENGE (no traversal gate): Return to Gestral Village's Chief's House and challenge Golgra. This very high-level optional duel is intentionally scheduled after Act 3 instead of implying a normal Act 1 party should win it.",
-            "act1:gestral-village:golgra-optional-duel"
-          ],
-          [
-            "Boss",
-            "Sprong · Cheater",
-            "Swim to the water near Blades' Graveyard and defeat Sprong for the Cheater Picto."
-          ],
-          [
-            "Boss",
-            "Serpenphare · Energy Master",
-            "Reach the eastern ocean by flight and battle Serpenphare for Energy Master."
-          ],
-          [
-            "Boss",
-            "Chromatic Petank · Anti-Stun",
-            "Search the large eastern island for Chromatic Petank and defeat it."
-          ],
-          [
-            "Secret",
-            "The Canvas · Dessendre family portrait",
-            "Fly to The Canvas optional island, pick up the DESSENDRE FAMILY PORTRAIT, then enter any Manor door. From the Manor rest point go upstairs to the landing and place the portrait in the EMPTY FRAME on the right. This opens a secret room off the main living/dining area containing an Unknown journal.",
-            "endgame:optional-regions-bosses-and-secret-weapons:the-canvas-manor-family-canvas"
-          ],
-          [
-            "Boss",
-            "The Crows",
-            "In The Crows find Expedition 34 and shoot all crows to trigger the optional Chromatic fight."
-          ],
-          [
-            "Boss",
-            "Flying Manor · Clea",
-            "Enter Flying Manor, clear all four guardian routes and defeat Clea for Clea's Life; speak to the boy afterward for unique cosmetics."
-          ],
-          [
-            "Boss",
-            "Renoir's Drafts / The Abyss · Simon",
-            "REQUIRES ESQUIE UNDERWATER DIVING: Act 3, relationship level 6, and the repeat François quest from Esquie's Nest. Dive into the glowing sea portal northeast of Old Lumière/southeast of Visages to enter Renoir's Drafts, then descend via Golden Tree into The Abyss. Defeat Simon for his journal and Simoso. Do not attempt this merely after learning to swim or break sea reefs."
-          ],
-          [
-            "Arena",
-            "Endless Tower",
-            "Finish all 11 stages (33 original trials), claim the Clea record and other unique rewards."
-          ],
-          [
-            "Area",
-            "Other flying-only areas",
-            "REQUIRES ESQUIE FLYING (Act 3). Explore Sky Island, Crimson Forest, Endless Night Sanctuary, Isle of the Eyes, Dark Gestral Arena, Sunless Cliffs and other floating islands for unique rewards. Deep-water dive sites require Esquie's separate level-6 relationship quest."
-          ]
-        ]
-      ],
-      [
-        "Verification sweep",
-        [
-          [
-            "Collection",
-            "All Expedition Journals",
-            "Revisit Berrami at Gestral Village and cross-check every uncollected expedition journal, including Unknown journals."
-          ],
-          [
-            "Collection",
-            "All records and music",
-            "Verify the music collection, especially missable prologue and camp records."
-          ],
-          [
-            "Collection",
-            "All weapons, Pictos and Monoco skills",
-            "Cross-check the site's Weapons and Pictos & Luminas pages; acquire remaining unique enemy drops, shop unlocks and Monoco skill variants."
-          ],
-          [
-            "Collection",
-            "All cosmetics and merchants",
-            "Win remaining merchant challenges, purchase unique outfits / hairstyles, and finish every Gestral Beach reward tier."
-          ],
-          [
-            "Journal",
-            "Expedition 34",
-            "Location: The Crows. Near the Expedition Flag; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 35",
-            "Location: Falling Leaves. Near the Chromatic Ballet encounter. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 37",
-            "Location: Gestral Beach. Climb the Wall Gestral Beach; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 45",
-            "Location: Crushing Cavern. Defeat the Giant Sapling then follow the tunnel. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 49",
-            "Location: Falling Leaves. Speak to Young Boy and Lady Sap to open the gate behind the boy; the interaction unlocks the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 51",
-            "Location: Frozen Hearts. From Icebound Train Station Flag go up the hill to a crevice. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 54",
-            "Location: Stone Wave Cliffs Cave. Defeat Chromatic Hexga to obtain the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 61",
-            "Location: The Reacher. From Foggy Area Flag cross the bridge and cave. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Expedition 84",
-            "Location: The Fountain. Near the upper ledge past the fountain; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Simon",
-            "Location: Renoir's Drafts. Defeat Simon in the Abyss. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Journal",
-            "Unknown 2",
-            "Location: The Reacher. Enter the Manor from The Reacher and find the second Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
-          ],
-          [
-            "Record",
-            "Alicia",
-            "Location: Falling Leaves. Enter the Manor through Falling Leaves."
-          ],
-          [
-            "Record",
-            "Clea",
-            "Location: Endless Tower. Clear all 11 stages; requires Esquie's flight."
-          ],
-          [
-            "Record",
-            "Clea! Don't Pull Your Sister's Hair!",
-            "Location: Frozen Hearts. Enter the Manor via Frozen Hearts."
-          ],
-          [
-            "Record",
-            "Endless Light",
-            "Location: Renoir's Drafts. From Entrance Flag take the grapple route; requires underwater swimming."
-          ],
-          [
-            "Record",
-            "Until Next Life",
-            "Location: Falling Leaves. Defeat the Scavenger behind gate and speak to Young Boy to claim the record."
-          ],
-          [
-            "Skill enemy",
-            "Chalier Combo",
-            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Stalact Punches",
-            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Pelerin Heal",
-            "Fight Pelerin after Monoco joins in Monoco's Station tutorial. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Braseleur Smash",
-            "Fight Reaper Cultist, northwest of Esoteric Ruins on small island in bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Ramasseur Bonk",
-            "Fight Ramasseur southwest of Esoteric Ruins at narrow left-hand path. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Troubadour Trumpet",
-            "Fight Troubadour south of Monoco's Station south portal with Demineur and Gault. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Duallist Storm",
-            "Refight Dualliste in Endless Tower Stage 1, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Creation Void",
-            "Fight Creation in Act 3 Lumière Gardens, or Renoir's Drafts if needed. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Abbest Wind",
-            "Fight Abbest southwest of Monoco's Station south portal with Rocher and Chalier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Lancelier Impale",
-            "Fight Lancelier east of Gestral Village with Cruler and Demineur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Portier Crash",
-            "Fight Portier southeast of Gestral Village with Bruler and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Eveque Spear",
-            "Fight Eveque near The Monolith Tainted Meadows blue-flower trail; Endless Tower Stage 7 Trial 1 alternative. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Chevaliere Ice",
-            "Fight Gold Chevalière west of Esoteric Ruins portal across small bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Chevaliere Thrusts",
-            "Fight Steel Chevalière on shoreline east of The Reacher. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Chevaliere Piercing",
-            "Fight Ceramic Chevalière southwest of Esoteric Ruins by orange trees. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Aberration Light",
-            "Fight Aberration near Renoir's Drafts entrance, in group with Benisseur and Ballet. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Demineur Thunder",
-            "Fight Demineur south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Bruler Bash",
-            "Fight Bruler southeast of Gestral Village alongside Portier and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Cruler Barrier",
-            "Fight Cruler east of Gestral Village in Lancelier group. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Luster Slices",
-            "Fight Luster southeast of Gestral Village with Bruler and Portier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Contorsionniste Blast",
-            "Fight Contorsionniste near Endless Night Sanctuary portal, south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Boucheclier Fortify",
-            "Fight Boucheclier northwest of Frozen Hearts portal, across river on gold-colored ground. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Chapelier Slash",
-            "Fight Chapelier on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Grosse Tete Whack",
-            "Fight Grosse Tete in Flying Manor, or the one near Coastal Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Sakapatate Explosion",
-            "Fight Catapult Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take right fork through cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Sakapatate Estoc",
-            "Fight Ranger Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take left fork. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Sakapatate Slam",
-            "Fight Robust Sakapatate near Gestral Totem Flag in Ancient Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Sakapatate Fire",
-            "Fight Ultimate Sakapatate in Endless Tower Stage 7 Trial 3; also in Monolith Tainted Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Benisseur Mortar",
-            "Fight Benisseur on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Ballet Charm",
-            "Fight Ballet on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Orphelin Cheers",
-            "Fight Orphelin west of Esoteric Ruins portal across bay with Gold Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Echassier Stabs",
-            "Fight Echassier in snow clearing southwest of Frozen Hearts portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Cultist Blood",
-            "Fight Greatsword Cultist on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Cultist Slashes",
-            "Fight Reaper Cultist northwest of Esoteric Ruins portal on small island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Hexga Crush",
-            "Fight Hexga southwest of Esoteric Ruins beside Ceramic Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Rocher Hammering",
-            "Fight Rocher southwest of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Lampmaster Light",
-            "Refight Lampmaster in Endless Tower Stage 2, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Moissonneuse Vendange",
-            "Fight Moissonneuse northwest of Floating Cemetery portal on small beach. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Clair Enfeeble",
-            "Fight Clair in Monolith from Tainted Meadows Flag, following main route. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Obscur Sword",
-            "Fight Obscur from Monolith Tainted Battlefield Flag, back through ship toward windmill. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Potier Energy",
-            "Fight Potier near Boat Graveyard portal with Abbest and Ramasseur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Sapling Absorption",
-            "Fight Sapling on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Jar Lampstorm",
-            "Fight Jar near Endless Night Sanctuary portal south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Gault Fury",
-            "Fight Gault south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Glaise Earthquakes",
-            "Fight Glaise west of Esoteric Ruins portal across bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
-          ],
-          [
-            "Skill enemy",
-            "Danseuse Waltz",
-            "Fight Danseuse on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
           ]
         ]
       ],
@@ -4870,74 +4951,6 @@ window.E33_COMPLETION_DATA = [
             "Collectible",
             "DLC Perfect Chroma Catalyst · Chromatic Lampmaster",
             "Endless Tower · defeat Chromatic Lampmaster. Verify the Perfect Catalyst drop."
-          ]
-        ]
-      ]
-    ]
-  },
-  {
-    "id": "update",
-    "title": "Thank You Update",
-    "subtitle": "Verso's Drafts · bonus challenges",
-    "accent": "#79e0b8",
-    "areas": [
-      [
-        "Verso's Drafts",
-        [
-          [
-            "Location",
-            "Enter Verso's Drafts",
-            "REQUIRES ACT 3 FLYING PLUS UNDERWATER DIVING from Esquie's relationship level 6 / François quest. Fly toward Lumière in the far south, then find the toy-covered rock on the small island immediately east of the city. Use the dive interaction to enter the Verso's Drafts portal; swimming alone is not enough."
-          ],
-          [
-            "Quest",
-            "Open Playground / Gestral Baths",
-            "Clear the diving-board, statue, seesaw and other minigame challenges; claim their unique rewards."
-          ],
-          [
-            "Collection",
-            "Reverie Path",
-            "Purchase exclusive update weapons and Pictos from its merchants, including AP Discount / Consuming Attack."
-          ],
-          [
-            "Chromatic",
-            "Licorne / Barbasucette / Franctale",
-            "Defeat the three distinctive update Chromatics and obtain their unique weapons."
-          ],
-          [
-            "Quest",
-            "Candy Land / Carousel",
-            "Find the hidden Mime and Paint Cages, finish the Carousel, Gingerbread-door quest and Licornapieds Station battle."
-          ],
-          [
-            "Boss",
-            "Root of All Evil · Osquio",
-            "Descend to the final update area and defeat Osquio for Esquiso and its other unique rewards."
-          ]
-        ]
-      ],
-      [
-        "Bonus Endless Tower",
-        [
-          [
-            "Boss",
-            "Clea Unleashed",
-            "Win the new Endless Tower Clea encounter for Cleim and Clea's Death."
-          ],
-          [
-            "Boss",
-            "Duollistes",
-            "Complete the extra dual-boss fight for Duollison."
-          ],
-          [
-            "Boss",
-            "Chromatic Lampmaster",
-            "Defeat the new Lampmaster challenge for First Life."
-          ],
-          [
-            "Boss",
-            "Simon the Divergent Star",
-            "Finish the new superboss fight and claim its unique rewards."
           ]
         ]
       ]
