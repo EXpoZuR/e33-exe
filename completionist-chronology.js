@@ -173,6 +173,25 @@
       step[2]=hint+" "+desc;
       return [ch,anchor];
     }
+    // Perfect Chroma Catalysts are the ONLY upgrade materials in this guide.
+    // Place each reward beside its first accessible boss or event.
+    if (/^Perfect Chroma Catalysts/.test(groupName)) {
+      const name = step[1];
+      if (/^Perfect Chroma Catalyst (?:1|2|3|4)$/.test(name))
+        return ["endgame","Optional regions, bosses and secret weapons"];
+      if (name==="Perfect Chroma Catalyst 5")
+        return ["endgame","Optional regions, bosses and secret weapons"];
+      if (name==="Perfect Chroma Catalyst 6")
+        return ["act3","Story finale · Lumière"];
+      if (name==="Perfect Chroma Catalyst 7")
+        return ["act3","Act 3 · relationships and full traversal"];
+      if (/^Perfect Chroma Catalyst (?:8|9|10)$/.test(name))
+        return ["endgame","Optional regions, bosses and secret weapons"];
+      if (/Osquio$/.test(name))
+        return ["update","Verso's Drafts"];
+      if (/Clea Unleashed|Simon, the Divergent Star|Chromatic Lampmaster/.test(name))
+        return ["update","Bonus Endless Tower"];
+    }
     if (/\bstarting weapon\b/i.test(desc)) return null;
     if (/\b(?:Chalier Combo|Stalact Punches)\b/i.test(step[1]))return ["act2","Monoco's Station"];
     if (/Blodam|Serpenphare/i.test(step[1]+" "+desc))return ["act3","Act 3 · relationships and full traversal"];
@@ -212,10 +231,11 @@
     return null;
   };
   for(const [g,entries] of groups){
-    if(/Chroma Catalysts/i.test(g)){excluded+=entries.length;continue}
+    if(/Grandiose Chroma Catalysts/i.test(g)){excluded+=entries.length;continue}
     let unresolved=[];
     for(const step of entries){
       const desc=String(step[2]||"");
+      if (/\b(?:Shape of (?:Energy|Health|Life)|Colours? of Lumina|Colors? of Lumina|Recoat)\b/i.test(step[1]) || (/\bCatalyst\b/i.test(step[1]) && !/\bPerfect Chroma Catalyst\b/i.test(step[1]))) {excluded++;continue;}
       if(/\bshard\b/i.test(step[1]) || (/^Paint Cage \d+$/i.test(step[1]) && /Reward:[^\n]*\bshard\b/i.test(desc))){excluded++;continue;}
       if((step[0]==="Cosmetic"&&(/default(?: costume)?\b|deluxe edition default/i.test(desc)))||(/\bstarting weapon\b/i.test(desc))){excluded++;continue}
       if(step[0]==="Collectible"&&/Paint Cage 15\b/.test(step[1])){excluded++;continue}
