@@ -716,22 +716,140 @@ window.E33_COMPLETION_DATA = [
         ]
       ],
       [
-        "Forgotten Battlefield",
+        "Forgotten Battlefield · Main Gate",
         [
+          [
+            "Weapon",
+            "Ramasson",
+            "At Main Gate, defeat the first Ramasseur group at the opening fork. Sciel's weapon drops here. Guide rank: B tier.",
+            "inventory:weapon-collection-audit-sciel:ramasson"
+          ],
+          [
+            "Picto",
+            "Longer Shell",
+            "The first Chalier group at Main Gate drops Longer Shell alongside the early Ramasson encounter. Guide tier: B.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:longer-shell"
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 3",
+            "Take the LEFT side of the Main Gate fork, follow past the dead Sakapatate and check the ruined building beside the stairs.",
+            "inventory:tint-shape-acquisition-audit:healing-tint-shard-3"
+          ],
+          [
+            "Picto",
+            "Sweet Kill",
+            "Still on the LEFT side of Main Gate, ascend the wooden ramp to the upper dead end behind the Troubadour. Guide tier: C.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:sweet-kill"
+          ],
+          [
+            "Picto",
+            "Energising Start IV",
+            "BEFORE THE FADING WOMAN: backtrack to Main Gate's first fork, take the RIGHT path and descend into the trench. Near the locked metal door and dead Chalier, take the dead-end side path to pick up Energising Start IV on the ground. Guide tier: A.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:energising-start-iv"
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 6",
+            "Before heading into Fort Ruins, check the lower route beneath the wooden bridge.",
+            "inventory:tint-shape-acquisition-audit:revive-tint-shard-6"
+          ]
+        ]
+      ],
+      [
+        "Forgotten Battlefield · Fort Ruins",
+        [
+          [
+            "Picto",
+            "Energising Death",
+            "At Fort Ruins Flag, cross the gap to the broken building, step onto the OUTER BALCONY and take Energising Death. Guide tier: C.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:energising-death"
+          ]
+        ]
+      ],
+      [
+        "Forgotten Battlefield · Vanguard Point / Ancient Bridge",
+        [
+          [
+            "Collectible",
+            "Energy Tint Shard 5",
+            "From Vanguard Point Flag cross the fallen metal pipe; check the crates against the wooden palisade to the right.",
+            "inventory:tint-shape-acquisition-audit:energy-tint-shard-5"
+          ],
           [
             "Journal",
             "Expedition 41",
-            "Near the Fading Woman, take the right-hand route then the first left to a fallen Nevron."
+            "At the Fading Woman crossroads, go RIGHT into the trench. Pick up Expedition 41 in the first LEFT alcove near burning debris. You should have Energising Start IV already."
+          ],
+          [
+            "Picto",
+            "Empowering Tint",
+            "From Expedition 41, continue down the trench, take the RIGHT fork, then climb the magical rope to reach Empowering Tint. Guide tier: B.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:empowering-tint"
+          ],
+          [
+            "Weapon",
+            "Lusteson",
+            "Below Empowering Tint, defeat optional Chromatic Luster for Sciel's Lusteson weapon. Guide rank: B+ tier.",
+            "inventory:weapon-collection-audit-sciel:lusteson"
+          ],
+          [
+            "Picto",
+            "Energising Parry",
+            "Chromatic Luster also drops Energising Parry. Obtain it before leaving the trench. Guide tier: S.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:energising-parry"
+          ],
+          [
+            "Collectible",
+            "Paint Cage 6",
+            "Proceed on the main route PAST the Fading Woman and solve Paint Cage 6 before descending farther toward the merchant.",
+            "inventory:paint-cage-acquisition-audit:paint-cage-6"
+          ],
+          [
+            "Collectible",
+            "Chroma Elixir Shard 3",
+            "Collect this upgrade directly from Paint Cage 6 after opening it.",
+            "inventory:tint-shape-acquisition-audit:chroma-elixir-shard-3"
           ],
           [
             "Journal",
             "Expedition 57",
-            "Beyond the Fading Woman, follow the rear passage to the open area; collect the journal before taking the left route."
+            "After the Paint Cage, follow the descending slope and pick up Expedition Journal 57 before the elevated merchant room."
+          ],
+          [
+            "Weapon",
+            "Benisim",
+            "Enter KASUMI's elevated merchant room, win the duel and buy Lune's Benisim for 7,990 Chroma. Guide rank: C tier.",
+            "inventory:weapon-collection-audit-lune:benisim"
+          ],
+          [
+            "Picto",
+            "Inverted Affinity",
+            "At the same Kasumi merchant, buy Inverted Affinity for 9,870 Chroma. Guide tier: SS.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:inverted-affinity"
           ],
           [
             "Boss",
             "Dualliste",
-            "Cross Ancient Bridge and defeat Dualliste. Check camp conversations afterward."
+            "Proceed to Ancient Bridge, cross to the boss and defeat Dualliste."
+          ],
+          [
+            "Weapon",
+            "Dualiso",
+            "Obtain Verso's Dualiso as the Dualliste story boss reward. Guide rank: S tier.",
+            "inventory:weapon-collection-audit-gustave-verso:dualiso"
+          ],
+          [
+            "Picto",
+            "Combo Attack I",
+            "Obtain Combo Attack I alongside Dualiso from the same Dualliste fight. Guide tier: C.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:combo-attack-i"
+          ],
+          [
+            "Picto",
+            "Revive Tint Energy",
+            "Beyond Dualliste, ascend the magical ropes and exit the pit. In the wooded grove, examine the broken wall to find Revive Tint Energy. Guide tier: C.",
+            "inventory:picto-inventory-audit-forgotten-battlefield:revive-tint-energy"
           ]
         ]
       ],
@@ -1749,11 +1867,6 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Weapon",
-            "Dualiso",
-            "Forgotten Battlefield · Ancient Bridge Flag, defeat boss. Guide rank: S tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
-          ],
-          [
-            "Weapon",
             "Gesam",
             "Flying Manor · Central Plaza Flag, elevator then left; or merchant 81,500 Chroma. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
           ],
@@ -1816,11 +1929,6 @@ window.E33_COMPLETION_DATA = [
             "Weapon",
             "Angerim",
             "Continent · north of Forgotten Battlefield, Chromatic Demineur drop. Guide rank: A tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
-          ],
-          [
-            "Weapon",
-            "Benisim",
-            "Forgotten Battlefield · merchant beyond central battlefield, 7,990 Chroma. Guide rank: C tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
           ],
           [
             "Weapon",
@@ -2069,11 +2177,6 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Weapon",
-            "Lusteson",
-            "Forgotten Battlefield · Battlefield Flag, defeat Chromatic Luster beyond Fading Woman. Guide rank: B+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
-          ],
-          [
-            "Weapon",
             "Martenon",
             "Flying Manor · Central Plaza elevator merchant, 97,800 Chroma. Guide rank: S+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
           ],
@@ -2086,11 +2189,6 @@ window.E33_COMPLETION_DATA = [
             "Weapon",
             "Moisson",
             "Continent · red island southwest of Visages, Chromatic Moissonneuse. Guide rank: A+ tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
-          ],
-          [
-            "Weapon",
-            "Ramasson",
-            "Forgotten Battlefield · first enemy after giant gate. Guide rank: B tier. Check the character's weapon inventory after obtaining it; in NG+ an existing copy may upgrade instead."
           ],
           [
             "Weapon",
@@ -2761,53 +2859,7 @@ window.E33_COMPLETION_DATA = [
       ],
       [
         "Picto inventory audit · Forgotten Battlefield",
-        [
-          [
-            "Picto",
-            "Combo Attack I",
-            "Forgotten Battlefield. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Empowering Tint",
-            "Forgotten Battlefield. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Energising Death",
-            "Forgotten Battlefield. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Energising Parry",
-            "Forgotten Battlefield. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Energising Start IV",
-            "Forgotten Battlefield. Guide tier: A. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Inverted Affinity",
-            "Forgotten Battlefield. Guide tier: SS. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Longer Shell",
-            "Forgotten Battlefield. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Revive Tint Energy",
-            "Forgotten Battlefield. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ],
-          [
-            "Picto",
-            "Sweet Kill",
-            "Forgotten Battlefield. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
-          ]
-        ]
+        []
       ],
       [
         "Picto inventory audit · Frozen Hearts",
@@ -4519,11 +4571,6 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Collectible",
-            "Chroma Elixir Shard 3",
-            "Forgotten Battlefield · Paint Cage 6. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
-          ],
-          [
-            "Collectible",
             "Chroma Elixir Shard 4",
             "Stone Wave Cliffs Cave · Paint Cage 19. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
           ],
@@ -4549,11 +4596,6 @@ window.E33_COMPLETION_DATA = [
           ],
           [
             "Collectible",
-            "Energy Tint Shard 5",
-            "Forgotten Battlefield · west corner of Vanguard Point Flag. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
-          ],
-          [
-            "Collectible",
             "Energy Tint Shard 6",
             "Visages · Sadness Vale, corner of skull room by enemy group. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
           ],
@@ -4571,11 +4613,6 @@ window.E33_COMPLETION_DATA = [
             "Collectible",
             "Healing Tint Shard 2",
             "Ancient Sanctuary · Giant Bell Alley Flag, west corner. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
-          ],
-          [
-            "Collectible",
-            "Healing Tint Shard 3",
-            "Forgotten Battlefield · beyond giant gate, left of main path. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
           ],
           [
             "Collectible",
@@ -4616,11 +4653,6 @@ window.E33_COMPLETION_DATA = [
             "Collectible",
             "Revive Tint Shard 5",
             "Sirène · Paint Cage 8. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
-          ],
-          [
-            "Collectible",
-            "Revive Tint Shard 6",
-            "Forgotten Battlefield · Vanguard Point Flag, just east. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
           ],
           [
             "Collectible",
@@ -4711,11 +4743,6 @@ window.E33_COMPLETION_DATA = [
             "Collectible",
             "Paint Cage 5",
             "Stone Wave Cliffs · Old Farm Flag, ledge next to farm. To open it, shoot the three nearby paint anomalies. Reward: Duenum weapon."
-          ],
-          [
-            "Collectible",
-            "Paint Cage 6",
-            "Forgotten Battlefield · Battlefield Flag, northwest. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard 3."
           ],
           [
             "Collectible",
