@@ -4702,6 +4702,156 @@ window.E33_COMPLETION_DATA = [
             "Monolith · Tainted Sanctuary, break Paint Spike after Ultimate Sakapatate. To open it, shoot the three nearby paint anomalies. Reward: Paint Cage reward."
           ]
         ]
+      ],
+      [
+        "Manor Doors · 11-room item sweep",
+        [
+          [
+            "Secret",
+            "Manor Door 1",
+            "Gestral Village · right of entrance, past Turn Back sign. Enter this distinct Manor access point and collect: Kitchen, Shape of Energy, Maelle Rebellious haircut. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 2",
+            "Stone Wave Cliffs · Tide Caverns Flag, zipline then defeat miniboss. Enter this distinct Manor access point and collect: Wardrobe and Maelle Skirt. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 3",
+            "Old Lumière · Manor Gardens Flag, crawl through hole in fence. Enter this distinct Manor access point and collect: Bathroom, Renoir music record and journal. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 4",
+            "Falling Leaves · Resinveil Grove Flag, use ropes by large statue. Enter this distinct Manor access point and collect: Study and Alicia record. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 5",
+            "Frozen Hearts · Glacial Falls Flag, ice cave near crystals. Enter this distinct Manor access point and collect: Music Room and Clea! Don't Pull Your Sister's Hair record. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 6",
+            "Visages · Anger Vale, blue-light cave then right. Enter this distinct Manor access point and collect: Verso Room, Verso record and Unknown journal. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 7",
+            "Sirène · Sewing Atelier Flag, follow main path toward Fading Boy. Enter this distinct Manor access point and collect: Bathroom access. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 8",
+            "The Reacher · Ladder Area Flag, door down route. Enter this distinct Manor access point and collect: Side Room and Unknown journal. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 9",
+            "Monolith · Tainted Battlefield Flag, progress to grave then search left. Enter this distinct Manor access point and collect: Aline Greenhouse, L'Amour d'une Mère record and Aline journal. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 10",
+            "Continent · island northeast of Endless Tower, beneath cliff. Enter this distinct Manor access point and collect: Library and Verso Civilian outfit. Check reward items separately too."
+          ],
+          [
+            "Secret",
+            "Manor Door 11",
+            "Continent · mainland lake reachable after Esquie flies. Enter this distinct Manor access point and collect: Storage Room and Forlorn music record. Check reward items separately too."
+          ]
+        ]
+      ],
+      [
+        "Side quest · 17-reward cross-check",
+        [
+          [
+            "Quest",
+            "Jar, Nevron",
+            "Spring Meadows · bring Resin found by Abandoned Expeditioner Camp to friendly Jar; do not attack"
+          ],
+          [
+            "Quest",
+            "Demineur, Nevron",
+            "Flying Waters · Noco's Hut, retrieve intact mine across platforms and give it to Demineur; do not attack"
+          ],
+          [
+            "Quest",
+            "Bourgeon, Nevron",
+            "The Small Bourgeon · defeat other Bourgeon and hand its skin to friendly Nevron"
+          ],
+          [
+            "Quest",
+            "Hexga, Nevron",
+            "Stone Wave Cliffs · after Old Farm collect 3 Tide Caverns Rock Crystals for friendly Hexga"
+          ],
+          [
+            "Quest",
+            "Troubadour, Nevron",
+            "Stone Quarry · parry red musical notes and ignore green ones for Troubadour"
+          ],
+          [
+            "Quest",
+            "Portier, Nevron",
+            "Esoteric Ruins · solve beacon-orb maze, bring Wooden Boards back to Portier"
+          ],
+          [
+            "Quest",
+            "Chalier, Nevron",
+            "Floating Cemetery · fight friendly Chalier and then grant final wish to receive Auto Powerful Picto"
+          ],
+          [
+            "Quest",
+            "Blanche, Nevron",
+            "The Fountain · preserve other friendly Nevrons and visit Blanche for 100 Colours of Lumina; otherwise boss battle"
+          ],
+          [
+            "Quest",
+            "Karatom, Gestral",
+            "Gestral Village · bring Mushroom from Esquie's Nest, complete Gustave duel before Act 1 end"
+          ],
+          [
+            "Quest",
+            "Grandis",
+            "The Carousel · break ice blocking carousel to complete quest"
+          ],
+          [
+            "Quest",
+            "Danseuse Teacher",
+            "Frozen Hearts · stairs beyond Glacial Falls Flag, perfect parry and counter to complete dance"
+          ],
+          [
+            "Quest",
+            "Benisseur",
+            "Red Woods · repeatedly donate Chroma to fountain until 90,000 Chroma demand, then defeat boss"
+          ],
+          [
+            "Quest",
+            "Fashionist",
+            "Monoco's Station · complete Fashionist poem to obtain Pure outfit"
+          ],
+          [
+            "Quest",
+            "Gingerbread door",
+            "Verso's Drafts · beside lake, assemble complete birthday cake and open door"
+          ],
+          [
+            "Quest",
+            "Half-baked Gestral",
+            "Verso's Drafts · Gestral Baths, attack Gestral blocking diving board to obtain Esquiaro weapon"
+          ],
+          [
+            "Quest",
+            "Half-baked Lifeguard",
+            "Verso's Drafts · Gestral Baths, solve Esquie statue puzzle for Monoco Double Bun and cake piece"
+          ],
+          [
+            "Quest",
+            "Seesaw Challenge",
+            "Verso's Drafts · complete seesaw to collect Empowering Jumps Picto"
+          ]
+        ]
       ]
     ]
   },
