@@ -551,14 +551,14 @@ window.E33_COMPLETION_DATA = [
             "In the Hexga clearing search at the base of the ruined metal tower structures. [Guide rank: B tier; situationally useful]."
           ],
           [
-            "Picto",
-            "Energising Pain",
-            "After the first Hexga, pass through the tunnel and grapple across the gap. In the next open courtyard, defeat the FIRST Greatsword Cultist group for Energising Pain. [Guide rank: B tier; situationally useful]."
-          ],
-          [
             "Weapon",
             "Chation",
             "In the SAME courtyard after the first Hexga, defeat the SECOND Greatsword Cultist enemy group to earn Sciel's Chation. This is an enemy drop, not a ground pickup; in NG+ it may upgrade your existing copy. [Guide rank: S+ tier · Sciel; high priority]."
+          ],
+          [
+            "Picto",
+            "Energising Pain",
+            "After the first Hexga, pass through the tunnel and grapple across the gap. In the next open courtyard, defeat the FIRST Greatsword Cultist group for Energising Pain. [Guide rank: B tier; situationally useful]."
           ],
           [
             "Journal",
