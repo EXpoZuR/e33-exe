@@ -332,21 +332,26 @@ window.E33_COMPLETION_ROUTES = {
     "previous": "Expedition 78",
     "from": "From Expedition 78 remain on the upper ledge and inspect the nearby Paint Cage. Shoot all visible locks to release Delaram."
   },
+  "act1:stone-wave-cliffs-entrance-shrine:confident": {"previous":"Delaram Paint Cage","from":"Drop into the initial Hexga clearing. Defeat the large shielded Hexga for Confident before examining the wrecked metal structures."},
   "act1:stone-wave-cliffs-entrance-shrine:breaking-counter": {
-    "previous": "Delaram Paint Cage",
+    "previous": "Confident",
     "from": "Climb/drop back from the Delaram cage into the main Hexga clearing. Search near the base of the tall ruined metal tower structures for Breaking Counter."
   },
+  "act1:stone-wave-cliffs-entrance-shrine:energising-pain": {"previous":"Breaking Counter","from":"Beyond the starting Hexga go through its tunnel and grapple across to the Greatsword Cultist courtyard. Beat the FIRST group for Energising Pain."},
+  "act1:stone-wave-cliffs-entrance-shrine:chation": {"previous":"Energising Pain","from":"In the same courtyard, beat the SECOND Greatsword Cultist group for Sciel’s Chation weapon or an NG+ upgrade."},
   "act1:stone-wave-cliffs-entrance-shrine:expedition-56": {
-    "previous": "Breaking Counter",
-    "from": "From Breaking Counter continue through the Hexga clearing into the NEXT section of Stone Wave Cliffs. Keep the LEFT cliff wall close and find Expedition 56 beside the statue/fallen explorers."
+    "previous": "Chation",
+    "from": "After Chation continue through the Hexga clearing into the NEXT section of Stone Wave Cliffs. Keep the LEFT cliff wall close and find Expedition 56 beside the statue/fallen explorers."
   },
+  "act1:stone-wave-cliffs-entrance-shrine:first-strike": {"previous":"Expedition 56","from":"Move onward from Expedition 56 to the left gazebo; climb the three ledges on the RIGHT, kill the enemies and pick up First Strike."},
   "act1:stone-wave-cliffs-entrance-shrine:expedition-50": {
-    "previous": "Expedition 56",
-    "from": "From Expedition 56 resume the main path until Paintress Shrine Flag. Beyond the flag take the LEFT route through the ruins and search by the bodies for Expedition 50."
+    "previous": "First Strike",
+    "from": "From First Strike resume the main path until Paintress Shrine Flag. Beyond the flag take the LEFT route through the ruins and search by the bodies for Expedition 50."
   },
+  "act1:stone-wave-cliffs-entrance-shrine:sos-power": {"previous":"Expedition 50","from":"Beyond Paintress Shrine use the side grapples and climb above the enemy ambush; find SOS Power behind the statue atop the ramp."},
   "act1:stone-wave-cliffs-entrance-shrine:speak-to-the-young-boy": {
-    "previous": "Expedition 50",
-    "from": "After Expedition 50 retrace the short ruins detour to the main Paintress Shrine route. Visit the isolated platform on the continuing trail and speak through the Young Boy's dialogue."
+    "previous": "SOS Power",
+    "from": "After SOS Power retrace the short ruins detour to the main Paintress Shrine route. Visit the isolated platform on the continuing trail and speak through the Young Boy's dialogue."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:jerijeri-rangeson": {
     "previous": "Speak to the Young Boy",
@@ -356,12 +361,14 @@ window.E33_COMPLETION_ROUTES = {
     "previous": "Jerijeri / Rangeson",
     "from": "From Jerijeri return to the Old Farm Flag, take the UPHILL LEFT trail toward the broken windmill and solve the Paint Cage for Duenum."
   },
+  "act1:stone-wave-cliffs-old-farm-tide-caverns:perilous-parry": {"previous":"Duenum Paint Cage","from":"Optional Tide Caverns detour: descend the lower second rope and defeat Gold Chevalière in front of the hidden Manor doorway for Perilous Parry."},
   "act1:stone-wave-cliffs-old-farm-tide-caverns:old-farm-petank": {
-    "previous": "Duenum Paint Cage",
-    "from": "From the windmill cage drop into the lower Old Farm field. Chase the glowing Petank around the farm until it stops in its marked arena."
+    "previous": "Perilous Parry",
+    "from": "Return from Tide Caverns to the windmill cage drop into the lower Old Farm field. Chase the glowing Petank around the farm until it stops in its marked arena."
   },
+  "act1:stone-wave-cliffs-old-farm-tide-caverns:breaking-shots": {"previous":"Old Farm Petank","from":"In Tide Caverns, pass the grassy path near the lantern and platform across the basalt columns to collect Breaking Shots."},
   "act1:stone-wave-cliffs-old-farm-tide-caverns:friendly-hexga": {
-    "previous": "Old Farm Petank",
+    "previous": "Breaking Shots",
     "from": "From Petank's arena head along the cliff path toward Tide Caverns. Speak to the white Hexga BEFORE entering; inside Tide Caverns gather the three Rock Crystals it requests."
   },
   "act1:stone-wave-cliffs-old-farm-tide-caverns:auto-shell": {
@@ -384,8 +391,9 @@ window.E33_COMPLETION_ROUTES = {
     "previous": "Healing Tint Energy",
     "from": "After Healing Tint Energy return to the building that held the Hexga group. Climb the interior rope, then the handholds on the LEFT to collect Coralim."
   },
+  "act1:stone-wave-cliffs-flooded-buildings-finale:at-death-s-door": {"previous":"Coralim","from":"Defeat the Stone Wave Cliffs story boss Lampmaster at Basalt Waves for the At Death’s Door Picto."},
   "act1:stone-wave-cliffs-flooded-buildings-finale:lampmaster-finish-act-1": {
-    "previous": "Coralim",
+    "previous": "At Death's Door",
     "from": "From Coralim descend back through Flooded Buildings to Basalt Waves Flag. Follow its MAIN route to Lampmaster's arena; finish Karatom's Gustave reward first, then defeat Lampmaster to end Act 1."
   },
   "prologue:lumie-re-festival:old-key": {
