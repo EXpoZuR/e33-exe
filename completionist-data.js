@@ -689,6 +689,11 @@ window.E33_COMPLETION_DATA = [
         "Continent · Esquie swimming",
         [
           [
+            "Picto",
+            "Energising Heal (west beach camp)",
+            "As soon as swimming unlocks, head WEST from the starting island to the shipwreck peninsula, then take Energising Heal from the second beach camp."
+          ],
+          [
             "Record",
             "Gustave record · Stone Wave Cliffs return",
             "REQUIRES ESQUIE SWIMMING (unlocked by the Stone Wave Cliffs finale at the start of Act 2). Swim to the north/rear shoreline entrance of Stone Wave Cliffs; return to the former Lampmaster cliff and collect Gustave's music record. No flying or diving is required."
