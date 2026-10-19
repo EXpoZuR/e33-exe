@@ -1,4 +1,4 @@
-/* Sequential travel directions keyed to immutable step IDs. */
+/* Sequential routes and landmarks. */
 window.E33_COMPLETION_ROUTES = {
   "act1:spring-meadows-meadows-corridor:dodger": {
     "previous": "Prologue festival rewards",
@@ -285,12 +285,12 @@ window.E33_COMPLETION_ROUTES = {
     "from": "Leave Twilight Quarry, ride Esquie northwest of Gestral Village and look for the rocky barrier near the YELLOW-leaf forest. Break through to the entrance of Yellow Harvest."
   },
   "act1:yellow-harvest-lost-woods:potierim": {
-    "previous": "Yellow Harvest entrance",
-    "from": "Inside Yellow Harvest, advance from the entrance to the initial group of Potier enemies. Defeat them for Lune's Potierim, then continue toward Harvester's Hollow."
+    "previous": "Gaulteram",
+    "from": "After receiving GAULTERAM from the first Gault group, continue through Yellow Harvest rather than looking for Potierim in the same clearing. Follow the path past the next Gaults; take the grappling/cave route on the LEFT and continue toward the HARVESTER'S HOLLOW Expedition Flag. From that flag, descend into the enormous clearing with a central POND. Defeat the FIRST nearby JAR/POTIER enemy group as you loop around the pond to obtain Lune's Potierim."
   },
   "act1:yellow-harvest-lost-woods:expedition-44": {
     "previous": "Potierim",
-    "from": "From the Potier group continue to Harvester's Hollow Flag and descend into the LOWER valley. Hug the right side near the river and the wandering Jar to find Expedition 44."
+    "from": "After defeating the Jar/Potier group by Harvester's Hollow's central pond and getting Lune's Potierim, CONTINUE around the same pond rather than returning to the dungeon entrance. Follow the lower path toward dead GAULT enemies and an expeditioner's body. EXPEDITION 44 is lying by those bodies near the rock wall; the Mime crawlspace is close by."
   },
   "act1:yellow-harvest-lost-woods:yellow-harvest-mime": {
     "previous": "Expedition 44",
@@ -787,5 +787,9 @@ window.E33_COMPLETION_ROUTES = {
   "act1:gestral-village:meet-chief-golgra": {
     "previous": "Stun Boost",
     "from": "After collecting Stun Boost beside Ultimate Sakapatate's arena, follow the Ancient Sanctuary exit into Gestral Village. Activate the Entrance Expedition Flag and go straight UP the sloped path to the prominent Chief's House. Enter, speak to Golgra about finding Esquie and the Legendary Tournament, then choose to LOOK AROUND FIRST. This unlocks the tournament. You can now explore the village before signing up."
+  },
+  "act1:yellow-harvest-lost-woods:gaulteram": {
+    "previous": "Yellow Harvest entrance",
+    "from": "You have just reached Yellow Harvest's Entrance Flag with Esquie. CLIMB the rock handholds on your RIGHT, pass the friendly Gestral and walk through the CAVE into the first open battlefield. Defeat the roaming GAULT enemy group here to get Gustave's Gaulteram. There is more of the dungeon to explore before Potierim."
   }
 };
