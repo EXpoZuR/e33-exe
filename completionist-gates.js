@@ -1,4 +1,4 @@
-/* Story/ability/quest prerequisites for E33.EXE Completionist. Do not lock actions: NG+ progress may exist outside tracker. */
+/* Quest and traversal gate notices. */
 window.E33_COMPLETION_GATES = {
   "version": 1,
   "steps": {
@@ -439,6 +439,12 @@ window.E33_COMPLETION_GATES = {
         "update:verso-s-drafts:enter-verso-s-drafts"
       ],
       "tip": "These objectives are inside Verso's Drafts. Enter the new region after unlocking Esquie's dive ability."
+    },
+    "act1:yellow-harvest-lost-woods:gaulteram": {
+      "requires": [
+        "act1:continent-after-esquie-traversal:yellow-harvest-entrance"
+      ],
+      "tip": "Yellow Harvest's portal is behind Esquie's land-barrier traversal. The Gaults are in the FIRST open area after its entrance cave."
     }
   }
 };
