@@ -4533,32 +4533,32 @@ window.E33_COMPLETION_DATA = [
           [
             "Collectible",
             "Shape of Energy 1",
-            "Gestral Village · beyond Manor door south of Gestral Theater. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "Gestral Village · beyond Manor door south of Gestral Theater. Verify this permanent Shape collectible."
           ],
           [
             "Collectible",
             "Shape of Energy 2",
-            "The Manor · bookcase platforming section. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "The Manor · bookcase platforming section. Verify this permanent Shape collectible."
           ],
           [
             "Collectible",
             "Shape of Health 1",
-            "Flying Waters · defeat Goblu. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "Flying Waters · defeat Goblu. Verify this permanent Shape collectible."
           ],
           [
             "Collectible",
             "Shape of Health 2",
-            "Sirène · Manor door beyond Sewing Atelier Flag; break bathroom mirror. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "Sirène · Manor door beyond Sewing Atelier Flag; break bathroom mirror. Verify this permanent Shape collectible."
           ],
           [
             "Collectible",
             "Shape of Life 1",
-            "The Manor · upstairs left stairwell, walk through large suspicious painting between pillars. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "The Manor · upstairs left stairwell, walk through large suspicious painting between pillars. Verify this permanent Shape collectible."
           ],
           [
             "Collectible",
             "Shape of Life 2",
-            "Stone Wave Cliffs · defeat first Lampmaster boss. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+            "Stone Wave Cliffs · defeat first Lampmaster boss. Verify this permanent Shape collectible."
           ]
         ]
       ],
