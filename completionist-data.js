@@ -849,6 +849,11 @@ window.E33_COMPLETION_DATA = [
             "inventory:picto-inventory-audit-forgotten-battlefield:inverted-affinity"
           ],
           [
+            "Cosmetic",
+            "Maelle · Obscur outfit (Kasumi)",
+            "At the SAME Kasumi merchant before Ancient Bridge, buy Maelle's Obscur outfit for 5,000 Chroma."
+          ],
+          [
             "Boss",
             "Dualliste",
             "Proceed to Ancient Bridge, cross to the boss and defeat Dualliste."
