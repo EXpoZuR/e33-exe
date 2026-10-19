@@ -216,6 +216,7 @@
     let unresolved=[];
     for(const step of entries){
       const desc=String(step[2]||"");
+      if(/\bshard\b/i.test(step[1]) || (/^Paint Cage \d+$/i.test(step[1]) && /Reward:[^\n]*\bshard\b/i.test(desc))){excluded++;continue;}
       if((step[0]==="Cosmetic"&&(/default(?: costume)?\b|deluxe edition default/i.test(desc)))||(/\bstarting weapon\b/i.test(desc))){excluded++;continue}
       if(step[0]==="Collectible"&&/Paint Cage 15\b/.test(step[1])){excluded++;continue}
       if(["Healing Tint Shard 4","Energy Tint Shard 4","Revive Tint Shard 7","Energising Heal","Shared Care","Accelerating Heal"].includes(step[1])){excluded++;continue}
