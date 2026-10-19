@@ -569,11 +569,6 @@ window.E33_COMPLETION_DATA = [
             "Picto",
             "SOS Power",
             "Past Paintress Shrine, navigate the fork and grapples to the upper ledge; after the enemy ambush climb the RIGHT ramp, then turn toward the far statue. SOS Power lies BEHIND it. [Guide rank: C tier; mostly collection or niche use]."
-          ],
-          [
-            "Secret",
-            "Speak to the Young Boy",
-            "The Young Boy is a mysterious humanoid NPC on an isolated platform reached from the story path near Paintress Shrine. Stop to speak with him and exhaust his available dialogue before continuing. There is no item to pick up here."
           ]
         ]
       ],
@@ -752,6 +747,16 @@ window.E33_COMPLETION_DATA = [
             "Quest",
             "Painting Workshop · entrance #2",
             "AFTER FORGOTTEN BATTLEFIELD (no flight required). From its northern exit follow the western land route into the grove of trees northwest of Forgotten Battlefield, south of Monoco's Station. Enter the second Painting Workshop, accept Colour of the Beast from the Faceless Boy, and add it to the statue. Do not attempt the third floating-island entrance yet."
+          ],
+          [
+            "Journal",
+            "Julie",
+            "Location: Continent · northern detours. At a campsite west of Forgotten Battlefield's northern exit. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Verso",
+            "Location: Continent · northern detours. Find the journal near the coral reef coastline by Julie's journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -867,6 +872,16 @@ window.E33_COMPLETION_DATA = [
             "Rare enemy",
             "Right Street Mime",
             "Revisit Right Street and climb the wall beyond the fallen Axon to reach Sciel's cosmetic Mime."
+          ],
+          [
+            "Journal",
+            "Expedition 58",
+            "Location: Old Lumière. Automatically received after Old Lumière's story events; verify in journal menu. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Renoir",
+            "Location: Old Lumière. Enter the Manor from Old Lumière and collect Renoir's journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -887,6 +902,11 @@ window.E33_COMPLETION_DATA = [
             "Optional areas",
             "Accessible caves",
             "Clear Stone Wave Cliffs Cave, Crushing Cavern and other available caves; record remaining bosses you cannot yet defeat."
+          ],
+          [
+            "Journal",
+            "Unknown 3",
+            "Location: Continent · western expansion. Place the family canvas on the empty frame to obtain the third Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -917,6 +937,11 @@ window.E33_COMPLETION_DATA = [
             "Missable record",
             "Lettre à Maelle",
             "Immediately after Visages, camp until the Verso piano scene with Maelle and Esquie occurs. Claim Lettre à Maelle before progressing too far."
+          ],
+          [
+            "Journal",
+            "Unknown 1",
+            "Location: Visages. Enter the Manor from Visages and collect the first Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -947,6 +972,11 @@ window.E33_COMPLETION_DATA = [
             "Record",
             "Sinister Cave",
             "REQUIRES ESQUIE'S SEA-REEF BREAKING unlocked after Old Lumière. Enter Sinister Cave in the eastern region and navigate the interior grapples/side paths to retrieve Nocturne pour Lumière; defeat its Chromatic encounter if strong enough."
+          ],
+          [
+            "Journal",
+            "Expedition 40",
+            "Location: Continent · eastern detour. Small island before The Monolith. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -972,6 +1002,11 @@ window.E33_COMPLETION_DATA = [
             "Boss",
             "Sirène Axon",
             "Clear the three-dimensional branching paths and defeat the story boss."
+          ],
+          [
+            "Journal",
+            "Expedition 46",
+            "Location: Sirène. In Sirène's Dress after Chromatic Glissando, search the nearby rubble. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ],
@@ -997,6 +1032,11 @@ window.E33_COMPLETION_DATA = [
             "Boss",
             "Monolith finale",
             "Complete the Monolith sequence to reach Act 3."
+          ],
+          [
+            "Journal",
+            "Aline",
+            "Location: The Monolith. Enter the Manor from Tainted Battlefield and find Aline's journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ]
@@ -1180,6 +1220,61 @@ window.E33_COMPLETION_DATA = [
             "Collection",
             "All cosmetics and merchants",
             "Win remaining merchant challenges, purchase unique outfits / hairstyles, and finish every Gestral Beach reward tier."
+          ],
+          [
+            "Journal",
+            "Expedition 34",
+            "Location: The Crows. Near the Expedition Flag; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 35",
+            "Location: Falling Leaves. Near the Chromatic Ballet encounter. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 37",
+            "Location: Gestral Beach. Climb the Wall Gestral Beach; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 45",
+            "Location: Crushing Cavern. Defeat the Giant Sapling then follow the tunnel. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 49",
+            "Location: Falling Leaves. Speak to Young Boy and Lady Sap to open the gate behind the boy; the interaction unlocks the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 51",
+            "Location: Frozen Hearts. From Icebound Train Station Flag go up the hill to a crevice. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 54",
+            "Location: Stone Wave Cliffs Cave. Defeat Chromatic Hexga to obtain the journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 61",
+            "Location: The Reacher. From Foggy Area Flag cross the bridge and cave. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Expedition 84",
+            "Location: The Fountain. Near the upper ledge past the fountain; Esquie flight required. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Simon",
+            "Location: Renoir's Drafts. Defeat Simon in the Abyss. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Journal",
+            "Unknown 2",
+            "Location: The Reacher. Enter the Manor from The Reacher and find the second Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
           ]
         ]
       ]
