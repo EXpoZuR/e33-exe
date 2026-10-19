@@ -208,8 +208,16 @@
     const eligible=new Set(["Weapon","Picto","Merchant","Chromatic","Boss","Optional boss","Quest","Arena","Collection","Secret","Minigame"]);
     if(!eligible.has(step.kind))return [];
     const names=new Set(rewardHints[step.title]||[]);
-    // Prefer exactly named rewards; only inspect original pickup text on weapon/picto steps.
-    const targets=step.kind==="Weapon"||step.kind==="Picto"?
+    // A weapon/picto named in the title takes precedence. Avoid rating the
+    // PREVIOUS/NEXT pickup when it is mentioned only to clarify the route.
+    const nameAlreadyIdentified = [...rankByName.values()].some(list=>{
+      const n=list[0].name.toLowerCase(),title=step.title.toLowerCase();
+      const at=title.indexOf(n);
+      if(at<0)return false;
+      const before=at===0?"":title[at-1],after=title[at+n.length]||"";
+      return !/[a-z0-9]/.test(before)&&!/[a-z0-9]/.test(after);
+    });
+    const targets=(step.kind==="Weapon"||step.kind==="Picto")&&!nameAlreadyIdentified?
       [step.title,step.restartDirections]:[step.title];
     for(const list of rankByName.values()) {
       const item=list[0];
