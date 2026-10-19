@@ -20,6 +20,11 @@ window.E33_COMPLETION_DATA = [
             "During Gustave and Sophie's DAYTIME walk, approach the harbor stairs but DO NOT head down them. Look RIGHT near the children dancing on a stage: a silent Mime is sitting to the right of the performance. Defeat it now for the unique achievement; this Mime disappears once you move to the NIGHTTIME FESTIVAL."
           ],
           [
+            "Cosmetic",
+            "Crimson Uniform · Gustave",
+            "MISSABLE Prologue quest: in the flower market during the daytime Sophie sequence, talk to the man in red uniform and take the uniform. Later during the Expedition Festival after the Gommage, give it to Jules (the boy). Verify Gustave's Crimson Uniform outfit before departing."
+          ],
+          [
             "Quest",
             "Old Key",
             "Only after the daytime harbor sequence does the NIGHTTIME departure festival begin. Gustave receives a Festival Token there. Visit COLETTE in the THIRD STALL on the LEFT and exchange a token for the Old Key needed for the Fracture Survivor journal in Old Lumière."
