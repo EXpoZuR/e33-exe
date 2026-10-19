@@ -34,9 +34,9 @@
   ];
   const continentPictoHints = {
     "Accelerating Heal": [
-      "act3",
-      "Act 3 · relationships and full traversal",
-      "On an island just NORTH of Flying Casino, search the beach camp (requires access to the island)."
+      "act2",
+      "Continent · Esquie swimming",
+      "After swimming unlocks, land on the eastern shore of the large island east/southeast of Blades Graveyard. Search the beach camp for Accelerating Heal (before Forgotten Battlefield)."
     ],
     "Anti-Stun": [
       "act3",
@@ -104,9 +104,9 @@
       "Northwest of Forgotten Battlefield north portal, defeat the Frost Eveque."
     ],
     "Energising Heal": [
-      "act3",
-      "Act 3 · relationships and full traversal",
-      "At the camp beside the Endless Tower portal, clear the nearby enemy group and collect."
+      "act2",
+      "Continent · Esquie swimming",
+      "After unlocking swimming, move WEST of the starting island to the shipwrecked peninsula and follow the coast to the second beach camp to collect Energising Heal before White Tree."
     ],
     "Energising Shell": [
       "act3",
