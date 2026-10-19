@@ -4953,6 +4953,566 @@ window.E33_COMPLETION_DATA = [
             "Endless Tower · defeat Chromatic Lampmaster. Verify the Perfect Catalyst drop."
           ]
         ]
+      ],
+      [
+        "Grandiose Chroma Catalysts · 111 location-specific drops",
+        [
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 1",
+            "Flying Manor · defeat Gargant near portal. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 2",
+            "Flying Manor · defeat Gargant near portal. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 3",
+            "Flying Manor · defeat Gargant near portal. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 4",
+            "Flying Manor · Central Plaza, defeat enemy group on broken bridge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 5",
+            "Flying Manor · Central Plaza, beyond handholds by broken bridge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 6",
+            "Flying Manor · defeat Dualliste left of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 7",
+            "Flying Manor · defeat Dualliste left of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 8",
+            "Flying Manor · defeat Dualliste left of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 9",
+            "Flying Manor · collect within Dualliste arena. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 10",
+            "Flying Manor · defeat Bourgeon near Dualliste arena. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 11",
+            "Flying Manor · cliff along Lampmaster path. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 12",
+            "Flying Manor · defeat Lampmaster right of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 13",
+            "Flying Manor · defeat Lampmaster right of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 14",
+            "Flying Manor · defeat Lampmaster right of Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 15",
+            "Flying Manor · platform along Goblu route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 16",
+            "Flying Manor · defeat Bourgeon along Goblu route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 17",
+            "Flying Manor · defeat Goblu. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 18",
+            "Flying Manor · defeat Goblu. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 19",
+            "Flying Manor · defeat Goblu. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 20",
+            "Flying Manor · on ground forward-right from Central Plaza toward Trio Eveque. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 21",
+            "Flying Manor · defeat Bourgeon on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 22",
+            "Flying Manor · ramp by Bourgeon on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 23",
+            "Flying Manor · defeat Pétank on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 24",
+            "Flying Manor · defeat Pétank on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 25",
+            "Flying Manor · defeat Pétank on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 26",
+            "Flying Manor · defeat Pétank on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 27",
+            "Flying Manor · defeat Pétank on Trio Eveque route. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 28",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 29",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 30",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 31",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 32",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 33",
+            "Flying Manor · defeat Trio Eveque boss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 34",
+            "Flying Manor · defeat Clea straight ahead from Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 35",
+            "Flying Manor · defeat Clea straight ahead from Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 36",
+            "Flying Manor · defeat Clea straight ahead from Central Plaza. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 37",
+            "Sirène's Dress · defeat Chromatic Glissando. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 38",
+            "Sirène's Dress · defeat Chromatic Glissando. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 39",
+            "Endless Night Sanctuary · defeat Ultimate Sakapatate. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 40",
+            "Endless Night Sanctuary · defeat Ultimate Sakapatate. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 41",
+            "Endless Night Sanctuary · defeat Ultimate Sakapatate. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 42",
+            "Endless Night Sanctuary · defeat Ultimate Sakapatate. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 43",
+            "Continent · defeat Serpenphare. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 44",
+            "Continent · defeat Serpenphare. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 45",
+            "Continent · defeat Serpenphare. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 46",
+            "Continent · defeat Sprong. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 47",
+            "Continent · defeat Sprong. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 48",
+            "Continent · defeat Sprong. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 49",
+            "Renoir's Drafts · defeat Chromatic Creation behind Paint Spike rock. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 50",
+            "Renoir's Drafts · defeat Chromatic Creation behind Paint Spike rock. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 51",
+            "Renoir's Drafts · merchant past Entrance Flag grapple, buy for 6,000 Chroma. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 52",
+            "The Fountain · complete Blanche's quest after sparing friendly Nevrons, then defeat Blanche. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 53",
+            "The Fountain · complete Blanche's quest after sparing friendly Nevrons, then defeat Blanche. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 54",
+            "Dark Gestral Arena · clear first boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 55",
+            "Dark Gestral Arena · clear first boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 56",
+            "Dark Gestral Arena · clear second boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 57",
+            "Dark Gestral Arena · clear second boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 58",
+            "Dark Gestral Arena · clear third boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 59",
+            "Dark Gestral Arena · clear third boss challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 60",
+            "Dark Gestral Arena · defeat Golgra in fourth challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 61",
+            "Dark Gestral Arena · defeat Golgra in fourth challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 62",
+            "Dark Gestral Arena · defeat Golgra in fourth challenge. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 63",
+            "Endless Tower · fully complete Stage 1. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 64",
+            "Endless Tower · fully complete Stage 2. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 65",
+            "Endless Tower · fully complete Stage 3. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 66",
+            "Endless Tower · fully complete Stage 4. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 67",
+            "Endless Tower · fully complete Stage 5. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 68",
+            "Endless Tower · fully complete Stage 6. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 69",
+            "Endless Tower · fully complete Stage 7. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 70",
+            "Endless Tower · fully complete Stage 8. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 71",
+            "Endless Tower · fully complete Stage 9. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 72",
+            "Endless Tower · fully complete Stage 10. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 73",
+            "Endless Tower · fully complete Stage 11. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 74",
+            "Frozen Hearts · from Icebound Train Station Flag travel far to Chromatic Veilleur; kill it and check area. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 75",
+            "Frozen Hearts · from Icebound Train Station Flag travel far to Chromatic Veilleur; kill it and check area. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 76",
+            "Frozen Hearts · from Icebound Train Station Flag travel far to Chromatic Veilleur; kill it and check area. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 77",
+            "Verso's Drafts · Gestral Baths Flag, dark hut opposite Flag. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 78",
+            "Verso's Drafts · by jumping-ring lake, defeat two Licornes upstairs. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 79",
+            "Verso's Drafts · by jumping-ring lake, defeat two Licornes upstairs. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 80",
+            "Verso's Drafts · defeat Gestral balloon miniboss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 81",
+            "Verso's Drafts · defeat Gestral balloon miniboss. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 82",
+            "Verso's Drafts · Reverie Path Flag, Chromatic Barbasucette. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 83",
+            "Verso's Drafts · Reverie Path Flag, Chromatic Barbasucette. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 84",
+            "Verso's Drafts · Reverie Path merchant, purchase for 6,000 Chroma each. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 85",
+            "Verso's Drafts · Reverie Path merchant, purchase for 6,000 Chroma each. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 86",
+            "Verso's Drafts · Reverie Path merchant, purchase for 6,000 Chroma each. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 87",
+            "Verso's Drafts · Reverie Path merchant, purchase for 6,000 Chroma each. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 88",
+            "Verso's Drafts · Reverie Path merchant, purchase for 6,000 Chroma each. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 89",
+            "Verso's Drafts · Reverie Path, defeat Chromatic Licorne. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 90",
+            "Verso's Drafts · Reverie Path, defeat Chromatic Licorne. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 91",
+            "Verso's Drafts · Reverie Path, defeat group of three Licornes. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 92",
+            "Verso's Drafts · Reverie Path, defeat group of three Licornes. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 93",
+            "Verso's Drafts · Candy Land Flag, defeat Mime. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 94",
+            "Verso's Drafts · Candy Land Flag, defeat Mime. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 95",
+            "Verso's Drafts · Gestral Carousel, defeat Chromatic Machinapieds. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 96",
+            "Verso's Drafts · Gestral Carousel, defeat Chromatic Machinapieds. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 97",
+            "Verso's Drafts · Gestral Carousel, defeat Chromatic Franctale. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 98",
+            "Verso's Drafts · Gestral Carousel, defeat Chromatic Franctale. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 99",
+            "Verso's Drafts · Root of All Evil, defeat Osquio. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 100",
+            "Verso's Drafts · Root of All Evil, defeat Osquio. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 101",
+            "Verso's Drafts · Root of All Evil, defeat Osquio. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 102",
+            "Endless Tower · defeat Simon Divergent Star. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 103",
+            "Endless Tower · defeat Simon Divergent Star. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 104",
+            "Endless Tower · defeat Simon Divergent Star. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 105",
+            "Endless Tower · defeat Simon Divergent Star. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 106",
+            "Endless Tower · defeat Simon Divergent Star. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 107",
+            "Endless Tower · defeat Chromatic Lampmaster. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 108",
+            "Endless Tower · defeat Chromatic Lampmaster. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 109",
+            "Endless Tower · defeat Chromatic Lampmaster. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 110",
+            "Endless Tower · defeat Chromatic Lampmaster. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ],
+          [
+            "Collectible",
+            "Grandiose Chroma Catalyst 111",
+            "Endless Tower · defeat Chromatic Lampmaster. Acquire this numbered catalyst drop or ground pickup; duplicates from a multi-item boss reward are separately counted in the source catalog. Used to level weapons up to 32."
+          ]
+        ]
       ]
     ]
   }
