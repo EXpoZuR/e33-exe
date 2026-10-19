@@ -1,4 +1,4 @@
-/* Verified source references, detailed directions and completion criteria. */
+/* Extended routes and source references. */
 window.E33_COMPLETION_DETAILS = {
   "sources": {
     "prologue": "https://www.powerpyx.com/clair-obscur-expedition-33-prologue-collectible-locations/",
@@ -49,7 +49,9 @@ window.E33_COMPLETION_DETAILS = {
     "golgra": "https://www.neoseeker.com/clair-obscur-expedition-33/Gestral_Village",
     "arena": "https://gamefaqs.gamespot.com/ps5/469495-clair-obscur-expedition-33/faqs/81920/chapter-4-gestral-village",
     "fashionist": "https://www.neoseeker.com/clair-obscur-expedition-33/Side_Quest_-_Grandis_Fashionist",
-    "grandisMerchant": "https://www.neoseeker.com/clair-obscur-expedition-33/Side_Quest_-_Grandis_-_Monocos_Station"
+    "grandisMerchant": "https://www.neoseeker.com/clair-obscur-expedition-33/Side_Quest_-_Grandis_-_Monocos_Station",
+    "gaulteram": "https://www.gamerguides.com/clair-obscur-expedition-33/database/weapons/gustave/gaulteram",
+    "potierim": "https://www.gamerguides.com/clair-obscur-expedition-33/guide/weapons/overview/all-weapons-locations"
   },
   "areas": {
     "Lumière Festival": [
@@ -299,7 +301,9 @@ window.E33_COMPLETION_DETAILS = {
     "Meet Chief Golgra — unlock tournament registration": "This conversation is REQUIRED to START tournament registration.\n\n1. In Gestral Village, activate the Entrance Expedition Flag and walk up the central SLOPE directly toward the largest building, CHIEF'S HOUSE.\n2. Enter and find GOLGRA, the village's chief. Ask about how the party can cross the sea and reach Esquie. Golgra says you must win the Legendary Tournament for a password.\n3. For a 100% route, choose the option to LOOK AROUND FIRST rather than immediately going to the arena; you can collect the journal and optional village rewards. Her conversation has now ENABLED Limonsol's arena desk.\n4. If you've ALREADY reached the Arena and heard 'the registration hasn't started yet,' simply backtrack to Chief's House, talk to Golgra, then return to Limonsol.",
     "Gestral tournament / recruit Sciel": "YOU MUST UNLOCK THIS TOURNAMENT WITH CHIEF GOLGRA BEFORE REGISTERING.\n\n1. From the Gestral Village Entrance Flag, walk UP the main village slope into the prominent CHIEF'S HOUSE (not the arena). Speak to Golgra about Esquie and the sea; choose the Legendary Tournament dialogue. If doing all optional quests first, choose to look around before starting the fights.\n2. After Golgra's conversation, follow ARENA signs to the Gestral Arena Expedition Flag. Find LIMONSOL, the YELLOW GESTRAL RESEMBLING A PINEAPPLE seated by the arena registration desk. If he still says registration hasn't started, return to Golgra and exhaust her tournament dialogue.\n3. Speak to Limonsol and choose to participate. Win three ONE-ON-ONE preliminary matches against Bertrand Big Hands, Dominique Giant Feet, and Matthieu the Colossus. You choose one available expedition member for each round.\n4. The fourth opponent is The Stranger (Sciel). For a strong reward, select MAELLE as your combatant and win to earn Medalum. Sciel joins your party after the story scene.\n5. IMPORTANT AFTERWARD: return to CHIEF'S HOUSE and speak with Golgra again to receive the password to Esquie's Nest. That nest's entrance sentry will otherwise prevent normal story progress.",
     "Eternal Ice merchant request": "The Grandis Merchant is beside Monoco's Station's central Expedition Flag, on the LEFT. The station must be fully accessible after you have recruited Monoco.\n\n1. Speak to the Grandis and inspect the items. Most will say 'COMPLETE A QUEST.' This is normal.\n2. Exit the shop list and speak to him again to hear that he needs ETERNAL ICE from Frozen Hearts east of the station.\n3. You have only STARTED the request here. It is not possible to buy the locked Pictos yet; later find Gargant at Frozen Hearts' Icebound Terminal, defeat it for Eternal Ice and bring that ice BACK to the merchant. Only then does he unlock his inventory; buying Survivor is a separate purchase.",
-    "Frozen Hearts": "The Eternal Ice quest was started earlier by the Grandis Merchant at Monoco's Station.\n\nFrom the station's EAST exit continue into Frozen Hearts, a difficult optional snow cave. Navigate its ropes and grapples up to the Icebound Terminal Flag, then defeat GARGANT for Eternal Ice. Don't stop at the loot notification! Return to Monoco's Station and SPEAK TO THE MERCHANT on the left of the central flag. Give him the Eternal Ice; this unlocks his previously greyed-out catalog. NOW open the store and PURCHASE Survivor (and any other unique items you want). Turning in the ice doesn't automatically put Survivor into your inventory."
+    "Frozen Hearts": "The Eternal Ice quest was started earlier by the Grandis Merchant at Monoco's Station.\n\nFrom the station's EAST exit continue into Frozen Hearts, a difficult optional snow cave. Navigate its ropes and grapples up to the Icebound Terminal Flag, then defeat GARGANT for Eternal Ice. Don't stop at the loot notification! Return to Monoco's Station and SPEAK TO THE MERCHANT on the left of the central flag. Give him the Eternal Ice; this unlocks his previously greyed-out catalog. NOW open the store and PURCHASE Survivor (and any other unique items you want). Turning in the ice doesn't automatically put Survivor into your inventory.",
+    "Gaulteram": "WHAT YOU'RE LOOKING FOR: Gustave's Earth-element weapon from the FIRST GAULT enemy groups in Yellow Harvest. This is NOT the Potierim drop.\n\n1. At Yellow Harvest's ENTRANCE Flag, look for handholds on the rocky wall to your RIGHT and climb up. Drop into the adjoining path.\n2. Pass the friendly Gestral standing beside the route. Continue through the rocky TUNNEL/CAVE and enter the first larger clearing with hostile GAULT enemies.\n3. Defeat the Gault group for GAULTERAM. The weapon will be in battle rewards, or improve an existing copy if you already own it.\n4. Keep progressing through the optional dungeon; HARVESTER'S HOLLOW is farther in and is where Potierim drops.",
+    "Potierim": "WHAT YOU'RE LOOKING FOR: Lune's Ice-element Potierim weapon dropped by an encounter in the BROAD POND CLEARING at HARVESTER'S HOLLOW. This is not the first enemy encounter near Yellow Harvest's entrance.\n\n1. Enter Yellow Harvest, CLIMB RIGHT from Entrance Flag, pass the friendly Gestral, traverse the cave and defeat the first GAULT enemies for Gaulteram.\n2. After those opening groups, use the LEFT route toward the cave with the grapple point, then follow the main path toward the next named EXPEDITION FLAG: HARVESTER'S HOLLOW.\n3. From Harvester's Hollow Flag, proceed down into the wide open clearing surrounding a CENTRAL POND. Keep to the low path and engage the first JAR/POTIER group. Defeating this group awards POTIERIM, typically as a level-7 weapon.\n4. Once you have Potierim, continue around the pond toward the fallen Gaults and JOURNAL 44; the nearby crawlspace leads to the Mime."
   },
   "overrides": {
     "Ancient Sanctuary Mime": "mimeSanctuary",
@@ -360,7 +364,9 @@ window.E33_COMPLETION_DETAILS = {
     "Meet Chief Golgra — unlock tournament registration": "golgra",
     "Gestral tournament / recruit Sciel": "arena",
     "Grandis Fashionist": "fashionist",
-    "Eternal Ice merchant request": "grandisMerchant"
+    "Eternal Ice merchant request": "grandisMerchant",
+    "Gaulteram": "gaulteram",
+    "Potierim": "potierim"
   },
   "sourceTitles": {
     "mimeSanctuary": "Gamer Guides — exact Ancient Sanctuary Mime location",
@@ -379,7 +385,9 @@ window.E33_COMPLETION_DETAILS = {
     "golgra": "Neoseeker — Gestral Village chief and tournament trigger",
     "arena": "GameFAQs — tournament authorization, rounds and password",
     "fashionist": "Neoseeker — Fashionist unlock and character-specific poems",
-    "grandisMerchant": "Neoseeker — Eternal Ice merchant quest and unlock"
+    "grandisMerchant": "Neoseeker — Eternal Ice merchant quest and unlock",
+    "gaulteram": "Gamer Guides — Gaulteram weapon and drop source",
+    "potierim": "Gamer Guides — Potierim at Harvester's Hollow"
   },
   "completion": {
     "Purumi rescue": "Purumi must be spoken to at the TOP of his pillar after you have spoken to Alexsoundro. The game returns you to Alexsoundro and you receive Lune's Sakapatate outfit. Talking only to the father is not completion.",
@@ -432,6 +440,8 @@ window.E33_COMPLETION_DETAILS = {
     "See the finale": "Complete the final story boss and reach an ending; optional endgame tasks can still be tracked afterward.",
     "Enter Verso's Drafts": "Enter the Verso's Drafts portal after unlocking the appropriate traversal. You don't need to clear the expansion to finish this entrance objective.",
     "Root of All Evil · Osquio": "Defeat Osquio at the end of the update dungeon and claim its unique equipment reward.",
-    "Meet Chief Golgra — unlock tournament registration": "Finish Golgra's dialogue about reaching Esquie and the Legendary Tournament. The conversation enables Limonsol's Arena registration. You may still explore the village before signing up."
+    "Meet Chief Golgra — unlock tournament registration": "Finish Golgra's dialogue about reaching Esquie and the Legendary Tournament. The conversation enables Limonsol's Arena registration. You may still explore the village before signing up.",
+    "Gaulteram": "Defeat the roaming Gault group in the FIRST open Yellow Harvest enemy section beyond the entrance cave. Confirm Gaulteram appears in Gustave's weapon inventory; if you're in NG+, an existing lower-level copy may be upgraded instead.",
+    "Potierim": "Defeat the Jar/Potier group IN HARVESTER'S HOLLOW beside the central pond, and confirm Lune has received Potierim (or a stronger copy). Opening Yellow Harvest and killing the first Gaults are not enough."
   }
 };
