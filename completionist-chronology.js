@@ -173,6 +173,15 @@
       return [ch,anchor];
     }
     if (/\bstarting weapon\b/i.test(desc)) return null;
+    if (/\b(?:Chalier Combo|Stalact Punches)\b/i.test(step[1]))return ["act2","Monoco's Station"];
+    if (/Blodam|Serpenphare/i.test(step[1]+" "+desc))return ["act3","Act 3 · relationships and full traversal"];
+    if (step[1]==="Colim") {step[2]="Sirène · fight Chorale enemies on the ribbon paths near the large chamber. "+desc;return ["act2","Sirène"];}
+    if (/Lumi.re.*Act III/i.test(desc+" "+groupName))return ["act3","Story finale · Lumière"];
+    if (/Civilian outfit/i.test(step[1]) && /Verso/.test(step[1]))return ["act2","Continent · Esquie swimming"];
+    if (/Camp scene with Maelle during Act 2/i.test(desc))return ["act2","Continent · Esquie swimming"];
+    if (/Monoco.*Pure outfit/i.test(step[1]))return ["act3","Act 3 · relationships and full traversal"];
+    if (/Gestral haircut/i.test(step[1]))return ["act1","Continent · AFTER Flying Waters (before Sanctuary)"];
+    if (/Manor Door 11/.test(step[1]))return ["act3","Act 3 · relationships and full traversal"];
     if (/\bHidden Gestral Arena\b/i.test(desc+" "+groupName))return ["act1","Continent · AFTER Flying Waters (before Sanctuary)"];
     if (/\bAbbest Cave\b/i.test(desc+" "+groupName))return ["act1","Continent · FIRST VISIT (before Flying Waters)"];
     if (/\bLumi.re (?:Act III|Act 3)\b/i.test(desc+" "+groupName))return ["act3","Story finale · Lumière"];
