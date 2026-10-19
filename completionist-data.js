@@ -4402,6 +4402,306 @@ window.E33_COMPLETION_DATA = [
             "Merchant near southwestern Continent lake, 10,000 Chroma. Verify the Monoco Pure hairstyle in the cosmetic inventory. "
           ]
         ]
+      ],
+      [
+        "Tint / Shape acquisition audit",
+        [
+          [
+            "Collectible",
+            "DLC Chroma Elixir Shard",
+            "Verso's Drafts · Gingerbread Door Paint Cage 21. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "DLC Revive Tint Shard",
+            "Verso's Drafts · beside Gestral balloon miniboss. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "DLC Energy Tint Shard",
+            "Verso's Drafts · Candy Land Flag, behind duo Barbasucettes. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "DLC Healing Tint Shard",
+            "Verso's Drafts · Gestral Carousel, behind Very Very Cool Gestral. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Chroma Elixir Shard 1",
+            "Flying Waters · Paint Cage 1. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Chroma Elixir Shard 2",
+            "Ancient Sanctuary · Paint Cage 3. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Chroma Elixir Shard 3",
+            "Forgotten Battlefield · Paint Cage 6. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Chroma Elixir Shard 4",
+            "Stone Wave Cliffs Cave · Paint Cage 19. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 1",
+            "Spring Meadows · Grand Meadow Flag, climb rope. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 2",
+            "Flying Waters · Lumieran Streets, booth next to Flag. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 3",
+            "Ancient Sanctuary · after Ultimate Sakapatate, east corner. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 4",
+            "Stone Wave Cliffs · west of Paintress Shrine Flag, beside shipwreck. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 5",
+            "Forgotten Battlefield · west corner of Vanguard Point Flag. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 6",
+            "Visages · Sadness Vale, corner of skull room by enemy group. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Energy Tint Shard 7",
+            "Sirène · Dancing Arena Flag, near Glissando miniboss. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 1",
+            "Spring Meadows · complete Jar quest, shoot Jar's head to light fire. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 2",
+            "Ancient Sanctuary · Giant Bell Alley Flag, west corner. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 3",
+            "Forgotten Battlefield · beyond giant gate, left of main path. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 4",
+            "Stone Wave Cliffs · just south of Paintress Shrine Flag. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 5",
+            "Visages · Joy Vale, across room from Jovial Moissonneuse. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Healing Tint Shard 6",
+            "Monolith · Tainted Hearts merchant beyond handholds, duel then buy for 5,000 Chroma. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 1",
+            "Spring Meadows · Indigo Tree Flag, west passage. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 2",
+            "Flying Waters · Coral Cave Paint Cage 2. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 3",
+            "Ancient Sanctuary · Sanctuary Maze east path before Mime. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 4",
+            "Frozen Hearts · Paint Cage 13. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 5",
+            "Sirène · Paint Cage 8. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 6",
+            "Forgotten Battlefield · Vanguard Point Flag, just east. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 7",
+            "Stone Wave Cliffs · Basalt Waves Flag, ruined building side area to west. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 8",
+            "Old Lumière · merchant near Entrance Flag, 1,000 Chroma. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 9",
+            "Visages · Anger Vale south section, east of rope. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Revive Tint Shard 10",
+            "Monolith · Tainted Meadows Paint Cage 9. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Energy 1",
+            "Gestral Village · beyond Manor door south of Gestral Theater. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Energy 2",
+            "The Manor · bookcase platforming section. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Health 1",
+            "Flying Waters · defeat Goblu. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Health 2",
+            "Sirène · Manor door beyond Sewing Atelier Flag; break bathroom mirror. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Life 1",
+            "The Manor · upstairs left stairwell, walk through large suspicious painting between pillars. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ],
+          [
+            "Collectible",
+            "Shape of Life 2",
+            "Stone Wave Cliffs · defeat first Lampmaster boss. Confirm the pickup; if you reached the permanent Tint cap, some later shards can appear as Recoats."
+          ]
+        ]
+      ],
+      [
+        "Paint Cage acquisition audit",
+        [
+          [
+            "Collectible",
+            "Paint Cage 21",
+            "Verso's Drafts · Gingerbread Door area, climb through gap. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 22",
+            "Verso's Drafts · Open Playground Flag, downhill near second Gestral Baths seesaws. To open it, shoot the three nearby paint anomalies. Reward: Esquim weapon."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 1",
+            "Flying Waters · on main route. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard 1."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 2",
+            "Flying Waters · Coral Cave Flag, descend the handholds. To open it, shoot the three nearby paint anomalies. Reward: Revive Tint Shard 2."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 3",
+            "Ancient Sanctuary · Giant Bell Alley Flag, high ledge. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard 2."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 4",
+            "Stone Wave Cliffs · Entrance Flag, follow right wall and ascend rope. To open it, shoot the three nearby paint anomalies. Reward: Delaram weapon."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 5",
+            "Stone Wave Cliffs · Old Farm Flag, ledge next to farm. To open it, shoot the three nearby paint anomalies. Reward: Duenum weapon."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 6",
+            "Forgotten Battlefield · Battlefield Flag, northwest. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard 3."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 7",
+            "Sirène · Dancing Classes, grapple up the stairs. To open it, shoot the three nearby paint anomalies. Reward: Shield Affinity Picto."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 8",
+            "Sirène · climb before Tisseur arena. To open it, shoot the three nearby paint anomalies. Reward: Revive Tint Shard 5."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 9",
+            "Monolith · Tainted Meadows, descend ropes. To open it, shoot the three nearby paint anomalies. Reward: Revive Tint Shard 10."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 11",
+            "Monolith · Tainted Hearts, grapple along cliff. To open it, shoot the three nearby paint anomalies. Reward: Empowering Parry Picto."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 12",
+            "Frozen Hearts · after cave with Manor door. To open it, shoot the three nearby paint anomalies. Reward: Anti-Freeze Picto."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 13",
+            "Frozen Hearts · room containing Pétank. To open it, shoot the three nearby paint anomalies. Reward: Revive Tint Shard 4."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 14",
+            "Old Lumière · Manor Gardens Flag away from Manor. To open it, shoot the three nearby paint anomalies. Reward: Redalim weapon."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 15",
+            "Esoteric Ruins · climb wall near Flag. To open it, shoot the three nearby paint anomalies. Reward: 4,990 Chroma."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 16",
+            "Endless Night Sanctuary · Night Totem Flag, small cliff. To open it, shoot the three nearby paint anomalies. Reward: Grandiose Chroma Catalyst."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 17",
+            "Flying Manor · floating island beyond grapple. To open it, shoot the three nearby paint anomalies. Reward: Powerful Revive Picto."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 18",
+            "Flying Manor · Triple Eveque encounter. To open it, shoot the three nearby paint anomalies. Reward: Energising Stun Picto."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 19",
+            "Stone Wave Cliffs Cave · upper area beyond bridge. To open it, shoot the three nearby paint anomalies. Reward: Chroma Elixir Shard 4."
+          ],
+          [
+            "Collectible",
+            "Paint Cage 20",
+            "Monolith · Tainted Sanctuary, break Paint Spike after Ultimate Sakapatate. To open it, shoot the three nearby paint anomalies. Reward: Paint Cage reward."
+          ]
+        ]
       ]
     ]
   },
