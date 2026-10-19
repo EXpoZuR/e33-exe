@@ -4764,67 +4764,12 @@ window.E33_COMPLETION_DATA = [
         ]
       ],
       [
-        "Side quest · 17-reward cross-check",
+        "Additional side quests · not covered earlier",
         [
-          [
-            "Quest",
-            "Jar, Nevron",
-            "Spring Meadows · bring Resin found by Abandoned Expeditioner Camp to friendly Jar; do not attack"
-          ],
-          [
-            "Quest",
-            "Demineur, Nevron",
-            "Flying Waters · Noco's Hut, retrieve intact mine across platforms and give it to Demineur; do not attack"
-          ],
-          [
-            "Quest",
-            "Bourgeon, Nevron",
-            "The Small Bourgeon · defeat other Bourgeon and hand its skin to friendly Nevron"
-          ],
-          [
-            "Quest",
-            "Hexga, Nevron",
-            "Stone Wave Cliffs · after Old Farm collect 3 Tide Caverns Rock Crystals for friendly Hexga"
-          ],
-          [
-            "Quest",
-            "Troubadour, Nevron",
-            "Stone Quarry · parry red musical notes and ignore green ones for Troubadour"
-          ],
-          [
-            "Quest",
-            "Portier, Nevron",
-            "Esoteric Ruins · solve beacon-orb maze, bring Wooden Boards back to Portier"
-          ],
-          [
-            "Quest",
-            "Chalier, Nevron",
-            "Floating Cemetery · fight friendly Chalier and then grant final wish to receive Auto Powerful Picto"
-          ],
-          [
-            "Quest",
-            "Blanche, Nevron",
-            "The Fountain · preserve other friendly Nevrons and visit Blanche for 100 Colours of Lumina; otherwise boss battle"
-          ],
-          [
-            "Quest",
-            "Karatom, Gestral",
-            "Gestral Village · bring Mushroom from Esquie's Nest, complete Gustave duel before Act 1 end"
-          ],
           [
             "Quest",
             "Grandis",
             "The Carousel · break ice blocking carousel to complete quest"
-          ],
-          [
-            "Quest",
-            "Danseuse Teacher",
-            "Frozen Hearts · stairs beyond Glacial Falls Flag, perfect parry and counter to complete dance"
-          ],
-          [
-            "Quest",
-            "Benisseur",
-            "Red Woods · repeatedly donate Chroma to fountain until 90,000 Chroma demand, then defeat boss"
           ],
           [
             "Quest",
@@ -4850,6 +4795,81 @@ window.E33_COMPLETION_DATA = [
             "Quest",
             "Seesaw Challenge",
             "Verso's Drafts · complete seesaw to collect Empowering Jumps Picto"
+          ]
+        ]
+      ],
+      [
+        "Perfect Chroma Catalysts · max-level weapon mastery",
+        [
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 1",
+            "Flying Manor · Central Plaza, take left and defeat Dualliste. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 2",
+            "Flying Manor · Central Plaza, take right and defeat Lampmaster. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 3",
+            "Flying Manor · Central Plaza, left of Lampmaster route, defeat trio Eveque. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 4",
+            "Flying Manor · continue ahead from Central Plaza and defeat Clea. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 5",
+            "Endless Tower · fully complete Stage 11. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 6",
+            "Act 3 Lumière · revisit trash can on festival street after prologue Trash-can Man dialogue. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 7",
+            "Continent · defeat Serpenphare. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 8",
+            "Renoir's Drafts · defeat Chromatic Creation behind a Paint Spike. Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 9",
+            "The Abyss · defeat Simon (first Perfect Catalyst). Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "Perfect Chroma Catalyst 10",
+            "The Abyss · defeat Simon (second Perfect Catalyst). Verify the Perfect Catalyst was received. Needed for Level 33 weapon upgrades."
+          ],
+          [
+            "Collectible",
+            "DLC Perfect Chroma Catalyst · Osquio",
+            "Verso's Drafts · Root of All Evil, defeat Osquio. Verify the Perfect Catalyst drop."
+          ],
+          [
+            "Collectible",
+            "DLC Perfect Chroma Catalyst · Clea Unleashed",
+            "Endless Tower · defeat Clea Unleashed. Verify the Perfect Catalyst drop."
+          ],
+          [
+            "Collectible",
+            "DLC Perfect Chroma Catalyst · Simon, the Divergent Star",
+            "Endless Tower · defeat Simon Divergent Star. Verify the Perfect Catalyst drop."
+          ],
+          [
+            "Collectible",
+            "DLC Perfect Chroma Catalyst · Chromatic Lampmaster",
+            "Endless Tower · defeat Chromatic Lampmaster. Verify the Perfect Catalyst drop."
           ]
         ]
       ]
