@@ -172,6 +172,23 @@
       step[2]=hint+" "+desc;
       return [ch,anchor];
     }
+    if (/\bstarting weapon\b/i.test(desc)) return null;
+    if (/\bHidden Gestral Arena\b/i.test(desc+" "+groupName))return ["act1","Continent · AFTER Flying Waters (before Sanctuary)"];
+    if (/\bAbbest Cave\b/i.test(desc+" "+groupName))return ["act1","Continent · FIRST VISIT (before Flying Waters)"];
+    if (/\bLumi.re (?:Act III|Act 3)\b/i.test(desc+" "+groupName))return ["act3","Story finale · Lumière"];
+    if (/\bIsle of the Eyes\b/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
+    if (/\bGestral Beach\b/i.test(desc))return /volleyball|raft volley|swimsuit 2|race|only up/i.test(desc)?["act2","Continent · Esquie swimming"]:["act1","Continent · AFTER Flying Waters (before Sanctuary)"];
+    if (/\bchoose (?:Maelle|Verso) ending\b/i.test(desc))return ["act3","Story finale · Lumière"];
+    if (/\brelationship level\b|\bStart Act 3\b|\bAct 3 story progression\b|\bsecond Axon\b/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
+    if (/\bSciel relationship level 6\b/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
+    if (/\bThe Manor\b/i.test(desc))return /kitchen|switch puzzle/i.test(desc)?["act1","Gestral Village"]:/bookcase platform|spiral staircase/i.test(desc)?["act2","Continent · Esquie swimming"]:["act3","Act 3 · relationships and full traversal"];
+    if (/\b(?:1|2|3) Lost Gestrals\b/i.test(desc))return ["act2","Continent · Esquie swimming"];
+    if (/\b(?:5|9) Lost Gestrals\b/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
+    if (/\bFestival Token\b/i.test(desc))return ["prologue","Lumière Festival"];
+    if (/\bwestern? (?:lake|side)|\bsouthwestern Continent lake\b/i.test(desc))return ["act2","Continent · Esquie swimming"];
+    if (/near Hidden Gestral Arena/i.test(desc))return ["act1","Continent · AFTER Flying Waters (before Sanctuary)"];
+    if (/south of snow region/i.test(desc))return ["act2","Continent · northern detours"];
+    if (/\bIsle of the Eyes\b|\bBoat Graveyard\b/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
     if(/requires paint break|behind paint spike|paint spike barrier/i.test(desc)&& !/endless night|manor/i.test(desc))return ["act2","Continent · before Old Lumière"];
     if(/requir(?:es|ing) flight|esquie.s flight|requires flying/i.test(desc))return ["act3","Act 3 · relationships and full traversal"];
     const skill=step[0]==="Skill enemy";
@@ -189,7 +206,7 @@
     let unresolved=[];
     for(const step of entries){
       const desc=String(step[2]||"");
-      if(step[0]==="Cosmetic"&&(/default(?: costume)?\b|deluxe edition default/i.test(desc))){excluded++;continue}
+      if((step[0]==="Cosmetic"&&(/default(?: costume)?\b|deluxe edition default/i.test(desc)))||(/\bstarting weapon\b/i.test(desc))){excluded++;continue}
       if(step[0]==="Collectible"&&/Paint Cage 15\b/.test(step[1])){excluded++;continue}
       const dest=findTarget(step,g);
       if(!dest){unresolved.push(step);retained++;continue}
