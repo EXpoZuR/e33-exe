@@ -1395,6 +1395,236 @@ window.E33_COMPLETION_DATA = [
             "Record",
             "Until Next Life",
             "Location: Falling Leaves. Defeat the Scavenger behind gate and speak to Young Boy to claim the record."
+          ],
+          [
+            "Skill enemy",
+            "Chalier Combo",
+            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Stalact Punches",
+            "Starting skill; verify already unlocked when Monoco joins. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Pelerin Heal",
+            "Fight Pelerin after Monoco joins in Monoco's Station tutorial. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Braseleur Smash",
+            "Fight Reaper Cultist, northwest of Esoteric Ruins on small island in bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Ramasseur Bonk",
+            "Fight Ramasseur southwest of Esoteric Ruins at narrow left-hand path. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Troubadour Trumpet",
+            "Fight Troubadour south of Monoco's Station south portal with Demineur and Gault. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Duallist Storm",
+            "Refight Dualliste in Endless Tower Stage 1, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Creation Void",
+            "Fight Creation in Act 3 Lumière Gardens, or Renoir's Drafts if needed. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Abbest Wind",
+            "Fight Abbest southwest of Monoco's Station south portal with Rocher and Chalier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Lancelier Impale",
+            "Fight Lancelier east of Gestral Village with Cruler and Demineur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Portier Crash",
+            "Fight Portier southeast of Gestral Village with Bruler and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Eveque Spear",
+            "Fight Eveque near The Monolith Tainted Meadows blue-flower trail; Endless Tower Stage 7 Trial 1 alternative. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Ice",
+            "Fight Gold Chevalière west of Esoteric Ruins portal across small bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Thrusts",
+            "Fight Steel Chevalière on shoreline east of The Reacher. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chevaliere Piercing",
+            "Fight Ceramic Chevalière southwest of Esoteric Ruins by orange trees. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Aberration Light",
+            "Fight Aberration near Renoir's Drafts entrance, in group with Benisseur and Ballet. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Demineur Thunder",
+            "Fight Demineur south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Bruler Bash",
+            "Fight Bruler southeast of Gestral Village alongside Portier and Luster. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cruler Barrier",
+            "Fight Cruler east of Gestral Village in Lancelier group. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Luster Slices",
+            "Fight Luster southeast of Gestral Village with Bruler and Portier. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Contorsionniste Blast",
+            "Fight Contorsionniste near Endless Night Sanctuary portal, south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Boucheclier Fortify",
+            "Fight Boucheclier northwest of Frozen Hearts portal, across river on gold-colored ground. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Chapelier Slash",
+            "Fight Chapelier on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Grosse Tete Whack",
+            "Fight Grosse Tete in Flying Manor, or the one near Coastal Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Explosion",
+            "Fight Catapult Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take right fork through cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Estoc",
+            "Fight Ranger Sakapatate in Ancient Sanctuary from Sanctuary Maze Flag, take left fork. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Slam",
+            "Fight Robust Sakapatate near Gestral Totem Flag in Ancient Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sakapatate Fire",
+            "Fight Ultimate Sakapatate in Endless Tower Stage 7 Trial 3; also in Monolith Tainted Sanctuary. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Benisseur Mortar",
+            "Fight Benisseur on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Ballet Charm",
+            "Fight Ballet on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Orphelin Cheers",
+            "Fight Orphelin west of Esoteric Ruins portal across bay with Gold Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Echassier Stabs",
+            "Fight Echassier in snow clearing southwest of Frozen Hearts portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cultist Blood",
+            "Fight Greatsword Cultist on beach west of Isle of the Eyes portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Cultist Slashes",
+            "Fight Reaper Cultist northwest of Esoteric Ruins portal on small island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Hexga Crush",
+            "Fight Hexga southwest of Esoteric Ruins beside Ceramic Chevalière. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Rocher Hammering",
+            "Fight Rocher southwest of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Lampmaster Light",
+            "Refight Lampmaster in Endless Tower Stage 2, Trial 3 with Monoco active. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Moissonneuse Vendange",
+            "Fight Moissonneuse northwest of Floating Cemetery portal on small beach. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Clair Enfeeble",
+            "Fight Clair in Monolith from Tainted Meadows Flag, following main route. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Obscur Sword",
+            "Fight Obscur from Monolith Tainted Battlefield Flag, back through ship toward windmill. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Potier Energy",
+            "Fight Potier near Boat Graveyard portal with Abbest and Ramasseur. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Sapling Absorption",
+            "Fight Sapling on sandy beach west of Sinister Cave island. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Jar Lampstorm",
+            "Fight Jar near Endless Night Sanctuary portal south of Sinister Cave. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Gault Fury",
+            "Fight Gault south of Monoco's Station south portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Glaise Earthquakes",
+            "Fight Glaise west of Esoteric Ruins portal across bay. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
+          ],
+          [
+            "Skill enemy",
+            "Danseuse Waltz",
+            "Fight Danseuse on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
           ]
         ]
       ]
