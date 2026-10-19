@@ -453,6 +453,11 @@ window.E33_COMPLETION_DATA = [
             "Optional dungeon",
             "Yellow Harvest entrance",
             "REQUIRES ESQUIE'S ROUGH-TERRAIN BREAK (unlocks at Esquie's Nest). Ride Esquie northwest of Gestral Village beyond the rocky obstruction by the yellow forest and Hidden Gestral Arena. Enter Yellow Harvest only after crossing this barrier."
+          ],
+          [
+            "Record",
+            "Lights of the Past",
+            "Location: Continent · AFTER Esquie traversal. In Ancient Gestral City, find it in the central room."
           ]
         ]
       ],
@@ -692,6 +697,16 @@ window.E33_COMPLETION_DATA = [
             "Quest",
             "Painting Workshop · entrance #1",
             "REQUIRES ESQUIE SWIMMING. On the island north/northeast of Stone Wave Cliffs (between the cliffs and Forgotten Battlefield), enter the large painted portal. Speak to the Faceless Boy, take Light of the Beast, and place it in the central statue. The third workshop remains inaccessible until Act 3 flight."
+          ],
+          [
+            "Record",
+            "Honeymoon in Lumiere",
+            "Location: Continent · Esquie swimming. On White Tree island, find it to the left of the tree."
+          ],
+          [
+            "Record",
+            "Our Painted Family",
+            "Location: Continent · Esquie swimming. On The Meadows island, pick up near the portal."
           ]
         ]
       ],
@@ -757,6 +772,11 @@ window.E33_COMPLETION_DATA = [
             "Journal",
             "Verso",
             "Location: Continent · northern detours. Find the journal near the coral reef coastline by Julie's journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Record",
+            "Goblu",
+            "Location: Continent · northern detours. Purchase from merchant near the Hidden Gestral Arena for 1,000 Chroma."
           ]
         ]
       ],
@@ -907,6 +927,21 @@ window.E33_COMPLETION_DATA = [
             "Journal",
             "Unknown 3",
             "Location: Continent · western expansion. Place the family canvas on the empty frame to obtain the third Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Record",
+            "Forlorn",
+            "Location: Continent · western expansion. Use the Manor door near the southeastern lake; requires flight."
+          ],
+          [
+            "Record",
+            "Rêveries dans Paris",
+            "Location: Continent · western expansion. Find the record behind Flying Casino."
+          ],
+          [
+            "Record",
+            "Un 33 Décembre - Lumiere",
+            "Location: Continent · western expansion. Twilight Quarry, against the dark-colored backdrop."
           ]
         ]
       ],
@@ -977,6 +1012,16 @@ window.E33_COMPLETION_DATA = [
             "Journal",
             "Expedition 40",
             "Location: Continent · eastern detour. Small island before The Monolith. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Record",
+            "Children of Lumiere",
+            "Location: Continent · eastern detour. Buy from merchant near Sacred River portal for 1,000 Chroma."
+          ],
+          [
+            "Record",
+            "Linen and Cotton",
+            "Location: Continent · eastern detour. Buy from merchant on a small island near Visages for 1,000 Chroma."
           ]
         ]
       ],
@@ -1080,6 +1125,41 @@ window.E33_COMPLETION_DATA = [
             "Lost Gestral",
             "Find remaining Gestrals",
             "REQUIRES ESQUIE FLYING at the start of Act 3. Locate the remaining airborne/island Gestrals (including near Endless Tower, The Reacher and Endless Night Sanctuary) and return to Sastro for all nine rescue rewards. No diving is needed to locate those reached by flight."
+          ],
+          [
+            "Record",
+            "Lettre à Maelle",
+            "Location: Act 3 · relationships and full traversal. MISSABLE: following first Axon in Act 2, immediately rest at camp and trigger Verso–Maelle–Esquie piano scene; do this before further progression."
+          ],
+          [
+            "Record",
+            "Lune",
+            "Location: Act 3 · relationships and full traversal. Reach Lune relationship level 6, following her Sirène's Dress side quest."
+          ],
+          [
+            "Record",
+            "Monoco",
+            "Location: Act 3 · relationships and full traversal. Reach Monoco relationship level 6, completing Sacred River side quest."
+          ],
+          [
+            "Record",
+            "Sciel",
+            "Location: Act 3 · relationships and full traversal. MISSABLE: on first camp after defeating Paintress in Act 2, complete Sciel conversation; reach relationship level 6."
+          ],
+          [
+            "Lost Gestral",
+            "Lost Gestral #7",
+            "Location: Act 3 · relationships and full traversal. Next to Endless Night Sanctuary portal, requires flight. Return to Sastro for the reward."
+          ],
+          [
+            "Lost Gestral",
+            "Lost Gestral #8",
+            "Location: Act 3 · relationships and full traversal. North of The Reacher portal, requires flight. Return to Sastro for the reward."
+          ],
+          [
+            "Lost Gestral",
+            "Lost Gestral #9",
+            "Location: Act 3 · relationships and full traversal. Small island near Endless Tower, requires flight. Return to Sastro for the reward."
           ]
         ]
       ],
@@ -1100,6 +1180,11 @@ window.E33_COMPLETION_DATA = [
             "Story",
             "See the finale",
             "Finish the story and choose an ending; afterward reload your pre-finale state to continue optional completion."
+          ],
+          [
+            "Record",
+            "Our Drafts Collide",
+            "Location: Story finale · Lumière. Complete Act 3, then verify the record at Camp."
           ]
         ]
       ]
@@ -1275,6 +1360,41 @@ window.E33_COMPLETION_DATA = [
             "Journal",
             "Unknown 2",
             "Location: The Reacher. Enter the Manor from The Reacher and find the second Unknown journal. Journal audit addition; collect this specific item and confirm it in the journal menu."
+          ],
+          [
+            "Record",
+            "Alicia",
+            "Location: Falling Leaves. Enter the Manor through Falling Leaves."
+          ],
+          [
+            "Record",
+            "Alicia's Birthday Party",
+            "Location: Boat Graveyard. Search beyond the coral reefs."
+          ],
+          [
+            "Record",
+            "Clea",
+            "Location: Endless Tower. Clear all 11 stages; requires Esquie's flight."
+          ],
+          [
+            "Record",
+            "Clea! Don't Pull Your Sister's Hair!",
+            "Location: Frozen Hearts. Enter the Manor via Frozen Hearts."
+          ],
+          [
+            "Record",
+            "Endless Light",
+            "Location: Renoir's Drafts. From Entrance Flag take the grapple route; requires underwater swimming."
+          ],
+          [
+            "Record",
+            "Nocturne pour Lumiere",
+            "Location: Sinister Cave. Drop through the hole in the upper part of the cave."
+          ],
+          [
+            "Record",
+            "Until Next Life",
+            "Location: Falling Leaves. Defeat the Scavenger behind gate and speak to Young Boy to claim the record."
           ]
         ]
       ]
