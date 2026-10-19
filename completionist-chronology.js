@@ -236,7 +236,7 @@
     const buckets=new Map();
     for(const entry of items){
       const hint=String(entry[2]||"").toLowerCase();
-      const region=regionNames.find(z=>hint.includes(z.toLowerCase()))||"Other "+anchor;
+      const region=regionNames.find(z=>hint.includes(z.toLowerCase()))||anchor;
       if(!buckets.has(region))buckets.set(region,[]);
       buckets.get(region).push(entry);
     }
