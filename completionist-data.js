@@ -2157,6 +2157,1101 @@ window.E33_COMPLETION_DATA = [
             "Fight Danseuse on beach northeast of Dark Shores portal. Monoco MUST be in active combat party when target dies to learn the skill; check his skill inventory afterward."
           ]
         ]
+      ],
+      [
+        "Picto inventory audit · Abbest Cave",
+        [
+          [
+            "Picto",
+            "First Offensive",
+            "Abbest Cave. Guide tier: S. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Ancient Sanctuary",
+        [
+          [
+            "Picto",
+            "Breaker",
+            "Ancient Sanctuary. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Piercing Shot",
+            "Ancient Sanctuary. Guide tier: A. Lumina cost: 2 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Continent",
+        [
+          [
+            "Picto",
+            "Accelerating Heal",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Anti-Stun",
+            "Overworld. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Breaking Burn",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Breaking Death",
+            "Overworld. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Breaking Slow",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Burning Death",
+            "Overworld. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Tint",
+            "Overworld. Guide tier: B. Lumina cost: 2 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Cheater",
+            "Defeat Sprong in the Overworld. Guide tier: SS. Lumina cost: 40 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Critical Break",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Critical Vulnerability",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Dead Energy I",
+            "Overworld. Guide tier: C. Lumina cost: 2 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Effective Support",
+            "Overworld. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Dodge",
+            "Overworld. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Gradient",
+            "Overworld. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Heal",
+            "Overworld. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Shell",
+            "Overworld. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energy Master",
+            "Overworld. Guide tier: SS. Lumina cost: 40 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Fueling Break",
+            "Overworld. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Parry",
+            "Overworld. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Longer Burn",
+            "Overworld. Guide tier: A. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Longer Rush",
+            "Overworld. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful Revive",
+            "Overworld. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Shared Care",
+            "Overworld. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Shielding Tint",
+            "Overworld. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Sniper",
+            "Overworld. Guide tier: A. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Warming Up",
+            "Overworld. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Crushing Cavern",
+        [
+          [
+            "Picto",
+            "Solidifying",
+            "Crushing Cavern. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Dark Gestral Arena",
+        [
+          [
+            "Picto",
+            "Combo Attack III",
+            "Dark Gestral Arena. Guide tier: C. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Dark Shores",
+        [
+          [
+            "Picto",
+            "In Medias Res",
+            "Dark Shores. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · DLC",
+        [
+          [
+            "Picto",
+            "Alternating Critical",
+            "Verso's Drafts. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "AP Discount",
+            "Verso's Drafts. Guide tier: SS. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Clea's Death",
+            "Endless Tower — DLC revisit. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Consuming Attack",
+            "Verso's Drafts. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Damage Share",
+            "Verso's Drafts. Guide tier: A. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Double Third",
+            "Verso's Drafts. Guide tier: SS. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Jumps",
+            "Verso's Drafts. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowered Healer",
+            "Verso's Drafts. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Feint",
+            "Verso's Drafts. Guide tier: SS. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "First Life",
+            "Endless Tower — DLC revisit. Guide tier: SS. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Frenzy",
+            "Verso's Drafts. Guide tier: SS. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Gradient Overcharge",
+            "Verso's Drafts. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Gradient Parry",
+            "Verso's Drafts. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Longer Break",
+            "Verso's Drafts. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Slowing Attack",
+            "Verso's Drafts. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "SOS Healing Tint",
+            "Verso's Drafts. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Trigger Happy",
+            "Verso's Drafts. Guide tier: S. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Endless Night Sanctuary",
+        [
+          [
+            "Picto",
+            "Accelerating Tint",
+            "Endless Night Sanctuary. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Mark",
+            "Endless Night Sanctuary. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Gradient Break",
+            "Endless Night Sanctuary. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Marking Break",
+            "Endless Night Sanctuary. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful Heal",
+            "Endless Night Sanctuary. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful Shield",
+            "Endless Night Sanctuary. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Protecting Attack",
+            "Endless Night Sanctuary. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Quick Break",
+            "Endless Night Sanctuary. Guide tier: S. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Shell On Rush",
+            "Endless Night Sanctuary. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Endless Tower",
+        [
+          [
+            "Picto",
+            "Critical Weakness",
+            "Endless Tower. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Rush",
+            "Endless Tower. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Greater Powerless",
+            "Endless Tower. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Rush on Powerful",
+            "Endless Tower. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Time Tint",
+            "Endless Tower. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Esoteric Ruins",
+        [
+          [
+            "Picto",
+            "Protecting Heal",
+            "Esoteric Ruins. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Esquie's Nest",
+        [
+          [
+            "Picto",
+            "Augmented First Strike",
+            "Esquie's Nest. Guide tier: SS. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Falling Leaves",
+        [
+          [
+            "Picto",
+            "Beneficial Contamination",
+            "Falling Leaves. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "SOS Rush",
+            "Falling Leaves. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Find all 9 Lost Gestrals, then speak to Sastro at camp",
+        [
+          [
+            "Picto",
+            "Pro Retreat",
+            "Find all 9 Lost Gestrals, then speak to Sastro at camp. Guide tier: D. Lumina cost: 40 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Floating Cemetery",
+        [
+          [
+            "Picto",
+            "Auto Powerful",
+            "Floating Cemetery. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Flying Manor",
+        [
+          [
+            "Picto",
+            "Accelerating Shots",
+            "Flying Manor. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Break Specialist",
+            "Flying Manor. Guide tier: C. Lumina cost: 1 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Alteration",
+            "Flying Manor. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Clea's Life",
+            "Flying Manor. Guide tier: A. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Break",
+            "Flying Manor. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energetic Healer",
+            "Flying Manor. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Shots",
+            "Flying Manor. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Stun",
+            "Flying Manor. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Gradient Breaker",
+            "Flying Manor. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Painter",
+            "Flying Manor. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful Mark",
+            "Flying Manor. Guide tier: S. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Protecting Shots",
+            "Flying Manor. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Slowing Break",
+            "Flying Manor. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Flying Waters",
+        [
+          [
+            "Picto",
+            "Augmented Aim",
+            "Flying Waters. Guide tier: A. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Augmented Counter I",
+            "Flying Waters. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Break",
+            "Flying Waters. Guide tier: S. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Exposing Attack (Missable)",
+            "Flying Waters. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Forgotten Battlefield",
+        [
+          [
+            "Picto",
+            "Combo Attack I",
+            "Forgotten Battlefield. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Tint",
+            "Forgotten Battlefield. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Death",
+            "Forgotten Battlefield. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Parry",
+            "Forgotten Battlefield. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Start IV",
+            "Forgotten Battlefield. Guide tier: A. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Inverted Affinity",
+            "Forgotten Battlefield. Guide tier: SS. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Longer Shell",
+            "Forgotten Battlefield. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Revive Tint Energy",
+            "Forgotten Battlefield. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Sweet Kill",
+            "Forgotten Battlefield. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Frozen Hearts",
+        [
+          [
+            "Picto",
+            "Anti-Burn",
+            "Frozen Hearts. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Anti-Freeze",
+            "Frozen Hearts. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Augmented Counter III",
+            "Frozen Hearts. Guide tier: A. Lumina cost: 7 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Burn Affinity",
+            "Frozen Hearts. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Burning Break",
+            "Frozen Hearts. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Burn",
+            "Frozen Hearts. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Gestral Village",
+        [
+          [
+            "Picto",
+            "Critical Moment",
+            "Gestral Village. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Mark",
+            "Gestral Village. Guide tier: B. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful Shots",
+            "Gestral Village. Guide tier: B. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Hidden Gestral Arena",
+        [
+          [
+            "Picto",
+            "Accelerating Last Stand",
+            "Hidden Gestral Arena. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Last Stand",
+            "Hidden Gestral Arena. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Last Stand Critical",
+            "Hidden Gestral Arena. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Protecting Last Stand",
+            "Hidden Gestral Arena. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Solo Fighter",
+            "Hidden Gestral Arena. Guide tier: C. Lumina cost: 1 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Lumière — Act III",
+        [
+          [
+            "Picto",
+            "Charging Stun",
+            "Lumière — Act III. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Powerful",
+            "Lumière — Act III. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Faster Than Strong",
+            "Lumière — Act III. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Full Strength",
+            "Lumière — Act III. Guide tier: S. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Gradient Fighter",
+            "Lumière — Act III. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Stun",
+            "Lumière — Act III. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Shortcut",
+            "Lumière — Act III. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Monoco's Station",
+        [
+          [
+            "Picto",
+            "Greater Rush",
+            "Monoco's Station. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Survivor",
+            "Monoco's Station. Guide tier: C. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Old Lumière",
+        [
+          [
+            "Picto",
+            "Auto Rush",
+            "Old Lumière. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Counter",
+            "Old Lumière. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Longer Powerful",
+            "Old Lumière. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Revive Paradox",
+            "Old Lumière. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Red Woods — complete the fountain Chroma quest",
+        [
+          [
+            "Picto",
+            "Recovery",
+            "Red Woods — complete the fountain Chroma quest. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Renoir's Drafts",
+        [
+          [
+            "Picto",
+            "Charging Burn",
+            "Renoir's Drafts. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Critical",
+            "Renoir's Drafts. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Sacred River",
+        [
+          [
+            "Picto",
+            "Critical Stun",
+            "Sacred River. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Sirène",
+        [
+          [
+            "Picto",
+            "Anti-Charm",
+            "Sirène. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Auto Regen",
+            "Sirène. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Double Mark",
+            "Sirène. Guide tier: A. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Effective Heal",
+            "Sirène. Guide tier: B. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Attack II",
+            "Sirène. Guide tier: B. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Turn",
+            "Sirène. Guide tier: SS. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Greater Powerful",
+            "Sirène. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Greater Shell",
+            "Sirène. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Fire",
+            "Sirène. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powerful on Shell",
+            "Sirène. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Protecting Death",
+            "Sirène. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Shield Affinity",
+            "Sirène. Guide tier: A. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Sky Island",
+        [
+          [
+            "Picto",
+            "Greater Slow",
+            "Sky Island. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Spring Meadows",
+        [
+          [
+            "Picto",
+            "Augmented Attack",
+            "Spring Meadows. Guide tier: C. Lumina cost: 7 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Cleansing Tint",
+            "Spring Meadows. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Spring Meadows — behind Paint Spike",
+        [
+          [
+            "Picto",
+            "Aegis Revival",
+            "Spring Meadows — behind Paint Spike. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Stone Wave Cliffs",
+        [
+          [
+            "Picto",
+            "Defensive Mode",
+            "Stone Wave Cliffs. Guide tier: C. Lumina cost: 1 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Rejuvenating Revive",
+            "Stone Wave Cliffs. Guide tier: C. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Tainted",
+            "Stone Wave Cliffs. Guide tier: S. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Stone Wave Cliffs Cave",
+        [
+          [
+            "Picto",
+            "Energising Revive",
+            "Stone Wave Cliffs Cave. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Exhausting Power",
+            "Stone Wave Cliffs Cave. Guide tier: C. Lumina cost: 2 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Sunless Cliffs",
+        [
+          [
+            "Picto",
+            "The One",
+            "Sunless Cliffs. Guide tier: D. Lumina cost: 1 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · The Chosen Path",
+        [
+          [
+            "Picto",
+            "Base Shield",
+            "The Chosen Path. Guide tier: B. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · The Crows — shoot all Crows and defeat the boss",
+        [
+          [
+            "Picto",
+            "Shielding Death",
+            "The Crows — shoot all Crows and defeat the boss. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · The Monolith",
+        [
+          [
+            "Picto",
+            "Breaking Attack",
+            "The Monolith. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Combo Attack II",
+            "The Monolith. Guide tier: C. Lumina cost: 20 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Empowering Parry",
+            "The Monolith. Guide tier: S. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Cleanse",
+            "The Monolith. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Enfeebling Attack",
+            "The Monolith. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Greater Defenceless",
+            "The Monolith. Guide tier: A. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Painted Power",
+            "The Monolith. Guide tier: SS. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Random Defense",
+            "The Monolith. Guide tier: D. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Second Chance",
+            "The Monolith. Guide tier: S. Lumina cost: 40 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Stay Marked",
+            "The Monolith. Guide tier: A. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Weakness Gain",
+            "The Monolith. Guide tier: S. Lumina cost: 3 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · The Reacher",
+        [
+          [
+            "Picto",
+            "Anti-Blight",
+            "The Reacher. Guide tier: C. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Attack",
+            "The Reacher. Guide tier: B. Lumina cost: 7 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Counter",
+            "The Reacher. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Charging Weakness",
+            "The Reacher. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Draining Cleanse",
+            "The Reacher. Guide tier: C. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Exposing Break",
+            "The Reacher. Guide tier: C. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Boon",
+            "The Reacher. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Protecting Tint",
+            "The Reacher. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Visages",
+        [
+          [
+            "Picto",
+            "Augmented Counter II",
+            "Visages. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Confident Fighter",
+            "Visages. Guide tier: A. Lumina cost: 15 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Double Burn",
+            "Visages. Guide tier: S. Lumina cost: 30 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Glass Canon",
+            "Visages. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Healing Share",
+            "Visages. Guide tier: B. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Immaculate",
+            "Visages. Guide tier: SS. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Powered Attack",
+            "Visages. Guide tier: S. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
+      ],
+      [
+        "Picto inventory audit · Yellow Harvest",
+        [
+          [
+            "Picto",
+            "Auto Death",
+            "Yellow Harvest. Guide tier: D. Lumina cost: 1 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Attack I",
+            "Yellow Harvest. Guide tier: B. Lumina cost: 10 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Energising Start I",
+            "Yellow Harvest. Guide tier: A. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ],
+          [
+            "Picto",
+            "Teamwork",
+            "Yellow Harvest. Guide tier: S. Lumina cost: 5 LP. Acquisition inventory check: find or obtain this Picto and verify it is in the Picto collection. This is a location-index checkpoint, not a verified turn-by-turn route; consult an area guide for exact position."
+          ]
+        ]
       ]
     ]
   },
