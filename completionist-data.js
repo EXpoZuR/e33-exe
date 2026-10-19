@@ -699,14 +699,9 @@ window.E33_COMPLETION_DATA = [
             "Before visiting White Tree, swim SOUTH from the starting island and search the beach camp at the southern tip for Shared Care."
           ],
           [
-            "Record",
-            "Gustave record · Stone Wave Cliffs return",
-            "REQUIRES ESQUIE SWIMMING (unlocked by the Stone Wave Cliffs finale at the start of Act 2). Swim to the north/rear shoreline entrance of Stone Wave Cliffs; return to the former Lampmaster cliff and collect Gustave's music record. No flying or diving is required."
-          ],
-          [
-            "Journal",
-            "Expedition 64 / The Meadows",
-            "REQUIRES ESQUIE SWIMMING (after Stone Wave Cliffs). Sail to The Meadows' beach on the southern coast; retrieve Expedition 64 from the abandoned camp between the coast and lake, then enter The Meadows for the Our Painted Family record."
+            "Lost Gestral",
+            "Lost Gestral #3",
+            "REQUIRES ESQUIE SWIMMING. Reach White Tree island off the western coast. Outside the White Tree entrance, find the small Gestral in the tall green vegetation and invite it back to Sastro."
           ],
           [
             "Journal",
@@ -714,9 +709,9 @@ window.E33_COMPLETION_DATA = [
             "REQUIRES ESQUIE SWIMMING. Land on the small island west of the starting landmass, enter White Tree, and pick up Expedition 36 and the Honeymoon in Lumière record from its central path."
           ],
           [
-            "Lost Gestral",
-            "Lost Gestral #3",
-            "REQUIRES ESQUIE SWIMMING. Reach White Tree island off the western coast. Outside the White Tree entrance, find the small Gestral in the tall green vegetation and invite it back to Sastro."
+            "Record",
+            "Honeymoon in Lumiere",
+            "Location: Continent · Esquie swimming. On White Tree island, find it to the left of the tree."
           ],
           [
             "Record",
@@ -729,24 +724,29 @@ window.E33_COMPLETION_DATA = [
             "After Blades' Graveyard, swim to the large island east/southeast, land on its eastern shore and search the camp for Accelerating Heal before the Painting Workshop."
           ],
           [
-            "Minigame",
-            "Gestral Beach · Beach Raft Volley",
-            "Enter the newly accessible floating-platform beach challenge. Beat all three difficulties for both swimsuit rewards."
-          ],
-          [
             "Quest",
             "Painting Workshop · entrance #1",
             "REQUIRES ESQUIE SWIMMING. On the island north/northeast of Stone Wave Cliffs (between the cliffs and Forgotten Battlefield), enter the large painted portal. Speak to the Faceless Boy, take Light of the Beast, and place it in the central statue. The third workshop remains inaccessible until Act 3 flight."
           ],
           [
-            "Record",
-            "Honeymoon in Lumiere",
-            "Location: Continent · Esquie swimming. On White Tree island, find it to the left of the tree."
+            "Minigame",
+            "Gestral Beach · Beach Raft Volley",
+            "Enter the newly accessible floating-platform beach challenge. Beat all three difficulties for both swimsuit rewards."
+          ],
+          [
+            "Journal",
+            "Expedition 64 / The Meadows",
+            "REQUIRES ESQUIE SWIMMING (after Stone Wave Cliffs). Sail to The Meadows' beach on the southern coast; retrieve Expedition 64 from the abandoned camp between the coast and lake, then enter The Meadows for the Our Painted Family record."
           ],
           [
             "Record",
             "Our Painted Family",
             "Location: Continent · Esquie swimming. On The Meadows island, pick up near the portal."
+          ],
+          [
+            "Record",
+            "Gustave record · Stone Wave Cliffs return",
+            "REQUIRES ESQUIE SWIMMING (unlocked by the Stone Wave Cliffs finale at the start of Act 2). Swim to the north/rear shoreline entrance of Stone Wave Cliffs; return to the former Lampmaster cliff and collect Gustave's music record. No flying or diving is required."
           ]
         ]
       ],
