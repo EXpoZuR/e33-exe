@@ -10,6 +10,7 @@ on:
     paths:
       - 'completionist-*.js'
       - 'scripts/test-completionist.cjs'
+      - 'scripts/test-completionist-ui.cjs'
       - '.github/workflows/completionist-integrity.yml'
 jobs:
   audit:
