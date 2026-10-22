@@ -207,6 +207,50 @@ for(const c of chapters)for(const [area,entries] of c.areas)for(const e of entri
   }
   if(e[2]!==before)boilerplateRemoved++;
 }
+
+/* Record identity cross-check against PowerPyx, Neoseeker and RPG Site.
+   These are 33 unique tracks, with 34 possible physical pickups because Lumière is duplicated. */
+apply("Sciel",
+ "In ACT 3, set up CAMP after the MONOLITH/PAINTRESS conclusion and choose CHECK UP ON THE OTHERS. Speak with SCIEL until she reaches RELATIONSHIP LEVEL SIX; the SCiel music record is granted immediately. This is NOT a missable Act 2 piano scene (that is Lettre à Maelle).",
+ {move:["act3","Sciel rank 6 · camp rewards"],ability:["fly"],source:"https://www.powerpyx.com/clair-obscur-expedition-33-act-3-collectible-locations/"});
+apply("Lettre à Maelle",
+ "MISSABLE IN THIS PLAYTHROUGH. IMMEDIATELY AFTER DEFEATING YOUR FIRST AXON (Visages OR Sirène), return to CAMP and choose CHECK UP ON THE OTHERS repeatedly until VERSO sits at the PIANO with MAELLE and ESQUIE. Watch the entire cutscene to collect Lettre à Maelle. Do this BEFORE completing the Monolith at the end of Act 2.",
+ {source:"https://www.powerpyx.com/clair-obscur-expedition-33-all-record-locations/"});
+apply("Goblu",
+ "As soon as you EXIT FLYING WATERS in ACT 1, travel the walkable Continent route WEST/NORTHWEST of ANCIENT SANCTUARY, near the YELLOW-LEAF TREES and Hidden Gestral Arena. Talk to BLABARY and buy the Goblu music record for 1,000 Chroma. The earlier 'Blabary / Goblu record' merchant visit is this same shop — do not travel back in Act 2.",
+ {move:["act1","Collectibles · Continent · AFTER Flying Waters (before Sanctuary)"],ability:[],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+apply("Sinister Cave",
+ "After OLD LUMIÈRE grants Esquie CORAL REEF SWIMMING, sail to SINISTER CAVE on the eastern Continent shore. From its ENTRANCE Flag follow the RIGHT-hand trail to the RAMP and climb it to the dead-end alcove. Pick up the NOCTURNE POUR LUMIÈRE record lying at the top.",
+ {source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+apply("Our Drafts Collide",
+ "Finish the ACT 3 LUMIÈRE finale, choose either story ending and let the credits/end scene finish. The OUR DRAFTS COLLIDE music record is awarded automatically as a story completion reward; verify it at CAMP afterward.",
+ {source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+apply("Endless Light",
+ "After completing ESQUIE'S RELATIONSHIP RANK SIX quest in Act 3 to unlock DIVING, travel to RENOIR'S DRAFTS underwater entrance. From the ENTRANCE Expedition Flag go LEFT over the FIRST GRAPPLE POINT and pick up Endless Light from the ground on the far landing.",
+ {ability:["dive"],source:"https://www.powerpyx.com/clair-obscur-expedition-33-all-record-locations/"});
+apply("Monoco",
+ "In ACT 3 camp with MONOCO until he tells you to investigate the SACRED RIVER. Fly there, complete his relationship side quest and return to CAMP. Choose CHECK UP ON THE OTHERS and speak to Monoco until RELATIONSHIP LEVEL SIX; this automatically grants the MONOCO music record.",
+ {ability:["fly"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+apply("Lune",
+ "In ACT 3 camp with LUNE until she invites you to SIRÈNE'S DRESS. Fly to the SIRÈNE island's far side, clear her side quest in SIRÈNE'S DRESS and return to CAMP. Speak with Lune through RELATIONSHIP LEVEL SIX to receive the LUNE music record.",
+ {ability:["fly"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+/* This is the only true prologue-exclusive Mime achievement; a second instance of
+   the record Lumière itself is collectible at the Act 3 Opera House. */
+apply("Lumière music record",
+ "In the FINAL ACT 3 LUMIÈRE dungeon fast-travel to OPERA HOUSE Flag and look on the STAGE near the locked doorway. Collect the second copy of the LUMIÈRE record here; this can substitute for the prologue Mime's record for Connoisseur, but it does NOT award A Peculiar Encounter.",
+ {source:"https://www.powerpyx.com/clair-obscur-expedition-33-all-record-locations/"});
+/* Keep each record location in the story at its first reachable point. */
+const recList=["Alicia","Alicia's Birthday Party","Aline","Aline's Glasshouse",
+ "Children of Lumière","Clea","Clea! Don't Pull Your Sister's Hair!",
+ "Endless Light","Forlorn","Goblu","Gustave","Honeymoon in Lumière",
+ "L'Amour d'une Mère","Le Grand Café de Lumière","Lettre à Maelle",
+ "Lights of the Past","Linen and Cotton","Lost Voice","Lumière","Lune",
+ "Monoco","Nocturne pour Lumière","Nocturne pour un masque de tristesse",
+ "Our Drafts Collide","Our Painted Family","Renoir","Reverence",
+ "Rêveries dans Paris","Robe de Jour","Sciel","Un 33 Décembre à Lumière",
+ "Until Next Life","Verso"];
+window.E33_RECORD_CATALOG={unique:recList.length, names:recList,
+ source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"};
 window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length,boilerplateRemoved};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
