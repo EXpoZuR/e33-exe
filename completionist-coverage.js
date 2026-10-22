@@ -63,20 +63,17 @@ for(const z of starting){
  // These are checkpoints for inherited default equipment, not optional unlocks.
  audit.quality[id]="verified";audit.verified[id]=true;audit.corrected[id]=z.route;audit.sources[id]=source;
 }
-// The 97-outfit comparison also exposed one genuinely missable-at-location
-// free outfit absent from the old 796-step source catalog.
-const obscur="Maelle — Obscur outfit";
-if(!lookup(obscur)){
- const act2=chapters.find(c=>c.id==="act2");
- const area=act2.areas.find(g=>g[0]==="Forgotten Battlefield · Vanguard Point / Ancient Bridge");
- if(!area)throw Error("Forgotten Battlefield group missing");
- const after=area[1].findIndex(e=>e[1]==="Benisim");
- if(after<0)throw Error("Missing Kasumi merchant checkpoint");
- const id="coverage:outfit:maelle-obscur";
- const route="In FORGOTTEN BATTLEFIELD, talk to the FADING WOMAN at the junction then take the RIGHT trench. Past the trench, pick up EXPEDITION 57 and enter the RUIN directly behind the journal. Climb the GOLDEN ROPE to merchant KASUMI in the upper room. Challenge Kasumi to a one-on-one duel, defeat him, then purchase Maelle's OBSCUR outfit for 5,000 Chroma. You can buy Benisim and Inverted Affinity at the same shop.";
- area[1].splice(after+1,0,["Cosmetic",obscur,route,id]);
- audit.requirements[id]=["swim"];audit.quality[id]="verified";audit.verified[id]=true;
- audit.corrected[id]=route;audit.sources[id]="https://www.neoseeker.com/clair-obscur-expedition-33/Kasumi";
+// Reconcile title aliases before declaring an omission. The original guide
+// already tracked Maelle's Obscur outfit under "(Kasumi)"; retain that stable ID.
+const obscurEntry=lookup("Maelle · Obscur outfit (Kasumi)");
+if(!obscurEntry)throw Error("Expected existing Kasumi outfit checkpoint missing");
+{
+ const id=obscurEntry.entry[3];
+ const route="In FORGOTTEN BATTLEFIELD, speak to the FADING WOMAN and follow the RIGHT-hand trench. Continue until EXPEDITION 57 is lying on the ground; enter the ruined building directly BEHIND that journal, then climb the GOLDEN ROPE. Defeat merchant KASUMI in a one-on-one duel to unlock Maelle's OBSCUR outfit, then buy it for 5,000 Chroma. Also purchase Benisim and Inverted Affinity at this same shop.";
+ obscurEntry.entry[1]="Maelle — Obscur outfit";
+ obscurEntry.entry[2]=route;
+ audit.corrected[id]=route;audit.verified[id]=true;audit.quality[id]="verified";
+ audit.sources[id]="https://www.neoseeker.com/clair-obscur-expedition-33/Kasumi";
 }
 const fullWeaponNames=[
  "Bonbim","Cleim","Esquim","Baguettaro","Esquiaro","Cannaro","Esqium","Licorum","Duollison","Esquion","Sucetton","Esquiso","Sucreso",
@@ -91,7 +88,7 @@ if(missing.length)throw Error("Missing weapons: "+missing.join(", "));
 window.E33_COMPLETION_COVERAGE={weapons:fullWeaponNames.length,weaponNames:fullWeaponNames,
  source,defaultWeaponsAdded:starting.length,weaponQuestNamesRepaired:corrections.length,
   outfitCoverage:{source:"https://game-checklists.com/expedition33/all-outfits.html",
-    total:97,earnedItemsInGuide:76,defaultOrEditionOnly:21}};
+    total:97,earnedItemsInGuide:75,defaultOrEditionOnly:22}};
 audit.stats.steps=chapters.reduce((n,c)=>n+c.areas.reduce((v,a)=>v+a[1].length,0),0);
 audit.stats.corrected=Object.keys(audit.verified).length;
 })();
