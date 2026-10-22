@@ -88,6 +88,32 @@
     directions:"At camp in Act 3, choose Check Up on the Others and speak with Sciel until relationship rank 6. Finish the swimming lesson scene with Verso to automatically receive Sciel's Swimsuit I AND Verso's Swimsuit I.",
     source:"https://www.gamerguides.com/clair-obscur-expedition-33/guide/characters/relationships/relationship-guide-all-ranks-and-rewards/"
   });
+  // Additional source-checked corrections discovered during the chapter-by-chapter pass.
+  edit("Maelle — Swimsuit outfit",{
+    destination:FLIGHT,capabilities:["fly"],
+    directions:"With Esquie's FLIGHT in Act 3, fly to the isolated Gestral Beach island SOUTH of Sirène, in the lake south of the northern Gestral Beach. The Expedition 37 journal lies immediately RIGHT of the entrance. Climb the three-lane tower, moving sideways between handholds to dodge falling blue flames, then speak to the GRANDIS at the top for Maelle's Swimsuit.",
+    source:"https://www.neoseeker.com/clair-obscur-expedition-33/Gestral_Beach_5"
+  });
+  edit("Verso — Sakapatate outfit",{
+    destination:["act2","Act 2 · revisit earlier merchants","Continent · Esquie swimming"],
+    directions:"Once Verso joins your party in Act 2, FAST TRAVEL back to Gestral Village. From Chief Golgra's House turn LEFT into the Bazaar, walk through the market, then turn RIGHT to Delsitra, the merchant beside a large LIT TORCH. Buy Verso's Sakapatate outfit for 1,000 Chroma; that stock is not usable as Verso in Act 1.",
+    source:"https://gameranx.com/features/id/542130/article/clair-obscur-expedition-33-all-verso-outfits-and-haircuts/"
+  });
+  edit("Monoco — Swimsuit outfit",{
+    capabilities:["swim"],
+    directions:"After recruiting MONOCO at his station in Act 2, head southwest into the forest between Monoco's Station and Old Lumière. Find the small LAKE with a Gestral Beach portal in its CENTER (swim to it with Esquie). Inside, finish the Only Up-style climbing course; at the summit pass the dancing Gestrals, ascend the stairs and speak to the host to claim Monoco's Swimsuit.",
+    source:"https://gameranx.com/features/id/542131/article/clair-obscur-expedition-33-all-monoco-outfits-and-haircuts/"
+  });
+  edit("Sciel — Swimsuit 2 outfit",{
+    capabilities:["swim"],
+    directions:"Once Esquie can SWIM in Act 2, sail east to the Gestral Beach RAFT VOLLEYBALL portal. Enter the Rafting Club and challenge the STRONGEST Gestral; return all his serves to win the final match and receive Sciel's Swimsuit II.",
+    source:"https://mapmaster.io/games/clair-obscur-expedition-33/guides/Outfit"
+  });
+  edit("Baguette",{
+    destination:["endgame","New Game+ only · bakery revisit","Verification sweep"],
+    directions:"NEW GAME+ ONLY. Keep an unused Festival Token when ending your previous run. During NG+ Lumière's DAYTIME Prologue, after meeting Sophie, go to Mathilde's Boulangerie on Main Street and interact with the BREAD BASKET immediately in front of the bakery. Spend the carried-over token for a Baguette weapon. In your first playthrough, only preserve a token; the weapon cannot be obtained there yet.",
+    source:"https://clair-obscur.fandom.com/wiki/Baguette_(weapon)"
+  });
   edit("Forlorn",{
     destination:FLIGHT,capabilities:["fly"],
     directions:"In Act 3, FLY to the inaccessible raised coast east of the original Act 1 island. Follow the southwest beach path up toward its Manor door. Inside, interact with the nearby WARDROBE to open the concealed room and pick up the Forlorn music record from its floor.",
