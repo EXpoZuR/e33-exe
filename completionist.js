@@ -181,39 +181,50 @@
     return {url,title};
   }
   function showGuide(id) {
-    const entry = byId.get(id);
-    if(!entry || !modal)return;
-    const step=entry.step, ch=chapters.find(c=>c.id===step.chapterId);
-    const area = detailData.areas?.[step.area] || [step.area,"Follow the nearest Expedition Flag and examine the side paths before leaving the area.",step.chapterId];
-    const detailed = detailData.specific?.[step.title] || "";
-    const source=guideSource(step);
-    const required=prerequisiteMarkup(step);
-    const st=statusOf(step.id);
-    modalStepId=id;
-    modalPreviousFocus=document.activeElement;
-    const modalBody=modal.querySelector(".cp-guide-body");
-    modal.style.setProperty("--cp-guide-accent", ch?.accent || "#81c8ff");
-    modal.querySelector("#cpGuideChapter").textContent = ch?.title || "Completionist";
-    modal.querySelector("#cpGuideType").textContent = icon(step.kind)+" "+step.kind;
-    modal.querySelector("#cpGuideTitle").textContent = step.title;
-    modal.querySelector("#cpGuideLocation").textContent = step.area;
-    modal.querySelector("#cpGuideNumber").textContent = "STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
-    modalBody.innerHTML = `
-      <div class="cp-guide-intro">Identify what you are looking for first. Then follow the route from your previous objective, or use the flag-based alternative if you travelled out of order.</div>
-      ${required}
-      <section class="cp-guide-block cp-guide-context"><span class="cp-guide-block-label">01 / WHAT YOU’RE LOOKING FOR</span><h4>${esc(step.title)}</h4>${rewardRankMarkup(step)}<p>${esc(step.context || step.restartDirections)}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">02 / ${esc(step.routeLabel)}</span><h4>${step.previousTitle ? esc(step.previousTitle) + " → " : ""}${esc(step.title)}</h4><p>${esc(step.directions)}</p></section>
-      <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / IF YOU'RE STARTING ELSEWHERE</span><h4>${esc(area[0])}</h4><p>${esc(area[1])}</p>${detailed ? `<p class="cp-guide-route-extra">${esc(detailed)}</p>` : ""}<p class="cp-guide-route-extra">${esc(step.restartDirections)}</p></section>
-      <section class="cp-guide-block"><span class="cp-guide-block-label">04 / FINISH & VERIFY</span><h4>When to mark complete</h4><p>${esc(detailData.completion?.[step.title] || completionNote(step))}</p></section>
-      ${source ? `<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(source.title)}</strong><small>Open external walkthrough with descriptions and images. Coverage can vary by item.</small></span><span aria-hidden="true">↗</span></a>` : ""}
-    `;
-    updateModalControls();
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden","false");
-    document.body.classList.add("modal-open");
-    modal.querySelector(".cp-guide-scroll").scrollTop=0;
-    modal.querySelector(".cp-guide-close")?.focus({preventScroll:true});
-  }
+ const entry=byId.get(id);
+ if(!entry||!modal)return;
+ const step=entry.step,ch=chapters.find(c=>c.id===step.chapterId);
+ const customSource=audit.sources?.[step.id];
+ const source=customSource?{url:customSource,title:"Source used to verify this location"}:guideSource(step);
+ const needed=capabilityNames(step),locked=missingCapabilities(step);
+ const isDocumented=step.quality!=="unverified";
+ const route=step.directions||step.restartDirections||"";
+ modalStepId=id;
+ modalPreviousFocus=document.activeElement;
+ const body=modal.querySelector(".cp-guide-body");
+ modal.style.setProperty("--cp-guide-accent",ch?.accent||"#81c8ff");
+ modal.querySelector("#cpGuideChapter").textContent=ch?.title||"Completionist";
+ modal.querySelector("#cpGuideType").textContent=icon(step.kind)+" "+step.kind;
+ modal.querySelector("#cpGuideTitle").textContent=step.title;
+ modal.querySelector("#cpGuideLocation").textContent=step.area;
+ modal.querySelector("#cpGuideNumber").textContent="STEP "+(ch.steps.indexOf(step)+1)+" / "+ch.steps.length;
+ body.innerHTML=`
+  <section class="cp-guide-block"><span class="cp-guide-block-label">01 / LOCATION & ACCESS</span>
+    <h4>${esc(step.area)}</h4>
+    <p>${needed.length?"Required traversal: "+esc(needed.join(" · ")): "No special overworld traversal recorded for this checkpoint."}</p>
+    ${prerequisiteMarkup(step)}
+    ${locked.length?`<p class="cp-route-blocked">This is not yet accessible: unlock ${esc(locked.map(a=>abilityById.get(a)?.label||a).join(", "))} first.</p>`:""}
+  </section>
+  <section class="cp-guide-block cp-guide-route"><span class="cp-guide-block-label">02 / ${isDocumented?"HOW TO GET THERE":"DIRECTIONS NOT YET VERIFIED"}</span>
+    <h4>${isDocumented?"Pickup route":"Needs location research"}</h4>
+    ${isDocumented?`<p>${esc(route)}</p>`:
+      `<p>The current item catalog does not supply reliable turn-by-turn directions. It is excluded from On Deck so it cannot block the walk-through. The available source note is:</p><p>${esc(step.restartDirections)}</p>`}
+  </section>
+  <section class="cp-guide-block cp-guide-alternate"><span class="cp-guide-block-label">03 / COMPLETE & VERIFY</span>
+    <h4>${esc(step.title)}</h4>
+    <p>${esc(detailData.completion?.[step.title]||completionNote(step))}</p>
+  </section>
+  ${source?`<a class="cp-guide-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">
+    <span><strong>${esc(source.title)}</strong><small>Optional reference. The available on-site directions are above.</small></span><span aria-hidden="true">↗</span></a>`:""}
+ `;
+ updateModalControls();
+ modal.classList.add("open");
+ modal.setAttribute("aria-hidden","false");
+ document.body.classList.add("modal-open");
+ modal.querySelector(".cp-guide-scroll").scrollTop=0;
+ modal.querySelector(".cp-guide-close")?.focus({preventScroll:true});
+}
+
   function updateModalControls() {
     if(!modalStepId || !modal)return;
     const st=statusOf(modalStepId), actions=modal.querySelector("#cpGuideControls");
@@ -255,20 +266,19 @@
   });
 
   // Lightweight availability hints, not a hard lock: the save file can be ahead of localStorage.
-  function prerequisiteMarkup(step,compact=false) {
-    const gate=gates[step.id];
-    if(!gate)return "";
-    const missing=(gate.requires || []).filter(id=>byId.has(id) && statusOf(id)!=="done");
-    if(!missing.length)return "";
-    const first=byId.get(missing[0]).step;
-    const count=missing.length;
-    return `<div class="cp-prerequisite ${compact?"is-compact":""}" role="note">
-      <span class="cp-prereq-marker" aria-hidden="true">!</span>
-      <span class="cp-prereq-copy"><strong>Check unlock first: ${esc(first.title)}${count>1?" (+"+(count-1)+" more)":""}</strong>${compact?"":`<span>${esc(gate.tip)}</span>`}</span>
-      <button type="button" class="cp-prereq-action" data-action="details" data-id="${esc(first.id)}">View prerequisite ↗</button>
-    </div>`;
-  }
-
+  function prerequisiteMarkup(step,compact=false){
+ const missing=missingDependencies(step),abilities=missingCapabilities(step);
+ if(!missing.length&&!abilities.length)return "";
+ const first=missing.length?byId.get(missing[0]).step:null;
+ const label=abilities.length?"Requires "+abilities.map(a=>abilityById.get(a)?.label||a).join(", "):
+   "First complete: "+first.title;
+ const tip=gates[step.id]?.tip||"Advance the listed story checkpoint before this pickup.";
+ return `<div class="cp-prerequisite ${compact?"is-compact":""}" role="note">
+   <span class="cp-prereq-marker" aria-hidden="true">!</span>
+   <span class="cp-prereq-copy"><strong>${esc(label)}</strong>${compact?"":`<span>${esc(tip)} ${abilities.length?"Update the traversal panel once this power is unlocked.":""}</span>`}</span>
+   ${first?`<button type="button" class="cp-prereq-action" data-action="details" data-id="${esc(first.id)}">View prerequisite ↗</button>`:""}
+ </div>`;
+}
 
   const rewardHints = {"Chromatic Lancelier":["Augmented Attack"],"Abbest Cave · Chromatic Abbest":["First Offensive"],"Noco's duel and shop":["Exposing Attack"],"Friendly Demineur":["Deminerim"],"Chromatic Troubadour":["Troubadim","Energising Break"],"Chromatic Brûleur":["Powerful Revive"],"Hidden Gestral Arena · four champions":["Solo Fighter","Accelerating Last Stand"],"Red Woods · Bénisseur":["Recovery"],"Ultimate Sakapatate":["Breaker"],"Black-market alley":["Healing Mark","Sekarum"],"Gestral tournament / recruit Sciel":["Medalum"],"Pinabby":["Teamwork","Auto Death"],"Glaise":["Plenum","Energising Attack I"],"Chromatic Orphelin trio":["Kralim"],"Friendly Hexga":["Auto Shell"],"Stone Quarry Troubadour":["Healing Parry"],"Esoteric Ruins / Portier":["Protecting Heal"],"Mandelgo · unique stock":["Algueron","Longer Powerful","Healing Counter"],"Chromatic Danseuse":["Danseso","Revive Paradox"],"Frozen Hearts":["Survivor"],"Flying Manor · Clea":["Clea's Life"],"Renoir's Drafts / The Abyss · Simon":["Simoso"],"Reverie Path":["AP Discount","Consuming Attack"],"Root of All Evil · Osquio":["Esquiso"],"Clea Unleashed":["Cleim","Clea's Death"],"Duollistes":["Duollison"],"Chromatic Lampmaster":["First Life"]};
   const rankByName=new Map();
