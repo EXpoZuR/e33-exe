@@ -156,7 +156,8 @@
     {id:"paint",label:"Paint Break",when:"Rescue FOUR Lost Gestrals; talk to Sastro at camp",source:"https://www.neoseeker.com/clair-obscur-expedition-33/Lost_Gestrals"},
     {id:"reef",label:"Cross coral reefs",when:"Finish Old Lumière in Act 2",source:"https://www.xboxachievements.com/game/expedition-33/guide/"},
     {id:"fly",label:"Fly",when:"Finish the Monolith and enter Act 3",source:"https://www.xboxachievements.com/game/expedition-33/guide/"},
-    {id:"dive",label:"Dive underwater",when:"Finish Esquie's relationship rank 6 quest in Act 3",source:"https://www.xboxachievements.com/game/expedition-33/guide/"}
+    {id:"dive",label:"Dive underwater",when:"Finish Esquie's relationship rank 6 quest in Act 3",source:"https://www.xboxachievements.com/game/expedition-33/guide/"},
+    {id:"ngplus",label:"New Game+",when:"Start a subsequent playthrough with a carried-over Festival Token",source:"https://clair-obscur.fandom.com/wiki/Baguette_(weapon)"}
   ];
   const milestones={
     rough:"act1:esquie-s-nest-return-to-village:franc-ois-recruit-esquie",
@@ -170,6 +171,8 @@
   const gate=window.E33_COMPLETION_GATES?.steps?.["act2:continent-northern-detours:painting-workshop-entrance-2"];
   if(gate?.requires)gate.requires=gate.requires.map(id=>id==="act2:forgotten-battlefield:dualliste"?
     "act2:forgotten-battlefield-vanguard-point-ancient-bridge:dualliste":id);
+  // A historical gate key was left after removing the old objective.
+  if(window.E33_COMPLETION_GATES?.steps)delete window.E33_COMPLETION_GATES.steps["act3:act-3-relationships-and-full-traversal:find-remaining-gestrals"];
   const requirements={};
   const quality={};
   let vague=0;
@@ -178,12 +181,14 @@
     const context=(area+" "+title+" "+description).toLowerCase();
     const need=new Set(manualCapabilities[id]||[]);
     if(chapter.id==="act2")need.add("swim");
-    if(chapter.id==="act3"||chapter.id==="endgame")need.add("fly");
+    if(chapter.id==="act3"||(chapter.id==="endgame"&&!/New Game\+/i.test(area)))need.add("fly");
+    if(/New Game\+/i.test(area)||/^Baguette$/i.test(title))need.add("ngplus");
     if(chapter.id==="update"&&/verso.s drafts/i.test(area))need.add("dive");
     if(chapter.id==="act1"&&/after esquie traversal|yellow harvest|lost woods/i.test(area))need.add("rough");
     if(chapter.id==="act2"&&/western expansion|eastern detour|sir.ne/i.test(area))need.add("reef");
     if(/paint spike|paint break|paint nail/i.test(description))need.add("paint");
-    if(/esquie.{0,40}(?:fly|flight)|(?:requires|using|unlock).{0,22}flight|flying casino|raised ledge only reachable by flight|floating island|airborne island/i.test(context))need.add("fly");
+    if(/esquie.{0,30}(?:\bfly\b|flight)|(?:requires|using|unlock).{0,22}flight|flying casino|raised ledge only reachable by flight|floating island|airborne island/i.test(context))need.add("fly");
+    if(id==="act1:continent-after-esquie-traversal:ancient-gestral-city"||id==="act2:continent-eastern-detour:gestral-race")need.delete("fly");
     if(/requires.{0,25}diving|underwater diving|dive entrance|renoir.s drafts/i.test(context))need.add("dive");
     if(/requires.{0,18}coral|swim through coral|sea.reef.breaking/i.test(context))need.add("reef");
     if(/requires.{0,20}esquie.s rough.terrain|land.barrier/i.test(context))need.add("rough");
