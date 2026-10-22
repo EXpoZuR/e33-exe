@@ -1,0 +1,22 @@
+name: Validate completionist data
+on:
+  push:
+    paths:
+      - 'completionist-*.js'
+      - 'scripts/test-completionist.cjs'
+      - '.github/workflows/completionist-integrity.yml'
+  pull_request:
+    paths:
+      - 'completionist-*.js'
+      - 'scripts/test-completionist.cjs'
+      - '.github/workflows/completionist-integrity.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check collectible accessibility and stable IDs
+        run: node scripts/test-completionist.cjs
