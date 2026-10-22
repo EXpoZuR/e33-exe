@@ -108,6 +108,47 @@
   const showUnverified=new Set();
   const showLocked=new Set();
 
+  function abilityMarkup(){
+ const abilities=audit.abilities||[];
+ if(!abilities.length)return "";
+ const confirmed=steps.filter(x=>x.quality==="verified").length;
+ const uncertain=steps.filter(x=>x.quality==="unverified"&&statusOf(x.id)==="pending").length;
+ return `<section class="cp-access-panel" aria-label="Traversal ability controls">
+   <div class="cp-access-top"><div><span class="cp-eyebrow">TRAVERSAL CHECK</span><h2>Only show what you can reach</h2>
+   <p>Mark the abilities currently unlocked in your save. Completing a linked story milestone also unlocks its ability automatically. Items that require missing abilities, or have insufficient directions, cannot interrupt your route.</p></div>
+   <span class="cp-access-stat">${confirmed} pickup routes cross-checked · ${uncertain} entries awaiting detailed locations</span></div>
+   <div class="cp-abilities">${abilities.map(a=>{const ok=hasCapability(a.id);return `<button type="button" data-action="toggle-ability"
+     data-ability="${esc(a.id)}" class="cp-ability ${ok?"is-unlocked":""}" aria-pressed="${ok}">
+     <span class="cp-ability-mark">${ok?"✓":"○"}</span><span class="cp-ability-copy"><strong>${esc(a.label)}</strong><small>${esc(a.when)}</small></span>
+     <span class="cp-ability-state">${ok?"UNLOCKED":"LOCKED"}</span></button>`;}).join("")}</div>
+   <p class="cp-access-help">New Game+ may reset traversal. These manual toggles adjust reachability without changing any collected-item checkmarks.</p>
+ </section>`;
+}
+  function queueMarkup(chapter){
+ const pending=chapter.steps.filter(x=>statusOf(x.id)==="pending");
+ const unknown=pending.filter(x=>x.quality==="unverified");
+ const blocked=pending.filter(x=>x.quality!=="unverified"&&!isReady(x));
+ const blocks=[];
+ if(blocked.length){
+  const expanded=showLocked.has(chapter.id),shown=expanded?blocked:blocked.slice(0,6);
+  blocks.push(`<details class="cp-audit-queue" open><summary>${blocked.length} locked by abilities or quests <small>excluded from On Deck</small></summary>
+  ${shown.map(x=>`<div class="cp-audit-row"><span>${esc(x.title)}<small>${esc(x.area)}</small></span>
+    <span class="cp-audit-reason">${esc(missingCapabilities(x).map(id=>abilityById.get(id)?.label||id).join(", ")||"Quest prerequisite")}</span>
+    <button class="cp-inline" data-action="details" data-id="${esc(x.id)}">Inspect ↗</button></div>`).join("")}
+  ${blocked.length>6?`<button class="cp-inline" data-action="toggle-audit" data-type="locked" data-chapter="${esc(chapter.id)}">${expanded?"Show fewer":"Show all "+blocked.length}</button>`:""}
+  </details>`);
+ }
+ if(unknown.length){
+  const expanded=showUnverified.has(chapter.id),shown=expanded?unknown:unknown.slice(0,6);
+  blocks.push(`<details class="cp-audit-queue"><summary>${unknown.length} entries awaiting usable directions <small>excluded from On Deck</small></summary>
+   <p class="cp-audit-explain">Retained in your collection total, but the current catalog does not document a reproducible location route. You can inspect or manually complete these entries.</p>
+  ${shown.map(x=>`<div class="cp-audit-row"><span>${esc(x.title)}<small>${esc(x.area)}</small></span>
+    <button class="cp-inline" data-action="details" data-id="${esc(x.id)}">Review ↗</button></div>`).join("")}
+  ${unknown.length>6?`<button class="cp-inline" data-action="toggle-audit" data-type="unverified" data-chapter="${esc(chapter.id)}">${expanded?"Show fewer":"Show all "+unknown.length}</button>`:""}
+  </details>`);
+ }
+ return blocks.length?`<div class="cp-audit-queues">${blocks.join("")}</div>`:"";
+}
   function icon(kind) {
     return ({
       "Quest":"✦","Missable quest":"!","Journal":"≡","Record":"♫",
@@ -420,6 +461,7 @@
       ${skipped}
       ${main}
       ${upcoming}
+      ${queueMarkup(chapter)}
       ${archive}
     </div>`;
   }
@@ -430,7 +472,7 @@
     const activeChapter = chapters.find(c=>c.id===openId);
     const activeStats = activeChapter ? chapterStats(activeChapter) : null;
     const previousUpcomingScroll = mount.querySelector(".cp-upcoming-list")?.scrollTop || 0;
-    mount.innerHTML=chapters.map(chapter => {
+    mount.innerHTML=abilityMarkup()+chapters.map(chapter => {
       const s=chapterStats(chapter),opened=chapter.id===openId;
       const percent=100*s.done/s.total;
       return `<section class="cp-chapter ${opened?"is-open":""}" style="--cp-accent:${esc(chapter.accent)}" data-cp-chapter="${esc(chapter.id)}">
@@ -548,6 +590,22 @@
         storageSet(OPEN,"");
         render({followRail:false});
       } else openChapter(btn.dataset.chapter);
+    }
+    if(action==="toggle-ability"){
+      const key=btn.dataset.ability;
+      if(!abilityById.has(key))return;
+      abilityOverrides[key]=!hasCapability(key);
+      storageSet(ABILITY_STORAGE,JSON.stringify(abilityOverrides));
+      render({followRail:false});
+      announce((abilityOverrides[key]?"Unlocked: ":"Locked: ")+abilityById.get(key).label);
+      return;
+    }
+    if(action==="toggle-audit"){
+      const target=btn.dataset.type==="locked"?showLocked:showUnverified;
+      if(target.has(btn.dataset.chapter))target.delete(btn.dataset.chapter);
+      else target.add(btn.dataset.chapter);
+      render({followRail:false});
+      return;
     }
     if(action==="details")showGuide(id);
     if(action==="resume"){
