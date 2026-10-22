@@ -76,11 +76,17 @@ apply("Augmented Attack",
  "At SPRING MEADOWS Grand Meadow Flag, follow the path past the flying Volesters, turn RIGHT instead of climbing the story rope, and defeat the CHROMATIC LANCELIER. It awards the Augmented Attack Picto.",
  {move:["act1","Spring Meadows · Grand Meadow"],ability:[],source:C});
 apply("Lost Gestral #5",
- "After Forgotten Battlefield, recruit Monoco and enter the Continent from MONOCO'S STATION. Use Esquie's normal swimming to reach the ISLAND with COASTAL CAVE's portal to the EAST; explore the grass BEHIND the Coastal Cave entrance among the roaming enemies and speak to Lost Gestral #5. The original route incorrectly delayed this Gestral until after Old Lumière.",
- {move:["act2","Continent · northern detours"],ability:["swim"],source:"https://www.polygon.com/clair-obscur-expedition-33-guides/566911/lost-gestrals-locations-all-where-to-find"});
+ "AFTER Old Lumière grants Esquie the ability to BREAK CORAL REEFS: leave Monoco's Station onto the eastern coast and swim through the previously impassable reef to the island with COASTAL CAVE. On the SMALL BEACH just NORTH of the Coastal Cave portal, find the Gestral near two enemy groups and invite it back to camp.",
+ {move:["act2","Continent · western expansion"],ability:["swim","reef"],source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-the-continent-walkthrough-lost-gestrals-music-records-outfits-journals"});
 apply("Verso · Gestral haircut",
- "After rescuing FIVE Lost Gestrals, open the CAMP from the Continent and find SASTRO beside the Curator's cave. Speak to him again to receive Verso's Gestral haircut; the fifth Gestral can be rescued on the Coastal Cave island before Old Lumière.",
- {move:["act2","Continent · northern detours"],ability:["swim"],gate:["act2:continent-western-expansion:lost-gestral-5"],source:H});
+ "After rescuing FIVE Lost Gestrals (the fifth is on the newly accessible coast north of Coastal Cave), set up CAMP from the Continent. Talk to SASTRO by the Curator's cave to collect Verso's Gestral haircut.",
+ {move:["act2","Continent · western expansion"],ability:["swim","reef"],gate:["act2:continent-western-expansion:lost-gestral-5"],source:H});
+apply("Verso — Swimsuit 1 outfit",
+ "AFTER Old Lumière unlocks swimming through reefs, reach the GESTRAL BEACH east of Sirène's island. Enter the RACE course, follow the right-side line on the final ascent and finish UNDER 38 SECONDS (gold medal) to unlock VERSO'S SWIMSUIT I. The Act 3 Sciel camp scene unlocks Swimsuit II, not this one.",
+ {move:["act2","Continent · eastern detour"],ability:["swim","reef"],source:O});
+apply("Verso — Swimsuit 2 outfit",
+ "At CAMP in Act 3, select CHECK UP ON THE OTHERS and talk to SCIEL until her relationship level reaches SIX. Finish the swimming lesson scene with Verso. It awards VERSO'S SWIMSUIT II and SCIEL'S SWIMSUIT I; do not confuse it with Verso's race reward.",
+ {move:["act3","Sciel rank 6 · camp rewards"],ability:["fly"],source:O});
 apply("Energising Start I",
  "From GESTRAL VILLAGE on the Continent, take the road directly NORTH toward the shoreline and find the SMALL BEACH north of the village. Collect Energising Start I from the visible ground pickup beside the coast; it is NOT inside Yellow Harvest.",
  {move:["act1","Continent · AFTER Esquie traversal"],ability:["rough"],source:C});
