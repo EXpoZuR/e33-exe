@@ -10,6 +10,7 @@
   const routeData = window.E33_COMPLETION_ROUTES || {};
   const contextData = window.E33_COMPLETION_CONTEXT || {};
   const gates = window.E33_COMPLETION_GATES?.steps || {};
+  const audit = window.E33_COMPLETION_AUDIT || {abilities:[],requirements:{},quality:{}};
   const siteRanks = window.E33_ITEM_RANKINGS || {weapons:[],pictos:[]};
   let modalStepId = null;
   let modalPreviousFocus = null;
@@ -25,7 +26,9 @@
       const previousRoute = routeData[id];
       return {
         id,kind,title,area,position,chapterId:chapter.id,
-        context: contextData[id] || "",
+        context: audit.verified?.[id] ? "" : contextData[id] || "",
+        capabilities: audit.requirements?.[id] || [],
+        quality: audit.quality?.[id] || "authored",
         // Always assume consecutive chronological play. Original wording stays available for NG+ detours.
         directions: typeof previousRoute?.from === "string" ? previousRoute.from : directions,
         previousTitle: previousRoute?.previous || null,
@@ -45,9 +48,9 @@
         slug(route.previous) === slug(previous.title);
       step.isLinkedRoute = chapter.id !== "inventory" && linked;
       step.previousTitle = step.isLinkedRoute ? previous.title : null;
-      if (!step.isLinkedRoute) step.directions = step.restartDirections;
+      if (!step.isLinkedRoute || audit.corrected?.[step.id]) step.directions = step.restartDirections;
       step.routeLabel = chapter.id === "inventory" ? "COLLECTION LOCATION / ACQUISITION" :
-        step.isLinkedRoute ? "FROM THE PREVIOUS STEP" : "AREA-BASED CHECKPOINT / DETOUR";
+        audit.corrected?.[step.id] ? "VERIFIED LOCATION ROUTE" : step.isLinkedRoute ? "FROM THE PREVIOUS STEP" : "AREA-BASED CHECKPOINT / DETOUR";
     });
   }
   const steps = chapters.flatMap(c => c.steps);
@@ -91,6 +94,20 @@
     const skip = chapter.steps.filter(s => statusOf(s.id) === "skip").length;
     return {done,skip,total:chapter.steps.length,pending:chapter.steps.length-done-skip};
   };
+
+  const ABILITY_STORAGE="e33-completionist-abilities-v1";
+  let abilityOverrides={};
+  try {const v=JSON.parse(storageGet(ABILITY_STORAGE)||"{}");if(v&&typeof v==="object")abilityOverrides=v;}catch{}
+  const abilityById=new Map((audit.abilities||[]).map(x=>[x.id,x]));
+  const hasCapability=id=>Object.prototype.hasOwnProperty.call(abilityOverrides,id)?
+    abilityOverrides[id]===true:statusOf(audit.milestones?.[id])==="done";
+  function missingCapabilities(step){return (step.capabilities||[]).filter(id=>!hasCapability(id));}
+  function missingDependencies(step){return (gates[step.id]?.requires||[]).filter(id=>byId.has(id)&&statusOf(id)!=="done");}
+  function isReady(step){return step.quality!=="unverified"&&!missingCapabilities(step).length&&!missingDependencies(step).length;}
+  function capabilityNames(step){return (step.capabilities||[]).map(id=>abilityById.get(id)?.label||id);}
+  const showUnverified=new Set();
+  const showLocked=new Set();
+
   function icon(kind) {
     return ({
       "Quest":"✦","Missable quest":"!","Journal":"≡","Record":"♫",
@@ -310,7 +327,7 @@
   function upcomingMarkup(chapter, current) {
     if (!current) return "";
     const nextIndex = chapter.steps.indexOf(current);
-    const upcoming = chapter.steps.slice(nextIndex + 1).filter(s => statusOf(s.id) === "pending").slice(0, 8);
+    const upcoming = chapter.steps.slice(nextIndex + 1).filter(s => statusOf(s.id) === "pending" && isReady(s)).slice(0, 8);
     if (!upcoming.length) return "";
     return `<section class="cp-upcoming" aria-label="Upcoming steps">
       <div class="cp-upcoming-header">
@@ -327,7 +344,7 @@
             <div class="cp-upcoming-info">
               <h5 class="cp-upcoming-title">${esc(step.title)}</h5>
               ${rewardRankMarkup(step)}
-              ${step.context ? `<p class="cp-upcoming-context">${esc(step.context)}</p>` : ""}
+              ${step.context && step.quality!=="verified" ? `<p class="cp-upcoming-context">${esc(step.context)}</p>` : ""}
               ${prerequisiteMarkup(step,true)}
               <p class="cp-upcoming-instructions">${esc(step.directions)}</p>
               <div class="cp-upcoming-meta"><span>${esc(step.area)}</span><span class="cp-upcoming-type">${esc(icon(step.kind)+" "+step.kind)}</span></div>
@@ -347,7 +364,7 @@
   function focusMarkup(chapter,stats) {
     // The true active objective remains the first pending one; a timeline dot may
     // spotlight ANY step without marking it done or undoing its skipped state.
-    const active = chapter.steps.find(step => statusOf(step.id) === "pending");
+    const active = chapter.steps.find(step => statusOf(step.id) === "pending" && isReady(step));
     const selection = selectedStepId && byId.get(selectedStepId)?.step.chapterId === chapter.id
       ? byId.get(selectedStepId).step : null;
     const step = selection || active;
@@ -359,8 +376,8 @@
     let main;
     if (!step) {
       main = `<div class="cp-finished">
-        <h3>${stats.skip ? "All checkpoints visited" : "Act complete ✓"}</h3>
-        <p>${stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Select one of their hollow markers in the bottom timeline to review it, or choose Revisit." : "Every step in this section has been completed. Select a filled marker to review a previous step."}</p>
+        <h3>${stats.pending ? "No reachable verified step at this point" : stats.skip ? "All checkpoints visited" : "Act complete ✓"}</h3>
+        <p>${stats.pending ? "Check the traversal unlocks above or the pending-location review section below. Remaining checkpoints are not confirmed accessible right now." : stats.skip ? "You reached the end of this route, but skipped checkpoints remain uncollected. Select one of their hollow markers in the bottom timeline to review it, or choose Revisit." : "Every step in this section has been completed. Select a filled marker to review a previous step."}</p>
         ${stats.skip ? `<button class="cp-tool" data-action="revisit-first" data-chapter="${esc(chapter.id)}">Revisit first skipped step ↗</button>` : ""}
       </div>`;
     } else {
@@ -383,7 +400,7 @@
         <div class="cp-stage">${esc(step.area)} <span aria-hidden="true">↗</span></div>
         <h3 style="margin-top:19px">${esc(step.title)}</h3>
         ${rewardRankMarkup(step)}
-        ${step.context ? `<p class="cp-focus-context">${esc(step.context)}</p>` : ""}
+        ${step.context && step.quality!=="verified" ? `<p class="cp-focus-context">${esc(step.context)}</p>` : ""}
         <div class="cp-directions-label">${esc(step.routeLabel)}${step.previousTitle ? " · "+esc(step.previousTitle) : ""}</div>
         <p class="cp-directions">${esc(step.directions)}</p>
         ${prerequisiteMarkup(step)}
@@ -435,7 +452,7 @@
     steps.forEach((step,index)=>{if(statusOf(step.id)!=="pending")furthest=index;});
     const travel = Math.max(0,100*(furthest+1)/steps.length);
     const currentStep = (selectedStepId && byId.get(selectedStepId)?.step.chapterId === openId ? byId.get(selectedStepId).step : null)
-      || activeChapter?.steps.find(s=>statusOf(s.id)==="pending") || null;
+      || activeChapter?.steps.find(s=>statusOf(s.id)==="pending"&&isReady(s)) || null;
     const activeIndex = currentStep ? byId.get(currentStep.id).index : -1;
     dock.innerHTML=`<div class="cp-dock-inner ${animated?"is-updated":""}">
       <div class="cp-dock-head">
@@ -504,7 +521,7 @@
     const item=byId.get(id);
     if(!item)return;
     const activeChapter=chapters.find(c=>c.id===openId);
-    const currentBefore=activeChapter?.steps.find(s=>statusOf(s.id)==="pending")?.id;
+    const currentBefore=activeChapter?.steps.find(s=>statusOf(s.id)==="pending"&&isReady(s))?.id;
     const changedCurrent=currentBefore===id || selectedStepId===id;
     if(selectedStepId===id)selectedStepId=null;
     if(status==="pending")delete statuses[id];
@@ -576,7 +593,7 @@
   });
 
   document.getElementById("completionistExport")?.addEventListener("click",()=>{
-    const payload={app:"E33.EXE",type:"completionist",schema:1,exported:new Date().toISOString(),statuses};
+    const payload={app:"E33.EXE",type:"completionist",schema:2,exported:new Date().toISOString(),statuses,abilityOverrides};
     const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
     const uri=URL.createObjectURL(blob),a=document.createElement("a");
     a.href=uri;a.download="e33-completionist-backup.json";
@@ -598,13 +615,15 @@
       });
       if(!window.confirm("Import this backup? It will replace the current Completionist progress on this browser."))return;
       statuses=incoming;
+      abilityOverrides=parsed.abilityOverrides&&typeof parsed.abilityOverrides==="object"?parsed.abilityOverrides:{};
+      storageSet(ABILITY_STORAGE,JSON.stringify(abilityOverrides));
       save();render({animated:true});announce("Completionist progress imported.");
     } catch(err){announce("Import failed. Select an E33.EXE Completionist backup JSON file.");window.alert("Import failed: "+err.message);}
     finally{importInput.value="";}
   });
   document.getElementById("completionistReset")?.addEventListener("click",()=>{
     if(!window.confirm("Reset ALL Completionist progress in this browser? Export a backup first if you want to keep it."))return;
-    statuses={};save();render({animated:true});announce("Completionist progress reset.");
+    statuses={};abilityOverrides={};storageSet(ABILITY_STORAGE,"{}");save();render({animated:true});announce("Completionist progress reset.");
   });
   render({followRail:true});
 })();
