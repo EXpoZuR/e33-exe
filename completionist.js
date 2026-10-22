@@ -605,6 +605,8 @@
       const key=btn.dataset.ability;
       if(!abilityById.has(key))return;
       abilityOverrides[key]=!hasCapability(key);
+      if(abilityOverrides[key]&&key==="endingMaelle")abilityOverrides.endingVerso=false;
+      if(abilityOverrides[key]&&key==="endingVerso")abilityOverrides.endingMaelle=false;
       storageSet(ABILITY_STORAGE,JSON.stringify(abilityOverrides));
       render({followRail:false});
       announce((abilityOverrides[key]?"Unlocked: ":"Locked: ")+abilityById.get(key).label);
