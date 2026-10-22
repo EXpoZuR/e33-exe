@@ -168,6 +168,27 @@ apply("Gustave — Chic outfit",
 apply("Gustave — Renoir's Suit outfit",
  "First defeat RENOIR inside the MONOLITH in Act 2; this awards the original Renoir's Suit to VERSO. Gustave's matching version becomes available in NEW GAME+ when Gustave is playable again, not as a wearable costume during Act 2. Begin NG+ after acquiring Verso's suit and check Gustave's wardrobe.",
  {move:["endgame","New Game+ only · bakery revisit"],ability:["ngplus"],source:"https://clair-obscur.fandom.com/wiki/Renoir%27s_Suit_%28Gustave_outfit%29"});
+
+/* Ending-specific outfits are mutually exclusive choices per finale, not ordinary
+   simultaneously reachable pickups. Player manually marks chosen ending. */
+const endingReqs=[
+ ["Gustave — Civilian outfit","endingMaelle"],
+ ["Lune — Civilian outfit","endingMaelle"],
+ ["Sciel — Civilian outfit","endingMaelle"],
+ ["Gustave — Renoir outfit","endingVerso"],
+ ["Verso — Renoir outfit","endingVerso"]
+];
+audit.abilities.push(
+ {id:"endingMaelle",label:"Maelle's ending",when:"Finish Lumière and choose A Life to Paint (alternate finale path)",source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-all-outfits-and-how-to-get-them"},
+ {id:"endingVerso",label:"Verso's ending",when:"Finish Lumière and choose A Life to Love (alternate finale path)",source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-all-outfits-and-how-to-get-them"}
+);
+for(const [name,kind] of endingReqs){
+  const candidate=(index.get(name)||[])[0];
+  if(candidate){
+    const id=candidate.entry[3];
+    audit.requirements[id]=[...new Set([...(audit.requirements[id]||[]),kind])];
+  }
+}
 window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
