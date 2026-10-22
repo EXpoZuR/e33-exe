@@ -227,14 +227,15 @@
       count:5
     }
   ].forEach(({name,after,quest,count})=>{
+    const ordinal=String(count)+(count===2?"nd":count===3?"rd":"th");
     edit(name,{
       destination:after,
-      directions:"First find and rescue at least "+count+" Lost Gestrals on the Continent; the "+count+"th comes from the preceding Lost Gestral checkpoint in this guide. At CAMP, locate SASTRO beside the Curator's cave and speak with him to claim the "+name+" reward. You cannot obtain this hairstyle before rescuing "+count+" Gestrals.",
+      directions:"First find and rescue at least "+count+" Lost Gestrals on the Continent; the "+ordinal+" comes from the preceding Lost Gestral checkpoint in this guide. At CAMP, locate SASTRO beside the Curator's cave and speak with him to claim the "+name+" reward. You cannot obtain this hairstyle before rescuing "+count+" Gestrals.",
       source:"https://www.neoseeker.com/clair-obscur-expedition-33/Lost_Gestrals"
     });
     const id=registry.find(x=>x.entry[1]===name)?.entry[3];
     if(id&&window.E33_COMPLETION_GATES?.steps)
-      window.E33_COMPLETION_GATES.steps[id]={requires:[quest],tip:"Save the "+count+"th Lost Gestral, then talk to Sastro in camp to claim this reward."};
+      window.E33_COMPLETION_GATES.steps[id]={requires:[quest],tip:"Save the "+ordinal+" Lost Gestral, then talk to Sastro in camp to claim this reward."};
   });
   // These milestones are sourced from story traversal and Sastro's nine-gestral rewards.
   const abilities=[
