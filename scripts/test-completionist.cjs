@@ -4,7 +4,7 @@ const fs=require("node:fs"),vm=require("node:vm"),path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const scope={window:{}};vm.createContext(scope);
-for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js"])
+for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js","completionist-coverage.js"])
   vm.runInContext(fs.readFileSync(path.join(root,name),"utf8"),scope,{filename:name});
 const w=scope.window, audit=w.E33_COMPLETION_AUDIT;
 const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=>({
@@ -12,7 +12,11 @@ const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=
 }))));
 const byId=new Map(rows.map(x=>[x.id,x]));
 function item(title){const x=rows.find(x=>x.title===title);assert.ok(x,title+" missing");return x;}
-assert.ok(rows.length>=780,"Unexpectedly reduced checklist");
+assert.equal(rows.length,802,"Completionist count changed; reconcile coverage and step migration first");
+assert.equal(w.E33_COMPLETION_COVERAGE.weapons,117,"Weapon inventory total must match cross-checked reference");
+for(const name of w.E33_COMPLETION_COVERAGE.weaponNames)
+ assert.ok(rows.some(r=>r.title===name),"Missing directly named weapon checkpoint: "+name);
+assert.equal(rows.filter(r=>r.title==="Maelle — Obscur outfit").length,1,"Duplicate outfit Kasumi reward");
 assert.equal(byId.size,rows.length,"Duplicate checkpoint IDs");
 for(const r of rows){
   assert.ok(r.id&&r.description,"Empty ID or description");
@@ -72,5 +76,5 @@ for(const [id,gate] of Object.entries(w.E33_COMPLETION_GATES.steps)){
   assert.ok(ix.get(needed)<ix.get(id),"Quest prerequisite appears after "+id);
 }
 
-console.log("PASS",rows.length,"unique collectible steps;",audit.stats.corrected,"source-linked corrections;",
+console.log("PASS",rows.length,"unique collectible steps and all 117 weapons;",audit.stats.corrected,"source-linked corrections;",
   audit.stats.vague,"generic item directions remaining.");
