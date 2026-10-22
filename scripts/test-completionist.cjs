@@ -34,10 +34,16 @@ assert.match(item("Verso — Civilian outfit").description,/spiral/i);
 assert.match(item("Verso — Civilian outfit").description,/books/i);
 assert.equal(item("Stalum").area,"Continent · northern detours");
 assert.equal(item("Maelle — Swimsuit outfit").chapter,"act3");
-assert.equal(item("Verso — Swimsuit 1 outfit").chapter,"act2");
-assert.equal(item("Verso — Swimsuit 2 outfit").chapter,"act3");
+assert.equal(item("Verso — Swimsuit 1 outfit").chapter,"act3");
+assert.equal(item("Verso — Swimsuit 2 outfit").chapter,"act2");
 assert.equal(item("Maelle — Civilian outfit").chapter,"act2");
 assert.equal(item("Snowim").chapter,"act2");
+assert.equal(item("Sciel").chapter,"act3");
+assert.equal(item("Goblu").chapter,"act1");
+assert.ok(w.E33_RECORD_CATALOG&&w.E33_RECORD_CATALOG.unique===33,"Music record catalog mismatch");
+assert.ok(audit.requirements[item("Gustave — Renoir's Suit outfit").id].includes("ngplus"));
+for (const name of ["Gustave — Civilian outfit","Gustave — Renoir outfit","Verso — Renoir outfit"])
+ assert.ok(audit.requirements[item(name).id].some(req=>req==="endingMaelle"||req==="endingVerso"),"Missing finale-choice gate: "+name);
 assert.equal(item("Barrier Breaker").chapter,"act2");
 assert.ok(audit.requirements[item("Piercing Shot").id].includes("paint"));
 assert.equal(audit.stats.vague,0,"All 796 entries must have item-specific pickup directions");
@@ -52,5 +58,19 @@ assert.ok(act2.indexOf("Collectibles · Frozen Hearts")<act2.indexOf("Old Lumiè
 assert.ok(act2.indexOf("Return Eternal Ice to Grandis merchant")>act2.indexOf("Collectibles · Frozen Hearts"));
 for(const name of ["Coldum","Cultam","Grandaro","Survivor","Greater Rush"])
   assert.equal(item(name).area,"Return Eternal Ice to Grandis merchant");
+
+/* Verify every traversal ability exists before the steps requiring it. */
+const ix=new Map(rows.map((r,i)=>[r.id,i]));
+for(const r of rows)for(const ability of audit.requirements[r.id]){
+ const milestone=audit.milestones?.[ability];
+ if(milestone&&ix.has(milestone))
+   assert.ok(ix.get(milestone)<=ix.get(r.id),"Ability "+ability+" unlocks AFTER "+r.title);
+}
+const milestoneIds=new Set(rows.map(r=>r.id));
+for(const [id,gate] of Object.entries(w.E33_COMPLETION_GATES.steps)){
+ for(const needed of gate.requires||[])
+  assert.ok(ix.get(needed)<ix.get(id),"Quest prerequisite appears after "+id);
+}
+
 console.log("PASS",rows.length,"unique collectible steps;",audit.stats.corrected,"source-linked corrections;",
   audit.stats.vague,"generic item directions remaining.");
