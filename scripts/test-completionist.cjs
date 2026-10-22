@@ -4,7 +4,7 @@ const fs=require("node:fs"),vm=require("node:vm"),path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const scope={window:{}};vm.createContext(scope);
-for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js"])
+for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js"])
   vm.runInContext(fs.readFileSync(path.join(root,name),"utf8"),scope,{filename:name});
 const w=scope.window, audit=w.E33_COMPLETION_AUDIT;
 const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=>({
@@ -32,9 +32,16 @@ assert.equal(item("Angerim").chapter,"act3");
 assert.ok(audit.requirements[item("Angerim").id].includes("fly"));
 assert.match(item("Verso — Civilian outfit").description,/spiral/i);
 assert.match(item("Verso — Civilian outfit").description,/books/i);
-assert.equal(item("Stalum").area,"Collectibles · Frozen Hearts");
+assert.equal(item("Stalum").area,"Continent · northern detours");
 assert.equal(item("Maelle — Swimsuit outfit").chapter,"act3");
-assert.equal(item("Verso — Swimsuit 1 outfit").chapter,"act3");
+assert.equal(item("Verso — Swimsuit 1 outfit").chapter,"act2");
+assert.equal(item("Verso — Swimsuit 2 outfit").chapter,"act3");
+assert.equal(item("Maelle — Civilian outfit").chapter,"act2");
+assert.equal(item("Snowim").chapter,"act2");
+assert.equal(item("Barrier Breaker").chapter,"act2");
+assert.ok(audit.requirements[item("Piercing Shot").id].includes("paint"));
+assert.equal(audit.stats.vague,0,"All 796 entries must have item-specific pickup directions");
+assert.ok(w.E33_PRECISION_AUDIT.updated>=300,"All second-pass source corrections must load");
 assert.equal(item("Baguette").chapter,"endgame");
 assert.ok(audit.requirements[item("Baguette").id].includes("ngplus"));
 assert.equal(item("Burning Shots").chapter,"act1");
@@ -45,5 +52,5 @@ assert.ok(act2.indexOf("Collectibles · Frozen Hearts")<act2.indexOf("Old Lumiè
 assert.ok(act2.indexOf("Return Eternal Ice to Grandis merchant")>act2.indexOf("Collectibles · Frozen Hearts"));
 for(const name of ["Coldum","Cultam","Grandaro","Survivor","Greater Rush"])
   assert.equal(item(name).area,"Return Eternal Ice to Grandis merchant");
-console.log("PASS",rows.length,"unique collectible steps;",audit.stats.corrected,"curated corrections;",
-  audit.stats.vague,"entries still need better location directions.");
+console.log("PASS",rows.length,"unique collectible steps;",audit.stats.corrected,"source-linked corrections;",
+  audit.stats.vague,"generic item directions remaining.");
