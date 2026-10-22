@@ -205,6 +205,37 @@
   edit("Energising Shell",{directions:"In Act 3 FLY just EAST of the STONE WAVE CLIFFS CAVE portal on the Continent. Land at the raised rock formation, use PAINT BREAK on the blue-black Paint Spike and take Energising Shell from the newly accessible pickup.",source:"https://game-checklists.com/expedition33/all-pictos.html"});
   edit("Confident Fighter",{directions:"Within VISAGES enter the PATH OF JOY section and progress to its enormous SKULL landmark. Turn RIGHT around the skull and pick up Confident Fighter from the nearby ledge before continuing toward the masks.",source:"https://game-checklists.com/expedition33/all-pictos.html"});
   edit("Energising Revive",{directions:"With Esquie's swimming unlocked, enter STONE WAVE CLIFFS CAVE from the sea. Follow the cave route to its final arena and defeat the CHROMATIC HEXGA; Energising Revive is the battle reward.",source:"https://game-checklists.com/expedition33/all-pictos.html"});
+  // Sastro's haircut rewards are strictly keyed by the number of recovered Lost
+  // Gestrals. Old collection migration incorrectly displayed 2/3/5 in early Act 1.
+  [
+    {
+      name:"Lune · Gestral haircut",
+      after:["act1","Return to camp · two Gestrals","Continent · AFTER Esquie traversal"],
+      quest:"act1:continent-after-esquie-traversal:lost-gestral-2",
+      count:2
+    },
+    {
+      name:"Sciel · Gestral haircut",
+      after:["act2","Return to camp · three Gestrals","Collectibles · Continent · Esquie swimming"],
+      quest:"act2:continent-esquie-swimming:lost-gestral-3",
+      count:3
+    },
+    {
+      name:"Verso · Gestral haircut",
+      after:["act2","Return to camp · five Gestrals","Collectibles · Continent · western expansion"],
+      quest:"act2:continent-western-expansion:lost-gestral-5",
+      count:5
+    }
+  ].forEach(({name,after,quest,count})=>{
+    edit(name,{
+      destination:after,
+      directions:"First find and rescue at least "+count+" Lost Gestrals on the Continent; the "+count+"th comes from the preceding Lost Gestral checkpoint in this guide. At CAMP, locate SASTRO beside the Curator's cave and speak with him to claim the "+name+" reward. You cannot obtain this hairstyle before rescuing "+count+" Gestrals.",
+      source:"https://www.neoseeker.com/clair-obscur-expedition-33/Lost_Gestrals"
+    });
+    const id=registry.find(x=>x.entry[1]===name)?.entry[3];
+    if(id&&window.E33_COMPLETION_GATES?.steps)
+      window.E33_COMPLETION_GATES.steps[id]={requires:[quest],tip:"Save the "+count+"th Lost Gestral, then talk to Sastro in camp to claim this reward."};
+  });
   // These milestones are sourced from story traversal and Sastro's nine-gestral rewards.
   const abilities=[
     {id:"rough",label:"Cross rough terrain",when:"Recruit Esquie in his Nest (Act 1)",source:"https://www.neoseeker.com/clair-obscur-expedition-33/walkthrough"},
