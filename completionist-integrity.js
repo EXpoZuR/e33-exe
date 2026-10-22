@@ -136,8 +136,8 @@
   });
   edit("Expedition 37",{
     destination:FLIGHT,capabilities:["fly"],
-    directions:"Fly to the otherwise inaccessible Gestral Beach ringed by steep rocks and water in the NORTHEAST Continent. Enter the Climb the Wall beach portal; the Expedition 37 journal is immediately to your RIGHT near the bodies of failed climbers, before the challenge itself.",
-    source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-the-continent-walkthrough-lost-gestrals-music-records-outfits-journals"
+    directions:"In Act 3 FLY to the isolated Gestral Beach island in the LAKE SOUTH of Sirène, below the northern Gestral Beach. Enter the portal and IMMEDIATELY turn RIGHT; Expedition 37 is beside the fallen expeditioner at the base of the climbing tower. Pick it up before climbing for Maelle’s Swimsuit.",
+    source:"https://www.neoseeker.com/clair-obscur-expedition-33/Gestral_Beach_5"
   });
   edit("Betelim",{
     destination:PAINT,capabilities:["paint"],
@@ -237,6 +237,24 @@
     if(id&&window.E33_COMPLETION_GATES?.steps)
       window.E33_COMPLETION_GATES.steps[id]={requires:[quest],tip:"Save the "+ordinal+" Lost Gestral, then talk to Sastro in camp to claim this reward."};
   });
+  // Keep related post-flight pickups together: the two journals are on one
+  // plateau, and Expedition 37 is at the entrance to Maelle's climbing beach.
+  if(flightGroup){
+    const prior=[
+      "Unlock flight / first flight sweep",
+      "Angerim",
+      "Julie",
+      "Verso",
+      "Expedition 37",
+      "Maelle — Swimsuit outfit",
+      "Forlorn",
+      "Rêveries dans Paris"
+    ];
+    flightGroup[1].sort((a,b)=>{
+      const ai=prior.indexOf(a[1]),bi=prior.indexOf(b[1]);
+      return (ai<0?999:ai)-(bi<0?999:bi);
+    });
+  }
   // These milestones are sourced from story traversal and Sastro's nine-gestral rewards.
   const abilities=[
     {id:"rough",label:"Cross rough terrain",when:"Recruit Esquie in his Nest (Act 1)",source:"https://www.neoseeker.com/clair-obscur-expedition-33/walkthrough"},
