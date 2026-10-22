@@ -148,6 +148,26 @@ if(act2Ch){
     }
   }
 }
+
+/* Independent corroboration overrides conflicting swimsuit labels and unlock timing. */
+apply("Verso — Swimsuit 1 outfit",
+ "At CAMP in Act 3, choose CHECK UP ON THE OTHERS and speak with SCIEL through relationship rank SIX. Finish the swimming lesson scene with Verso; this grants Verso's SWIMSUIT I and Sciel's Swimsuit I. It is NOT the beach-race reward.",
+ {move:["act3","Sciel rank 6 · camp rewards"],ability:["fly"],source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-the-continent-walkthrough-lost-gestrals-music-records-outfits-journals"});
+apply("Verso — Swimsuit 2 outfit",
+ "After OLD LUMIÈRE enables Esquie to CROSS CORAL REEFS, swim to the GESTRAL BEACH portal EAST OF SIRÈNE and run the timed obstacle course. Earn GOLD by finishing in 38 SECONDS OR LESS to receive Verso's SWIMSUIT II. Swimsuit I instead comes from Sciel's relationship event.",
+ {move:["act2","Continent · eastern detour"],ability:["swim","reef"],source:"https://www.pushsquare.com/guides/clair-obscur-expedition-33-all-outfits-and-how-to-get-them"});
+apply("Lune — Swimsuit 2 outfit",
+ "At GESTRAL BEACH RAFTING CLUB after Esquie unlocks SWIMMING, challenge 'JUST A NORMAL ONE', the SECOND opponent in the beach-volleyball game. Successfully return the volleys to win and talk to the host for Lune's SWIMSUIT II. The STRONGEST third match awards Sciel's Swimsuit II instead.",
+ {ability:["swim"],source:"https://www.powerpyx.com/clair-obscur-expedition-33-act-2-collectible-locations/"});
+apply("Defensive Mode",
+ "Return to STONE WAVE CLIFFS in ACT 2 after the Lampmaster fight. Sail with Esquie to the REAR/BEACH ENTRANCE, enter and move to BASALT WAVES Flag. Go BACK toward the former Lampmaster arena, then take the path toward the EXIT on the RIGHT; Defensive Mode lies next to the LIT LAMP and portal by the table and chair.",
+ {move:["act2","Continent · Esquie swimming"],ability:["swim"],source:"https://www.gamerguides.com/clair-obscur-expedition-33/database/pictos/defensive/defensive-mode/"});
+apply("Gustave — Chic outfit",
+ "After RECRUITING ESQUIE in Act 1, ride across the previously blocked rocky terrain to the BEACH north of ESQUIE'S NEST. Talk to CARRABI at his coastal shop and buy Gustave's Chic outfit for 2,000 Chroma before completing the Stone Wave Cliffs finale.",
+ {ability:["rough"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Outfits"});
+apply("Gustave — Renoir's Suit outfit",
+ "First defeat RENOIR inside the MONOLITH in Act 2; this awards the original Renoir's Suit to VERSO. Gustave's matching version becomes available in NEW GAME+ when Gustave is playable again, not as a wearable costume during Act 2. Begin NG+ after acquiring Verso's suit and check Gustave's wardrobe.",
+ {move:["endgame","New Game+ only · bakery revisit"],ability:["ngplus"],source:"https://clair-obscur.fandom.com/wiki/Renoir%27s_Suit_%28Gustave_outfit%29"});
 window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
