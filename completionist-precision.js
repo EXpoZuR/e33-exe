@@ -217,8 +217,11 @@ apply("Lettre à Maelle",
  "MISSABLE IN THIS PLAYTHROUGH. IMMEDIATELY AFTER DEFEATING YOUR FIRST AXON (Visages OR Sirène), return to CAMP and choose CHECK UP ON THE OTHERS repeatedly until VERSO sits at the PIANO with MAELLE and ESQUIE. Watch the entire cutscene to collect Lettre à Maelle. Do this BEFORE completing the Monolith at the end of Act 2.",
  {source:"https://www.powerpyx.com/clair-obscur-expedition-33-all-record-locations/"});
 apply("Goblu",
+ "After completing FLYING WATERS, use FLOWER FIELD Expedition Flag to reach the final mandatory GOBLU boss. Defeat it and take the portal out of Flying Waters to unlock the next Continent region.",
+ {oldAct:"act1",move:["act1","Flying Waters · Coral Cave / Lumieran Streets"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Flying_Waters"});
+apply("Goblu",
  "As soon as you EXIT FLYING WATERS in ACT 1, travel the walkable Continent route WEST/NORTHWEST of ANCIENT SANCTUARY, near the YELLOW-LEAF TREES and Hidden Gestral Arena. Talk to BLABARY and buy the Goblu music record for 1,000 Chroma. The earlier 'Blabary / Goblu record' merchant visit is this same shop — do not travel back in Act 2.",
- {move:["act1","Collectibles · Continent · AFTER Flying Waters (before Sanctuary)"],ability:[],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
+ {oldAct:"act2",move:["act1","Collectibles · Continent · AFTER Flying Waters (before Sanctuary)"],ability:[],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
 apply("Sinister Cave",
  "After OLD LUMIÈRE grants Esquie CORAL REEF SWIMMING, sail to SINISTER CAVE on the eastern Continent shore. From its ENTRANCE Flag follow the RIGHT-hand trail to the RAMP and climb it to the dead-end alcove. Pick up the NOCTURNE POUR LUMIÈRE record lying at the top.",
  {source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"});
