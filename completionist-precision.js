@@ -189,7 +189,25 @@ for(const [name,kind] of endingReqs){
     audit.requirements[id]=[...new Set([...(audit.requirements[id]||[]),kind])];
   }
 }
-window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length};
+
+/* Remove generic catalog boilerplate. The modal's completion/verification section
+   already tells players when to check menus; route text must be a route, not a
+   repeated "verify unlocked" sentence. Do not relabel these as source-verified. */
+let boilerplateRemoved=0;
+for(const c of chapters)for(const [area,entries] of c.areas)for(const e of entries){
+  const before=e[2];
+  if(e[0]==="Cosmetic"){
+    e[2]=e[2].replace(/\s*Check that this distinct [^.]+ is unlocked\.\s*/gi,"").replace(/\s*Verify the [^.]+ hairstyle in the cosmetic inventory\.\s*/gi,"").trim();
+  }
+  if(e[0]==="Secret"){
+    e[2]=e[2].replace(/\s*Check reward items separately too\.\s*/gi,"").trim();
+  }
+  if(e[0]==="Skill enemy"){
+    e[2]=e[2].replace(/;\s*check his skill inventory afterward\./gi,".").trim();
+  }
+  if(e[2]!==before)boilerplateRemoved++;
+}
+window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length,boilerplateRemoved};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
 })();
