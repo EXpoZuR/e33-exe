@@ -1,0 +1,49 @@
+// E33.EXE: Run \`node scripts/test-completionist.cjs\` from the repository root.
+// Structural regression checks do not substitute for in-game pickup verification.
+const fs=require("node:fs"),vm=require("node:vm"),path=require("node:path");
+const assert=require("node:assert/strict");
+const root=path.resolve(__dirname,"..");
+const scope={window:{}};vm.createContext(scope);
+for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js"])
+  vm.runInContext(fs.readFileSync(path.join(root,name),"utf8"),scope,{filename:name});
+const w=scope.window, audit=w.E33_COMPLETION_AUDIT;
+const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=>({
+  chapter:c.id,area,id:x[3],title:x[1],description:x[2]
+}))));
+const byId=new Map(rows.map(x=>[x.id,x]));
+function item(title){const x=rows.find(x=>x.title===title);assert.ok(x,title+" missing");return x;}
+assert.ok(rows.length>=780,"Unexpectedly reduced checklist");
+assert.equal(byId.size,rows.length,"Duplicate checkpoint IDs");
+for(const r of rows){
+  assert.ok(r.id&&r.description,"Empty ID or description");
+  assert.ok(Array.isArray(audit.requirements[r.id]),"Missing capability: "+r.id);
+  assert.ok(audit.quality[r.id],"Missing review status: "+r.id);
+  assert.ok(!["act1","act2"].includes(r.chapter)||
+    !audit.requirements[r.id].some(x=>x==="fly"||x==="dive"),
+    "Impossible early traversal: "+r.id);
+  if(audit.quality[r.id]==="verified")
+    assert.doesNotMatch(r.description,/Acquisition inventory check|Check that this distinct|consult an area guide for exact position/i);
+}
+for(const [id,gate] of Object.entries(w.E33_COMPLETION_GATES.steps)){
+  assert.ok(byId.has(id),"Orphan gate: "+id);
+  for(const dep of gate.requires||[])assert.ok(byId.has(dep),"Dangling prerequisite: "+id+" -> "+dep);
+}
+assert.equal(item("Angerim").chapter,"act3");
+assert.ok(audit.requirements[item("Angerim").id].includes("fly"));
+assert.match(item("Verso — Civilian outfit").description,/spiral/i);
+assert.match(item("Verso — Civilian outfit").description,/books/i);
+assert.equal(item("Stalum").area,"Collectibles · Frozen Hearts");
+assert.equal(item("Maelle — Swimsuit outfit").chapter,"act3");
+assert.equal(item("Verso — Swimsuit 1 outfit").chapter,"act3");
+assert.equal(item("Baguette").chapter,"endgame");
+assert.ok(audit.requirements[item("Baguette").id].includes("ngplus"));
+assert.equal(item("Burning Shots").chapter,"act1");
+assert.ok(!audit.requirements[item("Gestral Race").id].includes("fly"));
+const act2=w.E33_COMPLETION_DATA.find(c=>c.id==="act2").areas.map(a=>a[0]);
+assert.ok(act2.indexOf("Collectibles · Frozen Hearts")>act2.indexOf("Monoco's Station"));
+assert.ok(act2.indexOf("Collectibles · Frozen Hearts")<act2.indexOf("Old Lumière"));
+assert.ok(act2.indexOf("Return Eternal Ice to Grandis merchant")>act2.indexOf("Collectibles · Frozen Hearts"));
+for(const name of ["Coldum","Cultam","Grandaro","Survivor","Greater Rush"])
+  assert.equal(item(name).area,"Return Eternal Ice to Grandis merchant");
+console.log("PASS",rows.length,"unique collectible steps;",audit.stats.corrected,"curated corrections;",
+  audit.stats.vague,"entries still need better location directions.");
