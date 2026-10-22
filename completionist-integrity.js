@@ -69,7 +69,7 @@
     source:"https://www.neoseeker.com/clair-obscur-expedition-33/Chromatic_Demineur"
   });
   edit("Stalum",{
-    destination:["act2","Collectibles · Frozen Hearts"],capabilities:["reef"],
+    destination:["act2","Collectibles · Frozen Hearts"],capabilities:[],
     directions:"Enter Frozen Hearts and travel to the Glacial Falls Expedition Flag. Follow the broken railway tracks up the cliff beyond the flag and defeat the Danseuse + Stalact enemy group; the drop is Maelle's Stalum, NOT a Forgotten Battlefield overworld pickup.",
     source:"https://e33hub.com/en/weapons/stalum/"
   });
@@ -149,6 +149,29 @@
     directions:"After Sastro awards Paint Break for FOUR rescued Gestrals, return to Spring Meadows' Abandoned Expeditioner Camp and find the friendly white Jar Nevron. Break the Paint Spike beside Jar, GRAPPLE across the gap behind it, and pick up Aegis Revival on the RIGHT side.",
     source:"https://www.neoseeker.com/clair-obscur-expedition-33/Paint_Spikes"
   });
+  // Frozen Hearts is reached from Monoco's Station's EAST exit after the station's
+  // story sequence, not after Old Lumière or the coral-breaking upgrade.
+  const act2Chapter=findChapter("act2");
+  if(act2Chapter){
+    const frozenIndex=act2Chapter.areas.findIndex(a=>a[0]==="Collectibles · Frozen Hearts");
+    const monocoIndex=act2Chapter.areas.findIndex(a=>a[0]==="Monoco's Station");
+    if(frozenIndex>=0&&monocoIndex>=0){
+      const [frozenArea]=act2Chapter.areas.splice(frozenIndex,1);
+      const place=act2Chapter.areas.findIndex(a=>a[0]==="Collectibles · Monoco's Station");
+      act2Chapter.areas.splice((place<0?monocoIndex:place)+1,0,frozenArea);
+    }
+    const monocoArea=act2Chapter.areas.find(a=>a[0]==="Monoco's Station");
+    const returnItem=monocoArea?.[1].find(a=>a[1]==="Eternal Ice merchant request");
+    if(returnItem){
+      monocoArea[1].splice(monocoArea[1].indexOf(returnItem),1);
+      const after=addArea("act2","Return Eternal Ice to Grandis merchant","Collectibles · Frozen Hearts");
+      after[1].push(returnItem);
+      returnItem[2]="From Frozen Hearts' final boss GARGANT, collect Eternal Ice. Exit through the portal back to Monoco's Station and speak to the Grandis Merchant beside the train. HAND OVER Eternal Ice to unlock the merchant's additional stock, then purchase the unique weapons and Pictos you still need.";
+      verified[returnItem[3]]=true;
+      corrected[returnItem[3]]=returnItem[2];
+      sources[returnItem[3]]="https://www.neoseeker.com/clair-obscur-expedition-33/Frozen_Hearts";
+    }
+  }
   // These milestones are sourced from story traversal and Sastro's nine-gestral rewards.
   const abilities=[
     {id:"rough",label:"Cross rough terrain",when:"Recruit Esquie in his Nest (Act 1)",source:"https://www.neoseeker.com/clair-obscur-expedition-33/walkthrough"},
