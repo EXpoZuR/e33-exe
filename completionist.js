@@ -115,8 +115,8 @@
  const uncertain=steps.filter(x=>x.quality==="unverified"&&statusOf(x.id)==="pending").length;
  return `<section class="cp-access-panel" aria-label="Traversal ability controls">
    <div class="cp-access-top"><div><span class="cp-eyebrow">TRAVERSAL CHECK</span><h2>Only show what you can reach</h2>
-   <p>Mark the abilities currently unlocked in your save. Completing a linked story milestone also unlocks its ability automatically. Items that require missing abilities, or have insufficient directions, cannot interrupt your route.</p></div>
-   <span class="cp-access-stat">${confirmed} pickup routes cross-checked · ${uncertain} entries awaiting detailed locations</span></div>
+   <p>Mark the abilities currently unlocked in this save. Story milestones also unlock traversal when completed. Known unreachable items are deferred; some acquisition routes still need independent in-game confirmation.</p></div>
+   <span class="cp-access-stat">${confirmed} source-linked or manually curated entries · ${uncertain} generic directions remaining</span></div>
    <div class="cp-abilities">${abilities.map(a=>{const ok=hasCapability(a.id);return `<button type="button" data-action="toggle-ability"
      data-ability="${esc(a.id)}" class="cp-ability ${ok?"is-unlocked":""}" aria-pressed="${ok}">
      <span class="cp-ability-mark">${ok?"✓":"○"}</span><span class="cp-ability-copy"><strong>${esc(a.label)}</strong><small>${esc(a.when)}</small></span>
