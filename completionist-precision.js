@@ -254,6 +254,22 @@ const recList=["Alicia","Alicia's Birthday Party","Aline","Aline's Glasshouse",
  "Until Next Life","Verso"];
 window.E33_RECORD_CATALOG={unique:recList.length, names:recList,
  source:"https://www.neoseeker.com/clair-obscur-expedition-33/Music_Records"};
+
+/* Independent Act 2 walkthroughs confirm Manor Door 10 is SWIM-accessible
+   and is the same Library used for Verso's Civilian outfit. */
+apply("Manor Door 10",
+ "At the START OF ACT 2, after Esquie unlocks SWIMMING, sail to the ISLAND NORTH OF STONE WAVE CLIFFS and SOUTHWEST of Forgotten Battlefield. Pass GERANJO's merchant on its south shore, then follow the beach around to the NORTH side. Climb the slope to the MANOR DOOR at the foot of the mountain. Inside THE LIBRARY, climb the SPIRAL STAIRS and activate the BOOK by the lamp to open the hidden room containing Verso's Civilian outfit.",
+ {move:["act2","Collectibles · Continent · Esquie swimming"],ability:["swim"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/To_the_Forgotten_Battlefield"});
+apply("Paint Cage 22",
+ "After entering VERSO'S DRAFTS by Esquie's DIVING route, go to OPEN PLAYGROUND Flag and head DOWNHILL toward the SECOND pair of seesaws near GESTRAL BATHS. The nearby PAINT CAGE contains Lune's Esquim weapon; find and SHOOT all three blue paint anomalies within sight of the cage to unlock it.",
+ {ability:["dive"],source:"https://game-checklists.com/expedition33/all-paint-cages.html"});
+/* Cosmetic selection for the Flying Manor's Young Boy; the old replay glitch
+   may be patched, so never assert that one run can claim all three. */
+for(const who of ["Lune","Maelle","Sciel"]){
+ apply(who+" — Clea outfit",
+ "After defeating CLEA in the FLIGHT-ONLY FLYING MANOR, return to the YOUNG BOY near CENTRAL PLAZA and choose "+who.toUpperCase()+" as the recipient for that character's Clea outfit. Only one recipient is offered at a time. Some older versions allowed resetting this choice by visiting a Faceless Boy at a previous boss arena, then returning; if that no longer works in your version, the other two outfits require another NG+ clear.",
+ {ability:["fly"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Outfits"});
+}
 window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length,boilerplateRemoved};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
