@@ -88,7 +88,9 @@ if(missing.length)throw Error("Missing weapons: "+missing.join(", "));
 window.E33_COMPLETION_COVERAGE={weapons:fullWeaponNames.length,weaponNames:fullWeaponNames,
  source,defaultWeaponsAdded:starting.length,weaponQuestNamesRepaired:corrections.length,
   outfitCoverage:{source:"https://game-checklists.com/expedition33/all-outfits.html",
-    total:97,earnedItemsInGuide:75,defaultOrEditionOnly:22}};
+    total:97,earnedItemsInGuide:75,defaultOrEditionOnly:22},
+  haircutCoverage:{source:"https://game-checklists.com/expedition33/all-haircuts.html",
+    total:121,earnedItemsInGuide:109,defaultOrEditionOnly:12}};
 audit.stats.steps=chapters.reduce((n,c)=>n+c.areas.reduce((v,a)=>v+a[1].length,0),0);
 audit.stats.corrected=Object.keys(audit.verified).length;
 })();
