@@ -180,8 +180,7 @@
     ["Grandaro","Monoco weapon","53,901"],
     ["Cultam","Verso/Gustave weapon","47,530"],
     ["Survivor","Picto","98,000"],
-    ["Greater Rush","Picto","85,750"],
-    ["Burning Shots","Picto","53,901"]
+    ["Greater Rush","Picto","85,750"]
   ].forEach(([item,type,price])=>edit(item,{
     destination:["act2","Return Eternal Ice to Grandis merchant"],capabilities:["swim"],
     directions:"Complete Frozen Hearts and defeat GARGANT to get Eternal Ice. Return via the exit portal to Monoco's Station, speak to the GRANDIS MERCHANT left of the station's Expedition Flag beside the train, hand over the Eternal Ice, then buy "+item+" ("+type+") for "+price+" Chroma. This item is not sold before the hand-in.",
