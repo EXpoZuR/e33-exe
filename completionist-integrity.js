@@ -46,6 +46,14 @@
   const FLIGHT=["act3","Continent · first flight sweep"];
   const PAINT=["act2","Paint Break · revisit previous areas","Continent · northern detours"];
   const SC_REWARD=["act3","Sciel rank 6 · camp rewards","Act 3 · relationships and full traversal"];
+  // Treat swimming as a story milestone rather than a random nearby pickup.
+  const swimArea=findChapter("act2")?.areas?.[0];
+  if(swimArea&&!swimArea[1].some(x=>x[1]==="Unlock swimming / begin Act 2"))
+    swimArea[1].unshift(["Story","Unlock swimming / begin Act 2",
+      "Complete Stone Wave Cliffs, return to camp after Act 1, and follow the opening Act 2 story sequence. Once Esquie can enter the sea from the Continent, mark this complete and sweep the new islands before entering Forgotten Battlefield.",
+      "act2:swim:unlock-swimming"]);
+  corrected["act2:swim:unlock-swimming"]=swimArea[1][0][2];
+  verified["act2:swim:unlock-swimming"]=true;
   // An explicit story milestone makes the first-flight sweep navigable.
   const flightGroup=addArea("act3",FLIGHT[1]);
   if(flightGroup&&!flightGroup[1].some(x=>x[1]==="Unlock flight / first flight sweep"))
@@ -126,7 +134,7 @@
   ];
   const milestones={
     rough:"act1:esquie-s-nest-return-to-village:franc-ois-recruit-esquie",
-    swim:"act2:continent-esquie-swimming:energising-heal-west-beach-camp",
+    swim:"act2:swim:unlock-swimming",
     paint:"act2:continent-northern-detours:lost-gestral-4-paint-break",
     reef:"act2:old-lumie-re:old-lumie-re-story-encounter",
     fly:"act3:flight:unlock-flight",
@@ -154,6 +162,7 @@
     if(/requires.{0,18}coral|swim through coral|sea.reef.breaking/i.test(context))need.add("reef");
     if(/requires.{0,20}esquie.s rough.terrain|land.barrier/i.test(context))need.add("rough");
     if(kind==="Story"&&id==="act3:flight:unlock-flight")need.delete("fly");
+    if(id===milestones.swim)need.delete("swim");
     if(id===milestones.paint)need.delete("paint");
     if(id===milestones.rough)need.delete("rough");
     if(id===milestones.dive)need.delete("dive");
