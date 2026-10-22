@@ -17,6 +17,20 @@ assert.equal(w.E33_COMPLETION_COVERAGE.weapons,117,"Weapon inventory total must 
 for(const name of w.E33_COMPLETION_COVERAGE.weaponNames)
  assert.ok(rows.some(r=>r.title===name),"Missing directly named weapon checkpoint: "+name);
 assert.equal(rows.filter(r=>r.title==="Maelle — Obscur outfit").length,1,"Duplicate outfit Kasumi reward");
+
+const cosmeticOutfits=rows.filter(r=>/outfit/i.test(r.title)&&r.title.includes(" — ")).length;
+const haircutRows=rows.filter(r=>/haircut/i.test(r.title)).length;
+assert.equal(w.E33_COMPLETION_COVERAGE.outfitCoverage.total,97);
+assert.equal(w.E33_COMPLETION_COVERAGE.outfitCoverage.earnedItemsInGuide,76);
+assert.equal(w.E33_COMPLETION_COVERAGE.outfitCoverage.defaultOrEditionOnly,21);
+assert.equal(rows.filter(r=>r.title==="Crimson Uniform · Gustave").length,1);
+assert.equal(w.E33_COMPLETION_COVERAGE.haircutCoverage.total,121);
+assert.equal(w.E33_COMPLETION_COVERAGE.haircutCoverage.earnedItemsInGuide,109);
+assert.equal(w.E33_COMPLETION_COVERAGE.haircutCoverage.defaultOrEditionOnly,12);
+assert.equal(haircutRows,109,"Some haircut entries missing or duplicated");
+assert.ok(!rows.some(r=>/^(Healing|Energy) Shard|^Colour of Lumina$|^Recoat$|^Shape of Energy$/i.test(r.title)),"Excluded common shards/recoats leaked into checklist");
+assert.ok(!rows.some(r=>/Chroma Catalyst/i.test(r.title)&&!/Perfect Chroma Catalyst/i.test(r.title)),"Only Perfect Chroma Catalysts belong in guide");
+
 assert.equal(byId.size,rows.length,"Duplicate checkpoint IDs");
 for(const r of rows){
   assert.ok(r.id&&r.description,"Empty ID or description");
