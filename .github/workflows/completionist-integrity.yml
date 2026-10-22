@@ -4,6 +4,7 @@ on:
     paths:
       - 'completionist-*.js'
       - 'scripts/test-completionist.cjs'
+      - 'scripts/test-completionist-ui.cjs'
       - '.github/workflows/completionist-integrity.yml'
   pull_request:
     paths:
@@ -19,4 +20,6 @@ jobs:
         with:
           node-version: '22'
       - name: Check collectible accessibility and stable IDs
-        run: node scripts/test-completionist.cjs
+        run: |
+          node scripts/test-completionist.cjs
+          node scripts/test-completionist-ui.cjs
