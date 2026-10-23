@@ -18,7 +18,7 @@
         "https://www.neoseeker.com/clair-obscur-expedition-33/Lucaroparfe",
         "https://gamefaqs.gamespot.com/ps5/469495-clair-obscur-expedition-33/faqs/81883/merchants"
       ],
-      location:"In ACT 3, summon ESQUIE and FLY to the landlocked VALLEY EAST OF THE MEADOWS on the southern Continent, northeast of Lumière. Land beside the THREE fallen Contorsionnistes near the CHROMATIC BÉNISSEUR and find merchant LUCAROPARFÉ standing among them. Walking or swimming cannot reach this valley.",
+      location:"With ESQUIE'S ACT 3 FLIGHT, land in the otherwise inaccessible VALLEY EAST OF THE MEADOWS and NORTHEAST OF LUMIÈRE, among THREE fallen Contorsionnistes beside the CHROMATIC BÉNISSEUR.",
       stock:[
         {title:"Monoco · Pure haircut",price:"2,000 Chroma",item:"Pure haircut for Monoco"},
         {title:"Monoco — Pure outfit",price:"10,000 Chroma",item:"Pure outfit for Monoco"}
@@ -33,7 +33,7 @@
         "https://www.neoseeker.com/clair-obscur-expedition-33/Sodasso",
         "https://gamefaqs.gamespot.com/ps5/469495-clair-obscur-expedition-33/faqs/81883/merchants"
       ],
-      location:"In ACT 3, call ESQUIE and FLY into the isolated shallow VALLEY NORTH OF THE REACHER and directly WEST OF VISAGES. Land in the open field and find merchant SODASSO there; cliffs prevent reaching this shop before flight.",
+      location:"With ESQUIE'S ACT 3 FLIGHT, land in the isolated SHALLOW VALLEY NORTH OF THE REACHER and directly WEST OF VISAGES, then find merchant SODASSO in its open field.",
       stock:[
         {title:"Verso · Curly haircut",price:"2,000 Chroma",item:"Curly haircut for Verso"},
         {title:"Maelle · Short White haircut",price:"2,000 Chroma",item:"Short White haircut for Maelle"},
@@ -67,7 +67,7 @@
         group[1].push(found.entry);
       }
       const entry=found.entry,id=entry[3];
-      const directions=m.location+" BUY "+stock.item+" for "+stock.price+". Both vendors' location and the traversal gate are shared by every item they sell.";
+      const directions=m.location+" Buy the "+stock.item+" from "+m.name+" for "+stock.price+".";
       entry[2]=directions;
       audit.requirements[id]=[...new Set([...m.capabilities])];
       audit.corrected[id]=directions;
