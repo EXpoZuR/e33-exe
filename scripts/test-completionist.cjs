@@ -4,7 +4,7 @@ const fs=require("node:fs"),vm=require("node:vm"),path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const scope={window:{}};vm.createContext(scope);
-for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js","completionist-coverage.js","completionist-merchants.js"])
+for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js","completionist-coverage.js","completionist-merchants.js","completionist-areas.js"])
   vm.runInContext(fs.readFileSync(path.join(root,name),"utf8"),scope,{filename:name});
 const w=scope.window, audit=w.E33_COMPLETION_AUDIT;
 const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=>({
@@ -38,6 +38,29 @@ for(const merchant of merchantCatalog){
  const ids=sameMerchant.map(x=>x.id);
  assert.equal(new Set(ids).size,ids.length,"Merchant stock steps duplicate IDs");
 }
+
+// Important: being able to swim into the Cave does not allow reaching the
+// plateau above it. All location-specific steps must inherit the AREA gate.
+const cliffAccess=w.E33_AREA_ACCESS.entries;
+for(const [key,group] of Object.entries(cliffAccess)){
+  for(const id of group.stepIds){
+    const x=rows.find(r=>r.id===id);
+    assert.ok(x,"Required Stone Wave Cliffs checkpoint missing: "+id);
+    assert.equal(x.chapter,group.chapter,"Misplaced "+x.title+" in "+group.chapter);
+    for(const ability of group.requires){
+      assert.ok(audit.requirements[id].includes(ability),x.title+" missing area ability "+ability);
+    }
+  }
+}
+assert.equal(item("Breaking Death").chapter,"act3","Thunder Eveque must require flight, not Act 2 swim");
+assert.ok(audit.requirements[item("Breaking Death").id].includes("fly"));
+assert.match(item("Breaking Death").description,/THUNDER ÉVÊQUE/i);
+assert.match(item("Breaking Death").description,/EAST of the cave/i);
+assert.equal(item("Expedition 54").chapter,"act2","Expedition 54 is inside swim-accessible cave");
+assert.ok(!audit.requirements[item("Expedition 54").id].includes("fly"));
+assert.equal(item("Energising Revive").chapter,"act2");
+assert.equal(item("Exhausting Power").chapter,"act2");
+
 assert.equal(item("Monoco · Pure haircut").chapter,"act3");
 assert.ok(audit.requirements[item("Monoco · Pure haircut").id].includes("fly"));
 assert.match(item("Monoco · Pure haircut").description,/2,000 Chroma/);
