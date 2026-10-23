@@ -4,7 +4,7 @@ const fs=require("node:fs"),vm=require("node:vm"),path=require("node:path");
 const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const scope={window:{}};vm.createContext(scope);
-for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js","completionist-coverage.js"])
+for(const name of ["completionist-data.js","completionist-chronology.js","completionist-gates.js","completionist-integrity.js","completionist-precision.js","completionist-coverage.js","completionist-merchants.js"])
   vm.runInContext(fs.readFileSync(path.join(root,name),"utf8"),scope,{filename:name});
 const w=scope.window, audit=w.E33_COMPLETION_AUDIT;
 const rows=w.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(([area,r])=>r.map(x=>({
@@ -17,6 +17,31 @@ assert.equal(w.E33_COMPLETION_COVERAGE.weapons,117,"Weapon inventory total must 
 for(const name of w.E33_COMPLETION_COVERAGE.weaponNames)
  assert.ok(rows.some(r=>r.title===name),"Missing directly named weapon checkpoint: "+name);
 assert.equal(rows.filter(r=>r.title==="Maelle — Obscur outfit").length,1,"Duplicate outfit Kasumi reward");
+
+
+/* Merchant requirements are properties of the destination, not the item.
+ * Regression: Monoco Pure haircut must NEVER appear in Act 2 with swim alone.
+ */
+const merchantCatalog=w.E33_MERCHANT_ACCESS?.catalog;
+assert.ok(merchantCatalog?.length>=2,"Verified merchant registry did not load");
+for(const merchant of merchantCatalog){
+ const sameMerchant=merchant.stock.map(stock=>item(stock.title));
+ for(const x of sameMerchant){
+  assert.equal(x.chapter,merchant.chapter,merchant.name+": "+x.title+" is in wrong Act");
+  assert.equal(x.area,merchant.area,merchant.name+": "+x.title+" was split from merchant");
+  const abilities=audit.requirements[x.id]||[];
+  for(const capability of merchant.capabilities){
+   assert.ok(abilities.includes(capability),merchant.name+": "+x.title+" missing "+capability);
+  }
+  assert.match(x.description,new RegExp(merchant.name,"i"),merchant.name+" absent from pickup route");
+ }
+ const ids=sameMerchant.map(x=>x.id);
+ assert.equal(new Set(ids).size,ids.length,"Merchant stock steps duplicate IDs");
+}
+assert.equal(item("Monoco · Pure haircut").chapter,"act3");
+assert.ok(audit.requirements[item("Monoco · Pure haircut").id].includes("fly"));
+assert.match(item("Monoco · Pure haircut").description,/2,000 Chroma/);
+assert.equal(item("Monoco — Pure outfit").area,item("Monoco · Pure haircut").area);
 
 const cosmeticOutfits=rows.filter(r=>/outfit/i.test(r.title)&&r.title.includes(" — ")).length;
 const haircutRows=rows.filter(r=>/haircut/i.test(r.title)).length;
