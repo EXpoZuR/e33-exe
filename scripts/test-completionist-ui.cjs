@@ -24,7 +24,7 @@ const context={window:win,document:doc,console,HTMLDetailsElement:class{},setTim
 vm.createContext(context);
 for(const f of ["completionist-data.js","completionist-chronology.js","completionist-details.js",
  "completionist-routes.js","completionist-context.js","completionist-gates.js",
- "completionist-integrity.js","completionist-precision.js","completionist-coverage.js","completionist.js"]){
+ "completionist-integrity.js","completionist-precision.js","completionist-coverage.js","completionist-merchants.js","completionist.js"]){
  vm.runInContext(fs.readFileSync(path.join(base,f),"utf8"),context,{filename:f,timeout:10000});
 }
 const mount=els.completionistSections,dock=els.completionistDock;
@@ -46,6 +46,12 @@ const all=win.E33_COMPLETION_DATA.flatMap(c=>c.areas.flatMap(a=>a[1]));
 const civilian=all.find(x=>x[1]==="Verso — Civilian outfit");
 const starter=all.find(x=>x[1]==="Noahram");
 assert.ok(civilian&&starter);
+const pure=all.find(x=>x[1]==="Monoco · Pure haircut");
+assert.ok(pure,"Monoco Pure haircut missing");
+click(mount,"details",{id:pure[3]});
+assert.match(children[".cp-guide-body"].innerHTML,/Requires Fly|Required traversal: Fly/i);
+assert.match(children[".cp-guide-body"].innerHTML,/2,000 Chroma/);
+
 click(mount,"details",{id:civilian[3]});
 assert.match(children[".cp-guide-body"].innerHTML,/spiral/i);
 assert.match(children[".cp-guide-body"].innerHTML,/Required traversal: Swim/);
