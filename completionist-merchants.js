@@ -25,6 +25,24 @@
       ]
     },
     {
+      id:"papasso", name:"Papasso",
+      chapter:"act2", area:"Continent · Papasso eastern beach (swim)",
+      after:"Continent · western expansion",
+      capabilities:["swim"],
+      sources:[
+        "https://www.neoseeker.com/clair-obscur-expedition-33/Papasso",
+        "https://gamefaqs.gamespot.com/ps5/469495-clair-obscur-expedition-33/faqs/81883/merchants",
+        "https://questduo.com/clair-obscur-expedition-33/path-to-visages-walkthrough/"
+      ],
+      location:"After Esquie learns to SWIM, travel into the WESTERN SEA PASSAGE separating the Continent's north and south, directly NORTH OF FALLING LEAVES. Follow the passage SOUTH past the WEST and EAST BEACHES, land on the EAST BEACH, and find merchant PAPASSO practicing alone.",
+      stock:[
+        {title:"Maelle · Messy Bun haircut",price:"3,000 Chroma",item:"Messy Bun haircut for Maelle"},
+        {title:"Lune · Messy Bun haircut",price:"3,000 Chroma",item:"Messy Bun haircut for Lune"},
+        {title:"Sciel · Short haircut",price:"3,000 Chroma",item:"Short haircut for Sciel"},
+        {title:"Verso · Gustave's haircut",price:"3,000 Chroma",item:"Gustave's haircut for Verso"}
+      ]
+    },
+    {
       id:"sodasso", name:"Sodasso",
       chapter:"act3", area:"Continent · Sodasso valley (flight)",
       after:"Continent · Lucaroparfé valley (flight)",
