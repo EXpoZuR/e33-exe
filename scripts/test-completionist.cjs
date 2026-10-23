@@ -42,6 +42,13 @@ assert.equal(item("Monoco · Pure haircut").chapter,"act3");
 assert.ok(audit.requirements[item("Monoco · Pure haircut").id].includes("fly"));
 assert.match(item("Monoco · Pure haircut").description,/2,000 Chroma/);
 assert.equal(item("Monoco — Pure outfit").area,item("Monoco · Pure haircut").area);
+for(const name of ["Lune · Messy Bun haircut","Maelle · Messy Bun haircut","Sciel · Short haircut","Verso · Gustave's haircut"]){
+ const x=item(name);
+ assert.equal(x.chapter,"act2",name+" incorrectly deferred to Act 3");
+ assert.ok(audit.requirements[x.id].includes("swim"),name+" must require swimming");
+ assert.ok(!audit.requirements[x.id].includes("fly"),name+" wrongly requires flight");
+}
+
 
 const cosmeticOutfits=rows.filter(r=>/outfit/i.test(r.title)&&r.title.includes(" — ")).length;
 const haircutRows=rows.filter(r=>/haircut/i.test(r.title)).length;
