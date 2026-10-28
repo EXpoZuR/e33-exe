@@ -5,12 +5,14 @@ on:
       - 'completionist-*.js'
       - 'scripts/test-completionist.cjs'
       - 'scripts/test-completionist-ui.cjs'
+      - 'scripts/test-weapons-order.cjs'
       - '.github/workflows/completionist-integrity.yml'
   pull_request:
     paths:
       - 'completionist-*.js'
       - 'scripts/test-completionist.cjs'
       - 'scripts/test-completionist-ui.cjs'
+      - 'scripts/test-weapons-order.cjs'
       - '.github/workflows/completionist-integrity.yml'
 jobs:
   audit:
@@ -24,3 +26,4 @@ jobs:
         run: |
           node scripts/test-completionist.cjs
           node scripts/test-completionist-ui.cjs
+          node scripts/test-weapons-order.cjs
