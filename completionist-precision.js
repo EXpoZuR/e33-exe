@@ -270,6 +270,25 @@ for(const who of ["Lune","Maelle","Sciel"]){
  "After defeating CLEA in the FLIGHT-ONLY FLYING MANOR, return to the YOUNG BOY near CENTRAL PLAZA and choose "+who.toUpperCase()+" as the recipient for that character's Clea outfit. Only one recipient is offered at a time. Some older versions allowed resetting this choice by visiting a Faceless Boy at a previous boss arena, then returning; if that no longer works in your version, the other two outfits require another NG+ clear.",
  {ability:["fly"],source:"https://www.neoseeker.com/clair-obscur-expedition-33/Outfits"});
 }
+/* Flight-only overworld Thunder Évêque is NOT inside Stone Wave Cliffs Cave.
+   Two independent guides place the boss on a high plateau outside the cave;
+   map guides disagree about east/west, so use visible landmarks over false directions. */
+apply("Breaking Death",
+ "ACT 3 FLIGHT REQUIRED. On the CONTINENT, travel to the STONE WAVE CLIFFS CAVE entrance by the southeast coast. Do NOT enter the cave: summon Esquie, FLY UP onto the otherwise unreachable elevated grassy PLATEAU overlooking the cave and look for the lone THUNDER ÉVÊQUE standing among green/yellow trees. Defeat it to receive the BREAKING DEATH Picto (Level 7). The cave portal and nearby merchant are swim-accessible in Act 2, but the boss plateau is NOT.",
+ {move:["act3","Continent · first flight sweep"],ability:["fly"],
+  source:"https://clair-obscur.fandom.com/wiki/Breaking_Death"});
+/* Group this raised plateau with other flight pickups in the Stone Wave Cliffs
+   coastal region, rather than interrupting the Act 2 swim-only cave visit. */
+const flightSection=chapters.find(c=>c.id==="act3")?.areas.find(a=>a[0]==="Continent · first flight sweep");
+if(flightSection){
+ const entryIndex=flightSection[1].findIndex(e=>e[1]==="Breaking Death");
+ const afterIndex=flightSection[1].findIndex(e=>e[1]==="Forlorn");
+ if(entryIndex>=0&&afterIndex>=0){
+   const [entry]=flightSection[1].splice(entryIndex,1);
+   const anchorIndex=flightSection[1].findIndex(e=>e[1]==="Forlorn");
+   flightSection[1].splice(anchorIndex+1,0,entry);
+ }
+}
 window.E33_PRECISION_AUDIT={evidence,updated:evidence.filter(x=>x.id).length,failed:evidence.filter(x=>!x.id).length,boilerplateRemoved};
 audit.stats.vague=Object.values(audit.quality).filter(q=>q==="unverified").length;
 audit.stats.corrected=Object.keys(audit.verified).length;
