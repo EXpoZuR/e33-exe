@@ -61,15 +61,51 @@ for(const chapter of auditScope.window.E33_COMPLETION_DATA)
     auditedPictos.set(name,auditScope.window.E33_COMPLETION_AUDIT.requirements[step[3]]||[]);
    }
 assert.equal(auditedPictos.size,210,"Audited Picto source coverage changed");
+// Known discrepancies independently sourced from per-Picto entries and area walkthroughs.
+// The legacy Completionist registry is NOT authoritative for these 14 names.
+const verifiedGateOverrides={
+ "Healing Parry":["rough"],"In Medias Res":["swim"],"Cheater":["swim"],
+ "Warming Up":["swim"],"Tainted":["paint"],"Critical Break":["swim","paint"],
+ "Beneficial Contamination":["swim","reef"],"SOS Rush":["swim","reef"],
+ "Shielding Death":["swim"],"Double Burn":["swim"],"Random Defense":["swim","paint"],
+ "Shielding Tint":["fly"],"Breaking Slow":["paint","fly"],
+ "Energising Stun":["paint","fly"]
+};
+assert.equal(Object.keys(verifiedGateOverrides).length,14);
+
 const knownGates=new Set(["rough","swim","paint","reef","fly","dive"]);
 for(const p of entries){
  assert.ok(Array.isArray(p.requirements),p.name+" missing requirements array");
  assert.ok(p.requirements.every(g=>knownGates.has(g)),p.name+" has unknown ability");
  assert.equal(new Set(p.requirements).size,p.requirements.length,p.name+" duplicated ability");
- assert.equal(JSON.stringify([...p.requirements].sort()),JSON.stringify([...(auditedPictos.get(p.name)||[])].sort()),
-  p.name+" requirements differ from audited Completionist gates");
+ assert.equal(JSON.stringify([...p.requirements].sort()),JSON.stringify([...(verifiedGateOverrides[p.name]||auditedPictos.get(p.name)||[])].sort()),
+  p.name+" requirements differ from verified Picto gates");
 }
 const reqOf=name=>entries.find(p=>p.name===name).requirements;
+
+function assertGate(name,chapter,gate){
+ const p=entries.find(p=>p.name===name);
+ assert.ok(p,"Picto missing: "+name);
+ assert.equal(p.chapter,chapter,name+" story placement is wrong");
+ assert.equal(JSON.stringify([...p.requirements].sort()),JSON.stringify([...gate].sort()),name+" traversal tags are wrong");
+ assert.ok(p.guide.length>=75,name+" needs step-by-step directions");
+}
+for(const [name,chapter,gates] of [
+ ["Shielding Tint","act3",["fly"]],["Breaking Slow","act3",["paint","fly"]],
+ ["Tainted","act2",["paint"]],["Random Defense","act2",["swim","paint"]],
+ ["Energising Stun","endgame",["paint","fly"]],["In Medias Res","act2",["swim"]],
+ ["Critical Break","act2",["swim","paint"]],["Cheater","act2",["swim"]],
+ ["Double Burn","act2",["swim"]],["Shielding Death","act2",["swim"]],
+ ["Beneficial Contamination","act2",["swim","reef"]],["SOS Rush","act2",["swim","reef"]],
+ ["Healing Parry","act1",["rough"]],["Warming Up","act2",["swim"]],
+ ["Anti-Blight","act3",["fly"]],["Longer Burn","act3",["fly"]]
+])assertGate(name,chapter,gates);
+assert.match(entries.find(p=>p.name==="Shielding Tint").guide,/BOURGEON|ruin/i);
+assert.match(entries.find(p=>p.name==="Augmented Counter III").guide,/SHATTERED ALLEY/i);
+assert.ok(!/Frozen Hearts/i.test(entries.find(p=>p.name==="Augmented Counter III").guide));
+assert.match(entries.find(p=>p.name==="Energising Gradient").guide,/FROST ÉVÊQUE/);
+assert.match(entries.find(p=>p.name==="Time Tint").location,/Old Lumière/);
+
 assert.ok(reqOf("Piercing Shot").includes("paint"),"Piercing Shot needs Sastro Paint Break");
 assert.ok(!reqOf("Energising Revive").includes("paint"),"Paint Cage must not imply Paint Break");
 assert.ok(reqOf("Breaking Death").includes("fly"),"Thunder Évêque requires flight");
@@ -88,6 +124,12 @@ assert.ok(entries.filter(p=>p.section==="Flying Manor"||p.section==="Endless Tow
 assert.ok(entries.filter(p=>p.chapter==="endgame"&&p.section==="Optional regions, bosses and secret weapons").every(p=>/Esquie diving/i.test(p.requirement)),"Renoir's Drafts needs diving");
 const position=name=>entries.findIndex(p=>p.name===name);
 assert.ok(position("Stay Marked")<position("Shortcut")&&position("Shortcut")<position("AP Discount"),"Flight areas should precede diving zones and DLC");
+assert.ok(position("Healing Parry")<position("Confident"),"Healing Parry available before Stone Wave Cliffs");
+assert.ok(position("Cheater")<position("Energising Gradient"),"Sprong swim-accessible earlier than Monoco detours");
+assert.ok(position("Double Burn")<position("Shielding Tint"),"Visages pickup before flight");
+assert.ok(position("Shielding Death")<position("Shielding Tint"),"The Crows is swim-accessible");
+assert.ok(position("Shielding Tint")<position("Stay Marked"),"Flight-sweep ruins before Flying Manor");
+assert.ok(position("Tainted")>position("Piercing Shot"),"Tainted requires Paint Break revisit");
 
 assert.equal(byName["Piercing Shot"].chapter,"act2","Paint Break gate in Ancient Sanctuary");
 assert.match(byName["Piercing Shot"].requirement,/Paint Break/i);
@@ -125,7 +167,7 @@ assert.match(html,/\.site-main-scroll\s*\{[^}]*overflow-y:auto/,"Main scrolling 
 assert.match(html,/html,body\s*\{height:100%;overflow:hidden;\}/,"Root scrollbar must be hidden");
 assert.match(html,/document\.getElementById\('siteViewport'\)\.scrollTop=0/,"Switching tabs must reset the new scrollport");
 assert.match(html,/#buildsPage \.build-toolbar,#luminaPage \.library-toolbar \{top:0 !important;\}/,"Sticky toolbars must respect the internal scrollport");
-assert.match(html,/picto-locations\.js\?v=14\.12\.1/,"Bump cache-busting version to avoid stale browser scripts");
+assert.match(html,/picto-locations\.js\?v=14\.12\.2/,"Bump cache-busting version to avoid stale browser scripts");
 assert.doesNotMatch(html,/window\.scrollTo\(0,0\)/,"Page switching cannot scroll the old document");
 
-console.log("Picto Locations verified: 210 audited requirements, traversal tags, contrast bars, isolated scrollport, separate persistent tracker.");
+console.log("Picto Locations verified: 210 entries, independent per-Picto access fixes, complete gates, region ordering, preserved tracking state.");

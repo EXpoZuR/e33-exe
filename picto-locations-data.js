@@ -1,7 +1,7 @@
-/* E33.EXE Picto Locations: 210 unique entries with source-derived traversal requirements.
- * The requirements[] array is copied from the audited Completionist accessibility registry.
- * Paint cages do not require the separate Paint Break ability unless their route says so.
- * Progress and item-level data remain entirely independent. */
+/* E33.EXE Picto Locations — 210 unique pickups and earliest verified access routes.
+ * Independently cross-referenced per-item guides, region walkthroughs and maps,
+ * with 2026-11 audit overrides correcting legacy Completionist data.
+ * Progress IDs, storage keys and original character Picto inventory are untouched. */
 window.E33_PICTO_LOCATION_DATA = [
   {
     "name": "Dodger",
@@ -759,6 +759,31 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
+    "name": "Healing Parry",
+    "chapter": "act1",
+    "act": "Act 1",
+    "section": "Continent · after Esquie recruitment → Stone Wave Cliffs",
+    "location": "The Continent — before Stone Wave Cliffs",
+    "requirement": "Act 1 · Esquie",
+    "cost": 5,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Reaction",
+      "Verso",
+      "Maelle",
+      "Monoco",
+      "Sustain"
+    ],
+    "guide": "In ACT 1, after recruiting ESQUIE in his Nest, cross the rough black-blue terrain NORTH of Esquie's Nest toward STONE WAVE CLIFFS. Before entering the Cliffs, follow the LOWER RIGHT-hand route rather than going straight to the story portal. Go past the optional BOURGEON fight and follow the path to its SMALL TENT CAMP. Search the crates just OUTSIDE THE TENTS for HEALING PARRY. This is the first pickup; you do NOT need to wait for the Act 2 friendly Troubadour in Stone Quarry.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/To_Stone_Wave_Cliffs",
+    "requirements": [
+      "rough"
+    ]
+  },
+  {
     "name": "Death Bomb",
     "chapter": "act1",
     "act": "Act 1",
@@ -1011,27 +1036,6 @@ window.E33_PICTO_LOCATION_DATA = [
     "requirements": []
   },
   {
-    "name": "Tainted",
-    "chapter": "act1",
-    "act": "Act 1",
-    "section": "Stone Wave Cliffs · Old Farm / Tide Caverns",
-    "location": "Stone Wave Cliffs",
-    "requirement": "Act 1 · Story progression / no traversal unlock",
-    "cost": 3,
-    "tier": "S",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "DPS",
-      "Maelle",
-      "Verso"
-    ],
-    "guide": "From STONE WAVE CLIFFS OLD FARM Flag search around the barn clearing for the CHROMATIC GAULT optional enemy and defeat it to receive Tainted.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": []
-  },
-  {
     "name": "Enfeebling Mark",
     "chapter": "act1",
     "act": "Act 1",
@@ -1208,6 +1212,49 @@ window.E33_PICTO_LOCATION_DATA = [
     "guide": "While swimming the Continent in Act 2, beach Esquie beside the DARK SHORES dungeon portal and check the ground along the approach to the portal for Dead Energy I.",
     "missable": false,
     "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "requirements": [
+      "swim"
+    ]
+  },
+  {
+    "name": "In Medias Res",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Dark Shores · early swim detour (dangerous enemies)",
+    "location": "Dark Shores",
+    "requirement": "Act 2 · Esquie swimming",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "As soon as ESQUIE can SWIM at the beginning of Act 2, sail to the shipwreck-strewn beach with the DARK SHORES portal, southwest of Spring Meadows. Enter at BLOODIED BEACH Flag and follow the open beach past the shipwrecks toward the far end. The IN MEDIAS RES Picto sits on the sand by TWO NOIRE enemies near the rear of the area. Fight the Noire or lure them away, double back and pick it up. NO CORAL BREAK is required; these enemies are far stronger than early Act 2 enemies.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Dark_Shores",
+    "requirements": [
+      "swim"
+    ]
+  },
+  {
+    "name": "Cheater",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Continent · swim-accessible optional superboss",
+    "location": "The Continent — Sprong, southwest of Blades’ Graveyard",
+    "requirement": "Act 2 · Esquie swimming",
+    "cost": 40,
+    "tier": "SS",
+    "dlc": false,
+    "effect": "Always plays twice in a row.",
+    "tags": [
+      "AP economy",
+      "Universal"
+    ],
+    "guide": "As soon as ESQUIE learns SWIM at the start of Act 2, sail into the OPEN SEA between BLADES' GRAVEYARD and the ENDLESS TOWER, southwest of Blades' Graveyard. Look for SPRONG, the enormous roaming Nevron standing in the water; swim directly into it to start the fight. Defeat SPRONG to obtain CHEATER. It is reachable WITHOUT FLIGHT, but this is a very hard optional boss: returning in Act 3 with Painted Power and a stronger party is recommended if you cannot win yet.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Sprong",
     "requirements": [
       "swim"
     ]
@@ -1484,6 +1531,29 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
+    "name": "Warming Up",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Continent · Coastal Cave beach (swim-accessible)",
+    "location": "The Continent — outside Coastal Cave",
+    "requirement": "Act 2 · Esquie swimming",
+    "cost": 15,
+    "tier": "S",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "DPS",
+      "Maelle",
+      "Verso"
+    ],
+    "guide": "Once ESQUIE can SWIM and you have reached the northern Continent beyond Forgotten Battlefield, head toward the STONE QUARRY portal, then search the nearby BEACH to the EAST toward COASTAL CAVE. The enormous GROSSE TÊTE optional boss stands directly IN FRONT OF COASTAL CAVE's entrance on that shore. Defeat it to receive WARMING UP. You can reach the beach with SWIM: breaking coral reefs after Old Lumière is NOT necessary. The boss is very difficult at this stage, so you may return later.",
+    "missable": false,
+    "source": "https://www.pictotracker.com/pictos/warming-up",
+    "requirements": [
+      "swim"
+    ]
+  },
+  {
     "name": "Aegis Revival",
     "chapter": "act2",
     "act": "Act 2",
@@ -1578,6 +1648,55 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
+    "name": "Tainted",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Paint Break · revisit previous areas",
+    "location": "Stone Wave Cliffs",
+    "requirement": "Act 2 · Paint Break",
+    "cost": 3,
+    "tier": "S",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "DPS",
+      "Maelle",
+      "Verso"
+    ],
+    "guide": "After rescuing FOUR Lost Gestrals and learning PAINT BREAK from Sastro at camp, fast-travel to STONE WAVE CLIFFS — OLD FARM. Head down toward the Hexga clearing, pass to the LEFT of the shelter rather than following the usual right-hand route, and break the BLUE-CRACKED PAINT SPIKE blocking the hidden path. Enter the new clearing beyond it and defeat the CHROMATIC GAULT; it drops Tainted. Rejuvenating Revive is behind a nearby shelter in the same unlocked section.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Revisiting_Old_Areas",
+    "requirements": [
+      "paint"
+    ]
+  },
+  {
+    "name": "Critical Break",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Paint Break · revisit previous areas",
+    "location": "Overworld",
+    "requirement": "Act 2 · Esquie swimming · Paint Break",
+    "cost": 5,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco",
+      "DPS",
+      "Maelle"
+    ],
+    "guide": "After unlocking Sastro's PAINT BREAK (four rescued Gestrals), summon ESQUIE and swim to the WESTERN/NORTHWESTERN shore of VISAGES on the Continent. Land on the small reachable beach northwest of the Visages entrance and look for the cracked PAINT SPIKE on the rocky shore. Destroy it to reveal the CRITICAL BREAK Picto. This spot can be reached with SWIM; the later CORAL BREAK upgrade is not required.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Paint_Spikes",
+    "requirements": [
+      "swim",
+      "paint"
+    ]
+  },
+  {
     "name": "Breaking Burn",
     "chapter": "act2",
     "act": "Act 2",
@@ -1667,59 +1786,9 @@ window.E33_PICTO_LOCATION_DATA = [
       "Gradient",
       "Act 3"
     ],
-    "guide": "Exit FORGOTTEN BATTLEFIELD through its NORTH portal onto the Continent, then explore the slopes NORTHWEST of that entrance. Defeat the FROST ÉVÊQUE roaming this approach to collect Energising Gradient.",
+    "guide": "After entering ACT 2 and crossing FORGOTTEN BATTLEFIELD, reach MONOCO'S STATION and follow the eastern Continent route to the STONE QUARRY portal. From the quarry area, climb the HILL NORTH/NORTHEAST of Stone Quarry, passing a small campsite, until you find the solitary FROST ÉVÊQUE at the top. Defeat it to obtain ENERGISING GRADIENT. This optional enemy hits very hard; it is accessible before Act 3 via the northern land route, but you can come back when stronger.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim"
-    ]
-  },
-  {
-    "name": "Shielding Tint",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Boat Graveyard",
-    "location": "Overworld",
-    "requirement": "Act 2 · Esquie swimming",
-    "cost": 10,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Sustain",
-      "Lune",
-      "Sciel",
-      "Defense",
-      "Support"
-    ],
-    "guide": "On the peninsula SOUTHWEST of the BOAT GRAVEYARD portal, walk among the ruined walls beside the shoreline and collect Shielding Tint hidden in the building remains.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim"
-    ]
-  },
-  {
-    "name": "Healing Parry",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Stone Quarry",
-    "location": "Overworld",
-    "requirement": "Act 2 · Esquie swimming",
-    "cost": 5,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Reaction",
-      "Verso",
-      "Maelle",
-      "Monoco",
-      "Sustain"
-    ],
-    "guide": "Enter STONE QUARRY near the Stone Wave Cliffs coastal route and find the FRIENDLY TROUBADOUR Nevron. Complete its request and speak to it again to claim Healing Parry. An alternate ground copy lies behind the Bourgeon near Stone Wave Cliffs' entrance.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Eveque",
     "requirements": [
       "swim"
     ]
@@ -1961,32 +2030,6 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
-    "name": "Breaking Slow",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Abbest Cave",
-    "location": "Overworld",
-    "requirement": "Act 2 · Esquie swimming · Paint Break",
-    "cost": 5,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco",
-      "Turn control",
-      "Sciel"
-    ],
-    "guide": "With PAINT BREAK earned from Sastro, return to the Continent SOUTHWEST of ABBEST CAVE. Find the cracked blue-black rock along the coast, break it with a ranged paint shot and take Breaking Slow behind the spike.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim",
-      "paint"
-    ]
-  },
-  {
     "name": "Healing Death",
     "chapter": "act2",
     "act": "Act 2",
@@ -2107,7 +2150,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "chapter": "act2",
     "act": "Act 2",
     "section": "Old Lumière",
-    "location": "Endless Tower",
+    "location": "Old Lumière — Right Street",
     "requirement": "Act 2 · Esquie swimming",
     "cost": 10,
     "tier": "C",
@@ -2118,84 +2161,11 @@ window.E33_PICTO_LOCATION_DATA = [
       "Lune",
       "Sciel"
     ],
-    "guide": "In OLD LUMIÈRE, fast-travel to RIGHT STREET Flag. Follow Right Street deep into the ruined buildings and check by the rocks along the main path for the loose Time Tint Picto; do not wait until Endless Tower.",
+    "guide": "In OLD LUMIÈRE reach the RIGHT STREET Expedition Flag and follow the ruined street through the grapple sections until you encounter a CHEVALIÈRE. Continue uphill past the enemy, follow the winding SLOPE and look RIGHT near the top for a lower rock LEDGE. Drop down to that ledge and pick up TIME TINT. This is the first copy in Act 2; completing Endless Tower Stage 4 Trial 3 is a later alternate source.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Pictos",
     "requirements": [
       "swim"
-    ]
-  },
-  {
-    "name": "In Medias Res",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Continent · western expansion",
-    "location": "Dark Shores",
-    "requirement": "Act 2 · Esquie swimming · Esquie coral break",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "In Act 2, sail to DARK SHORES and enter from the BLOODIED BEACH Flag. Follow the dangerous beach toward its far end, checking the final dead-end shoreline for In Medias Res.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim",
-      "reef"
-    ]
-  },
-  {
-    "name": "Warming Up",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Coastal Cave",
-    "location": "Overworld",
-    "requirement": "Act 2 · Esquie swimming · Esquie coral break",
-    "cost": 15,
-    "tier": "S",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "DPS",
-      "Maelle",
-      "Verso"
-    ],
-    "guide": "On the Continent outside COASTAL CAVE's portal, defeat the enormous GROSSE TÊTE optional boss standing in front of the entrance. Warming Up is the victory reward.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim",
-      "reef"
-    ]
-  },
-  {
-    "name": "Critical Break",
-    "chapter": "act2",
-    "act": "Act 2",
-    "section": "Continent · western expansion",
-    "location": "Overworld",
-    "requirement": "Act 2 · Esquie swimming · Paint Break · Esquie coral break",
-    "cost": 5,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco",
-      "DPS",
-      "Maelle"
-    ],
-    "guide": "After learning Paint Break, swim northwest of VISAGES on the Continent to the reachable strip of coastline. Destroy the blue-cracked PAINT SPIKE rock on that shore and retrieve Critical Break.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "swim",
-      "paint",
-      "reef"
     ]
   },
   {
@@ -2204,7 +2174,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "act": "Act 2",
     "section": "Falling Leaves",
     "location": "Falling Leaves",
-    "requirement": "Act 2 · Esquie swimming",
+    "requirement": "Act 2 · Esquie swimming · Esquie coral break",
     "cost": 15,
     "tier": "S",
     "dlc": false,
@@ -2212,11 +2182,12 @@ window.E33_PICTO_LOCATION_DATA = [
     "tags": [
       "Situational"
     ],
-    "guide": "In FALLING LEAVES, start at the RESINVEIL GROVE Expedition Flag and follow the grove path toward the grapple point that leads to PECHA's merchant ledge. Grapple across and buy the Beneficial Contamination Picto from the merchant for 48,200 Chroma.",
+    "guide": "AFTER completing OLD LUMIÈRE and unlocking ESQUIE'S CORAL BREAK, swim through the reef-blocked western passage on the Continent to the FALLING LEAVES portal northwest of Forgotten Battlefield. In FALLING LEAVES, start at the RESINVEIL GROVE Expedition Flag and follow the grove path toward the grapple point that leads to PECHA's merchant ledge. Grapple across and buy the Beneficial Contamination Picto from the merchant for 48,200 Chroma.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
     "requirements": [
-      "swim"
+      "swim",
+      "reef"
     ]
   },
   {
@@ -2225,7 +2196,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "act": "Act 2",
     "section": "Falling Leaves",
     "location": "Falling Leaves",
-    "requirement": "Act 2 · Esquie swimming",
+    "requirement": "Act 2 · Esquie swimming · Esquie coral break",
     "cost": 5,
     "tier": "B",
     "dlc": false,
@@ -2235,9 +2206,32 @@ window.E33_PICTO_LOCATION_DATA = [
       "Sciel",
       "Monoco"
     ],
-    "guide": "In FALLING LEAVES, start at RESINVEIL GROVE Flag and follow the route toward the CHROMATIC BALLET side-boss; check the pickup beside its arena for SOS Rush.",
+    "guide": "AFTER completing OLD LUMIÈRE and unlocking ESQUIE'S CORAL BREAK, swim through the reef-blocked western passage on the Continent to the FALLING LEAVES portal northwest of Forgotten Battlefield. In FALLING LEAVES, start at RESINVEIL GROVE Flag and follow the route toward the CHROMATIC BALLET side-boss; check the pickup beside its arena for SOS Rush.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+    "requirements": [
+      "swim",
+      "reef"
+    ]
+  },
+  {
+    "name": "Shielding Death",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "The Crows · portal west of Visages (swim-accessible)",
+    "location": "The Crows — Chromatic Chapelier",
+    "requirement": "Act 2 · Esquie swimming",
+    "cost": 10,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Defense",
+      "Support"
+    ],
+    "guide": "AFTER OLD LUMIÈRE in ACT 2, summon ESQUIE and SWIM across the western ocean to the small shore WEST/NORTHWEST of VISAGES with THE CROWS portal. Enter and activate the ENTRANCE Flag. Shoot ALL glowing black CROWS perched throughout the small cliff area (inspect every overlook and post). Once the crows are cleared, the CHROMATIC CHAPELIER appears. Defeat it to get SHIELDING DEATH. The entrance itself requires SWIMMING, NOT FLIGHT; this is a very difficult fight, so consider returning at level 60+.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/The_Crows",
     "requirements": [
       "swim"
     ]
@@ -2377,6 +2371,30 @@ window.E33_PICTO_LOCATION_DATA = [
     "guide": "At VISAGES take the ANGER VALE branch, activate the giant MOUTH landmark, then turn RIGHT into the enemy-guarded side path and defeat the enemy to collect Powered Attack.",
     "missable": false,
     "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "requirements": [
+      "swim"
+    ]
+  },
+  {
+    "name": "Double Burn",
+    "chapter": "act2",
+    "act": "Act 2",
+    "section": "Visages",
+    "location": "Visages — Anger Vale",
+    "requirement": "Act 2 · Esquie swimming",
+    "cost": 30,
+    "tier": "S",
+    "dlc": false,
+    "effect": "Each Burn application applies an additional Burn stack.",
+    "tags": [
+      "Burn",
+      "Lune",
+      "Maelle",
+      "Monoco"
+    ],
+    "guide": "Inside VISAGES, reach the ANGER VALE Expedition Flag. Head from the flag toward the huge angry MASK/face; before confronting it, seek the CAVE OPENING across from the mask near the blue-lit stone wall. Enter the cave and take the LEFT fork. Defeat the Boucheclier/Moissonneuse group guarding an expeditioner's body in the dead end and pick up DOUBLE BURN. You can get it here in ACT 2; the merchant in SACRED RIVER in Act 3 is only a later alternative.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Visages",
     "requirements": [
       "swim"
     ]
@@ -2826,7 +2844,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "act": "Act 2",
     "section": "The Monolith",
     "location": "The Monolith",
-    "requirement": "Act 2 · Esquie swimming",
+    "requirement": "Act 2 · Esquie swimming · Paint Break",
     "cost": 5,
     "tier": "D",
     "dlc": false,
@@ -2834,11 +2852,12 @@ window.E33_PICTO_LOCATION_DATA = [
     "tags": [
       "Situational"
     ],
-    "guide": "In the MONOLITH's TAINTED SANCTUARY section find PAINT CAGE 20 and shoot its three nearby anomalies. Open the cage for Random Defense.",
+    "guide": "Inside THE MONOLITH in TAINTED SANCTUARY, pass the huge wooden statue and find the crawlspace on the LEFT of the main route near the Clair enemy. Crawl through to PAINT CAGE 20. Shoot the first anomaly on the statue's big central column and the second on the level below behind the folded-arms golden Gestral. The THIRD anomaly is concealed behind the BLUE-CRACKED PAINT SPIKE near the cage: use Sastro's PAINT BREAK to destroy it, shoot the last anomaly and collect Random Defense from the open cage.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.gamerguides.com/clair-obscur-expedition-33/database/pictos/defensive/random-defense",
     "requirements": [
-      "swim"
+      "swim",
+      "paint"
     ]
   },
   {
@@ -2907,6 +2926,102 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
+    "name": "Shielding Tint",
+    "chapter": "act3",
+    "act": "Act 3",
+    "section": "Continent · Bourgeon valley southeast of Forgotten Battlefield (flight)",
+    "location": "The Continent — southeast of Forgotten Battlefield",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Sustain",
+      "Lune",
+      "Sciel",
+      "Defense",
+      "Support"
+    ],
+    "guide": "AFTER Esquie learns to FLY in Act 3, return to the Continent and fly to the otherwise inaccessible valley southeast of FORGOTTEN BATTLEFIELD. Look for a BOURGEON roaming beside ruined columns and a low ruined stone structure. Search the WOODEN CRATES among the broken walls near the Bourgeon; break the crates to reveal Shielding Tint. Do not confuse this elevated ruin with the Boat Graveyard beach.",
+    "missable": false,
+    "source": "https://ethugamer.com/clair-obscur-expedition-33/best-endgame-pictos-build-combos-in-clair-obscur-expedition-33-final-guide-part-3/",
+    "requirements": [
+      "fly"
+    ]
+  },
+  {
+    "name": "Breaking Slow",
+    "chapter": "act3",
+    "act": "Act 3",
+    "section": "Continent · raised plateau west of Abbest Cave (flight + Paint Break)",
+    "location": "The Continent — mountains west of Abbest Cave",
+    "requirement": "Act 3 · Paint Break · Esquie flight",
+    "cost": 5,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco",
+      "Turn control",
+      "Sciel"
+    ],
+    "guide": "ONLY AFTER ESQUIE FLIGHT AND SASTRO'S PAINT BREAK: fly to the elevated mountains WEST of ABBEST CAVE on the original Continent landmass. Land in the high clearing with the large stone STATUES, locate the cracked BLUE-BLACK PAINT SPIKE among the rocks, destroy it using Paint Break and collect Breaking Slow behind the barrier. This upper plateau cannot be reached by simply swimming to the shore.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Paint_Spikes",
+    "requirements": [
+      "paint",
+      "fly"
+    ]
+  },
+  {
+    "name": "Anti-Blight",
+    "chapter": "act3",
+    "act": "Act 3",
+    "section": "Continent · flight-accessible floating islands",
+    "location": "The Continent — Chromatic Portier floating island",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "As soon as ESQUIE learns FLIGHT in Act 3, fly to the isolated FLOATING ISLAND southeast of STONE WAVE CLIFFS CAVE (northeast of Lumière). Land beside the CHROMATIC PORTIER and defeat this high-level optional boss for ANTI-BLIGHT. This is a direct fight/drop and can be done before exploring THE REACHER. If you prefer a shop, Eragol in the Reacher's Foggy Area also sells this Picto later.",
+    "missable": false,
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Chromatic_Portier",
+    "requirements": [
+      "fly"
+    ]
+  },
+  {
+    "name": "Longer Burn",
+    "chapter": "act3",
+    "act": "Act 3",
+    "section": "Continent · flight-accessible floating islands",
+    "location": "The Continent — Chromatic Aberration floating island",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 15,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Burn",
+      "Lune",
+      "Maelle",
+      "Monoco"
+    ],
+    "guide": "After ESQUIE unlocks FLIGHT, fly onto the FLOATING ISLAND northwest of DARK SHORES, between Dark Shores and THE FOUNTAIN on the original Continent coastline. Locate and defeat the CHROMATIC ABERRATION there; its boss drops include LONGER BURN. This is the first flight-sweep opportunity; a merchant in FLYING MANOR also sells the Picto later.",
+    "missable": false,
+    "source": "https://gamefaqs.gamespot.com/pc/469480-clair-obscur-expedition-33/faqs/81920/chapter-19-flying-manor",
+    "requirements": [
+      "fly"
+    ]
+  },
+  {
     "name": "Breaking Death",
     "chapter": "act3",
     "act": "Act 3",
@@ -2951,52 +3066,6 @@ window.E33_PICTO_LOCATION_DATA = [
     "source": "https://game-checklists.com/expedition33/all-pictos.html",
     "requirements": [
       "paint",
-      "fly"
-    ]
-  },
-  {
-    "name": "Double Burn",
-    "chapter": "act3",
-    "act": "Act 3",
-    "section": "Sacred River",
-    "location": "Visages",
-    "requirement": "Act 3 · Esquie flight",
-    "cost": 30,
-    "tier": "S",
-    "dlc": false,
-    "effect": "Each Burn application applies an additional Burn stack.",
-    "tags": [
-      "Burn",
-      "Lune",
-      "Maelle",
-      "Monoco"
-    ],
-    "guide": "After unlocking Esquie's FLIGHT in Act 3, reach SACRED RIVER on the north part of the Continent above the snowy region. Find the Gestral merchant inside the dungeon, win its duel and purchase Double Burn for 89,800 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "fly"
-    ]
-  },
-  {
-    "name": "Cheater",
-    "chapter": "act3",
-    "act": "Act 3",
-    "section": "Continent · flight-accessible islands and quests",
-    "location": "Defeat Sprong in the Overworld",
-    "requirement": "Act 3 · Esquie flight",
-    "cost": 40,
-    "tier": "SS",
-    "dlc": false,
-    "effect": "Always plays twice in a row.",
-    "tags": [
-      "AP economy",
-      "Universal"
-    ],
-    "guide": "In Act 3's optional Continent exploration, reach the SP RONG superboss on the landmass north of Forgotten Battlefield and defeat it to collect Cheater.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
       "fly"
     ]
   },
@@ -3149,27 +3218,6 @@ window.E33_PICTO_LOCATION_DATA = [
       "Monoco"
     ],
     "guide": "Fly to THE REACHER and progress through the wooden tower to the upper SNOWY AREA. Defeat the enemy GROUP patrolling that snowy section to receive Sniper.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "fly"
-    ]
-  },
-  {
-    "name": "Anti-Blight",
-    "chapter": "act3",
-    "act": "Act 3",
-    "section": "The Reacher",
-    "location": "The Reacher",
-    "requirement": "Act 3 · Esquie flight",
-    "cost": 10,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "In THE REACHER go to the FOGGY AREA Flag and follow the route beyond the large HOT-AIR BALLOON to the Gestral merchant. Win the merchant duel if necessary and buy Anti-Blight for 67,350 Chroma.",
     "missable": false,
     "source": "https://game-checklists.com/expedition33/all-pictos.html",
     "requirements": [
@@ -3647,28 +3695,6 @@ window.E33_PICTO_LOCATION_DATA = [
     ]
   },
   {
-    "name": "Shielding Death",
-    "chapter": "act3",
-    "act": "Act 3",
-    "section": "The Crows",
-    "location": "The Crows — shoot all Crows and defeat the boss",
-    "requirement": "Act 3 · Esquie flight",
-    "cost": 10,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Defense",
-      "Support"
-    ],
-    "guide": "In THE CROWS, solve the black-crow interactions to make the CHROMATIC CHAPELIER appear, then defeat it to receive Shielding Death.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "fly"
-    ]
-  },
-  {
     "name": "Greater Slow",
     "chapter": "act3",
     "act": "Act 3",
@@ -3696,7 +3722,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "chapter": "act3",
     "act": "Act 3",
     "section": "Story finale · Lumière",
-    "location": "Frozen Hearts",
+    "location": "Lumière — Shattered Alley (Act 3)",
     "requirement": "Act 3 · Esquie flight",
     "cost": 7,
     "tier": "A",
@@ -3708,9 +3734,9 @@ window.E33_PICTO_LOCATION_DATA = [
       "Maelle",
       "Monoco"
     ],
-    "guide": "During the ACT 3 LUMIÈRE story route, locate and defeat the CHROMATIC ÉCHASSIER before advancing beyond its encounter area. This awards Augmented Counter III; the unique story encounter may be missed if you rush the finale.",
+    "guide": "During the ACT 3 return to LUMIÈRE, fast-travel to the SHATTERED ALLEY Expedition Flag. Head down the alley, take the LEFT path at the first meaningful fork, then descend the stairs and continue toward the OPERA HOUSE. In the open area ahead, a large four-legged CHROMATIC ÉCHASSIER blocks the route. Shoot its exposed antenna weak point with Free Aim to remove its damage reduction, then defeat the boss for AUGMENTED COUNTER III before grappling on to the Opera House. It is NOT a Frozen Hearts pickup.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Lumiere_3",
     "requirements": [
       "fly"
     ]
@@ -3862,7 +3888,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "chapter": "endgame",
     "act": "Act 3 · flight-accessible challenges",
     "section": "Flying Manor",
-    "location": "The Monolith",
+    "location": "Flying Manor",
     "requirement": "Act 3 · Esquie flight",
     "cost": 10,
     "tier": "A",
@@ -3876,31 +3902,7 @@ window.E33_PICTO_LOCATION_DATA = [
     ],
     "guide": "With Esquie's FLIGHT unlocked, enter FLYING MANOR and reach CENTRAL PLAZA Flag. Take the ELEVATOR beside the plaza to the merchant landing and purchase Stay Marked for 122,250 Chroma.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
-    "requirements": [
-      "fly"
-    ]
-  },
-  {
-    "name": "Longer Burn",
-    "chapter": "endgame",
-    "act": "Act 3 · flight-accessible challenges",
-    "section": "Flying Manor",
-    "location": "Overworld",
-    "requirement": "Act 3 · Esquie flight",
-    "cost": 15,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Burn",
-      "Lune",
-      "Maelle",
-      "Monoco"
-    ],
-    "guide": "At FLYING MANOR Central Plaza Flag take the adjacent ELEVATOR and reach the Gestral merchant. After winning his duel, buy Longer Burn for 142,625 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Flying_Manor",
     "requirements": [
       "fly"
     ]
@@ -4072,7 +4074,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "act": "Act 3 · flight-accessible challenges",
     "section": "Flying Manor",
     "location": "Flying Manor",
-    "requirement": "Act 3 · Esquie flight",
+    "requirement": "Act 3 · Paint Break · Esquie flight",
     "cost": 10,
     "tier": "B",
     "dlc": false,
@@ -4084,10 +4086,11 @@ window.E33_PICTO_LOCATION_DATA = [
       "Gustave",
       "Monoco"
     ],
-    "guide": "In FLYING MANOR locate PAINT CAGE 18 and shoot its THREE nearby paint anomalies to open the cage. Claim Energising Stun from inside.",
+    "guide": "In FLYING MANOR, begin at CENTRAL PLAZA and reach the northeast floating-picture-frame route. Grapple across the frames into the CATHEDRAL with the THREE ÉVÊQUES. Turn back toward the Bourgeon and locate PAINT CAGE 18 in front of an Évêque statue. Shoot the first two anomalies on the Évêque statue and on the nearby stairs. For the THIRD anomaly, follow the wall LEFT of the statue and use Sastro's PAINT BREAK on the blue-cracked Paint Spike hiding the lock. Shoot it and return to the cage for Energising Stun.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.gamerguides.com/clair-obscur-expedition-33/database/pictos/support/energising-stun",
     "requirements": [
+      "paint",
       "fly"
     ]
   },
@@ -4356,7 +4359,7 @@ window.E33_PICTO_LOCATION_DATA = [
     "chapter": "endgame",
     "act": "Act 3 · diving-required regions",
     "section": "Optional regions, bosses and secret weapons",
-    "location": "Lumière — Act III",
+    "location": "Renoir's Drafts",
     "requirement": "Act 3 · Esquie diving",
     "cost": 5,
     "tier": "C",
@@ -4367,7 +4370,7 @@ window.E33_PICTO_LOCATION_DATA = [
     ],
     "guide": "Only after Esquie unlocks DIVING through his relationship rank 6 quest: enter RENOIR'S DRAFTS and travel from ENTRANCE Flag past the first GRAPPLE to the side area with a merchant. Defeat the enemy there for Shortcut.",
     "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html",
+    "source": "https://www.neoseeker.com/clair-obscur-expedition-33/Pictos",
     "requirements": [
       "dive"
     ]
