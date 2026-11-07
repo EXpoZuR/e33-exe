@@ -4443,6 +4443,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 
 </style>
 <link rel="stylesheet" href="completionist.css?v=14.11.4" />
+<link rel="stylesheet" href="picto-locations.css?v=14.12.0" />
 </head>
 <body>
 <header class="app-header">
@@ -4456,6 +4457,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       <button class="app-tab" data-page="buildsPage">Builds</button>
       <button class="app-tab" data-page="progressionPage">Progression</button>
       <button class="app-tab" data-page="luminaPage">Pictos &amp; Luminas</button>
+      <button class="app-tab" data-page="pictoHuntPage">Picto Locations</button>
       <button class="app-tab" data-page="optimizerPage">Optimizer</button>
       <button class="app-tab" data-page="completionistPage">Completionist</button>
     </nav>
@@ -6365,6 +6367,50 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 </section>
 
 
+
+<section class="app-page" id="pictoHuntPage">
+  <div class="pl-shell">
+    <div class="pl-hero">
+      <div>
+        <div class="pl-eyebrow">E33.EXE // Collection route &amp; NG+ upgrades</div>
+        <h1>Picto Locations</h1>
+        <p>All 210 Pictos, arranged by the earliest story progression and traversal abilities needed to reach them. Every entry includes a route to its location. Track it each playthrough until the Picto reaches level 33.</p>
+      </div>
+      <aside class="pl-hero-note">
+        <strong>Independent of your builds</strong>
+        Found and Maxed here never change the Pictos &amp; Luminas ownership or level data. Maxed means you have obtained this Picto at level 33.
+      </aside>
+    </div>
+
+    <div class="pl-status-panel" aria-label="Picto acquisition status">
+      <div class="pl-status-top"><strong>Picto progression</strong><span><span id="pictoHuntTotal">210</span> unique Pictos</span></div>
+      <div class="pl-status-grid">
+        <div class="pl-stat pl-stat-unfound"><span class="pl-stat-dot" aria-hidden="true"></span><div><span class="pl-stat-label">Unfound</span><strong id="pictoHuntUnfound">210</strong></div></div>
+        <div class="pl-stat pl-stat-found"><span class="pl-stat-dot" aria-hidden="true"></span><div><span class="pl-stat-label">Found · below Lv 33</span><strong id="pictoHuntFound">0</strong></div></div>
+        <div class="pl-stat pl-stat-maxed"><span class="pl-stat-dot" aria-hidden="true"></span><div><span class="pl-stat-label">Maxed · Lv 33</span><strong id="pictoHuntMaxed">0</strong></div></div>
+      </div>
+      <div class="pl-meter" role="img" aria-label="210 unfound, 0 found but not maxed, 0 maxed">
+        <span class="pl-meter-unfound" style="width:100%"></span><span class="pl-meter-found" style="width:0%"></span><span class="pl-meter-maxed" style="width:0%"></span>
+      </div>
+      <div class="pl-progress-foot"><span>The three bar segments are exclusive.</span><span>The Found tab includes Maxed Pictos.</span></div>
+    </div>
+
+    <div class="pl-toolbar">
+      <div class="pl-tabs" role="tablist" aria-label="Picto completion lists">
+        <button class="pl-tab active" id="huntTabAll" type="button" role="tab" aria-selected="true" aria-controls="pictoHuntList" data-hunt-tab="all">All <span class="pl-tab-count" id="pictoHuntTabAllCount">210</span></button>
+        <button class="pl-tab" id="huntTabFound" type="button" role="tab" aria-selected="false" aria-controls="pictoHuntList" data-hunt-tab="found">Found <span class="pl-tab-count" id="pictoHuntTabFoundCount">0</span></button>
+        <button class="pl-tab" id="huntTabMaxed" type="button" role="tab" aria-selected="false" aria-controls="pictoHuntList" data-hunt-tab="maxed">Maxed <span class="pl-tab-count" id="pictoHuntTabMaxedCount">0</span></button>
+      </div>
+      <label class="pl-search-group"><span class="pl-search-icon" aria-hidden="true">⌕</span><input id="pictoHuntSearch" type="search" autocomplete="off" placeholder="Search Picto, Expedition Flag, landmark, route…" aria-label="Search Picto names and locations"><button id="pictoHuntClearSearch" class="pl-clear-search" type="button" aria-label="Clear Picto location search">×</button></label>
+      <div class="pl-backups"><button type="button" id="pictoHuntExport">↥ Export</button><button type="button" id="pictoHuntImport">↧ Import</button><input id="pictoHuntImportFile" type="file" accept=".json,application/json" hidden aria-label="Import Picto Locations backup"></div>
+    </div>
+    <p class="pl-save-note" id="pictoHuntSaveNote">Changes save automatically in this browser. Export a backup before clearing browser data or switching devices. Routes use the earliest reliable access window, not a fixed NG+ Picto level.</p>
+    <div class="pl-result-line" id="pictoHuntShown" aria-live="polite">210 of 210 Pictos shown</div>
+    <div id="pictoHuntList" role="tabpanel" aria-labelledby="huntTabAll"></div>
+    <div class="pl-empty" id="pictoHuntEmpty" hidden>No Pictos match this tab and search. Try another search or switch tabs.</div>
+  </div>
+</section>
+
 <section class="app-page" id="optimizerPage">
   <div class="guide-shell optimizer-shell">
     <div class="page-hero optimizer-hero">
@@ -6765,6 +6811,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
       buildsPage:'E33.EXE — Builds',
       progressionPage:'E33.EXE — Progression',
       luminaPage:'E33.EXE — Pictos & Luminas',
+      pictoHuntPage:'E33.EXE — Picto Locations',
       optimizerPage:'E33.EXE — Optimizer',
       completionistPage:'E33.EXE — Completionist'
     };
@@ -9119,7 +9166,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
   initializeSlidingSegments();
   renderBuilds();
   const savedPage = localStorage.getItem('e33-page');
-  if (['weaponsPage','buildsPage','progressionPage','luminaPage','optimizerPage','completionistPage'].includes(savedPage)) switchPage(savedPage);
+  if (['weaponsPage','buildsPage','progressionPage','luminaPage','pictoHuntPage','optimizerPage','completionistPage'].includes(savedPage)) switchPage(savedPage);
   else requestAnimationFrame(()=>updateTabIndicator(false));
 
 </script>
@@ -9135,5 +9182,7 @@ html,.picto-modal-body,.collection-modal-list,.skill-modal,.skill-tree-stage,.gr
 <script src="completionist-merchants.js?v=14.11.4"></script>
 <script src="completionist-areas.js?v=14.11.4"></script>
 <script src="completionist.js?v=14.11.4"></script>
+<script src="picto-locations-data.js?v=14.12.0"></script>
+<script src="picto-locations.js?v=14.12.0"></script>
 </body>
 </html>

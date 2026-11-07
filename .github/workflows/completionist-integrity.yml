@@ -6,6 +6,10 @@ on:
       - 'scripts/test-completionist.cjs'
       - 'scripts/test-completionist-ui.cjs'
       - 'scripts/test-weapons-order.cjs'
+      - 'scripts/test-picto-locations.cjs'
+      - 'picto-locations*.js'
+      - 'picto-locations.css'
+      - 'index.html'
       - '.github/workflows/completionist-integrity.yml'
   pull_request:
     paths:
@@ -13,6 +17,10 @@ on:
       - 'scripts/test-completionist.cjs'
       - 'scripts/test-completionist-ui.cjs'
       - 'scripts/test-weapons-order.cjs'
+      - 'scripts/test-picto-locations.cjs'
+      - 'picto-locations*.js'
+      - 'picto-locations.css'
+      - 'index.html'
       - '.github/workflows/completionist-integrity.yml'
 jobs:
   audit:
@@ -27,3 +35,4 @@ jobs:
           node scripts/test-completionist.cjs
           node scripts/test-completionist-ui.cjs
           node scripts/test-weapons-order.cjs
+          node scripts/test-picto-locations.cjs

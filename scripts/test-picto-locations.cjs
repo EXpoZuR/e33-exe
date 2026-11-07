@@ -1,0 +1,61 @@
+"use strict";
+/* E33.EXE: verify the independent Picto Locations inventory and regression gates.
+ * Source checks cannot replace manual in-game acquisition verification. */
+const fs=require("node:fs");
+const vm=require("node:vm");
+const path=require("node:path");
+const assert=require("node:assert/strict");
+const root=path.resolve(__dirname,"..");
+const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
+const css=fs.readFileSync(path.join(root,"picto-locations.css"),"utf8");
+const script=fs.readFileSync(path.join(root,"picto-locations.js"),"utf8");
+const dataText=fs.readFileSync(path.join(root,"picto-locations-data.js"),"utf8");
+const scope={window:{}};
+vm.runInNewContext(dataText,scope,{filename:"picto-locations-data.js",timeout:10000});
+const entries=scope.window.E33_PICTO_LOCATION_DATA;
+const originalMatch=html.match(/const luminaData = (\[[^\n]+\]);/);
+assert.ok(originalMatch,"Cannot inspect existing catalog");
+const original=JSON.parse(originalMatch[1]);
+assert.equal(entries.length,210,"Guide should contain exactly 210 Pictos");
+assert.equal(new Set(entries.map(x=>x.name)).size,210,"Duplicated Picto");
+assert.equal(original.length,210,"Old Picto inventory changed unexpectedly");
+const catalogNames=new Set(original.map(x=>x.name));
+for(const p of entries){
+ assert.ok(catalogNames.has(p.name),"Unknown Picto "+p.name);
+ assert.ok(p.guide.length>=55,"Location instructions too short: "+p.name);
+ assert.ok(p.section.length>=3,"Missing region: "+p.name);
+ assert.ok(p.requirement.length>=4,"Missing access gate: "+p.name);
+ assert.ok(p.source.startsWith("https://"),"Missing source: "+p.name);
+ assert.ok(["act1","act2","act3","update","endgame"].includes(p.chapter),p.name+": unknown progression stage");
+ assert.ok(!["act1","act2"].includes(p.chapter)||!/\b(Fly to|requires flight|unlock(?:s|ed)? FLIGHT)\b/i.test(p.guide),p.name+": flight content placed before Act 3");
+}
+for(const name of catalogNames)assert.ok(entries.some(p=>p.name===name),"Guide misses "+name);
+assert.equal(entries.filter(p=>p.dlc).length,17,"DLC/update Picto count");
+assert.equal(entries.filter(p=>p.missable).length,2,"Missable Picto count");
+const byName=Object.fromEntries(entries.map(p=>[p.name,p]));
+assert.equal(byName["Breaking Death"].chapter,"act3","Thunder Évêque requires flight");
+assert.match(byName["Breaking Death"].guide,/THUNDER ÉVÊQUE/i);
+assert.equal(byName["Energising Start IV"].chapter,"act2");
+assert.equal(byName["Augmented Counter III"].chapter,"act3");
+assert.match(byName["Exposing Attack (Missable)"].guide,/Noco/i);
+assert.match(byName["Auto Powerful"].guide,/Chalier/i);
+assert.equal(byName["Piercing Shot"].chapter,"act2","Paint Break gate in Ancient Sanctuary");
+assert.match(byName["Piercing Shot"].requirement,/Paint Break/i);
+assert.ok(entries.filter(p=>p.chapter==="update").every(p=>/diving/i.test(p.requirement)),"Verso's Drafts requires Esquie diving");
+assert.ok(entries.filter(p=>p.chapter==="endgame"&&/Renoir.s Drafts/i.test(p.location)).every(p=>/diving/i.test(p.requirement)),"Renoir's Drafts requires dive");
+const chapterRank={act1:0,act2:1,act3:2,update:3,endgame:4};
+for(let i=1;i<entries.length;i++)
+ assert.ok(chapterRank[entries[i-1].chapter]<=chapterRank[entries[i].chapter],"Guide chapter order regressed near "+entries[i].name);
+assert.match(html,/id="pictoHuntPage"/);
+assert.match(html,/data-page="pictoHuntPage"/);
+assert.match(html,/data-hunt-tab="all"[\s\S]*data-hunt-tab="found"[\s\S]*data-hunt-tab="maxed"/);
+assert.match(html,/picto-locations-data\.js/);
+assert.match(html,/picto-locations\.css/);
+assert.match(html,/picto-locations\.js/);
+assert.match(script,/e33-picto-location-hunt-v1/);
+assert.doesNotMatch(script,/\be33-acquired-pictos-luminas-v1\b.*(?:getItem|setItem)/);
+assert.doesNotMatch(script,/\be33-owned-picto-levels-v1\b.*(?:getItem|setItem)/);
+assert.match(script,/if\(checked\)progress\[name\]='maxed'/,"Checking Maxed must mark the row as Maxed");
+assert.match(script,/input\.dataset\.huntStatus==='found'\?now!=='unfound':now==='maxed'/,"Checking Maxed must check Found");
+assert.match(css,/\.pl-meter-maxed/);
+console.log("Picto Locations verified: 210 entries, 17 DLC, 2 missables, progression gates, separate persistence, three tabs.");
