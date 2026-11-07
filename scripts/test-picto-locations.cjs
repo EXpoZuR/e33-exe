@@ -102,7 +102,7 @@ for(const [name,chapter,gates] of [
 ])assertGate(name,chapter,gates);
 assert.match(entries.find(p=>p.name==="Shielding Tint").guide,/BOURGEON|ruin/i);
 assert.match(entries.find(p=>p.name==="Augmented Counter III").guide,/SHATTERED ALLEY/i);
-assert.ok(!/Frozen Hearts/i.test(entries.find(p=>p.name==="Augmented Counter III").guide));
+assert.match(entries.find(p=>p.name==="Augmented Counter III").guide,/NOT a Frozen Hearts pickup/i);
 assert.match(entries.find(p=>p.name==="Energising Gradient").guide,/FROST ÉVÊQUE/);
 assert.match(entries.find(p=>p.name==="Time Tint").location,/Old Lumière/);
 
