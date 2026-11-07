@@ -14,6 +14,28 @@
   let tab='all', progress=readProgress();
 
   const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  // Derived from the vetted Completionist traversal registry, not inferred
+  // from area names (Paint Cage pickups do NOT automatically need Paint Break).
+  const gateLabels={
+    rough:'Esquie',swim:'Esquie Swim',paint:'Paint Break',
+    reef:'Esquie Coral Break',fly:'Esquie Fly',dive:'Esquie Dive'
+  };
+  const gateHelp={
+    rough:'Recruit Esquie in his Nest to cross rough terrain.',
+    swim:'Finish Stone Wave Cliffs to unlock Esquie swimming in Act 2.',
+    paint:'Rescue four Lost Gestrals and speak to Sastro to unlock Paint Break.',
+    reef:'Finish Old Lumière to unlock breaking coral reefs with Esquie.',
+    fly:'Complete the Monolith and begin Act 3 to unlock Esquie flight.',
+    dive:'Finish Esquie’s rank 6 relationship quest in Act 3 to unlock diving.'
+  };
+  function requirementHTML(p){
+    const keys=Array.isArray(p.requirements)?p.requirements:[];
+    const chips=keys.length
+      ?keys.map(k=>'<span class="pl-req-tag pl-req-'+safe(k)+'" title="'+safe(gateHelp[k]||k)+'">'+safe(gateLabels[k]||k)+'</span>').join('')
+      :'<span class="pl-req-tag pl-req-none" title="This pickup has no special overworld traversal requirement; follow its route details.">No traversal unlock</span>';
+    return '<div class="pl-card-requirements" aria-label="Traversal requirements"><span class="pl-req-caption">Requires</span>'+chips+'</div>';
+  }
+
   function readProgress(){
     try{
       const saved=JSON.parse(localStorage.getItem(storeKey)||'{}');
@@ -62,7 +84,7 @@
     if(tab==='found'&&progress[p.name]!=='found')return false;
     if(tab==='maxed'&&progress[p.name]!=='maxed')return false;
     if(!q)return true;
-    return [p.name,p.section,p.location,p.requirement,p.guide,p.effect,...(p.tags||[])].join(' ').toLowerCase().includes(q);
+    return [p.name,p.section,p.location,p.requirement,p.guide,p.effect,...(p.tags||[]),...(p.requirements||[]).map(k=>gateLabels[k]||k)].join(' ').toLowerCase().includes(q);
   }
   function status(p){
     return progress[p.name]||'unfound';
@@ -76,7 +98,7 @@
       +(p.missable?'<span class="pl-mini pl-missable">Missable</span>':'')
       +'<span class="pl-mini pl-tier" title="Build ranking">Tier '+safe(p.tier)+'</span>'
       +'<span class="pl-mini pl-lp">'+safe(p.cost)+' LP</span></div>'
-      +'<div class="pl-card-gate">'+safe(p.requirement)+'</div>'
+      +requirementHTML(p)
       +'<div class="pl-card-location"><span class="pl-pin" aria-hidden="true">⌖</span><strong>'+safe(cleanedSection(p))+'</strong></div>'
       +'<p class="pl-card-directions">'+safe(p.guide)+'</p>'
       +(p.effect?'<p class="pl-card-effect"><b>Effect:</b> '+safe(p.effect)+'</p>':'')

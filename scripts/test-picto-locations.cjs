@@ -32,6 +32,51 @@ for(const p of entries){
 for(const name of catalogNames)assert.ok(entries.some(p=>p.name===name),"Guide misses "+name);
 assert.equal(entries.filter(p=>p.dlc).length,17,"DLC/update Picto count");
 assert.equal(entries.filter(p=>p.missable).length,2,"Missable Picto count");
+
+// Each visible requirement tag must match the per-item audited progression gate.
+// Do not infer Paint Break from Paint Cage or Esquie flight from a nearby area.
+const auditScope={window:{}};
+vm.createContext(auditScope);
+const auditedModules=[
+ "completionist-data.js","completionist-chronology.js","completionist-details.js",
+ "completionist-routes.js","completionist-context.js","completionist-gates.js",
+ "completionist-integrity.js","completionist-precision.js","completionist-coverage.js",
+ "completionist-merchants.js","completionist-areas.js"
+];
+for(const file of auditedModules)
+ vm.runInContext(fs.readFileSync(path.join(root,file),"utf8"),auditScope,{filename:file,timeout:10000});
+const aliases={
+ "Exposing Attack · Noco exclusive":"Exposing Attack (Missable)",
+ "Energising Heal (west beach camp)":"Energising Heal",
+ "Shared Care (southern island)":"Shared Care",
+ "Accelerating Heal (eastern camp)":"Accelerating Heal"
+};
+const auditedPictos=new Map();
+for(const chapter of auditScope.window.E33_COMPLETION_DATA)
+ for(const [area,steps] of chapter.areas)
+  for(const step of steps)
+   if(step[0]==="Picto"){
+    const name=aliases[step[1]]||step[1];
+    assert.ok(!auditedPictos.has(name),"Duplicate Picto in audit: "+name);
+    auditedPictos.set(name,auditScope.window.E33_COMPLETION_AUDIT.requirements[step[3]]||[]);
+   }
+assert.equal(auditedPictos.size,210,"Audited Picto source coverage changed");
+const knownGates=new Set(["rough","swim","paint","reef","fly","dive"]);
+for(const p of entries){
+ assert.ok(Array.isArray(p.requirements),p.name+" missing requirements array");
+ assert.ok(p.requirements.every(g=>knownGates.has(g)),p.name+" has unknown ability");
+ assert.equal(new Set(p.requirements).size,p.requirements.length,p.name+" duplicated ability");
+ assert.equal(JSON.stringify([...p.requirements].sort()),JSON.stringify([...(auditedPictos.get(p.name)||[])].sort()),
+  p.name+" requirements differ from audited Completionist gates");
+}
+const reqOf=name=>entries.find(p=>p.name===name).requirements;
+assert.ok(reqOf("Piercing Shot").includes("paint"),"Piercing Shot needs Sastro Paint Break");
+assert.ok(!reqOf("Energising Revive").includes("paint"),"Paint Cage must not imply Paint Break");
+assert.ok(reqOf("Breaking Death").includes("fly"),"Thunder Évêque requires flight");
+assert.ok(reqOf("Shortcut").includes("dive"),"Renoir's Drafts requires dive");
+assert.ok(entries.some(p=>p.requirements.includes("rough")),"Missing Esquie terrain badges");
+assert.ok(entries.some(p=>p.requirements.includes("reef")),"Missing Esquie Coral Break badges");
+
 const byName=Object.fromEntries(entries.map(p=>[p.name,p]));
 assert.equal(byName["Breaking Death"].chapter,"act3","Thunder Évêque requires flight");
 assert.match(byName["Breaking Death"].guide,/THUNDER ÉVÊQUE/i);
@@ -66,4 +111,21 @@ assert.match(script,/set\('pictoHuntTabFoundCount',found\)/,"Found tab count mus
 assert.match(html,/Found and Maxed are separate tabs/,"UI explanation must reflect mutually exclusive tabs");
 assert.match(script,/input\.dataset\.huntStatus==='found'\?now!=='unfound':now==='maxed'/,"Checking Maxed must check Found");
 assert.match(css,/\.pl-meter-maxed/);
-console.log("Picto Locations verified: 210 entries, 17 DLC, 2 missables, progression gates, separate persistence, three tabs.");
+
+assert.match(script,/function requirementHTML\(p\)/,"Requirements must render as independent badges");
+for(const label of ["Esquie Swim","Paint Break","Esquie Coral Break","Esquie Fly","Esquie Dive"])
+ assert.ok(script.includes(label),"Missing requirement label: "+label);
+assert.match(css,/\.pl-req-rough/,"Missing Esquie tag styling");
+assert.match(css,/\.pl-req-reef/,"Missing coral-break tag styling");
+assert.match(css,/\.pl-req-none/,"Missing no-traversal-requirement tag styling");
+for(const status of ["unfound","found","maxed"])
+ assert.match(css,new RegExp("\\.pl-meter-"+status+"\\{background:linear-gradient"),status+" progress bar needs high-contrast gradient");
+assert.match(html,/<main class="site-main-scroll" id="siteViewport"/,"Main content needs its own scrolling region beneath the header");
+assert.match(html,/\.site-main-scroll\s*\{[^}]*overflow-y:auto/,"Main scrolling region must own vertical scrolling");
+assert.match(html,/html,body\s*\{height:100%;overflow:hidden;\}/,"Root scrollbar must be hidden");
+assert.match(html,/document\.getElementById\('siteViewport'\)\.scrollTop=0/,"Switching tabs must reset the new scrollport");
+assert.match(html,/#buildsPage \.build-toolbar,#luminaPage \.library-toolbar \{top:0 !important;\}/,"Sticky toolbars must respect the internal scrollport");
+assert.match(html,/picto-locations\.js\?v=14\.12\.1/,"Bump cache-busting version to avoid stale browser scripts");
+assert.doesNotMatch(html,/window\.scrollTo\(0,0\)/,"Page switching cannot scroll the old document");
+
+console.log("Picto Locations verified: 210 audited requirements, traversal tags, contrast bars, isolated scrollport, separate persistent tracker.");

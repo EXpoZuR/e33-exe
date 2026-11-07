@@ -13,16 +13,16 @@
 #pictoHuntPage .pl-status-top span{font-size:11px;color:#8ca8bb}
 #pictoHuntPage .pl-status-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
 #pictoHuntPage .pl-stat{min-width:0;display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:9px;background:#0c141bb8;border:1px solid #293b48}
-#pictoHuntPage .pl-stat-dot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;background:#617689}
-#pictoHuntPage .pl-stat-found .pl-stat-dot{background:#75a6cf}
-#pictoHuntPage .pl-stat-maxed .pl-stat-dot{background:#bbaaed}
+#pictoHuntPage .pl-stat-dot{width:10px;height:10px;border-radius:50%;flex:0 0 10px;background:#e6a455;box-shadow:0 0 8px #e6a4553a}
+#pictoHuntPage .pl-stat-found .pl-stat-dot{background:#42cbed;box-shadow:0 0 8px #42cbed4a}
+#pictoHuntPage .pl-stat-maxed .pl-stat-dot{background:#b68dff;box-shadow:0 0 8px #b68dff4a}
 #pictoHuntPage .pl-stat-label{display:block;color:#99abba;font-size:11px;line-height:1.4}
 #pictoHuntPage .pl-stat strong{display:block;color:#e5eef5;font-size:24px;line-height:1.1;font-weight:750;font-variant-numeric:tabular-nums}
-#pictoHuntPage .pl-meter{display:flex;height:10px;overflow:hidden;border:1px solid #2d3f4b;border-radius:999px;background:#263340;box-shadow:inset 0 2px 5px #0004}
+#pictoHuntPage .pl-meter{display:flex;height:12px;overflow:hidden;border:1px solid #40515f;border-radius:999px;background:#192732;box-shadow:inset 0 2px 5px #0005}
 #pictoHuntPage .pl-meter>span{height:100%;display:block;transition:width .25s ease}
-#pictoHuntPage .pl-meter-unfound{background:#526574}
-#pictoHuntPage .pl-meter-found{background:#75a6cf}
-#pictoHuntPage .pl-meter-maxed{background:#bbaaed}
+#pictoHuntPage .pl-meter-unfound{background:linear-gradient(90deg,#db9142,#f0b96b)}
+#pictoHuntPage .pl-meter-found{background:linear-gradient(90deg,#28b7db,#65e0f3)}
+#pictoHuntPage .pl-meter-maxed{background:linear-gradient(90deg,#9272e3,#c3a1ff)}
 #pictoHuntPage .pl-progress-foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:9px;font-size:11px;color:#849bac}
 #pictoHuntPage .pl-toolbar{background:#141e27;border:1px solid #30404d;border-radius:13px;padding:13px 16px;margin-bottom:18px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
 #pictoHuntPage .pl-tabs{display:flex;background:#0b131b;padding:4px;gap:4px;border:1px solid #2f404d;border-radius:9px;flex:0 0 auto}
@@ -54,8 +54,8 @@
 #pictoHuntPage .pl-area-list,#pictoHuntPage .pl-flat-list{display:grid;gap:9px}
 #pictoHuntPage .pl-card{background:#151e27;border:1px solid #2a3a46;border-radius:10px;padding:16px 16px 15px;display:flex;gap:24px;align-items:flex-start;justify-content:space-between;position:relative;transition:border-color .15s,background .15s;min-width:0}
 #pictoHuntPage .pl-card:hover{border-color:#426075;background:#17242f}
-#pictoHuntPage .pl-card.pl-maxed{border-left:3px solid #a992df;padding-left:14px}
-#pictoHuntPage .pl-card.pl-found{border-left:3px solid #6c9fc6;padding-left:14px}
+#pictoHuntPage .pl-card.pl-maxed{border-left:3px solid #b68dff;padding-left:14px}
+#pictoHuntPage .pl-card.pl-found{border-left:3px solid #42cbed;padding-left:14px}
 #pictoHuntPage .pl-card-copy{flex:1;min-width:0}
 #pictoHuntPage .pl-card-head{display:flex;flex-wrap:wrap;align-items:center;gap:7px 8px;margin-bottom:5px}
 #pictoHuntPage .pl-card-head h3{font-size:15px;line-height:1.25;color:#f0f6fa;font-weight:720;margin:0 4px 0 0}
@@ -64,7 +64,17 @@
 #pictoHuntPage .pl-lp{font-variant-numeric:tabular-nums;color:#ceb994;background:#342c22;border-color:#4e4230}
 #pictoHuntPage .pl-dlc{color:#a5c9ec;background:#1a2b3f;border-color:#375775}
 #pictoHuntPage .pl-missable{background:#42261e;border-color:#794835;color:#f6bf9d}
-#pictoHuntPage .pl-card-gate{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#8eaaad;margin-bottom:10px}
+#pictoHuntPage .pl-card-requirements{display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin:7px 0 10px;min-height:22px}
+#pictoHuntPage .pl-req-caption{font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:#839aa9;font-weight:750;margin-right:3px}
+#pictoHuntPage .pl-req-tag{--pl-gate:#9aaebd;display:inline-flex;align-items:center;min-height:21px;padding:3px 8px;border-radius:5px;border:1px solid color-mix(in srgb,var(--pl-gate) 44%,#30404e);background:color-mix(in srgb,var(--pl-gate) 12%,#111c26);color:color-mix(in srgb,var(--pl-gate) 78%,#ffffff);font-size:10px;line-height:1.1;font-weight:650;white-space:nowrap}
+#pictoHuntPage .pl-req-rough{--pl-gate:#d9ad61}
+#pictoHuntPage .pl-req-swim{--pl-gate:#72d7e7}
+#pictoHuntPage .pl-req-paint{--pl-gate:#e8b56e}
+#pictoHuntPage .pl-req-reef{--pl-gate:#78b9ff}
+#pictoHuntPage .pl-req-fly{--pl-gate:#a08bff}
+#pictoHuntPage .pl-req-dive{--pl-gate:#d98bd7}
+#pictoHuntPage .pl-req-none{--pl-gate:#91a1b0;color:#a7b7c3;background:#1b2833}
+
 #pictoHuntPage .pl-card-location{display:flex;align-items:baseline;gap:7px;font-size:12px;margin:0 0 6px;color:#b3ccdc}
 #pictoHuntPage .pl-card-location strong{font-weight:690}
 #pictoHuntPage .pl-pin{font-size:17px;color:#70a9cc}
@@ -82,10 +92,10 @@
 #pictoHuntPage .pl-toggle:has(input:focus-visible){outline:2px solid #9ed5f7;outline-offset:3px}
 #pictoHuntPage .pl-toggle .pl-check{height:15px;width:15px;line-height:13px;font-size:12px;text-align:center;border:1px solid #698196;color:transparent;background:#14202b;border-radius:4px;flex:0 0 15px}
 #pictoHuntPage .pl-toggle small{font-size:9px;font-weight:500;opacity:.85}
-#pictoHuntPage .pl-toggle.is-selected{border-color:#6598c1;background:#203c50;color:#d5ebfa}
-#pictoHuntPage .pl-toggle.is-selected .pl-check{background:#6c9fc6;border-color:#6c9fc6;color:#0f1e2b}
-#pictoHuntPage .pl-maxed-toggle.is-selected{background:#302b49;border-color:#9b8ad2;color:#e5dbff}
-#pictoHuntPage .pl-maxed-toggle.is-selected .pl-check{background:#b6a2ec;border-color:#b6a2ec;color:#211e31}
+#pictoHuntPage .pl-toggle.is-selected{border-color:#42cbed;background:#16475a;color:#e0f8ff}
+#pictoHuntPage .pl-toggle.is-selected .pl-check{background:#42cbed;border-color:#42cbed;color:#102631}
+#pictoHuntPage .pl-maxed-toggle.is-selected{background:#362952;border-color:#b68dff;color:#eee1ff}
+#pictoHuntPage .pl-maxed-toggle.is-selected .pl-check{background:#b68dff;border-color:#b68dff;color:#211e31}
 #pictoHuntPage .pl-empty{color:#acbdca;text-align:center;padding:65px 20px;border:1px dashed #3a5160;border-radius:12px;background:#121c25}
 @media(max-width:1000px){#pictoHuntPage .pl-hero-note{display:none}#pictoHuntPage .pl-backups{width:100%;justify-content:flex-end}}
 @media(max-width:720px){
