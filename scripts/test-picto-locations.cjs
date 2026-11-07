@@ -39,11 +39,16 @@ assert.equal(byName["Energising Start IV"].chapter,"act2");
 assert.equal(byName["Augmented Counter III"].chapter,"act3");
 assert.match(byName["Exposing Attack (Missable)"].guide,/Noco/i);
 assert.match(byName["Auto Powerful"].guide,/Chalier/i);
+assert.ok(entries.filter(p=>p.section==="Flying Manor"||p.section==="Endless Tower").every(p=>/Esquie flight/i.test(p.requirement)),"Flying Manor and Endless Tower accessible immediately after flight");
+assert.ok(entries.filter(p=>p.chapter==="endgame"&&p.section==="Optional regions, bosses and secret weapons").every(p=>/Esquie diving/i.test(p.requirement)),"Renoir's Drafts needs diving");
+const position=name=>entries.findIndex(p=>p.name===name);
+assert.ok(position("Stay Marked")<position("Shortcut")&&position("Shortcut")<position("AP Discount"),"Flight areas should precede diving zones and DLC");
+
 assert.equal(byName["Piercing Shot"].chapter,"act2","Paint Break gate in Ancient Sanctuary");
 assert.match(byName["Piercing Shot"].requirement,/Paint Break/i);
 assert.ok(entries.filter(p=>p.chapter==="update").every(p=>/diving/i.test(p.requirement)),"Verso's Drafts requires Esquie diving");
 assert.ok(entries.filter(p=>p.chapter==="endgame"&&/Renoir.s Drafts/i.test(p.location)).every(p=>/diving/i.test(p.requirement)),"Renoir's Drafts requires dive");
-const chapterRank={act1:0,act2:1,act3:2,update:3,endgame:4};
+const chapterRank={act1:0,act2:1,act3:2,endgame:3,update:4};
 for(let i=1;i<entries.length;i++)
  assert.ok(chapterRank[entries[i-1].chapter]<=chapterRank[entries[i].chapter],"Guide chapter order regressed near "+entries[i].name);
 assert.match(html,/id="pictoHuntPage"/);

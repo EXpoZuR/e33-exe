@@ -1,4 +1,4 @@
-/* E33.EXE Picto hunt: independent 210-location snapshot, audited against completionist routes and source guides. */
+/* E33.EXE Picto hunt: independent 210-location snapshot, flight challenges precede dive-gated areas. */
 window.E33_PICTO_LOCATION_DATA = [
   {
     "name": "Dodger",
@@ -3417,6 +3417,499 @@ window.E33_PICTO_LOCATION_DATA = [
     "source": "https://game-checklists.com/expedition33/all-pictos.html"
   },
   {
+    "name": "Stay Marked",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "The Monolith",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Mark",
+      "Verso",
+      "Maelle",
+      "Sciel"
+    ],
+    "guide": "With Esquie's FLIGHT unlocked, enter FLYING MANOR and reach CENTRAL PLAZA Flag. Take the ELEVATOR beside the plaza to the merchant landing and purchase Stay Marked for 122,250 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Longer Burn",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Overworld",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 15,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Burn",
+      "Lune",
+      "Maelle",
+      "Monoco"
+    ],
+    "guide": "At FLYING MANOR Central Plaza Flag take the adjacent ELEVATOR and reach the Gestral merchant. After winning his duel, buy Longer Burn for 142,625 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Accelerating Shots",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 3,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Free Aim",
+      "Verso",
+      "Gustave",
+      "Monoco"
+    ],
+    "guide": "At FLYING MANOR Central Plaza Flag use the ELEVATOR to the upper merchant, challenge him and purchase Accelerating Shots for 89,650 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Break Specialist",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 1,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco"
+    ],
+    "guide": "Inside FLYING MANOR reach CENTRAL PLAZA and take the ELEVATOR to the merchant. Win his duel to unlock stock and buy Break Specialist for 81,500 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Charging Alteration",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Gradient",
+      "Act 3"
+    ],
+    "guide": "Inside FLYING MANOR fight the GARGANT optional boss, then use the GRAPPLE revealed behind its arena to reach Charging Alteration.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Clea's Life",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 30,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "Climb to the upper part of FLYING MANOR and defeat the optional superboss CLEA. Clea's Life drops from this encounter; this is not a shop item.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Empowering Break",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 3,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco"
+    ],
+    "guide": "At FLYING MANOR Central Plaza use the elevator to the upper area, then search around the CRULER enemy on the adjacent path for Empowering Break.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Energetic Healer",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Sustain",
+      "Lune",
+      "Sciel"
+    ],
+    "guide": "At FLYING MANOR CENTRAL PLAZA Flag take the LEFT-hand path and descend by the ROPE. Pick up Energetic Healer on the nearby lower ledge.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Energising Shots",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "AP economy",
+      "Universal",
+      "Free Aim",
+      "Verso",
+      "Gustave"
+    ],
+    "guide": "In FLYING MANOR travel along the central boss route to the GOBLU encounter, defeat it and enter the ROOM directly adjacent to the arena to collect Energising Shots.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Energising Stun",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "AP economy",
+      "Universal",
+      "Break",
+      "Gustave",
+      "Monoco"
+    ],
+    "guide": "In FLYING MANOR locate PAINT CAGE 18 and shoot its THREE nearby paint anomalies to open the cage. Claim Energising Stun from inside.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Gradient Breaker",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 5,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco",
+      "Gradient",
+      "Act 3"
+    ],
+    "guide": "In FLYING MANOR from CENTRAL PLAZA take the ELEVATOR to the merchant, win the duel and purchase Gradient Breaker for 97,800 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Painter",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 10,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "In FLYING MANOR reach the encounter with the THREE ÉVÊQUES and look for the CLIMBABLE PLATFORM positioned ABOVE them. Climb to it to collect Painter.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Powerful Mark",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 5,
+    "tier": "S",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Mark",
+      "Verso",
+      "Maelle",
+      "Sciel",
+      "Buff / Debuff"
+    ],
+    "guide": "From FLYING MANOR's CENTRAL PLAZA Flag follow the main road toward the GOBLU boss area; search the side path just before the fight to pick up Powerful Mark.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Protecting Shots",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 3,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Free Aim",
+      "Verso",
+      "Gustave",
+      "Monoco",
+      "Defense"
+    ],
+    "guide": "In FLYING MANOR enter from its Continent portal, use the nearby STAIRS, then take the descending ROPE to reach the lower section. Search the lower ledge around the rope landing for Protecting Shots.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Slowing Break",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Flying Manor",
+    "location": "Flying Manor",
+    "requirement": "Act 3 · Esquie flight",
+    "cost": 5,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Break",
+      "Gustave",
+      "Monoco",
+      "Turn control",
+      "Sciel"
+    ],
+    "guide": "At FLYING MANOR's CENTRAL PLAZA Flag take the ELEVATOR up to the Gestral merchant. Win the duel and buy Slowing Break for 97,800 Chroma.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Clea's Death",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower — DLC revisit",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 15,
+    "tier": "C",
+    "dlc": true,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "In the ENDLESS TOWER, clear the newly added challenge against CLEA UNLEASHED. It awards Clea's Death on victory; the original Clea in Flying Manor does not give this Picto.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "First Life",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower — DLC revisit",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 15,
+    "tier": "SS",
+    "dlc": true,
+    "effect": "Damage bonus until first death; smaller penalty after that death.",
+    "tags": [
+      "DPS",
+      "Maelle",
+      "Verso"
+    ],
+    "guide": "In the ENDLESS TOWER complete the added CHROMATIC LAMPMASTER boss encounter. First Life is the victory reward.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Critical Weakness",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 5,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "DPS",
+      "Maelle",
+      "Verso"
+    ],
+    "guide": "At the ENDLESS TOWER complete all three trials in each of the FIRST SIX stages, then claim Critical Weakness from the stage-clear reward.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Energising Rush",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "AP economy",
+      "Universal",
+      "Turn control",
+      "Sciel",
+      "Monoco"
+    ],
+    "guide": "In ENDLESS TOWER clear all trials through the END OF STAGE TWO; collect Energising Rush from the stage-clear rewards.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Greater Powerless",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 15,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Buff / Debuff",
+      "Support"
+    ],
+    "guide": "At the ENDLESS TOWER finish every trial through STAGE TEN, then retrieve the Greater Powerless Picto from the completion rewards.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Rush on Powerful",
+    "chapter": "endgame",
+    "act": "Act 3 · flight-accessible challenges",
+    "section": "Endless Tower",
+    "location": "Endless Tower",
+    "requirement": "Act 3 · Esquie flight · Endless Tower trial clear",
+    "cost": 10,
+    "tier": "B",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Turn control",
+      "Sciel",
+      "Monoco",
+      "Buff / Debuff",
+      "Support"
+    ],
+    "guide": "At the ENDLESS TOWER fully complete NINE stages and claim the Rush on Powerful reward. An alternative copy exists in Renoir's Drafts.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Shortcut",
+    "chapter": "endgame",
+    "act": "Act 3 · diving-required regions",
+    "section": "Optional regions, bosses and secret weapons",
+    "location": "Lumière — Act III",
+    "requirement": "Act 3 · Esquie diving",
+    "cost": 5,
+    "tier": "C",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Situational"
+    ],
+    "guide": "Only after Esquie unlocks DIVING through his relationship rank 6 quest: enter RENOIR'S DRAFTS and travel from ENTRANCE Flag past the first GRAPPLE to the side area with a merchant. Defeat the enemy there for Shortcut.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Charging Burn",
+    "chapter": "endgame",
+    "act": "Act 3 · diving-required regions",
+    "section": "Optional regions, bosses and secret weapons",
+    "location": "Renoir's Drafts",
+    "requirement": "Act 3 · Esquie diving",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Burn",
+      "Lune",
+      "Maelle",
+      "Monoco",
+      "Gradient"
+    ],
+    "guide": "Only after Esquie's DIVING quest, enter RENOIR'S DRAFTS. From the ENTRANCE route toward the merchant, walk across the DESTROYED BRIDGE and check the ground beside the broken span for Charging Burn.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
+    "name": "Charging Critical",
+    "chapter": "endgame",
+    "act": "Act 3 · diving-required regions",
+    "section": "Optional regions, bosses and secret weapons",
+    "location": "Renoir's Drafts",
+    "requirement": "Act 3 · Esquie diving",
+    "cost": 10,
+    "tier": "A",
+    "dlc": false,
+    "effect": "",
+    "tags": [
+      "Gradient",
+      "Act 3",
+      "DPS",
+      "Maelle",
+      "Verso"
+    ],
+    "guide": "With Esquie's DIVING unlocked, enter RENOIR'S DRAFTS and reach the Gestral merchant via the route beyond ENTRANCE Flag. Cross the PLATFORMS BEHIND that merchant to collect Charging Critical.",
+    "missable": false,
+    "source": "https://game-checklists.com/expedition33/all-pictos.html"
+  },
+  {
     "name": "Double Third",
     "chapter": "update",
     "act": "Act 3 · Verso’s Drafts update",
@@ -3716,499 +4209,6 @@ window.E33_PICTO_LOCATION_DATA = [
       "Act 3"
     ],
     "guide": "At VERSO'S DRAFTS RÊVERIE PATH Flag locate the side PARKOUR challenge and finish the route to its far LEFT endpoint. Pick up Gradient Overcharge there.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Shortcut",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Optional regions, bosses and secret weapons",
-    "location": "Lumière — Act III",
-    "requirement": "Act 3 · Esquie diving",
-    "cost": 5,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "Only after Esquie unlocks DIVING through his relationship rank 6 quest: enter RENOIR'S DRAFTS and travel from ENTRANCE Flag past the first GRAPPLE to the side area with a merchant. Defeat the enemy there for Shortcut.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Charging Burn",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Optional regions, bosses and secret weapons",
-    "location": "Renoir's Drafts",
-    "requirement": "Act 3 · Esquie diving",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Burn",
-      "Lune",
-      "Maelle",
-      "Monoco",
-      "Gradient"
-    ],
-    "guide": "Only after Esquie's DIVING quest, enter RENOIR'S DRAFTS. From the ENTRANCE route toward the merchant, walk across the DESTROYED BRIDGE and check the ground beside the broken span for Charging Burn.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Charging Critical",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Optional regions, bosses and secret weapons",
-    "location": "Renoir's Drafts",
-    "requirement": "Act 3 · Esquie diving",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Gradient",
-      "Act 3",
-      "DPS",
-      "Maelle",
-      "Verso"
-    ],
-    "guide": "With Esquie's DIVING unlocked, enter RENOIR'S DRAFTS and reach the Gestral merchant via the route beyond ENTRANCE Flag. Cross the PLATFORMS BEHIND that merchant to collect Charging Critical.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Stay Marked",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "The Monolith",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Mark",
-      "Verso",
-      "Maelle",
-      "Sciel"
-    ],
-    "guide": "With Esquie's FLIGHT unlocked, enter FLYING MANOR and reach CENTRAL PLAZA Flag. Take the ELEVATOR beside the plaza to the merchant landing and purchase Stay Marked for 122,250 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Longer Burn",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Overworld",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 15,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Burn",
-      "Lune",
-      "Maelle",
-      "Monoco"
-    ],
-    "guide": "At FLYING MANOR Central Plaza Flag take the adjacent ELEVATOR and reach the Gestral merchant. After winning his duel, buy Longer Burn for 142,625 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Accelerating Shots",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 3,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Free Aim",
-      "Verso",
-      "Gustave",
-      "Monoco"
-    ],
-    "guide": "At FLYING MANOR Central Plaza Flag use the ELEVATOR to the upper merchant, challenge him and purchase Accelerating Shots for 89,650 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Break Specialist",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 1,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco"
-    ],
-    "guide": "Inside FLYING MANOR reach CENTRAL PLAZA and take the ELEVATOR to the merchant. Win his duel to unlock stock and buy Break Specialist for 81,500 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Charging Alteration",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Gradient",
-      "Act 3"
-    ],
-    "guide": "Inside FLYING MANOR fight the GARGANT optional boss, then use the GRAPPLE revealed behind its arena to reach Charging Alteration.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Clea's Life",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 30,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "Climb to the upper part of FLYING MANOR and defeat the optional superboss CLEA. Clea's Life drops from this encounter; this is not a shop item.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Empowering Break",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 3,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco"
-    ],
-    "guide": "At FLYING MANOR Central Plaza use the elevator to the upper area, then search around the CRULER enemy on the adjacent path for Empowering Break.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Energetic Healer",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Sustain",
-      "Lune",
-      "Sciel"
-    ],
-    "guide": "At FLYING MANOR CENTRAL PLAZA Flag take the LEFT-hand path and descend by the ROPE. Pick up Energetic Healer on the nearby lower ledge.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Energising Shots",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "AP economy",
-      "Universal",
-      "Free Aim",
-      "Verso",
-      "Gustave"
-    ],
-    "guide": "In FLYING MANOR travel along the central boss route to the GOBLU encounter, defeat it and enter the ROOM directly adjacent to the arena to collect Energising Shots.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Energising Stun",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame · Paint Break where noted",
-    "cost": 10,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "AP economy",
-      "Universal",
-      "Break",
-      "Gustave",
-      "Monoco"
-    ],
-    "guide": "In FLYING MANOR locate PAINT CAGE 18 and shoot its THREE nearby paint anomalies to open the cage. Claim Energising Stun from inside.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Gradient Breaker",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 5,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco",
-      "Gradient",
-      "Act 3"
-    ],
-    "guide": "In FLYING MANOR from CENTRAL PLAZA take the ELEVATOR to the merchant, win the duel and purchase Gradient Breaker for 97,800 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Painter",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "In FLYING MANOR reach the encounter with the THREE ÉVÊQUES and look for the CLIMBABLE PLATFORM positioned ABOVE them. Climb to it to collect Painter.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Powerful Mark",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 5,
-    "tier": "S",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Mark",
-      "Verso",
-      "Maelle",
-      "Sciel",
-      "Buff / Debuff"
-    ],
-    "guide": "From FLYING MANOR's CENTRAL PLAZA Flag follow the main road toward the GOBLU boss area; search the side path just before the fight to pick up Powerful Mark.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Protecting Shots",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 3,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Free Aim",
-      "Verso",
-      "Gustave",
-      "Monoco",
-      "Defense"
-    ],
-    "guide": "In FLYING MANOR enter from its Continent portal, use the nearby STAIRS, then take the descending ROPE to reach the lower section. Search the lower ledge around the rope landing for Protecting Shots.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Slowing Break",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Flying Manor",
-    "location": "Flying Manor",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 5,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Break",
-      "Gustave",
-      "Monoco",
-      "Turn control",
-      "Sciel"
-    ],
-    "guide": "At FLYING MANOR's CENTRAL PLAZA Flag take the ELEVATOR up to the Gestral merchant. Win the duel and buy Slowing Break for 97,800 Chroma.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Clea's Death",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower — DLC revisit",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 15,
-    "tier": "C",
-    "dlc": true,
-    "effect": "",
-    "tags": [
-      "Situational"
-    ],
-    "guide": "In the ENDLESS TOWER, clear the newly added challenge against CLEA UNLEASHED. It awards Clea's Death on victory; the original Clea in Flying Manor does not give this Picto.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "First Life",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower — DLC revisit",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 15,
-    "tier": "SS",
-    "dlc": true,
-    "effect": "Damage bonus until first death; smaller penalty after that death.",
-    "tags": [
-      "DPS",
-      "Maelle",
-      "Verso"
-    ],
-    "guide": "In the ENDLESS TOWER complete the added CHROMATIC LAMPMASTER boss encounter. First Life is the victory reward.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Critical Weakness",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 5,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "DPS",
-      "Maelle",
-      "Verso"
-    ],
-    "guide": "At the ENDLESS TOWER complete all three trials in each of the FIRST SIX stages, then claim Critical Weakness from the stage-clear reward.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Energising Rush",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 10,
-    "tier": "A",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "AP economy",
-      "Universal",
-      "Turn control",
-      "Sciel",
-      "Monoco"
-    ],
-    "guide": "In ENDLESS TOWER clear all trials through the END OF STAGE TWO; collect Energising Rush from the stage-clear rewards.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Greater Powerless",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower",
-    "requirement": "Act 3 · optional endgame",
-    "cost": 15,
-    "tier": "C",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Buff / Debuff",
-      "Support"
-    ],
-    "guide": "At the ENDLESS TOWER finish every trial through STAGE TEN, then retrieve the Greater Powerless Picto from the completion rewards.",
-    "missable": false,
-    "source": "https://game-checklists.com/expedition33/all-pictos.html"
-  },
-  {
-    "name": "Rush on Powerful",
-    "chapter": "endgame",
-    "act": "Act 3 · endgame challenges",
-    "section": "Endless Tower",
-    "location": "Endless Tower",
-    "requirement": "Act 3 · Esquie diving",
-    "cost": 10,
-    "tier": "B",
-    "dlc": false,
-    "effect": "",
-    "tags": [
-      "Turn control",
-      "Sciel",
-      "Monoco",
-      "Buff / Debuff",
-      "Support"
-    ],
-    "guide": "At the ENDLESS TOWER fully complete NINE stages and claim the Rush on Powerful reward. An alternative copy exists in Renoir's Drafts.",
     "missable": false,
     "source": "https://game-checklists.com/expedition33/all-pictos.html"
   }
