@@ -31,7 +31,11 @@ const mount=els.completionistSections,dock=els.completionistDock;
 const click=(scope,action,dataset={})=>{
  assert.equal(typeof scope.handlers.click,"function","Missing click listener");
  const b={dataset:{action,...dataset}};
- scope.handlers.click({target:{closest:()=>b}});
+ scope.handlers.click({target:{closest:selector=>{
+  if(selector.includes("data-action='segment'"))return action==='segment'?b:null;
+  if(selector.includes("data-action='jump'"))return action==='jump'?b:null;
+  return b;
+ }}});
 };
 assert.match(mount.innerHTML,/TRAVERSAL CHECK/);
 assert.match(dock.innerHTML,/802 steps completed/);
