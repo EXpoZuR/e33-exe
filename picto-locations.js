@@ -35,7 +35,7 @@
     return {unfound:n-found-maxed,found,maxed,owned:found+maxed};
   }
   function stats(){
-    const {unfound,found,maxed,owned}=totals();
+    const {unfound,found,maxed}=totals();
     const n=data.length;
     const set=(id,val)=>{const el=host.querySelector('#'+id);if(el)el.textContent=val;};
     set('pictoHuntTotal',n);
@@ -43,7 +43,7 @@
     set('pictoHuntFound',found);
     set('pictoHuntMaxed',maxed);
     set('pictoHuntTabAllCount',n);
-    set('pictoHuntTabFoundCount',owned);
+    set('pictoHuntTabFoundCount',found);
     set('pictoHuntTabMaxedCount',maxed);
     const bar=host.querySelector('.pl-meter');
     if(bar){
@@ -59,7 +59,7 @@
     return p.section||p.location||'Other locations';
   }
   function visible(p,q){
-    if(tab==='found'&&!progress[p.name])return false;
+    if(tab==='found'&&progress[p.name]!=='found')return false;
     if(tab==='maxed'&&progress[p.name]!=='maxed')return false;
     if(!q)return true;
     return [p.name,p.section,p.location,p.requirement,p.guide,p.effect,...(p.tags||[])].join(' ').toLowerCase().includes(q);
